@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/login",
+    "pages/order/index",
+    "pages/order/visitor",
+    "pages/order/base",
+    "pages/order/edit",
+    "pages/user/means",
+    "pages/user/edit_visitor",
+    "pages/user/visitor",
+    "components/LHIndexedList",
+    "pages/user/info",
+    "pages/user/index",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "浪花朵朵行程管家",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#39cffc",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "iconPath": "static/订单.png",
+        "selectedIconPath": "static/订单 (1).png",
+        "pagePath": "pages/order/index",
+        "text": "订单"
+      },
+      {
+        "iconPath": "static/icon_patriarch.png",
+        "selectedIconPath": "static/icon_patriarch (1).png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": ""
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap64.json"
+}

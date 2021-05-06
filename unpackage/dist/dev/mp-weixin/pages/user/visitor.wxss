@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*浪花管家*/
+.lh-title.data-v-1ff95223 {
+  height: 79.2rpx;
+  line-height: 79.2rpx;
+  font-size: 21.6rpx;
+  color: #999999;
+  padding-left: 28.8rpx;
+}
+button.data-v-1ff95223::after {
+  border: none;
+}
+.btn-primary.data-v-1ff95223 {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #4992E7;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 0;
+}
+.btn-default.data-v-1ff95223 {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #fff;
+  color: #303030;
+  font-size: 24rpx;
+  border-radius: 0;
+}
+.user-visitor.data-v-1ff95223 {
+  font-size: 24rpx;
+}
+.user-visitor .visitor-list.data-v-1ff95223 {
+  padding: 0 28.8rpx;
+}
+.user-visitor .visitor-list .visitor-item.data-v-1ff95223 {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 28.8rpx;
+  padding: 28.8rpx;
+}
+.user-visitor .visitor-list .visitor-item .top.data-v-1ff95223 {
+  overflow: hidden;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0;
+}
+.user-visitor .visitor-list .visitor-item .top .name-box.data-v-1ff95223 {
+  float: left;
+  font-size: 28.8rpx;
+}
+.user-visitor .visitor-list .visitor-item .top .name-box .iconfont.data-v-1ff95223 {
+  font-size: 28.8rpx;
+  padding-right: 12rpx;
+}
+.user-visitor .visitor-list .visitor-item .top .name-box .lhddmale.data-v-1ff95223 {
+  color: #4992e7;
+}
+.user-visitor .visitor-list .visitor-item .top .name-box .lhddfemale.data-v-1ff95223 {
+  color: #ff6600;
+}
+.user-visitor .visitor-list .visitor-item .top .edit.data-v-1ff95223 {
+  float: right;
+  line-height: 28.8rpx;
+}
+.user-visitor .visitor-list .visitor-item .top .edit .iconfont.data-v-1ff95223 {
+  font-size: 43.2rpx;
+  vertical-align: middle;
+}
+.user-visitor .visitor-list .visitor-item .bottom.data-v-1ff95223 {
+  overflow: hidden;
+  padding-top: 24rpx;
+}
+.user-visitor .visitor-list .visitor-item .bottom .post.data-v-1ff95223 {
+  float: left;
+}
+.user-visitor .visitor-list .visitor-item .bottom .birthday.data-v-1ff95223 {
+  float: right;
+}
+.user-visitor .visitor-bottom.data-v-1ff95223 {
+  position: fixed;
+  bottom: 60rpx;
+  width: 100%;
+  font-size: 24rpx;
+  overflow: hidden;
+}
+.user-visitor .visitor-bottom .btn-invite.data-v-1ff95223 {
+  width: 234rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border: 1px solid #4992e7;
+  float: left;
+  border-radius: 0;
+  margin-right: 28.8rpx;
+}
+.user-visitor .visitor-bottom .btn-add.data-v-1ff95223 {
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #4992e7;
+  color: #ffffff;
+  border-radius: 0;
+}
+

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*浪花管家*/
+.lh-title.data-v-c3d8bbfa {
+  height: 79.2rpx;
+  line-height: 79.2rpx;
+  font-size: 21.6rpx;
+  color: #999999;
+  padding-left: 28.8rpx;
+}
+button.data-v-c3d8bbfa::after {
+  border: none;
+}
+.btn-primary.data-v-c3d8bbfa {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #4992E7;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 0;
+}
+.btn-default.data-v-c3d8bbfa {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #fff;
+  color: #303030;
+  font-size: 24rpx;
+  border-radius: 0;
+}
+.page-login.data-v-c3d8bbfa {
+  height: 100%;
+  font-size: 24rpx;
+}
+.page-login .top-image.data-v-c3d8bbfa {
+  width: 100%;
+  height: 496.8rpx;
+}
+.page-login .ctn.data-v-c3d8bbfa {
+  padding: 28.8rpx;
+  text-align: center;
+}
+.page-login .ctn .cmd-box.data-v-c3d8bbfa {
+  width: 100%;
+  height: 288rpx;
+  position: relative;
+}
+.page-login .ctn .cmd-box .textarea.data-v-c3d8bbfa {
+  border: 1px solid #797979;
+  display: inline-block;
+  width: 100%;
+  height: 288rpx;
+}
+.page-login .ctn .cmd-box .text.data-v-c3d8bbfa {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 90rpx;
+  left: 0;
+  color: #ccc;
+}
+.page-login .ctn .cmd-box .btn-paste.data-v-c3d8bbfa {
+  position: absolute;
+  width: 144rpx;
+  height: 43.2rpx;
+  line-height: 43.2rpx;
+  top: 138rpx;
+  left: 50%;
+  margin-left: -72rpx;
+  border: 1px solid #797979;
+  border-radius: 5px;
+}
+.page-login .ctn .btn-login.data-v-c3d8bbfa {
+  margin: 28.8rpx 0;
+}
+.page-login .ctn .text.data-v-c3d8bbfa {
+  text-align: right;
+  line-height: 33.6rpx;
+  color: #797979;
+}
+.page-login .ctn .logo.data-v-c3d8bbfa {
+  height: 52.8rpx;
+  width: 162rpx;
+  display: inline-block;
+  margin-top: 60rpx;
+}
+

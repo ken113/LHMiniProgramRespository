@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*浪花管家*/
+.lh-title.data-v-137d5072 {
+  height: 79.2rpx;
+  line-height: 79.2rpx;
+  font-size: 21.6rpx;
+  color: #999999;
+  padding-left: 28.8rpx;
+}
+button.data-v-137d5072::after {
+  border: none;
+}
+.btn-primary.data-v-137d5072 {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #4992E7;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 0;
+}
+.btn-default.data-v-137d5072 {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #fff;
+  color: #303030;
+  font-size: 24rpx;
+  border-radius: 0;
+}
+.page-user.data-v-137d5072 {
+  font-size: 24rpx;
+}
+.page-user .user-top.data-v-137d5072 {
+  height: 336rpx;
+  overflow: hidden;
+}
+.page-user .user-top .user-box.data-v-137d5072 {
+  height: 295.2rpx;
+  width: 699.6rpx;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 96rpx;
+}
+.page-user .user-top .user-box .user-box-top.data-v-137d5072 {
+  overflow: hidden;
+}
+.page-user .user-top .user-box .user-box-top .user-img.data-v-137d5072 {
+  float: left;
+  margin-left: 84rpx;
+}
+.page-user .user-top .user-box .user-box-top .user-img ._img.data-v-137d5072 {
+  height: 120rpx;
+  width: 120rpx;
+}
+.page-user .user-top .user-box .user-box-top .user-name.data-v-137d5072 {
+  float: left;
+  padding-left: 10px;
+  font-size: 33.6rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.page-user .user-top .user-box .user-box-bottom.data-v-137d5072 {
+  overflow: hidden;
+}
+.page-user .user-top .user-box .user-box-bottom .text1.data-v-137d5072 {
+  color: #999999;
+  font-size: 24rpx;
+}
+.page-user .user-top .user-box .user-box-bottom .text2.data-v-137d5072 {
+  color: #303030;
+  font-size: 24rpx;
+}
+.page-user .user-top .user-box .user-box-bottom .ubb-left.data-v-137d5072 {
+  width: 50%;
+  float: left;
+  padding-left: 84rpx;
+  box-sizing: border-box;
+  border-right: 1px solid #eeeeee;
+}
+.page-user .user-top .user-box .user-box-bottom .ubb-right.data-v-137d5072 {
+  width: 50%;
+  float: left;
+  padding-left: 36rpx;
+  box-sizing: border-box;
+}
+.page-user .user-menu.data-v-137d5072 {
+  width: 699.6rpx;
+  margin: 0 auto;
+  background: #ffffff;
+  margin-top: 84rpx;
+  border-radius: 10px;
+}
+.page-user .user-menu .lml-btm-line.data-v-137d5072 {
+  margin-left: 28.8rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.page-user .user-logout.data-v-137d5072 {
+  width: 699.6rpx;
+  height: 79.2rpx;
+  margin: 0 auto;
+  background: #ffffff;
+  margin-top: 84rpx;
+  border-radius: 10px;
+  text-align: center;
+  color: #ff0000;
+  font-size: 24rpx;
+  line-height: 79.2rpx;
+}
+.langhua-menu-list.data-v-137d5072 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  height: 79.2rpx;
+}
+.langhua-menu-list .iconleft.data-v-137d5072 {
+  padding-left: 28.8rpx;
+  width: 38.4rpx;
+  font-size: 38.4rpx;
+}
+.langhua-menu-list .menu-name.data-v-137d5072 {
+  text-align: left;
+  padding-left: 20rpx;
+  width: 100%;
+}
+.langhua-menu-list .iconright.data-v-137d5072 {
+  width: 33.6rpx;
+  font-size: 33.6rpx;
+  padding-right: 36rpx;
+}
+
