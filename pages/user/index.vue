@@ -59,36 +59,36 @@ export default {
 
 <style lang="scss" scoped>
 .page-user {
-  font-size: $rate * 20;
+  font-size:  20rpx;
   .user-top {
-    height: $rate * 280;
+    height:  336rpx;
     overflow: hidden;
 
     .user-box {
-      height: $rate * 246;
-      width: $rate * 583;
+      height:  295rpx;
+      width:  700rpx;
       background: #ffffff;
       border-radius: 10px;
       margin: 0 auto;
-      margin-top: $rate * 80;
+      margin-top:  80rpx;
 
       .user-box-top {
         overflow: hidden;
 
         .user-img {
           float: left;
-          margin-left: $rate * 70;
+          margin-left:  70rpx;
           img {
-            height: $rate * 100;
-            width: $rate * 100;
+            height:  120rpx;
+            width:  120rpx;
           }
         }
         .user-name {
           float: left;
           padding-left: 10px;
-          font-size: $rate * 28;
-          height: $rate * 100;
-          line-height: $rate * 100;
+          font-size:  28rpx;
+          height:  100rpx;
+          line-height:  100rpx;
         }
       }
       .user-box-bottom {
@@ -96,53 +96,51 @@ export default {
 
         .text1 {
           color: #999999;
-          font-size: $rate * 20;
+          font-size:  22rpx;
         }
         .text2 {
           color: #303030;
-          font-size: $rate * 20;
+          font-size:  22rpx;
         }
         .ubb-left {
           width: 50%;
           float: left;
-          padding-left: $rate * 70;
+          padding-left:  70rpx;
           box-sizing: border-box;
           border-right: 1px solid #eeeeee;
         }
         .ubb-right {
           width: 50%;
           float: left;
-          padding-left: $rate * 30;
+          padding-left:  30rpx;
           box-sizing: border-box;
         }
       }
     }
   }
   .user-menu {
-    width: $rate * 583;
+    width:  700rpx;
     margin: 0 auto;
     background: #ffffff;
-    margin-top: $rate * 70;
+    margin-top:  70rpx;
     border-radius: 10px;
 
     .lml-btm-line {
-      margin-left: $rate * 24;
+      margin-left:  24rpx;
       border-bottom: 1px solid #eeeeee;
     }
   }
   .user-logout {
-    width: $rate * 583;
-    height: $rate * 66;
+    width:  700rpx;
+    height:  66rpx;
     margin: 0 auto;
     background: #ffffff;
-    margin-top: $rate * 70;
+    margin-top:  70rpx;
     border-radius: 10px;
-
     text-align: center;
-
     color: #ff0000;
-    font-size: $rate * 20;
-    line-height: $rate * 66;
+    font-size:  24rpx;
+    line-height:  66rpx;
   }
 }
 
@@ -151,21 +149,22 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: $rate * 66;
+  height:  66rpx;
 }
 .langhua-menu-list .iconleft {
-  padding-left: $rate * 24;
-  width: $rate * 32;
-  font-size: $rate * 32;
+  padding-left:  24rpx;
+  width:  32rpx;
+  font-size:  32rpx;
 }
 .langhua-menu-list .menu-name {
   text-align: left;
   padding-left: 20rpx;
   width: 100%;
+  font-size:  24rpx;
 }
 .langhua-menu-list .iconright {
-  width: $rate * 28;
-  font-size: $rate * 28;
-  padding-right: $rate * 30;
+  width:  28rpx;
+  font-size:  28rpx;
+  padding-right:  30rpx;
 }
 </style>

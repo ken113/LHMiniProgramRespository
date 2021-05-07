@@ -13,34 +13,6 @@
 /* 透明度 */
 /* 文章场景相关 */
 /*浪花管家*/
-.lh-title.data-v-7da806a4 {
-  height: 79.2rpx;
-  line-height: 79.2rpx;
-  font-size: 21.6rpx;
-  color: #999999;
-  padding-left: 28.8rpx;
-}
-button.data-v-7da806a4::after {
-  border: none;
-}
-.btn-primary.data-v-7da806a4 {
-  width: 100%;
-  height: 90rpx;
-  line-height: 90rpx;
-  background: #4992E7;
-  color: #fff;
-  font-size: 24rpx;
-  border-radius: 0;
-}
-.btn-default.data-v-7da806a4 {
-  width: 100%;
-  height: 90rpx;
-  line-height: 90rpx;
-  background: #fff;
-  color: #303030;
-  font-size: 24rpx;
-  border-radius: 0;
-}
 .uni-popup.data-v-7da806a4 {
   position: fixed;
   z-index: 99;

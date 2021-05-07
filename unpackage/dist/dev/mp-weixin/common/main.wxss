@@ -99,7 +99,8 @@ form {
 	height: 88rpx;
 	line-height: 88rpx;
 	color: #BEBEBE;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	border-bottom: 2rpx solid #D8D8D8;
 }
 .uni-page-body {
@@ -237,7 +238,8 @@ radio-group label, checkbox-group label{
 	display: inline-block;
 	padding: 3px 6px;
 	color: #333;
-	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	        border-radius: 100px;
 	background-color: rgba(0, 0, 0, .15);
 }
 .uni-badge.uni-badge-inverted {
@@ -306,10 +308,12 @@ radio-group label, checkbox-group label{
 /*卡片视图 */
 .uni-card {
 	background: #fff;
-	border-radius: 8rpx;
+	-webkit-border-radius: 8rpx;
+	        border-radius: 8rpx;
 	margin:20rpx 0;
 	position: relative;
-	box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, .3);
+	        box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, .3);
 }
 .uni-card-content {
 	font-size: 30rpx;
@@ -523,7 +527,8 @@ radio-group label, checkbox-group label{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 100%;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
@@ -581,7 +586,8 @@ radio-group label, checkbox-group label{
 	background: #eee;
 }
 .uni-list.uni-collapse {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	height: 0;
 	overflow: hidden;
 }
@@ -603,7 +609,8 @@ radio-group label, checkbox-group label{
 	-webkit-flex: 1;
 	        flex: 1;
 	width: 100%;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
@@ -634,7 +641,8 @@ radio-group label, checkbox-group label{
 /* 图文列表 */
 .uni-media-list {
 	padding: 22rpx 30rpx;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -731,7 +739,8 @@ radio-group label, checkbox-group label{
 	border-bottom: 2rpx solid;
 	border-right: 2rpx solid;
 	border-color: #eee;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 .no-border-right {
 	border-right: none;
@@ -888,7 +897,8 @@ radio-group label, checkbox-group label{
 	font-size: 34rpx;
 	line-height: 50rpx;
 	width: 100%;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	padding: 20rpx 30rpx 0;
 }
 .feedback-input {
@@ -1042,15 +1052,15 @@ radio-group label, checkbox-group label{
 /* comment */
 .uni-comment{padding:5rpx 0; display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-flex:1; -webkit-flex-grow:1; flex-grow:1; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;}
 .uni-comment-list{-webkit-flex-wrap:nowrap;flex-wrap:nowrap; padding:10rpx 0; margin:10rpx 0; width:100%; display: -webkit-box; display: -webkit-flex; display: flex;}
-.uni-comment-face{width:70rpx; height:70rpx; border-radius:100%; margin-right:20rpx; -webkit-flex-shrink:0; flex-shrink:0; overflow:hidden;}
-.uni-comment-face image{width:100%; border-radius:100%;}
+.uni-comment-face{width:70rpx; height:70rpx; -webkit-border-radius:100%; border-radius:100%; margin-right:20rpx; -webkit-flex-shrink:0; flex-shrink:0; overflow:hidden;}
+.uni-comment-face image{width:100%; -webkit-border-radius:100%; border-radius:100%;}
 .uni-comment-body{width:100%;}
 .uni-comment-top{line-height:1.5em; -webkit-box-pack:justify; -webkit-justify-content:space-between; justify-content:space-between;}
 .uni-comment-top text{color:#0A98D5; font-size:24rpx;}
 .uni-comment-date{line-height:38rpx; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -webkit-flex-direction:row; flex-direction:row; -webkit-box-pack:justify; -webkit-justify-content:space-between; justify-content:space-between; display:-webkit-box !important; display:-webkit-flex !important; display:flex !important; -webkit-box-flex:1; -webkit-flex-grow:1; flex-grow:1;}
 .uni-comment-date view{color:#666666; font-size:24rpx; line-height:38rpx;}
 .uni-comment-content{line-height:1.6em; font-size:28rpx; padding:8rpx 0;}
-.uni-comment-replay-btn{background:#FFF; font-size:24rpx; line-height:28rpx; padding:5rpx 20rpx; border-radius:30rpx; color:#333 !important; margin:0 10rpx;}
+.uni-comment-replay-btn{background:#FFF; font-size:24rpx; line-height:28rpx; padding:5rpx 20rpx; -webkit-border-radius:30rpx; border-radius:30rpx; color:#333 !important; margin:0 10rpx;}
 /* swiper msg */
 .uni-swiper-msg{width:100%; padding:12rpx 0; -webkit-flex-wrap:nowrap; flex-wrap:nowrap; display:-webkit-box; display:-webkit-flex; display:flex;}
 .uni-swiper-msg-icon{width:50rpx; margin-right:20rpx;}
@@ -1119,7 +1129,8 @@ radio-group label, checkbox-group label{
     background-color: #ff3333;
     color: #ffffff;
     padding: 0 10rpx;
-    border-radius: 5rpx;
+    -webkit-border-radius: 5rpx;
+            border-radius: 5rpx;
 }
 /* timeline */
 .uni-timeline {
@@ -1143,14 +1154,16 @@ radio-group label, checkbox-group label{
 		        flex-direction: row;
 		position: relative;
 		padding-bottom: 20rpx;
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 		overflow: hidden;
 }
 .uni-timeline-item .uni-timeline-item-keynode {
 		width: 160rpx;
 		-webkit-flex-shrink: 0;
 		        flex-shrink: 0;
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 		padding-right: 20rpx;
 		text-align: right;
 		line-height: 65rpx;
@@ -1162,7 +1175,8 @@ radio-group label, checkbox-group label{
 		width: 30rpx;
 		height: 30rpx;
 		top: 15rpx;
-		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
 		background-color: #bbb;
 }
 .uni-timeline-item-divider::before,
@@ -1611,11 +1625,137 @@ radio-group label, checkbox-group label{
   content: "\e8c6";
 }
 page {
-  background-color: #f7f9fb;
-  height: 100%;
-  color: #303030;
+	background-color: #f7f9fb;
+	height: 100%;
+	color: #303030;
 }
 .uni-picker-container .uni-picker-action.uni-picker-action-confirm {
-  color: #4992e7;
+	color: #4992e7;
 }
+.uni-datetime-picker-timebox {
+	border: none !important;
+	padding: 0 !important;
+}
+.uni-datetime-picker-time {
+	font-size: 22rpx;
+}
+.lh-title {
+	height: 66rpx;
+	line-height: 66rpx;
+	font-size: 22rpx;
+	color: #999999;
+	padding-left: 24rpx;
+}
+button::after {
+	border: none;
+}
+.btn-primary {
+	width: 100%;
+	height: 75rpx;
+	line-height: 75rpx;
+	background: #4992E7;
+	color: #fff;
+	font-size: 24rpx;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+}
+.btn-default {
+	width: 100%;
+	height: 75rpx;
+	line-height: 75rpx;
+	background: #fff;
+	color: #303030;
+	font-size: 24rpx;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+}
+.lhform {
+	/* margin: 0 24rpx; */
+}
+.lhform .uib-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	height: 66rpx;
+	border-top: 1px solid #eeeeee;
+	background: #ffffff;
+}
+.lhform .uib-item .item-left {
+	width: 180rpx;
+	padding-left: 24rpx;
+	font-size: 24rpx;
+}
+.lhform .uib-item .item-right {
+	text-align: left;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	min-width: 0;
+	font-size: 24rpx;
+	height: 66rpx;
+	line-height: 66rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.lhform .uib-item .item-right .text {
+	float: right;
+	font-size: 24rpx;
+}
+.lhform .uib-item .item-right .iconright {
+	float: right;
+	margin-right: 24rpx;
+	width: 24rpx;
+}
+.lhform .uib-item .item-right .input {
+	font-size: 24rpx;
+	width: 100%;
+}
+.lhform .uib-item .item-right .select {
+	width: 100%;
+	font-size: 24rpx;
+}
+.lhform .uib-item .item-right .select-item {
+	font-size: 24rpx;
+}
+.lhform .uib-item .item-right .radio {
+	font-size: 24rpx;
+}
+.lhform .uib-item .item-right .region {
+	display: inline-block;
+	width: 70rpx;
+	height: 66rpx;
+	line-height: 66rpx;
+	text-align: right;
+}
+.lhform .uib-item .item-right .iconleft {
+	margin-left: 5rpx;
+	margin-right: 15rpx;
+}
+.lhform .uib-item .item-right .ipt {
+	width: 280rpx;
+	display: inline-block;
+	height: 66rpx;
+	line-height: 66rpx;
+	vertical-align: top;
+}
+.lhform .uib-item .item-right .label {
+          display: inline-block;
+          height: 66rpx;
+          line-height: 66rpx;
+}
+
 

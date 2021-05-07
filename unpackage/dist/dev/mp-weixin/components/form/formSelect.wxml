@@ -1,0 +1,1 @@
+<view class="lhform form-select"><view class="uib-item"><view class="item-left">服务场次</view><view class="item-right"><picker class="select" value="{{index}}" range="{{array}}" data-event-opts="{{[['change',[['bindPickerChange',['$event']]]]]}}" bindchange="__e"><view class="select-item">{{array[index]}}</view></picker></view></view></view>

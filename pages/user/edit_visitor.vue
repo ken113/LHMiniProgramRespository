@@ -1,7 +1,7 @@
 <template>
   <view class="user-edit-visitor">
     <view class="lh-title">游客信息</view>
-    <view class="user-info-box">
+    <view class="user-info-box lhform">
       <view class="uib-item">
         <view class="item-left">中文姓名</view>
         <view class="item-right">
@@ -49,7 +49,7 @@
     </view>
 
     <view class="lh-title">附加资料</view>
-    <view class="user-info-box">
+    <view class="user-info-box lhform">
       <navigator url="/pages/user/means" open-type="navigate">
         <view class="uib-item">
           <view class="item-left">
@@ -57,7 +57,7 @@
             <text class="label">附加资料</text>
           </view>
           <view class="item-right">
-            <navigator url="/pages/user/means" open-type="navigate">
+            <navigator url="/pages/user/means" open-type="navigate" style="width: 100%;">
               <text class="iconright iconfont lhddright"></text>
               <text class="text">未填写</text>
             </navigator>
@@ -149,69 +149,27 @@ export default {
 
 <style lang="scss" scoped>
 .user-edit-visitor {
-  font-size: $rate * 20;
+  font-size: 20rpx;
   .title {
-    height: $rate * 56;
-    line-height: $rate * 56;
-    font-size: $rate * 18;
+    height: 56rpx;
+    line-height: 56rpx;
+    font-size: 18rpx;
     color: #999999;
-    padding-left: $rate * 24;
+    padding-left: 24rpx;
   }
   .page-tips {
-    font-size: $rate * 18;
+    font-size: 18rpx;
     color: #999999;
-    padding: 10px $rate * 24;
+    padding: 10px 24rpx;
   }
   .user-info-box {
-    background: #ffffff;
-    border-bottom: 1px solid #eeeeee;
-    .uib-item {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      height: $rate * 66;
-      border-top: 1px solid #eeeeee;
-
-      .item-left {
-        width: $rate * 160;
-        padding-left: $rate * 24;
-
-        .iconfont {
-          padding-right: 5px;
-          font-size: $rate * 40;
-          display: inline-block;
-          vertical-align: middle;
-        }
-        .label {
-          display: inline-block;
-          height: $rate * 66;
-          line-height: $rate * 66;
-        }
-      }
-      .item-right {
-        text-align: left;
-        flex: 1;
-        min-width: 0;
-
-        .ipt {
-          display: inline-block;
-        }
-        .iconright {
-          float: right;
-          margin-right: $rate * 24;
-          width: $rate * 24;
-        }
-        .text {
-          float: right;
-        }
-      }
-    }
+   
+    
   }
   .page-btm {
-    margin: $rate * 24;
+    margin: 24rpx;
     .btn-save {
-      margin-bottom: $rate * 24;
+      margin-bottom: 24rpx;
     }
     .btn-delete {
       color: #ff0000;

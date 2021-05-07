@@ -2,7 +2,7 @@
   <view class="user-means">
     <view class="lh-title">张三附加资料</view>
 
-    <view class="user-means-box">
+    <view class="user-means-box lhform">
       <view class="uib-item">
         <view class="item-left">身高</view>
         <view class="item-right">
@@ -61,21 +61,21 @@ export default {
 
 <style lang="scss" scoped>
 .user-means {
-  font-size: $rate * 20;
+  font-size:  20rpx;
   .title {
-    height: $rate * 56;
-    line-height: $rate * 56;
-    font-size: $rate * 18;
+    height:  56rpx;
+    line-height:  56rpx;
+    font-size:  18rpx;
     color: #999999;
-    padding-left: $rate * 24;
+    padding-left: 24rpx;
   }
   .user-means-tips {
-    padding: $rate * 24;
-    font-size: $rate * 18;
+    padding:  24rpx;
+    font-size:  18rpx;
     color: #ccc;
 
     .text {
-      padding-left: $rate * 34;
+      padding-left:  34rpx;
     }
   }
   .user-means-box {
@@ -87,33 +87,28 @@ export default {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      height: $rate * 66;
+      height:  66rpx;
       border-top: 1px solid #eeeeee;
       position: relative;
 
-      .item-left {
-        width: $rate * 160;
-        padding-left: $rate * 24;
-      }
+     
       .item-right {
-        text-align: left;
-        flex: 1;
-        min-width: 0;
+      
 
         .txt {
           position: absolute;
           top: 0;
-          right: $rate * 24;
-          height: $rate * 66;
-          line-height: $rate * 66;
+          right:  24rpx;
+          height: 66rpx;
+          line-height:  66rpx;
         }
       }
     }
   }
 
   .user-means-bottom {
-    margin-top: $rate * 15;
-    padding: 0 $rate * 24;
+    margin-top:  15rpx;
+    padding: 0  24rpx;
   }
 }
 </style>

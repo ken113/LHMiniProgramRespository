@@ -1,17 +1,18 @@
 {
   "pages": [
-    "pages/index/login",
-    "pages/order/index",
-    "pages/order/visitor",
-    "pages/order/base",
-    "pages/order/edit",
-    "pages/user/means",
+    "pages/user/index",
     "pages/user/edit_visitor",
+    "pages/order/index",
+    "pages/order/edit",
+    "components/selectPerson",
+    "pages/index/login",
+    "pages/order/base",
+    "pages/user/means",
     "pages/user/visitor",
     "components/LHIndexedList",
     "pages/user/info",
-    "pages/user/index",
-    "pages/index/index"
+    "pages/index/index",
+    "components/form/travelDate"
   ],
   "subPackages": [],
   "window": {
@@ -41,11 +42,6 @@
       }
     ]
   },
-  "permission": {
-    "scope.userLocation": {
-      "desc": ""
-    }
-  },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap64.json"
+  "permission": {},
+  "usingComponents": {}
 }

@@ -1,0 +1,1 @@
+<view class="lhform form-flight-number"><view class="uib-item"><view class="item-left">返回国内航班号</view><view class="item-right"><input class="input" placeholder="免税店购物需要提供返程航班号" data-event-opts="{{[['input',[['__set_model',['','flightNumber','$event',[]]]]]]}}" value="{{flightNumber}}" bindinput="__e"/></view></view></view>

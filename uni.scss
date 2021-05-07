@@ -68,33 +68,3 @@ $lh_theme_color:#4992E7;
 $lh_import_color:#FF6600;
 $lh_error_color:#FF0000;
 $lh_line_color:#EEEEEE;
-
-.lh-title{
-    height: $rate * 66;
-    line-height: $rate * 66;
-    font-size: $rate * 18;
-    color: #999999;
-    padding-left: $rate * 24;
-}
-button::after{
-    border:none;
-}
-.btn-primary{
-    width: 100%;
-    height: $rate*75;
-    line-height: $rate*75;
-    background:$lh_theme_color;
-    color:#fff;
-    font-size:$rate*20;
-    border-radius: 0;
-}
-.btn-default{
-    width: 100%;
-    height: $rate*75;
-    line-height: $rate*75;
-    background: #fff;
-    color:#303030;
-    font-size:$rate*20;
-    border-radius: 0;
-}
-

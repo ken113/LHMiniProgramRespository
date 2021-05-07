@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*浪花管家*/
+.select-person .top-buttom {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  height: 60rpx;
+  font-size: 24rpx;
+  padding: 0  24rpx;
+}
+.select-person .top-buttom .btn-cancel {
+  font-size: 24rpx;
+  color: #303030;
+}
+.select-person .top-buttom .text-num {
+  font-size: 24rpx;
+}
+.select-person .top-buttom .btn-ok {
+  font-size: 24rpx;
+  color: #4992E7;
+}
+.select-person .btn-box {
+  margin-top: 20rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 0  24rpx;
+}
+.select-person .btn-box .iconfont {
+  margin-right: 10rpx;
+}
+.select-person .btn-box .btn-invite {
+  width: 195rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  border: 1px solid #4992e7;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  margin-right: 24rpx;
+  font-size: 24rpx;
+}
+.select-person .btn-box .btn-add {
+  width: 442rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  border: 1px solid #4992e7;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  font-size: 24rpx;
+}
+.select-person .person-list {
+  margin-top: 20rpx;
+}
+.select-person .person-list .person-item .person-line {
+  padding: 0  24rpx;
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.select-person .person-list .person-item .person-line.error .person-right {
+  border-bottom: 1px solid #FF0000;
+}
+.select-person .person-list .person-item .person-line .person-radio {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+.select-person .person-list .person-item .person-line .person-right {
+  width: 100%;
+  border-bottom: 1px solid #EEEEEE;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 10rpx;
+}
+.select-person .person-list .person-item .person-line .person-right .user-sex {
+  font-size: 24rpx;
+}
+.select-person .person-list .person-item .person-line .person-right .user-sex.male {
+  color: #4992e7;
+}
+.select-person .person-list .person-item .person-line .person-right .user-sex.female {
+  color: #ff6600;
+}
+.select-person .person-list .person-item .person-line .person-right .user-name {
+  margin: 0 10rpx;
+  font-size: 24rpx;
+}
+.select-person .person-list .person-item .person-line .person-right .user-enname {
+  margin: 0 10rpx;
+  font-size: 24rpx;
+}
+.select-person .person-list .person-item .person-line .person-right .user-extra {
+  font-size: 30rpx;
+}
+.select-person .person-list .person-item .person-line .person-right .user-edit {
+  font-size: 32rpx;
+  float: right;
+}
+.select-person .person-list .person-item .person-error {
+  font-size: 18rpx;
+  color: #ff0000;
+  padding-left: 75rpx;
+  margin-top: 5rpx;
+}
+

@@ -218,15 +218,15 @@ export default {
 
 <style lang="scss" scoped>
 .page-order {
-  font-size: $rate * 20;
+  font-size:  22rpx;
   .uni-tab-bar {
-    height: $rate * 66;
-    line-height: $rate * 66;
+    height:  66rpx;
+    line-height:  66rpx;
     position: relative;
 
     .order-tab-line {
       border-top: 2px solid #4992e7;
-      width: $rate * 80;
+      width:  80rpx;
       position: absolute;
       bottom: 2px;
       transition: all 0.3s;
@@ -246,15 +246,15 @@ export default {
           display: inline;
           .num {
             position: absolute;
-            height: $rate * 20;
-            line-height: $rate * 20;
-            width: $rate * 20;
+            height:  24rpx;
+            line-height:  24rpx;
+            width:  24rpx;
             border-radius: 50%;
-            right: -$rate * 18;
+            right: -24rpx;
             background: #ff6600;
             color: #fff;
-            top: -$rate * 8;
-            font-size: $rate * 16;
+            top: -5rpx;
+            font-size: 18rpx;
             text-align: center;
           }
         }
@@ -263,7 +263,7 @@ export default {
   }
   .order-item-nomore {
     margin: 0 auto;
-    margin-top: $rate * 90;
+    margin-top:  90rpx;
     text-align: center;
     width: 100%;
 
@@ -275,26 +275,26 @@ export default {
       .txt3 {
         border-bottom: 1px solid #eeeeee;
         width: 33.33%;
-        transform: translate(0, -$rate * 20);
+        transform: translate(0, 20rpx);
       }
     }
     .center {
-      height: 44 * $rate;
-      width: 135 * $rate;
+      height: 44rpx ;
+      width: 135rpx;
       display: inline-block;
-      margin-top: 5 * $rate;
+      margin-top: 5rpx;
     }
   }
   .order-item-null {
-    margin: $rate * 40 auto;
+    margin:  40rpx auto;
     text-align: center;
-    font-size: 20 * $rate;
+    font-size: 22rpx;
     .center {
       margin: 0 auto;
       text-align: center;
       .img {
-        height: 126 * $rate;
-        width: 126 * $rate;
+        height: 126rpx;
+        width: 126rpx;
         display: inline-block;
 
         image {
@@ -308,21 +308,21 @@ export default {
       }
     }
     .bottom {
-      margin-top: $rate * 20;
-      padding: 0 $rate * 24;
+      margin-top:  20rpx;
+      padding: 0 24rpx;
       color: #ff6600;
       display: flex;
       justify-content: center;
       .txt1,
       .txt3 {
         border-bottom: 1px solid #ff6600;
-        width: $rate * 170;
-        transform: translate(0, -$rate * 20);
+        width:  170rpx;
+        transform: translate(0, 20rpx);
         position: relative;
       }
       .txt2 {
         display: inline-block;
-        width: $rate * 200;
+        width: 200rpx;
         text-align: center;
       }
       .txt1:after {
@@ -350,16 +350,16 @@ export default {
     }
   }
   .goods-list {
-    padding: 0 $rate * 24;
+    padding: 0  24rpx;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     .goods-item {
-      width: $rate * 288;
-      margin-bottom: $rate * 20;
+      width:  300rpx;
+      margin-bottom:  20rpx;
       .goods-img {
-        width: $rate * 288;
-        height: $rate * 288;
+        width:  300rpx;
+        height:  300rpx;
 
         image {
           width: 100%;
@@ -367,32 +367,33 @@ export default {
         }
       }
       .goods-name {
-        margin-top: 12 * $rate;
-        font-size: $rate * 24;
+        margin-top: 12rpx;
+        font-size: 24rpx;
         width: 100%;
-        line-height: $rate * 24;
+        line-height:  24rpx;
       }
       .goods-bottom {
-        margin-top: 12 * $rate;
-        line-height: $rate * 24;
+        margin-top: 12rpx;
+        line-height:  24rpx;
         overflow: hidden;
-        height: $rate * 40;
+        height:  40rpx;
 
         .goods-price {
           color: #4992e7;
           float: left;
           font-weight: 600;
-          height: $rate * 40;
-          line-height: $rate * 40;
+          height:  40rpx;
+          line-height:  40rpx;
+		  font-size: 24rpx;
         }
         .goods-link {
           float: right;
-          padding-right: 20 * $rate;
+          padding-right: 20rpx;
           color: #4992e7;
-          font-size: 40 * $rate;
+          font-size: 42rpx;
           vertical-align: middle;
-          height: $rate * 40;
-          line-height: $rate * 40;
+          height:  40rpx;
+          line-height:  40rpx;
         }
       }
     }
@@ -402,27 +403,27 @@ export default {
     position: relative;
   }
   .top-img {
-    margin: 24 * $rate;
-    height: $rate * 100;
+    margin: 24rpx;
+    height:  100rpx;
     margin-bottom: 0;
   }
   .order-list-ctn {
-    padding: 24 * $rate;
+    padding: 24rpx;
 
     .order-list {
-      margin-top: $rate * 24;
+      margin-top:  24rpx;
       .order-item-box {
-        margin-bottom: $rate * 24;
+        margin-bottom:  24rpx;
         background: #fff;
-        padding: 0 $rate * 24;
+        padding: 0  24rpx;
         border-radius: 10px;
 
         position: relative;
 
         .free-iamge {
           position: absolute;
-          height: 54 * $rate;
-          width: 52 * $rate;
+          height: 54rpx;
+          width: 52rpx;
           top: 0;
           left: 0;
           z-index: 10;
@@ -430,31 +431,33 @@ export default {
         .item-top {
           border-bottom: 1px solid #eeeeee;
           overflow: hidden;
-          padding: $rate * 24 0 $rate * 5 0;
+          padding:  24rpx 0  5rpx 0;
 
           .order-number {
-            font-size: $rate * 20;
+            font-size:  24rpx;
             color: #999;
             float: left;
           }
           .order-status {
             float: right;
+			font-size:  24rpx;
           }
         }
         .item-center {
           .order-name {
-            font-size: $rate * 24;
+            font-size:  24rpx;
             color: #303030;
-            margin: $rate * 10 0;
+            margin:  10rpx 0;
           }
         }
 
         .item-bottom {
           overflow: hidden;
-          font-size: $rate * 20;
-          padding-bottom: $rate * 10;
+          font-size:  22rpx;
+          padding-bottom:  10rpx;
           .order-date {
             float: left;
+			
           }
           .order-person {
             float: right;
@@ -463,8 +466,9 @@ export default {
         }
         .item-bottom2 {
           border-top: 1px solid #eeeeee;
-          padding: $rate * 5 0;
+          padding:  8rpx 0;
           color: #ff6600;
+		  font-size:  22rpx;
         }
       }
     }

@@ -1,0 +1,136 @@
+page {
+	background-color: #f7f9fb;
+	height: 100%;
+	color: #303030;
+}
+
+.uni-picker-container .uni-picker-action.uni-picker-action-confirm {
+	color: #4992e7;
+}
+
+.uni-datetime-picker-timebox {
+	border: none !important;
+	padding: 0 !important;
+}
+
+.uni-datetime-picker-time {
+	font-size: 22rpx;
+}
+
+.lh-title {
+	height: 66rpx;
+	line-height: 66rpx;
+	font-size: 22rpx;
+	color: #999999;
+	padding-left: 24rpx;
+}
+
+button::after {
+	border: none;
+}
+
+.btn-primary {
+	width: 100%;
+	height: 75rpx;
+	line-height: 75rpx;
+	background: #4992E7;
+	color: #fff;
+	font-size: 24rpx;
+	border-radius: 0;
+}
+
+.btn-default {
+	width: 100%;
+	height: 75rpx;
+	line-height: 75rpx;
+	background: #fff;
+	color: #303030;
+	font-size: 24rpx;
+	border-radius: 0;
+}
+
+.lhform {
+	/* margin: 0 24rpx; */
+}
+
+.lhform .uib-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 66rpx;
+	border-top: 1px solid #eeeeee;
+	background: #ffffff;
+}
+
+.lhform .uib-item .item-left {
+	width: 180rpx;
+	padding-left: 24rpx;
+	font-size: 24rpx;
+}
+
+.lhform .uib-item .item-right {
+	text-align: left;
+	flex: 1;
+	min-width: 0;
+	font-size: 24rpx;
+	height: 66rpx;
+	line-height: 66rpx;
+	display: flex;
+	align-items: center;
+}
+
+.lhform .uib-item .item-right .text {
+	float: right;
+	font-size: 24rpx;
+}
+
+.lhform .uib-item .item-right .iconright {
+	float: right;
+	margin-right: 24rpx;
+	width: 24rpx;
+}
+
+.lhform .uib-item .item-right .input {
+	font-size: 24rpx;
+	width: 100%;
+}
+
+.lhform .uib-item .item-right .select {
+	width: 100%;
+	font-size: 24rpx;
+}
+
+.lhform .uib-item .item-right .select-item {
+	font-size: 24rpx;
+}
+
+.lhform .uib-item .item-right .radio {
+	font-size: 24rpx;
+}
+
+.lhform .uib-item .item-right .region {
+	display: inline-block;
+	width: 70rpx;
+	height: 66rpx;
+	line-height: 66rpx;
+	text-align: right;
+}
+
+.lhform .uib-item .item-right .iconleft {
+	margin-left: 5rpx;
+	margin-right: 15rpx;
+}
+
+.lhform .uib-item .item-right .ipt {
+	width: 280rpx;
+	display: inline-block;
+	height: 66rpx;
+	line-height: 66rpx;
+	vertical-align: top;
+}
+.lhform .uib-item .item-right .label {
+          display: inline-block;
+          height: 66rpx;
+          line-height: 66rpx;
+        }

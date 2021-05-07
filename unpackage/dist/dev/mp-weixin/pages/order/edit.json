@@ -1,4 +1,10 @@
 {
   "navigationBarTitleText": "填写订单",
-  "usingComponents": {}
+  "usingComponents": {
+    "travel-date": "/components/form/travelDate",
+    "flight-number": "/components/form/flightNumber",
+    "flight-time": "/components/form/flightTime",
+    "form-select": "/components/form/formSelect",
+    "hotel": "/components/form/hotel"
+  }
 }

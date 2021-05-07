@@ -1,11 +1,11 @@
 <template>
-  <view class="order-edit">
+  <view class="lhform order-edit">
     <view class="lh-title">基本资料</view>
 
     <view class="uib-item" style="border-top:1px solid #eeeeee;">
       <view class="item-left">中文姓名</view>
       <view class="item-right">
-        <input name="input" value="袁丁" />
+        <input class="input" name="input" value="袁丁" />
       </view>
     </view>
     <view class="uib-item">
@@ -63,54 +63,9 @@ export default {
 
 <style lang="scss" scoped>
 .order-edit {
-  font-size: $rate * 20;
-  .uib-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: $rate * 66;
-    border-bottom: 1px solid #eeeeee;
-    background: #ffffff;
-    .item-left {
-      width: $rate * 160;
-      padding-left: $rate * 24;
-    }
-    .item-right {
-      text-align: left;
-      flex: 1;
-      min-width: 0;
-
-      .iconright {
-        float: right;
-        margin-right: $rate * 24;
-        width: $rate * 24;
-      }
-      .text {
-        float: right;
-      }
-      .region {
-        display: inline-block;
-        width: $rate * 70;
-        height: $rate * 66;
-        line-height: $rate * 66;
-        text-align: right;
-      }
-      .iconleft {
-        margin-left: $rate * 5;
-        margin-right: $rate * 15;
-      }
-      .ipt {
-        width: $rate * 280;
-        display: inline-block;
-        height: $rate * 66;
-        line-height: $rate * 66;
-        vertical-align: top;
-      }
-    }
-  }
+	
   .btn-save {
-    padding: $rate * 24;
+    padding: 24rpx;
   }
 }
 </style>

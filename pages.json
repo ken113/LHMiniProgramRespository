@@ -1,29 +1,24 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/login",
-			"style": {
-				"navigationBarTitleText": "填写订单"
-			}
-		},
-		{
-			"path": "pages/order/index",
-			"style": {
-				"navigationBarTitleText": "浪花朵朵行程管家"
-			}
-		},
-		{
-			"path": "pages/order/visitor",
-			"style": {
-				"navigationBarTitleText": "填写订单"
-			}
-		},
-		{
-			"path": "pages/order/base",
-			"style": {
-				"navigationBarTitleText": "基本资料"
-			}
-		},
+	{
+		"path": "pages/user/index",
+		"style": {
+			"navigationBarTitleText": "个人中心"
+		}
+	},
+	{
+		"path": "pages/user/edit_visitor",
+		"style": {
+			"navigationBarTitleText": "编辑常用游客"
+		}
+	},
+	
+	{
+		"path": "pages/order/index",
+		"style": {
+			"navigationBarTitleText": "浪花朵朵行程管家"
+		}
+	},
 		{
 			"path": "pages/order/edit",
 			"style": {
@@ -31,17 +26,33 @@
 			}
 		},
 		{
+			"path": "components/selectPerson",
+			"style": {
+				"navigationBarTitleText": "选择客人"
+			}
+		},
+		{
+			"path": "pages/index/login",
+			"style": {
+				"navigationBarTitleText": "填写订单"
+			}
+		},
+		
+		
+		{
+			"path": "pages/order/base",
+			"style": {
+				"navigationBarTitleText": "基本资料"
+			}
+		},
+
+		{
 			"path": "pages/user/means",
 			"style": {
 				"navigationBarTitleText": "附加资料"
 			}
 		},
-		{
-			"path": "pages/user/edit_visitor",
-			"style": {
-				"navigationBarTitleText": "编辑常用游客"
-			}
-		},
+		
 		{
 			"path": "pages/user/visitor",
 			"style": {
@@ -60,33 +71,36 @@
 				"navigationBarTitleText": "个人资料"
 			}
 		},
-		{
-			"path": "pages/user/index",
-			"style": {
-				"navigationBarTitleText": "个人中心"
-			}
-		},
+		
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "浪花朵朵行程管家"
 			}
 		}
-	],
+	    ,{
+            "path" : "components/form/travelDate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "浪花朵朵行程管家",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
-		"enablePullDownRefresh":true
+		"enablePullDownRefresh": true
 	},
 	"tabBar": {
 		"color": "#cdcdcd",
 		"selectedColor": "#39cffc",
 		"borderStyle": "white",
 		"backgroundColor": "#ffffff",
-		"list": [
-			{
+		"list": [{
 				"iconPath": "static/订单.png",
 				"selectedIconPath": "static/订单 (1).png",
 				"pagePath": "pages/order/index",
@@ -102,12 +116,10 @@
 	},
 	"condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)
-		"list": [
-			{
-				"name": "", //模式名称
-				"path": "", //启动页面，必选
-				"query": "" //启动参数，在页面的onLoad函数里面得到
-			}
-		]
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
 	}
 }

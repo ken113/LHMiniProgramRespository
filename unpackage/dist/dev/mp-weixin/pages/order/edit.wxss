@@ -13,69 +13,73 @@
 /* 透明度 */
 /* 文章场景相关 */
 /*浪花管家*/
-.lh-title.data-v-46b67838 {
-  height: 79.2rpx;
-  line-height: 79.2rpx;
-  font-size: 21.6rpx;
-  color: #999999;
-  padding-left: 28.8rpx;
+.order-edit.data-v-46b67838 {
+  margin-bottom: 30rpx;
 }
-button.data-v-46b67838::after {
-  border: none;
-}
-.btn-primary.data-v-46b67838 {
-  width: 100%;
-  height: 90rpx;
-  line-height: 90rpx;
-  background: #4992E7;
-  color: #fff;
+.order-edit .order-extra.data-v-46b67838 {
   font-size: 24rpx;
-  border-radius: 0;
+  height: 66rpx;
+  line-height: 66rpx;
+  padding: 0 24rpx;
+  color: #999;
 }
-.btn-default.data-v-46b67838 {
-  width: 100%;
-  height: 90rpx;
-  line-height: 90rpx;
-  background: #fff;
-  color: #303030;
+.order-edit .order-extra-number.data-v-46b67838 {
   font-size: 24rpx;
-  border-radius: 0;
+  height: 66rpx;
+  line-height: 66rpx;
+  padding: 0 24rpx;
+  background: #ffffff;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  color: #999;
 }
-.order-edit .uib-item.data-v-46b67838 {
+.order-edit .form-bottom.data-v-46b67838 {
+  margin-top: 20rpx;
+}
+.order-edit .notice.data-v-46b67838 {
+  font-size: 22rpx;
+  height: 66rpx;
+  padding: 0 24rpx;
+  color: #999;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-  height: 79.2rpx;
-  border-top: 1px solid #eeeeee;
   background: #ffffff;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
-.order-edit .uib-item .item-left.data-v-46b67838 {
-  width: 192rpx;
-  padding-left: 28.8rpx;
+.order-edit .notice .text.data-v-46b67838 {
+  font-size: 22rpx;
+  padding: 5rpx 0;
+  line-height: 24rpx;
 }
-.order-edit .uib-item .item-right.data-v-46b67838 {
-  text-align: left;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-          flex: 1;
-  min-width: 0;
+.order-edit .notice .link.data-v-46b67838 {
+  font-size: 22rpx;
+  color: #4992E7;
 }
-.order-edit .uib-item .item-right .iconright.data-v-46b67838 {
-  float: right;
-  margin-right: 28.8rpx;
-  width: 28.8rpx;
+.order-edit .form-btn .save-btn.data-v-46b67838 {
+  display: block;
+  margin: 24rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+  background: #4992E7;
+  color: #fff;
+  font-size: 24rpx;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
-.order-edit .uib-item .item-right .text.data-v-46b67838 {
-  float: right;
+.order-edit .form-btn .save2-btn.data-v-46b67838 {
+  display: block;
+  height: 75rpx;
+  line-height: 75rpx;
+  background: #fff;
+  border: 1px solid #4992E7;
+  font-size: 24rpx;
+  margin: 0 24rpx;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 

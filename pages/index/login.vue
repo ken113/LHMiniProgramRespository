@@ -41,59 +41,59 @@ export default {
 <style lang="scss" scoped>
 .page-login {
   height: 100%;
-  font-size: $rate * 20;
+  font-size: 22rpx;
   .top-image {
     width: 100%;
-    height: $rate * 414;
+    height: 414rpx;
   }
   .ctn {
-    padding: $rate * 24;
+    padding: 24rpx;
     text-align: center;
 
     .cmd-box {
       width: 100%;
-      height: $rate * 240;
+      height: 240rpx;
       position: relative;
 
       .textarea {
         border: 1px solid #797979;
         display: inline-block;
         width: 100%;
-        height: $rate * 240;
+        height: 240rpx;
       }
       .text {
         position: absolute;
         width: 100%;
         text-align: center;
-        top: $rate * 75;
+        top: 75rpx;
         left: 0;
         color: #ccc;
       }
       .btn-paste {
         position: absolute;
-        width: $rate * 120;
-        height: $rate * 36;
-        line-height: $rate * 36;
-        top: $rate * 115;
+        width: 120rpx;
+        height:  36rpx;
+        line-height:36rpx;
+        top: 115rpx;
         left: 50%;
-        margin-left: -$rate * 60;
+        margin-left: 60rpx;
         border: 1px solid #797979;
         border-radius: 5px;
       }
     }
     .btn-login {
-      margin: $rate * 24 0;
+      margin:  24rpx 0;
     }
     .text {
       text-align: right;
-      line-height: $rate * 28;
+      line-height:  28rpx;
       color: #797979;
     }
     .logo {
-      height: 44 * $rate;
-      width: 135 * $rate;
+      height: 44rpx ;
+      width: 135rpx ;
       display: inline-block;
-      margin-top: $rate * 50;
+      margin-top:  50rpx;
     }
   }
 }

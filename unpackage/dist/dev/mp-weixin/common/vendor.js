@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
+Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.createSubpackageApp = createSubpackageApp;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
 
 var _toString = Object.prototype.toString;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -241,7 +241,7 @@ var promiseInterceptor = {
 
 
 var SYNC_API_RE =
-/^\$|sendNativeEvent|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
+/^\$|Window$|WindowStyle$|sendNativeEvent|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
 
 var CONTEXT_API_RE = /^create|Manager$/;
 
@@ -366,6 +366,38 @@ var baseApi = /*#__PURE__*/Object.freeze({
   interceptors: interceptors });
 
 
+function findExistsPageIndex(url) {
+  var pages = getCurrentPages();
+  var len = pages.length;
+  while (len--) {
+    var page = pages[len];
+    if (page.$page && page.$page.fullPath === url) {
+      return len;
+    }
+  }
+  return -1;
+}
+
+var redirectTo = {
+  name: function name(fromArgs) {
+    if (fromArgs.exists === 'back' && fromArgs.delta) {
+      return 'navigateBack';
+    }
+    return 'redirectTo';
+  },
+  args: function args(fromArgs) {
+    if (fromArgs.exists === 'back' && fromArgs.url) {
+      var existsPageIndex = findExistsPageIndex(fromArgs.url);
+      if (existsPageIndex !== -1) {
+        var delta = getCurrentPages().length - 1 - existsPageIndex;
+        if (delta > 0) {
+          fromArgs.delta = delta;
+        }
+      }
+    }
+  } };
+
+
 var previewImage = {
   args: function args(fromArgs) {
     var currentIndex = parseInt(fromArgs.current);
@@ -400,6 +432,20 @@ var previewImage = {
   } };
 
 
+var UUID_KEY = '__DC_STAT_UUID';
+var deviceId;
+function addUuid(result) {
+  deviceId = deviceId || wx.getStorageSync(UUID_KEY);
+  if (!deviceId) {
+    deviceId = Date.now() + '' + Math.floor(Math.random() * 1e7);
+    wx.setStorage({
+      key: UUID_KEY,
+      data: deviceId });
+
+  }
+  result.deviceId = deviceId;
+}
+
 function addSafeAreaInsets(result) {
   if (result.safeArea) {
     var safeArea = result.safeArea;
@@ -411,14 +457,22 @@ function addSafeAreaInsets(result) {
 
   }
 }
+
+var getSystemInfo = {
+  returnValue: function returnValue(result) {
+    addUuid(result);
+    addSafeAreaInsets(result);
+  } };
+
+
+// import navigateTo from 'uni-helpers/navigate-to'
+
 var protocols = {
+  redirectTo: redirectTo,
+  // navigateTo,  // 由于在微信开发者工具的页面参数，会显示__id__参数，因此暂时关闭mp-weixin对于navigateTo的AOP
   previewImage: previewImage,
-  getSystemInfo: {
-    returnValue: addSafeAreaInsets },
-
-  getSystemInfoSync: {
-    returnValue: addSafeAreaInsets } };
-
+  getSystemInfo: getSystemInfo,
+  getSystemInfoSync: getSystemInfo };
 
 var todos = [
 'vibrate',
@@ -449,7 +503,7 @@ function processArgs(methodName, fromArgs) {var argsOption = arguments.length > 
           keyOption = keyOption(fromArgs[key], fromArgs, toArgs);
         }
         if (!keyOption) {// 不支持的参数
-          console.warn("\u5FAE\u4FE1\u5C0F\u7A0B\u5E8F ".concat(methodName, "\u6682\u4E0D\u652F\u6301").concat(key));
+          console.warn("The '".concat(methodName, "' method of platform '\u5FAE\u4FE1\u5C0F\u7A0B\u5E8F' does not support option '").concat(key, "'"));
         } else if (isStr(keyOption)) {// 重写参数 key
           toArgs[keyOption] = fromArgs[key];
         } else if (isPlainObject(keyOption)) {// {name:newName,value:value}可重新指定参数 key:value
@@ -484,7 +538,7 @@ function wrapper(methodName, method) {
     var protocol = protocols[methodName];
     if (!protocol) {// 暂不支持的 api
       return function () {
-        console.error("\u5FAE\u4FE1\u5C0F\u7A0B\u5E8F \u6682\u4E0D\u652F\u6301".concat(methodName));
+        console.error("Platform '\u5FAE\u4FE1\u5C0F\u7A0B\u5E8F' does not support '".concat(methodName, "'."));
       };
     }
     return function (arg1, arg2) {// 目前 api 最多两个参数
@@ -499,7 +553,12 @@ function wrapper(methodName, method) {
       if (typeof arg2 !== 'undefined') {
         args.push(arg2);
       }
-      var returnValue = wx[options.name || methodName].apply(wx, args);
+      if (isFn(options.name)) {
+        methodName = options.name(arg1);
+      } else if (isStr(options.name)) {
+        methodName = options.name;
+      }
+      var returnValue = wx[methodName].apply(wx, args);
       if (isSyncApi(methodName)) {// 同步 api
         return processReturnValue(methodName, returnValue, options.returnValue, isContextApi(methodName));
       }
@@ -526,7 +585,7 @@ function createTodoApi(name) {
 
   {var fail = _ref.fail,complete = _ref.complete;
     var res = {
-      errMsg: "".concat(name, ":fail:\u6682\u4E0D\u652F\u6301 ").concat(name, " \u65B9\u6CD5") };
+      errMsg: "".concat(name, ":fail method '").concat(name, "' not supported") };
 
     isFn(fail) && fail(res);
     isFn(complete) && complete(res);
@@ -560,7 +619,7 @@ function getProvider(_ref2)
     isFn(success) && success(res);
   } else {
     res = {
-      errMsg: 'getProvider:fail:服务[' + service + ']不存在' };
+      errMsg: 'getProvider:fail service not found' };
 
     isFn(fail) && fail(res);
   }
@@ -645,16 +704,19 @@ function initHook(name, options) {
     };
   }
 }
+if (!MPPage.__$wrappered) {
+  MPPage.__$wrappered = true;
+  Page = function Page() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    initHook('onLoad', options);
+    return MPPage(options);
+  };
+  Page.after = MPPage.after;
 
-Page = function Page() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  initHook('onLoad', options);
-  return MPPage(options);
-};
-
-Component = function Component() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  initHook('created', options);
-  return MPComponent(options);
-};
+  Component = function Component() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    initHook('created', options);
+    return MPComponent(options);
+  };
+}
 
 var PAGE_EVENT_HOOKS = [
 'onPullDownRefresh',
@@ -760,7 +822,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -861,6 +923,11 @@ function initProperties(props) {var isBehavior = arguments.length > 1 && argumen
     properties.vueId = {
       type: String,
       value: '' };
+
+    // 用于字节跳动小程序模拟抽象节点
+    properties.generic = {
+      type: Object,
+      value: null };
 
     properties.vueSlots = { // 小程序不能直接定义 $slots 的 props，所以通过 vueSlots 转换到 $slots
       type: null,
@@ -1160,14 +1227,21 @@ function handleEvent(event) {var _this = this;
             }
             handler.once = true;
           }
-          ret.push(handler.apply(handlerCtx, processEventArgs(
+          var params = processEventArgs(
           _this.$vm,
           event,
           eventArray[1],
           eventArray[2],
           isCustom,
-          methodName)));
+          methodName);
 
+          params = Array.isArray(params) ? params : [];
+          // 参数尾部增加原始事件对象用于复杂表达式内获取额外数据
+          if (/=\s*\S+\.eventParams\s*\|\|\s*\S+\[['"]event-params['"]\]/.test(handler.toString())) {
+            // eslint-disable-next-line no-sparse-arrays
+            params = params.concat([,,,,,,,,,, event]);
+          }
+          ret.push(handler.apply(handlerCtx, params));
         }
       });
     }
@@ -1182,6 +1256,19 @@ function handleEvent(event) {var _this = this;
   }
 }
 
+var eventChannels = {};
+
+var eventChannelStack = [];
+
+function getEventChannel(id) {
+  if (id) {
+    var eventChannel = eventChannels[id];
+    delete eventChannels[id];
+    return eventChannel;
+  }
+  return eventChannelStack.shift();
+}
+
 var hooks = [
 'onShow',
 'onHide',
@@ -1191,10 +1278,28 @@ var hooks = [
 'onUnhandledRejection'];
 
 
+function initEventChannel() {
+  _vue.default.prototype.getOpenerEventChannel = function () {
+    // 微信小程序使用自身getOpenerEventChannel
+    {
+      return this.$scope.getOpenerEventChannel();
+    }
+  };
+  var callHook = _vue.default.prototype.__call_hook;
+  _vue.default.prototype.__call_hook = function (hook, args) {
+    if (hook === 'onLoad' && args && args.__id__) {
+      this.__eventChannel__ = getEventChannel(args.__id__);
+      delete args.__id__;
+    }
+    return callHook.call(this, hook, args);
+  };
+}
+
 function parseBaseApp(vm, _ref3)
 
 
 {var mocks = _ref3.mocks,initRefs = _ref3.initRefs;
+  initEventChannel();
   if (vm.$options.store) {
     _vue.default.prototype.$store = vm.$options.store;
   }
@@ -1218,7 +1323,12 @@ function parseBaseApp(vm, _ref3)
 
       delete this.$options.mpType;
       delete this.$options.mpInstance;
-
+      if (this.mpType === 'page') {// hack vue-i18n
+        var app = getApp();
+        if (app.$vm && app.$vm.$i18n) {
+          this._i18n = app.$vm.$i18n;
+        }
+      }
       if (this.mpType !== 'app') {
         initRefs(this);
         initMocks(this, mocks);
@@ -1302,16 +1412,28 @@ function initRelation(detail) {
   this.triggerEvent('__l', detail);
 }
 
+function selectAllComponents(mpInstance, selector, $refs) {
+  var components = mpInstance.selectAllComponents(selector);
+  components.forEach(function (component) {
+    var ref = component.dataset.ref;
+    $refs[ref] = component.$vm || component;
+    {
+      if (component.dataset.vueGeneric === 'scoped') {
+        component.selectAllComponents('.scoped-ref').forEach(function (scopedComponent) {
+          selectAllComponents(scopedComponent, selector, $refs);
+        });
+      }
+    }
+  });
+}
+
 function initRefs(vm) {
   var mpInstance = vm.$scope;
   Object.defineProperty(vm, '$refs', {
     get: function get() {
       var $refs = {};
-      var components = mpInstance.selectAllComponents('.vue-ref');
-      components.forEach(function (component) {
-        var ref = component.dataset.ref;
-        $refs[ref] = component.$vm || component;
-      });
+      selectAllComponents(mpInstance, '.vue-ref', $refs);
+      // TODO 暂不考虑 for 中的 scoped
       var forComponents = mpInstance.selectAllComponents('.vue-ref-in-for');
       forComponents.forEach(function (component) {
         var ref = component.dataset.ref;
@@ -1354,6 +1476,49 @@ function parseApp(vm) {
 function createApp(vm) {
   App(parseApp(vm));
   return vm;
+}
+
+var encodeReserveRE = /[!'()*]/g;
+var encodeReserveReplacer = function encodeReserveReplacer(c) {return '%' + c.charCodeAt(0).toString(16);};
+var commaRE = /%2C/g;
+
+// fixed encodeURIComponent which is more conformant to RFC3986:
+// - escapes [!'()*]
+// - preserve commas
+var encode = function encode(str) {return encodeURIComponent(str).
+  replace(encodeReserveRE, encodeReserveReplacer).
+  replace(commaRE, ',');};
+
+function stringifyQuery(obj) {var encodeStr = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : encode;
+  var res = obj ? Object.keys(obj).map(function (key) {
+    var val = obj[key];
+
+    if (val === undefined) {
+      return '';
+    }
+
+    if (val === null) {
+      return encodeStr(key);
+    }
+
+    if (Array.isArray(val)) {
+      var result = [];
+      val.forEach(function (val2) {
+        if (val2 === undefined) {
+          return;
+        }
+        if (val2 === null) {
+          result.push(encodeStr(key));
+        } else {
+          result.push(encodeStr(key) + '=' + encodeStr(val2));
+        }
+      });
+      return result.join('&');
+    }
+
+    return encodeStr(key) + '=' + encodeStr(val);
+  }).filter(function (x) {return x.length > 0;}).join('&') : null;
+  return res ? "?".concat(res) : '';
 }
 
 function parseBaseComponent(vueComponentOptions)
@@ -1478,9 +1643,15 @@ function parseBasePage(vuePageOptions, _ref6)
 
   initHooks(pageOptions.methods, hooks$1, vuePageOptions);
 
-  pageOptions.methods.onLoad = function (args) {
-    this.$vm.$mp.query = args; // 兼容 mpvue
-    this.$vm.__call_hook('onLoad', args);
+  pageOptions.methods.onLoad = function (query) {
+    this.options = query;
+    var copyQuery = Object.assign({}, query);
+    delete copyQuery.__id__;
+    this.$page = {
+      fullPath: '/' + (this.route || this.is) + stringifyQuery(copyQuery) };
+
+    this.$vm.$mp.query = query; // 兼容 mpvue
+    this.$vm.__call_hook('onLoad', query);
   };
 
   return pageOptions;
@@ -1503,6 +1674,41 @@ function createComponent(vueOptions) {
   {
     return Component(parseComponent(vueOptions));
   }
+}
+
+function createSubpackageApp(vm) {
+  var appOptions = parseApp(vm);
+  var app = getApp({
+    allowDefault: true });
+
+  var globalData = app.globalData;
+  if (globalData) {
+    Object.keys(appOptions.globalData).forEach(function (name) {
+      if (!hasOwn(globalData, name)) {
+        globalData[name] = appOptions.globalData[name];
+      }
+    });
+  }
+  Object.keys(appOptions).forEach(function (name) {
+    if (!hasOwn(app, name)) {
+      app[name] = appOptions[name];
+    }
+  });
+  if (isFn(appOptions.onShow) && wx.onAppShow) {
+    wx.onAppShow(function () {for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {args[_key5] = arguments[_key5];}
+      appOptions.onShow.apply(app, args);
+    });
+  }
+  if (isFn(appOptions.onHide) && wx.onAppHide) {
+    wx.onAppHide(function () {for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {args[_key6] = arguments[_key6];}
+      appOptions.onHide.apply(app, args);
+    });
+  }
+  if (isFn(appOptions.onLaunch)) {
+    var args = wx.getLaunchOptionsSync && wx.getLaunchOptionsSync();
+    appOptions.onLaunch.call(app, args);
+  }
+  return vm;
 }
 
 todos.forEach(function (todoApi) {
@@ -1584,6 +1790,7 @@ if (typeof Proxy !== 'undefined' && "mp-weixin" !== 'app-plus') {
 wx.createApp = createApp;
 wx.createPage = createPage;
 wx.createComponent = createComponent;
+wx.createSubpackageApp = createSubpackageApp;
 
 var uni$1 = uni;var _default =
 
@@ -1720,10 +1927,21 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 100:
-/*!***************************************************!*\
-  !*** E:/LHMiniProgramRespository/static/mybg.png ***!
-  \***************************************************/
+/***/ 102:
+/*!************************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/static/head.png ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ 105:
+/*!************************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/static/mybg.png ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1732,9 +1950,9 @@ module.exports = "/static/mybg.png";
 /***/ }),
 
 /***/ 11:
-/*!**************************************************!*\
-  !*** E:/LHMiniProgramRespository/common/util.js ***!
-  \**************************************************/
+/*!***********************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/common/util.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1756,15 +1974,15 @@ module.exports = "/static/mybg.png";
 
 /***/ }),
 
-/***/ 116:
-/*!*******************************************************************!*\
-  !*** E:/LHMiniProgramRespository/components/uni-calendar/util.js ***!
-  \*******************************************************************/
+/***/ 122:
+/*!****************************************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/components/uni-calendar/util.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 117));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 123));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
 
 Calendar = /*#__PURE__*/function () {
   function Calendar()
@@ -2119,10 +2337,10 @@ Calendar;exports.default = _default;
 
 /***/ }),
 
-/***/ 117:
-/*!***********************************************************************!*\
-  !*** E:/LHMiniProgramRespository/components/uni-calendar/calendar.js ***!
-  \***********************************************************************/
+/***/ 123:
+/*!********************************************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/components/uni-calendar/calendar.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2676,15 +2894,15 @@ calendar;exports.default = _default;
 
 /***/ }),
 
-/***/ 125:
-/*!*****************************************************************!*\
-  !*** E:/LHMiniProgramRespository/components/uni-popup/popup.js ***!
-  \*****************************************************************/
+/***/ 131:
+/*!**************************************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/components/uni-popup/popup.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _message = _interopRequireDefault(__webpack_require__(/*! ./message.js */ 126));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _message = _interopRequireDefault(__webpack_require__(/*! ./message.js */ 132));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 // 定义 type 类型:弹出类型：top/bottom/center
 var config = {
   // 顶部弹出
@@ -2711,10 +2929,10 @@ var config = {
 
 /***/ }),
 
-/***/ 126:
-/*!*******************************************************************!*\
-  !*** E:/LHMiniProgramRespository/components/uni-popup/message.js ***!
-  \*******************************************************************/
+/***/ 132:
+/*!****************************************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/components/uni-popup/message.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2753,7 +2971,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(global) {/*!
  * Vue.js v2.6.11
- * (c) 2014-2020 Evan You
+ * (c) 2014-2021 Evan You
  * Released under the MIT License.
  */
 /*  */
@@ -3493,11 +3711,13 @@ Dep.SharedObject.targetStack = [];
 function pushTarget (target) {
   Dep.SharedObject.targetStack.push(target);
   Dep.SharedObject.target = target;
+  Dep.target = target;
 }
 
 function popTarget () {
   Dep.SharedObject.targetStack.pop();
   Dep.SharedObject.target = Dep.SharedObject.targetStack[Dep.SharedObject.targetStack.length - 1];
+  Dep.target = Dep.SharedObject.target;
 }
 
 /*  */
@@ -5395,7 +5615,7 @@ function renderList (
       var iterator = val[Symbol.iterator]();
       var result = iterator.next();
       while (!result.done) {
-        ret.push(render(result.value, ret.length, i++, i)); // fixed by xxxxxx
+        ret.push(render(result.value, ret.length, i, i++)); // fixed by xxxxxx
         result = iterator.next();
       }
     } else {
@@ -8266,7 +8486,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8287,14 +8507,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -8338,13 +8558,14 @@ function cloneWithData(vm) {
   }, ret);
 
   // vue-composition-api
-  var rawBindings = vm.__secret_vfa_state__ && vm.__secret_vfa_state__.rawBindings;
+  var compositionApiState = vm.__composition_api_state__ || vm.__secret_vfa_state__;
+  var rawBindings = compositionApiState && compositionApiState.rawBindings;
   if (rawBindings) {
     Object.keys(rawBindings).forEach(function (key) {
       ret[key] = vm[key];
     });
   }
-  
+
   //TODO 需要把无用数据处理掉，比如 list=>l0 则 list 需要移除，否则多传输一份数据
   Object.assign(ret, vm.$mp.data || {});
   if (
@@ -8379,7 +8600,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -8667,7 +8888,7 @@ function internalMixin(Vue) {
   };
 
   Vue.prototype.__map = function(val, iteratee) {
-    //TODO 暂不考虑 string,number
+    //TODO 暂不考虑 string
     var ret, i, l, keys, key;
     if (Array.isArray(val)) {
       ret = new Array(val.length);
@@ -8681,6 +8902,13 @@ function internalMixin(Vue) {
       for (i = 0, l = keys.length; i < l; i++) {
         key = keys[i];
         ret[key] = iteratee(val[key], key, i);
+      }
+      return ret
+    } else if (typeof val === 'number') {
+      ret = new Array(val);
+      for (i = 0, l = val; i < l; i++) {
+        // 第一个参数暂时仍和小程序一致
+        ret[i] = iteratee(i, i);
       }
       return ret
     }
@@ -8702,6 +8930,7 @@ var LIFECYCLE_HOOKS$1 = [
     'onError',
     'onUnhandledRejection',
     //Page
+    'onInit',
     'onLoad',
     // 'onShow',
     'onReady',
@@ -8811,9 +9040,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 4:
-/*!**********************************************!*\
-  !*** E:/LHMiniProgramRespository/pages.json ***!
-  \**********************************************/
+/*!*******************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/pages.json ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8821,25 +9050,14 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 82:
-/*!***********************************************************!*\
-  !*** E:/LHMiniProgramRespository/common/coutry_code.json ***!
-  \***********************************************************/
+/***/ 87:
+/*!********************************************************************!*\
+  !*** D:/MyWeb/LH/LHMiniProgramRespository/common/coutry_code.json ***!
+  \********************************************************************/
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, default */
 /***/ (function(module) {
 
-module.exports = [{"chineseName":"安哥拉","country":"Angola","region":"+244","shortName":"AO","showName":"+244(Angola)"},{"chineseName":"阿富汗","country":"Afghanistan","region":"+93","shortName":"AF","showName":"+93(Afghanistan)"},{"chineseName":"阿尔巴尼亚 ","country":"Albania","region":"+355","shortName":"AL","showName":"+355(Albania)"},{"chineseName":"阿尔及利亚","country":"Algeria","region":"+213","shortName":"DZ","showName":"+213(Algeria)"},{"chineseName":"安道尔共和国","country":"Andorra","region":"+376","shortName":"AD","showName":"+376(Andorra)"},{"chineseName":"安圭拉岛","country":"Anguilla","region":"+1264","shortName":"AI","showName":"+1264(Anguilla)"},{"chineseName":"安提瓜和巴布达","country":"Antigua and Barbuda","region":"+1268","shortName":"AG","showName":"+1268(Antigua and Barbuda)"},{"chineseName":"阿根廷","country":"Argentina","region":"+54","shortName":"AR","showName":"+54(Argentina)"},{"chineseName":"亚美尼亚","country":"Armenia","region":"+374","shortName":"AM","showName":"+374(Armenia)"},{"chineseName":"阿森松","country":"Ascension","region":"+247","shortName":"　","showName":"+247(Ascension)"},{"chineseName":"澳大利亚","country":"Australia","region":"+61","shortName":"AU","showName":"+61(Australia)"},{"chineseName":"奥地利","country":"Austria","region":"+43","shortName":"AT","showName":"+43(Austria)"},{"chineseName":"阿塞拜疆","country":"Azerbaijan","region":"+994","shortName":"AZ","showName":"+994(Azerbaijan)"},{"chineseName":"巴哈马","country":"Bahamas","region":"+1242","shortName":"BS","showName":"+1242(Bahamas)"},{"chineseName":"巴林","country":"Bahrain","region":"+973","shortName":"BH","showName":"+973(Bahrain)"},{"chineseName":"孟加拉国","country":"Bangladesh","region":"+880","shortName":"BD","showName":"+880(Bangladesh)"},{"chineseName":"巴巴多斯","country":"Barbados","region":"+1246","shortName":"BB","showName":"+1246(Barbados)"},{"chineseName":"白俄罗斯","country":"Belarus","region":"+375","shortName":"BY","showName":"+375(Belarus)"},{"chineseName":"比利时","country":"Belgium","region":"+32","shortName":"BE","showName":"+32(Belgium)"},{"chineseName":"伯利兹","country":"Belize","region":"+501","shortName":"BZ","showName":"+501(Belize)"},{"chineseName":"贝宁","country":"Benin","region":"+229","shortName":"BJ","showName":"+229(Benin)"},{"chineseName":"百慕大群岛","country":"BermudaIs.","region":"+1441","shortName":"BM","showName":"+1441(BermudaIs.)"},{"chineseName":"玻利维亚","country":"Bolivia","region":"+591","shortName":"BO","showName":"+591(Bolivia)"},{"chineseName":"博茨瓦纳","country":"Botswana","region":"+267","shortName":"BW","showName":"+267(Botswana)"},{"chineseName":"巴西","country":"Brazil","region":"+55","shortName":"BR","showName":"+55(Brazil)"},{"chineseName":"文莱","country":"Brunei","region":"+673","shortName":"BN","showName":"+673(Brunei)"},{"chineseName":"保加利亚","country":"Bulgaria","region":"+359","shortName":"BG","showName":"+359(Bulgaria)"},{"chineseName":"布基纳法索","country":"Burkina-faso","region":"+226","shortName":"BF","showName":"+226(Burkina-faso)"},{"chineseName":"缅甸","country":"Burma","region":"+95","shortName":"MM","showName":"+95(Burma)"},{"chineseName":"布隆迪","country":"Burundi","region":"+257","shortName":"BI","showName":"+257(Burundi)"},{"chineseName":"喀麦隆","country":"Cameroon","region":"+237","shortName":"CM","showName":"+237(Cameroon)"},{"chineseName":"加拿大","country":"Canada","region":"+1","shortName":"CA","showName":"+1(Canada)"},{"chineseName":"开曼群岛","country":"Cayman Is.","region":"+1345","shortName":"　","showName":"+1345(Cayman Is.)"},{"chineseName":"中非共和国 ","country":"Central African Republic","region":"+236","shortName":"CF","showName":"+236(Central African Republic)"},{"chineseName":"乍得","country":"Chad","region":"+235","shortName":"TD","showName":"+235(Chad)"},{"chineseName":"智利","country":"Chile","region":"+56","shortName":"CL","showName":"+56(Chile)"},{"chineseName":"中国","country":"China","region":"+86","shortName":"CN","showName":"+86(China)"},{"chineseName":"哥伦比亚","country":"Colombia","region":"+57","shortName":"CO","showName":"+57(Colombia)"},{"chineseName":"刚果","country":"Congo","region":"+242","shortName":"CG","showName":"+242(Congo)"},{"chineseName":"库克群岛","country":"Cook Is.","region":"+682","shortName":"CK","showName":"+682(Cook Is.)"},{"chineseName":"哥斯达黎加","country":"Costa Rica","region":"+506","shortName":"CR","showName":"+506(Costa Rica)"},{"chineseName":"古巴","country":"Cuba","region":"+53","shortName":"CU","showName":"+53(Cuba)"},{"chineseName":"塞浦路斯","country":"Cyprus","region":"+357","shortName":"CY","showName":"+357(Cyprus)"},{"chineseName":"捷克","country":"Czech Republic","region":"+420","shortName":"CZ","showName":"+420(Czech Republic)"},{"chineseName":"丹麦","country":"Denmark","region":"+45","shortName":"DK","showName":"+45(Denmark)"},{"chineseName":"吉布提","country":"Djibouti","region":"+253","shortName":"DJ","showName":"+253(Djibouti)"},{"chineseName":"多米尼加共和国","country":"Dominica Rep.","region":"+1890","shortName":"DO","showName":"+1890(Dominica Rep.)"},{"chineseName":"厄瓜多尔","country":"Ecuador","region":"+593","shortName":"EC","showName":"+593(Ecuador)"},{"chineseName":"埃及","country":"Egypt","region":"+20","shortName":"EG","showName":"+20(Egypt)"},{"chineseName":"萨尔瓦多","country":"EISalvador","region":"+503","shortName":"SV","showName":"+503(EISalvador)"},{"chineseName":"爱沙尼亚","country":"Estonia","region":"+372","shortName":"EE","showName":"+372(Estonia)"},{"chineseName":"埃塞俄比亚","country":"Ethiopia","region":"+251","shortName":"ET","showName":"+251(Ethiopia)"},{"chineseName":"斐济","country":"Fiji","region":"+679","shortName":"FJ","showName":"+679(Fiji)"},{"chineseName":"芬兰","country":"Finland","region":"+358","shortName":"FI","showName":"+358(Finland)"},{"chineseName":"法国","country":"France","region":"+33","shortName":"FR","showName":"+33(France)"},{"chineseName":"法属圭亚那","country":"French Guiana","region":"+594","shortName":"GF","showName":"+594(French Guiana)"},{"chineseName":"加蓬","country":"Gabon","region":"+241","shortName":"GA","showName":"+241(Gabon)"},{"chineseName":"冈比亚","country":"Gambia","region":"+220","shortName":"GM","showName":"+220(Gambia)"},{"chineseName":"格鲁吉亚","country":"Georgia","region":"+995","shortName":"GE","showName":"+995(Georgia)"},{"chineseName":"德国","country":"Germany","region":"+49","shortName":"DE","showName":"+49(Germany)"},{"chineseName":"加纳","country":"Ghana","region":"+233","shortName":"GH","showName":"+233(Ghana)"},{"chineseName":"直布罗陀","country":"Gibraltar","region":"+350","shortName":"GI","showName":"+350(Gibraltar)"},{"chineseName":"希腊","country":"Greece","region":"+30","shortName":"GR","showName":"+30(Greece)"},{"chineseName":"格林纳达","country":"Grenada","region":"+1809","shortName":"GD","showName":"+1809(Grenada)"},{"chineseName":"关岛","country":"Guam","region":"+1671","shortName":"GU","showName":"+1671(Guam)"},{"chineseName":"危地马拉","country":"Guatemala","region":"+502","shortName":"GT","showName":"+502(Guatemala)"},{"chineseName":"几内亚","country":"Guinea","region":"+224","shortName":"GN","showName":"+224(Guinea)"},{"chineseName":"圭亚那","country":"Guyana","region":"+592","shortName":"GY","showName":"+592(Guyana)"},{"chineseName":"海地","country":"Haiti","region":"+509","shortName":"HT","showName":"+509(Haiti)"},{"chineseName":"洪都拉斯","country":"Honduras","region":"+504","shortName":"HN","showName":"+504(Honduras)"},{"chineseName":"香港","country":"Hongkong","region":"+852","shortName":"HK","showName":"+852(Hongkong)"},{"chineseName":"匈牙利","country":"Hungary","region":"+36","shortName":"HU","showName":"+36(Hungary)"},{"chineseName":"冰岛","country":"Iceland","region":"+354","shortName":"IS","showName":"+354(Iceland)"},{"chineseName":"印度","country":"India","region":"+91","shortName":"IN","showName":"+91(India)"},{"chineseName":"印度尼西亚","country":"Indonesia","region":"+62","shortName":"ID","showName":"+62(Indonesia)"},{"chineseName":"伊朗","country":"Iran","region":"+98","shortName":"IR","showName":"+98(Iran)"},{"chineseName":"伊拉克","country":"Iraq","region":"+964","shortName":"IQ","showName":"+964(Iraq)"},{"chineseName":"爱尔兰","country":"Ireland","region":"+353","shortName":"IE","showName":"+353(Ireland)"},{"chineseName":"以色列","country":"Israel","region":"+972","shortName":"IL","showName":"+972(Israel)"},{"chineseName":"意大利","country":"Italy","region":"+39","shortName":"IT","showName":"+39(Italy)"},{"chineseName":"科特迪瓦","country":"IvoryCoast","region":"+225","shortName":"　","showName":"+225(IvoryCoast)"},{"chineseName":"牙买加","country":"Jamaica","region":"+1876","shortName":"JM","showName":"+1876(Jamaica)"},{"chineseName":"日本","country":"Japan","region":"+81","shortName":"JP","showName":"+81(Japan)"},{"chineseName":"约旦","country":"Jordan","region":"+962","shortName":"JO","showName":"+962(Jordan)"},{"chineseName":"柬埔寨","country":"Kampuchea (Cambodia )","region":"+855","shortName":"KH","showName":"+855(Kampuchea (Cambodia ))"},{"chineseName":"哈萨克斯坦 ","country":"Kazakstan","region":"+327","shortName":"KZ","showName":"+327(Kazakstan)"},{"chineseName":"肯尼亚","country":"Kenya","region":"+254","shortName":"KE","showName":"+254(Kenya)"},{"chineseName":"韩国","country":"Korea","region":"+82","shortName":"KR","showName":"+82(Korea)"},{"chineseName":"科威特","country":"Kuwait","region":"+965","shortName":"KW","showName":"+965(Kuwait)"},{"chineseName":"吉尔吉斯坦 ","country":"Kyrgyzstan","region":"+331","shortName":"KG","showName":"+331(Kyrgyzstan)"},{"chineseName":"老挝","country":"Laos","region":"+856","shortName":"LA","showName":"+856(Laos)"},{"chineseName":"拉脱维亚","country":"Latvia","region":"+371","shortName":"LV","showName":"+371(Latvia)"},{"chineseName":"黎巴嫩","country":"Lebanon","region":"+961","shortName":"LB","showName":"+961(Lebanon)"},{"chineseName":"莱索托","country":"Lesotho","region":"+266","shortName":"LS","showName":"+266(Lesotho)"},{"chineseName":"利比里亚","country":"Liberia","region":"+231","shortName":"LR","showName":"+231(Liberia)"},{"chineseName":"利比亚","country":"Libya","region":"+218","shortName":"LY","showName":"+218(Libya)"},{"chineseName":"列支敦士登","country":"Liechtenstein","region":"+423","shortName":"LI","showName":"+423(Liechtenstein)"},{"chineseName":"立陶宛","country":"Lithuania","region":"+370","shortName":"LT","showName":"+370(Lithuania)"},{"chineseName":"卢森堡","country":"Luxembourg","region":"+352","shortName":"LU","showName":"+352(Luxembourg)"},{"chineseName":"澳门","country":"Macao","region":"+853","shortName":"MO","showName":"+853(Macao)"},{"chineseName":"马达加斯加","country":"Madagascar","region":"+261","shortName":"MG","showName":"+261(Madagascar)"},{"chineseName":"马拉维","country":"Malawi","region":"+265","shortName":"MW","showName":"+265(Malawi)"},{"chineseName":"马来西亚","country":"Malaysia","region":"+60","shortName":"MY","showName":"+60(Malaysia)"},{"chineseName":"马尔代夫","country":"Maldives","region":"+960","shortName":"MV","showName":"+960(Maldives)"},{"chineseName":"马里","country":"Mali","region":"+223","shortName":"ML","showName":"+223(Mali)"},{"chineseName":"马耳他","country":"Malta","region":"+356","shortName":"MT","showName":"+356(Malta)"},{"chineseName":"马里亚那群岛","country":"Mariana Is","region":"+1670","shortName":"　","showName":"+1670(Mariana Is)"},{"chineseName":"马提尼克","country":"Martinique","region":"+596","shortName":"　","showName":"+596(Martinique)"},{"chineseName":"毛里求斯","country":"Mauritius","region":"+230","shortName":"MU","showName":"+230(Mauritius)"},{"chineseName":"墨西哥","country":"Mexico","region":"+52","shortName":"MX","showName":"+52(Mexico)"},{"chineseName":"摩尔多瓦","country":"Moldova, Republic of","region":"+373","shortName":"MD","showName":"+373(Moldova, Republic of)"},{"chineseName":"摩纳哥","country":"Monaco","region":"+377","shortName":"MC","showName":"+377(Monaco)"},{"chineseName":"蒙古","country":"Mongolia","region":"+976","shortName":"MN","showName":"+976(Mongolia)"},{"chineseName":"蒙特塞拉特岛","country":"Montserrat Is","region":"+1664","shortName":"MS","showName":"+1664(Montserrat Is)"},{"chineseName":"摩洛哥","country":"Morocco","region":"+212","shortName":"MA","showName":"+212(Morocco)"},{"chineseName":"莫桑比克","country":"Mozambique","region":"+258","shortName":"MZ","showName":"+258(Mozambique)"},{"chineseName":"纳米比亚","country":"Namibia","region":"+264","shortName":"NA","showName":"+264(Namibia)"},{"chineseName":"瑙鲁","country":"Nauru","region":"+674","shortName":"NR","showName":"+674(Nauru)"},{"chineseName":"尼泊尔","country":"Nepal","region":"+977","shortName":"NP","showName":"+977(Nepal)"},{"chineseName":"荷属安的列斯","country":"Netheriands Antilles","region":"+599","shortName":"　","showName":"+599(Netheriands Antilles)"},{"chineseName":"荷兰","country":"Netherlands ","region":"+31","shortName":"NL","showName":"+31(Netherlands )"},{"chineseName":"新西兰","country":"NewZealand","region":"+64","shortName":"NZ","showName":"+64(NewZealand)"},{"chineseName":"尼加拉瓜","country":"Nicaragua","region":"+505","shortName":"NI","showName":"+505(Nicaragua)"},{"chineseName":"尼日尔","country":"Niger","region":"+227","shortName":"NE","showName":"+227(Niger)"},{"chineseName":"尼日利亚","country":"Nigeria","region":"+234","shortName":"NG","showName":"+234(Nigeria)"},{"chineseName":"朝鲜","country":"North Korea","region":"+850","shortName":"KP","showName":"+850(North Korea)"},{"chineseName":"挪威","country":"Norway","region":"+47","shortName":"NO","showName":"+47(Norway)"},{"chineseName":"阿曼","country":"Oman","region":"+968","shortName":"OM","showName":"+968(Oman)"},{"chineseName":"巴基斯坦","country":"Pakistan","region":"+92","shortName":"PK","showName":"+92(Pakistan)"},{"chineseName":"巴拿马","country":"Panama","region":"+507","shortName":"PA","showName":"+507(Panama)"},{"chineseName":"巴布亚新几内亚","country":"Papua New Cuinea","region":"+675","shortName":"PG","showName":"+675(Papua New Cuinea)"},{"chineseName":"巴拉圭","country":"Paraguay","region":"+595","shortName":"PY","showName":"+595(Paraguay)"},{"chineseName":"秘鲁","country":"Peru","region":"+51","shortName":"PE","showName":"+51(Peru)"},{"chineseName":"菲律宾","country":"Philippines ","region":"+63","shortName":"PH","showName":"+63(Philippines )"},{"chineseName":"波兰","country":"Poland","region":"+48","shortName":"PL","showName":"+48(Poland)"},{"chineseName":"法属玻利尼西亚","country":"French Polynesia","region":"+689","shortName":"PF","showName":"+689(French Polynesia)"},{"chineseName":"葡萄牙","country":"Portugal","region":"+351","shortName":"PT","showName":"+351(Portugal)"},{"chineseName":"波多黎各","country":"PuertoRico","region":"+1787","shortName":"PR","showName":"+1787(PuertoRico)"},{"chineseName":"卡塔尔","country":"Qatar","region":"+974","shortName":"QA","showName":"+974(Qatar)"},{"chineseName":"留尼旺","country":"Reunion","region":"+262","shortName":"　","showName":"+262(Reunion)"},{"chineseName":"罗马尼亚","country":"Romania","region":"+40","shortName":"RO","showName":"+40(Romania)"},{"chineseName":"俄罗斯","country":"Russia","region":"+7","shortName":"RU","showName":"+7(Russia)"},{"chineseName":"圣卢西亚","country":"Saint Lueia","region":"+1758","shortName":"LC","showName":"+1758(Saint Lueia)"},{"chineseName":"圣文森特岛 ","country":"Saint Vincent","region":"+1784","shortName":"VC","showName":"+1784(Saint Vincent)"},{"chineseName":"东萨摩亚(美)","country":"Samoa Eastern","region":"+684","shortName":"　","showName":"+684(Samoa Eastern)"},{"chineseName":"西萨摩亚","country":"Samoa Western","region":"+685","shortName":"　","showName":"+685(Samoa Western)"},{"chineseName":"圣马力诺","country":"San Marino","region":"+378","shortName":"SM","showName":"+378(San Marino)"},{"chineseName":"圣多美和普林西比","country":"Sao Tome and Principe","region":"+239","shortName":"ST","showName":"+239(Sao Tome and Principe)"},{"chineseName":"沙特阿拉伯","country":"Saudi Arabia","region":"+966","shortName":"SA","showName":"+966(Saudi Arabia)"},{"chineseName":"塞内加尔","country":"Senegal","region":"+221","shortName":"SN","showName":"+221(Senegal)"},{"chineseName":"塞舌尔","country":"Seychelles","region":"+248","shortName":"SC","showName":"+248(Seychelles)"},{"chineseName":"塞拉利昂","country":"Sierra Leone","region":"+232","shortName":"SL","showName":"+232(Sierra Leone)"},{"chineseName":"新加坡","country":"Singapore","region":"+65","shortName":"SG","showName":"+65(Singapore)"},{"chineseName":"斯洛伐克","country":"Slovakia","region":"+421","shortName":"SK","showName":"+421(Slovakia)"},{"chineseName":"斯洛文尼亚 ","country":"Slovenia","region":"+386","shortName":"SI","showName":"+386(Slovenia)"},{"chineseName":"所罗门群岛","country":"Solomon Is","region":"+677","shortName":"SB","showName":"+677(Solomon Is)"},{"chineseName":"索马里","country":"Somali","region":"+252","shortName":"SO","showName":"+252(Somali)"},{"chineseName":"南非","country":"South Africa","region":"+27","shortName":"ZA","showName":"+27(South Africa)"},{"chineseName":"西班牙","country":"Spain","region":"+34","shortName":"ES","showName":"+34(Spain)"},{"chineseName":"斯里兰卡","country":"Sri Lanka","region":"+94","shortName":"LK","showName":"+94(Sri Lanka)"},{"chineseName":"圣卢西亚","country":"St.Lucia","region":"+1758","shortName":"LC","showName":"+1758(St.Lucia)"},{"chineseName":"圣文森特","country":"St.Vincent","region":"+1784","shortName":"VC","showName":"+1784(St.Vincent)"},{"chineseName":"苏丹","country":"Sudan","region":"+249","shortName":"SD","showName":"+249(Sudan)"},{"chineseName":"苏里南","country":"Suriname","region":"+597","shortName":"SR","showName":"+597(Suriname)"},{"chineseName":"斯威士兰","country":"Swaziland","region":"+268","shortName":"SZ","showName":"+268(Swaziland)"},{"chineseName":"瑞典","country":"Sweden","region":"+46","shortName":"SE","showName":"+46(Sweden)"},{"chineseName":"瑞士","country":"Switzerland ","region":"+41","shortName":"CH","showName":"+41(Switzerland )"},{"chineseName":"叙利亚","country":"Syria","region":"+963","shortName":"SY","showName":"+963(Syria)"},{"chineseName":"台湾省","country":"Taiwan","region":"+886","shortName":"TW","showName":"+886(Taiwan)"},{"chineseName":"塔吉克斯坦 ","country":"Tajikstan","region":"+992","shortName":"TJ","showName":"+992(Tajikstan)"},{"chineseName":"坦桑尼亚","country":"Tanzania","region":"+255","shortName":"TZ","showName":"+255(Tanzania)"},{"chineseName":"泰国","country":"Thailand","region":"+66","shortName":"TH","showName":"+66(Thailand)"},{"chineseName":"多哥","country":"Togo","region":"+228","shortName":"TG","showName":"+228(Togo)"},{"chineseName":"汤加","country":"Tonga","region":"+676","shortName":"TO","showName":"+676(Tonga)"},{"chineseName":"特立尼达和多巴哥","country":"Trinidad and Tobago","region":"+1809","shortName":"TT","showName":"+1809(Trinidad and Tobago)"},{"chineseName":"突尼斯","country":"Tunisia","region":"+216","shortName":"TN","showName":"+216(Tunisia)"},{"chineseName":"土耳其","country":"Turkey","region":"+90","shortName":"TR","showName":"+90(Turkey)"},{"chineseName":"土库曼斯坦 ","country":"Turkmenistan","region":"+993","shortName":"TM","showName":"+993(Turkmenistan)"},{"chineseName":"乌干达","country":"Uganda","region":"+256","shortName":"UG","showName":"+256(Uganda)"},{"chineseName":"乌克兰","country":"Ukraine","region":"+380","shortName":"UA","showName":"+380(Ukraine)"},{"chineseName":"阿拉伯联合酋长国","country":"United Arab Emirates","region":"+971","shortName":"AE","showName":"+971(United Arab Emirates)"},{"chineseName":"英国","country":"United Kiongdom","region":"+44","shortName":"GB","showName":"+44(United Kiongdom)"},{"chineseName":"美国","country":"United States of America","region":"+1","shortName":"US","showName":"+1(United States of America)"},{"chineseName":"乌拉圭","country":"Uruguay","region":"+598","shortName":"UY","showName":"+598(Uruguay)"},{"chineseName":"乌兹别克斯坦","country":"Uzbekistan","region":"+233","shortName":"UZ","showName":"+233(Uzbekistan)"},{"chineseName":"委内瑞拉","country":"Venezuela","region":"+58","shortName":"VE","showName":"+58(Venezuela)"},{"chineseName":"越南","country":"Vietnam","region":"+84","shortName":"VN","showName":"+84(Vietnam)"},{"chineseName":"也门","country":"Yemen","region":"+967","shortName":"YE","showName":"+967(Yemen)"},{"chineseName":"南斯拉夫","country":"Yugoslavia","region":"+381","shortName":"YU","showName":"+381(Yugoslavia)"},{"chineseName":"津巴布韦","country":"Zimbabwe","region":"+263","shortName":"ZW","showName":"+263(Zimbabwe)"},{"chineseName":"扎伊尔","country":"Zaire","region":"+243","shortName":"ZR","showName":"+243(Zaire)"},{"chineseName":"赞比亚","country":"Zambia","region":"+260","shortName":"ZM","showName":"+260(Zambia)"}];
-
-/***/ }),
-
-/***/ 97:
-/*!***************************************************!*\
-  !*** E:/LHMiniProgramRespository/static/head.png ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
+module.exports = JSON.parse("[{\"chineseName\":\"安哥拉\",\"country\":\"Angola\",\"region\":\"+244\",\"shortName\":\"AO\",\"showName\":\"+244(Angola)\"},{\"chineseName\":\"阿富汗\",\"country\":\"Afghanistan\",\"region\":\"+93\",\"shortName\":\"AF\",\"showName\":\"+93(Afghanistan)\"},{\"chineseName\":\"阿尔巴尼亚 \",\"country\":\"Albania\",\"region\":\"+355\",\"shortName\":\"AL\",\"showName\":\"+355(Albania)\"},{\"chineseName\":\"阿尔及利亚\",\"country\":\"Algeria\",\"region\":\"+213\",\"shortName\":\"DZ\",\"showName\":\"+213(Algeria)\"},{\"chineseName\":\"安道尔共和国\",\"country\":\"Andorra\",\"region\":\"+376\",\"shortName\":\"AD\",\"showName\":\"+376(Andorra)\"},{\"chineseName\":\"安圭拉岛\",\"country\":\"Anguilla\",\"region\":\"+1264\",\"shortName\":\"AI\",\"showName\":\"+1264(Anguilla)\"},{\"chineseName\":\"安提瓜和巴布达\",\"country\":\"Antigua and Barbuda\",\"region\":\"+1268\",\"shortName\":\"AG\",\"showName\":\"+1268(Antigua and Barbuda)\"},{\"chineseName\":\"阿根廷\",\"country\":\"Argentina\",\"region\":\"+54\",\"shortName\":\"AR\",\"showName\":\"+54(Argentina)\"},{\"chineseName\":\"亚美尼亚\",\"country\":\"Armenia\",\"region\":\"+374\",\"shortName\":\"AM\",\"showName\":\"+374(Armenia)\"},{\"chineseName\":\"阿森松\",\"country\":\"Ascension\",\"region\":\"+247\",\"shortName\":\"　\",\"showName\":\"+247(Ascension)\"},{\"chineseName\":\"澳大利亚\",\"country\":\"Australia\",\"region\":\"+61\",\"shortName\":\"AU\",\"showName\":\"+61(Australia)\"},{\"chineseName\":\"奥地利\",\"country\":\"Austria\",\"region\":\"+43\",\"shortName\":\"AT\",\"showName\":\"+43(Austria)\"},{\"chineseName\":\"阿塞拜疆\",\"country\":\"Azerbaijan\",\"region\":\"+994\",\"shortName\":\"AZ\",\"showName\":\"+994(Azerbaijan)\"},{\"chineseName\":\"巴哈马\",\"country\":\"Bahamas\",\"region\":\"+1242\",\"shortName\":\"BS\",\"showName\":\"+1242(Bahamas)\"},{\"chineseName\":\"巴林\",\"country\":\"Bahrain\",\"region\":\"+973\",\"shortName\":\"BH\",\"showName\":\"+973(Bahrain)\"},{\"chineseName\":\"孟加拉国\",\"country\":\"Bangladesh\",\"region\":\"+880\",\"shortName\":\"BD\",\"showName\":\"+880(Bangladesh)\"},{\"chineseName\":\"巴巴多斯\",\"country\":\"Barbados\",\"region\":\"+1246\",\"shortName\":\"BB\",\"showName\":\"+1246(Barbados)\"},{\"chineseName\":\"白俄罗斯\",\"country\":\"Belarus\",\"region\":\"+375\",\"shortName\":\"BY\",\"showName\":\"+375(Belarus)\"},{\"chineseName\":\"比利时\",\"country\":\"Belgium\",\"region\":\"+32\",\"shortName\":\"BE\",\"showName\":\"+32(Belgium)\"},{\"chineseName\":\"伯利兹\",\"country\":\"Belize\",\"region\":\"+501\",\"shortName\":\"BZ\",\"showName\":\"+501(Belize)\"},{\"chineseName\":\"贝宁\",\"country\":\"Benin\",\"region\":\"+229\",\"shortName\":\"BJ\",\"showName\":\"+229(Benin)\"},{\"chineseName\":\"百慕大群岛\",\"country\":\"BermudaIs.\",\"region\":\"+1441\",\"shortName\":\"BM\",\"showName\":\"+1441(BermudaIs.)\"},{\"chineseName\":\"玻利维亚\",\"country\":\"Bolivia\",\"region\":\"+591\",\"shortName\":\"BO\",\"showName\":\"+591(Bolivia)\"},{\"chineseName\":\"博茨瓦纳\",\"country\":\"Botswana\",\"region\":\"+267\",\"shortName\":\"BW\",\"showName\":\"+267(Botswana)\"},{\"chineseName\":\"巴西\",\"country\":\"Brazil\",\"region\":\"+55\",\"shortName\":\"BR\",\"showName\":\"+55(Brazil)\"},{\"chineseName\":\"文莱\",\"country\":\"Brunei\",\"region\":\"+673\",\"shortName\":\"BN\",\"showName\":\"+673(Brunei)\"},{\"chineseName\":\"保加利亚\",\"country\":\"Bulgaria\",\"region\":\"+359\",\"shortName\":\"BG\",\"showName\":\"+359(Bulgaria)\"},{\"chineseName\":\"布基纳法索\",\"country\":\"Burkina-faso\",\"region\":\"+226\",\"shortName\":\"BF\",\"showName\":\"+226(Burkina-faso)\"},{\"chineseName\":\"缅甸\",\"country\":\"Burma\",\"region\":\"+95\",\"shortName\":\"MM\",\"showName\":\"+95(Burma)\"},{\"chineseName\":\"布隆迪\",\"country\":\"Burundi\",\"region\":\"+257\",\"shortName\":\"BI\",\"showName\":\"+257(Burundi)\"},{\"chineseName\":\"喀麦隆\",\"country\":\"Cameroon\",\"region\":\"+237\",\"shortName\":\"CM\",\"showName\":\"+237(Cameroon)\"},{\"chineseName\":\"加拿大\",\"country\":\"Canada\",\"region\":\"+1\",\"shortName\":\"CA\",\"showName\":\"+1(Canada)\"},{\"chineseName\":\"开曼群岛\",\"country\":\"Cayman Is.\",\"region\":\"+1345\",\"shortName\":\"　\",\"showName\":\"+1345(Cayman Is.)\"},{\"chineseName\":\"中非共和国 \",\"country\":\"Central African Republic\",\"region\":\"+236\",\"shortName\":\"CF\",\"showName\":\"+236(Central African Republic)\"},{\"chineseName\":\"乍得\",\"country\":\"Chad\",\"region\":\"+235\",\"shortName\":\"TD\",\"showName\":\"+235(Chad)\"},{\"chineseName\":\"智利\",\"country\":\"Chile\",\"region\":\"+56\",\"shortName\":\"CL\",\"showName\":\"+56(Chile)\"},{\"chineseName\":\"中国\",\"country\":\"China\",\"region\":\"+86\",\"shortName\":\"CN\",\"showName\":\"+86(China)\"},{\"chineseName\":\"哥伦比亚\",\"country\":\"Colombia\",\"region\":\"+57\",\"shortName\":\"CO\",\"showName\":\"+57(Colombia)\"},{\"chineseName\":\"刚果\",\"country\":\"Congo\",\"region\":\"+242\",\"shortName\":\"CG\",\"showName\":\"+242(Congo)\"},{\"chineseName\":\"库克群岛\",\"country\":\"Cook Is.\",\"region\":\"+682\",\"shortName\":\"CK\",\"showName\":\"+682(Cook Is.)\"},{\"chineseName\":\"哥斯达黎加\",\"country\":\"Costa Rica\",\"region\":\"+506\",\"shortName\":\"CR\",\"showName\":\"+506(Costa Rica)\"},{\"chineseName\":\"古巴\",\"country\":\"Cuba\",\"region\":\"+53\",\"shortName\":\"CU\",\"showName\":\"+53(Cuba)\"},{\"chineseName\":\"塞浦路斯\",\"country\":\"Cyprus\",\"region\":\"+357\",\"shortName\":\"CY\",\"showName\":\"+357(Cyprus)\"},{\"chineseName\":\"捷克\",\"country\":\"Czech Republic\",\"region\":\"+420\",\"shortName\":\"CZ\",\"showName\":\"+420(Czech Republic)\"},{\"chineseName\":\"丹麦\",\"country\":\"Denmark\",\"region\":\"+45\",\"shortName\":\"DK\",\"showName\":\"+45(Denmark)\"},{\"chineseName\":\"吉布提\",\"country\":\"Djibouti\",\"region\":\"+253\",\"shortName\":\"DJ\",\"showName\":\"+253(Djibouti)\"},{\"chineseName\":\"多米尼加共和国\",\"country\":\"Dominica Rep.\",\"region\":\"+1890\",\"shortName\":\"DO\",\"showName\":\"+1890(Dominica Rep.)\"},{\"chineseName\":\"厄瓜多尔\",\"country\":\"Ecuador\",\"region\":\"+593\",\"shortName\":\"EC\",\"showName\":\"+593(Ecuador)\"},{\"chineseName\":\"埃及\",\"country\":\"Egypt\",\"region\":\"+20\",\"shortName\":\"EG\",\"showName\":\"+20(Egypt)\"},{\"chineseName\":\"萨尔瓦多\",\"country\":\"EISalvador\",\"region\":\"+503\",\"shortName\":\"SV\",\"showName\":\"+503(EISalvador)\"},{\"chineseName\":\"爱沙尼亚\",\"country\":\"Estonia\",\"region\":\"+372\",\"shortName\":\"EE\",\"showName\":\"+372(Estonia)\"},{\"chineseName\":\"埃塞俄比亚\",\"country\":\"Ethiopia\",\"region\":\"+251\",\"shortName\":\"ET\",\"showName\":\"+251(Ethiopia)\"},{\"chineseName\":\"斐济\",\"country\":\"Fiji\",\"region\":\"+679\",\"shortName\":\"FJ\",\"showName\":\"+679(Fiji)\"},{\"chineseName\":\"芬兰\",\"country\":\"Finland\",\"region\":\"+358\",\"shortName\":\"FI\",\"showName\":\"+358(Finland)\"},{\"chineseName\":\"法国\",\"country\":\"France\",\"region\":\"+33\",\"shortName\":\"FR\",\"showName\":\"+33(France)\"},{\"chineseName\":\"法属圭亚那\",\"country\":\"French Guiana\",\"region\":\"+594\",\"shortName\":\"GF\",\"showName\":\"+594(French Guiana)\"},{\"chineseName\":\"加蓬\",\"country\":\"Gabon\",\"region\":\"+241\",\"shortName\":\"GA\",\"showName\":\"+241(Gabon)\"},{\"chineseName\":\"冈比亚\",\"country\":\"Gambia\",\"region\":\"+220\",\"shortName\":\"GM\",\"showName\":\"+220(Gambia)\"},{\"chineseName\":\"格鲁吉亚\",\"country\":\"Georgia\",\"region\":\"+995\",\"shortName\":\"GE\",\"showName\":\"+995(Georgia)\"},{\"chineseName\":\"德国\",\"country\":\"Germany\",\"region\":\"+49\",\"shortName\":\"DE\",\"showName\":\"+49(Germany)\"},{\"chineseName\":\"加纳\",\"country\":\"Ghana\",\"region\":\"+233\",\"shortName\":\"GH\",\"showName\":\"+233(Ghana)\"},{\"chineseName\":\"直布罗陀\",\"country\":\"Gibraltar\",\"region\":\"+350\",\"shortName\":\"GI\",\"showName\":\"+350(Gibraltar)\"},{\"chineseName\":\"希腊\",\"country\":\"Greece\",\"region\":\"+30\",\"shortName\":\"GR\",\"showName\":\"+30(Greece)\"},{\"chineseName\":\"格林纳达\",\"country\":\"Grenada\",\"region\":\"+1809\",\"shortName\":\"GD\",\"showName\":\"+1809(Grenada)\"},{\"chineseName\":\"关岛\",\"country\":\"Guam\",\"region\":\"+1671\",\"shortName\":\"GU\",\"showName\":\"+1671(Guam)\"},{\"chineseName\":\"危地马拉\",\"country\":\"Guatemala\",\"region\":\"+502\",\"shortName\":\"GT\",\"showName\":\"+502(Guatemala)\"},{\"chineseName\":\"几内亚\",\"country\":\"Guinea\",\"region\":\"+224\",\"shortName\":\"GN\",\"showName\":\"+224(Guinea)\"},{\"chineseName\":\"圭亚那\",\"country\":\"Guyana\",\"region\":\"+592\",\"shortName\":\"GY\",\"showName\":\"+592(Guyana)\"},{\"chineseName\":\"海地\",\"country\":\"Haiti\",\"region\":\"+509\",\"shortName\":\"HT\",\"showName\":\"+509(Haiti)\"},{\"chineseName\":\"洪都拉斯\",\"country\":\"Honduras\",\"region\":\"+504\",\"shortName\":\"HN\",\"showName\":\"+504(Honduras)\"},{\"chineseName\":\"香港\",\"country\":\"Hongkong\",\"region\":\"+852\",\"shortName\":\"HK\",\"showName\":\"+852(Hongkong)\"},{\"chineseName\":\"匈牙利\",\"country\":\"Hungary\",\"region\":\"+36\",\"shortName\":\"HU\",\"showName\":\"+36(Hungary)\"},{\"chineseName\":\"冰岛\",\"country\":\"Iceland\",\"region\":\"+354\",\"shortName\":\"IS\",\"showName\":\"+354(Iceland)\"},{\"chineseName\":\"印度\",\"country\":\"India\",\"region\":\"+91\",\"shortName\":\"IN\",\"showName\":\"+91(India)\"},{\"chineseName\":\"印度尼西亚\",\"country\":\"Indonesia\",\"region\":\"+62\",\"shortName\":\"ID\",\"showName\":\"+62(Indonesia)\"},{\"chineseName\":\"伊朗\",\"country\":\"Iran\",\"region\":\"+98\",\"shortName\":\"IR\",\"showName\":\"+98(Iran)\"},{\"chineseName\":\"伊拉克\",\"country\":\"Iraq\",\"region\":\"+964\",\"shortName\":\"IQ\",\"showName\":\"+964(Iraq)\"},{\"chineseName\":\"爱尔兰\",\"country\":\"Ireland\",\"region\":\"+353\",\"shortName\":\"IE\",\"showName\":\"+353(Ireland)\"},{\"chineseName\":\"以色列\",\"country\":\"Israel\",\"region\":\"+972\",\"shortName\":\"IL\",\"showName\":\"+972(Israel)\"},{\"chineseName\":\"意大利\",\"country\":\"Italy\",\"region\":\"+39\",\"shortName\":\"IT\",\"showName\":\"+39(Italy)\"},{\"chineseName\":\"科特迪瓦\",\"country\":\"IvoryCoast\",\"region\":\"+225\",\"shortName\":\"　\",\"showName\":\"+225(IvoryCoast)\"},{\"chineseName\":\"牙买加\",\"country\":\"Jamaica\",\"region\":\"+1876\",\"shortName\":\"JM\",\"showName\":\"+1876(Jamaica)\"},{\"chineseName\":\"日本\",\"country\":\"Japan\",\"region\":\"+81\",\"shortName\":\"JP\",\"showName\":\"+81(Japan)\"},{\"chineseName\":\"约旦\",\"country\":\"Jordan\",\"region\":\"+962\",\"shortName\":\"JO\",\"showName\":\"+962(Jordan)\"},{\"chineseName\":\"柬埔寨\",\"country\":\"Kampuchea (Cambodia )\",\"region\":\"+855\",\"shortName\":\"KH\",\"showName\":\"+855(Kampuchea (Cambodia ))\"},{\"chineseName\":\"哈萨克斯坦 \",\"country\":\"Kazakstan\",\"region\":\"+327\",\"shortName\":\"KZ\",\"showName\":\"+327(Kazakstan)\"},{\"chineseName\":\"肯尼亚\",\"country\":\"Kenya\",\"region\":\"+254\",\"shortName\":\"KE\",\"showName\":\"+254(Kenya)\"},{\"chineseName\":\"韩国\",\"country\":\"Korea\",\"region\":\"+82\",\"shortName\":\"KR\",\"showName\":\"+82(Korea)\"},{\"chineseName\":\"科威特\",\"country\":\"Kuwait\",\"region\":\"+965\",\"shortName\":\"KW\",\"showName\":\"+965(Kuwait)\"},{\"chineseName\":\"吉尔吉斯坦 \",\"country\":\"Kyrgyzstan\",\"region\":\"+331\",\"shortName\":\"KG\",\"showName\":\"+331(Kyrgyzstan)\"},{\"chineseName\":\"老挝\",\"country\":\"Laos\",\"region\":\"+856\",\"shortName\":\"LA\",\"showName\":\"+856(Laos)\"},{\"chineseName\":\"拉脱维亚\",\"country\":\"Latvia\",\"region\":\"+371\",\"shortName\":\"LV\",\"showName\":\"+371(Latvia)\"},{\"chineseName\":\"黎巴嫩\",\"country\":\"Lebanon\",\"region\":\"+961\",\"shortName\":\"LB\",\"showName\":\"+961(Lebanon)\"},{\"chineseName\":\"莱索托\",\"country\":\"Lesotho\",\"region\":\"+266\",\"shortName\":\"LS\",\"showName\":\"+266(Lesotho)\"},{\"chineseName\":\"利比里亚\",\"country\":\"Liberia\",\"region\":\"+231\",\"shortName\":\"LR\",\"showName\":\"+231(Liberia)\"},{\"chineseName\":\"利比亚\",\"country\":\"Libya\",\"region\":\"+218\",\"shortName\":\"LY\",\"showName\":\"+218(Libya)\"},{\"chineseName\":\"列支敦士登\",\"country\":\"Liechtenstein\",\"region\":\"+423\",\"shortName\":\"LI\",\"showName\":\"+423(Liechtenstein)\"},{\"chineseName\":\"立陶宛\",\"country\":\"Lithuania\",\"region\":\"+370\",\"shortName\":\"LT\",\"showName\":\"+370(Lithuania)\"},{\"chineseName\":\"卢森堡\",\"country\":\"Luxembourg\",\"region\":\"+352\",\"shortName\":\"LU\",\"showName\":\"+352(Luxembourg)\"},{\"chineseName\":\"澳门\",\"country\":\"Macao\",\"region\":\"+853\",\"shortName\":\"MO\",\"showName\":\"+853(Macao)\"},{\"chineseName\":\"马达加斯加\",\"country\":\"Madagascar\",\"region\":\"+261\",\"shortName\":\"MG\",\"showName\":\"+261(Madagascar)\"},{\"chineseName\":\"马拉维\",\"country\":\"Malawi\",\"region\":\"+265\",\"shortName\":\"MW\",\"showName\":\"+265(Malawi)\"},{\"chineseName\":\"马来西亚\",\"country\":\"Malaysia\",\"region\":\"+60\",\"shortName\":\"MY\",\"showName\":\"+60(Malaysia)\"},{\"chineseName\":\"马尔代夫\",\"country\":\"Maldives\",\"region\":\"+960\",\"shortName\":\"MV\",\"showName\":\"+960(Maldives)\"},{\"chineseName\":\"马里\",\"country\":\"Mali\",\"region\":\"+223\",\"shortName\":\"ML\",\"showName\":\"+223(Mali)\"},{\"chineseName\":\"马耳他\",\"country\":\"Malta\",\"region\":\"+356\",\"shortName\":\"MT\",\"showName\":\"+356(Malta)\"},{\"chineseName\":\"马里亚那群岛\",\"country\":\"Mariana Is\",\"region\":\"+1670\",\"shortName\":\"　\",\"showName\":\"+1670(Mariana Is)\"},{\"chineseName\":\"马提尼克\",\"country\":\"Martinique\",\"region\":\"+596\",\"shortName\":\"　\",\"showName\":\"+596(Martinique)\"},{\"chineseName\":\"毛里求斯\",\"country\":\"Mauritius\",\"region\":\"+230\",\"shortName\":\"MU\",\"showName\":\"+230(Mauritius)\"},{\"chineseName\":\"墨西哥\",\"country\":\"Mexico\",\"region\":\"+52\",\"shortName\":\"MX\",\"showName\":\"+52(Mexico)\"},{\"chineseName\":\"摩尔多瓦\",\"country\":\"Moldova, Republic of\",\"region\":\"+373\",\"shortName\":\"MD\",\"showName\":\"+373(Moldova, Republic of)\"},{\"chineseName\":\"摩纳哥\",\"country\":\"Monaco\",\"region\":\"+377\",\"shortName\":\"MC\",\"showName\":\"+377(Monaco)\"},{\"chineseName\":\"蒙古\",\"country\":\"Mongolia\",\"region\":\"+976\",\"shortName\":\"MN\",\"showName\":\"+976(Mongolia)\"},{\"chineseName\":\"蒙特塞拉特岛\",\"country\":\"Montserrat Is\",\"region\":\"+1664\",\"shortName\":\"MS\",\"showName\":\"+1664(Montserrat Is)\"},{\"chineseName\":\"摩洛哥\",\"country\":\"Morocco\",\"region\":\"+212\",\"shortName\":\"MA\",\"showName\":\"+212(Morocco)\"},{\"chineseName\":\"莫桑比克\",\"country\":\"Mozambique\",\"region\":\"+258\",\"shortName\":\"MZ\",\"showName\":\"+258(Mozambique)\"},{\"chineseName\":\"纳米比亚\",\"country\":\"Namibia\",\"region\":\"+264\",\"shortName\":\"NA\",\"showName\":\"+264(Namibia)\"},{\"chineseName\":\"瑙鲁\",\"country\":\"Nauru\",\"region\":\"+674\",\"shortName\":\"NR\",\"showName\":\"+674(Nauru)\"},{\"chineseName\":\"尼泊尔\",\"country\":\"Nepal\",\"region\":\"+977\",\"shortName\":\"NP\",\"showName\":\"+977(Nepal)\"},{\"chineseName\":\"荷属安的列斯\",\"country\":\"Netheriands Antilles\",\"region\":\"+599\",\"shortName\":\"　\",\"showName\":\"+599(Netheriands Antilles)\"},{\"chineseName\":\"荷兰\",\"country\":\"Netherlands \",\"region\":\"+31\",\"shortName\":\"NL\",\"showName\":\"+31(Netherlands )\"},{\"chineseName\":\"新西兰\",\"country\":\"NewZealand\",\"region\":\"+64\",\"shortName\":\"NZ\",\"showName\":\"+64(NewZealand)\"},{\"chineseName\":\"尼加拉瓜\",\"country\":\"Nicaragua\",\"region\":\"+505\",\"shortName\":\"NI\",\"showName\":\"+505(Nicaragua)\"},{\"chineseName\":\"尼日尔\",\"country\":\"Niger\",\"region\":\"+227\",\"shortName\":\"NE\",\"showName\":\"+227(Niger)\"},{\"chineseName\":\"尼日利亚\",\"country\":\"Nigeria\",\"region\":\"+234\",\"shortName\":\"NG\",\"showName\":\"+234(Nigeria)\"},{\"chineseName\":\"朝鲜\",\"country\":\"North Korea\",\"region\":\"+850\",\"shortName\":\"KP\",\"showName\":\"+850(North Korea)\"},{\"chineseName\":\"挪威\",\"country\":\"Norway\",\"region\":\"+47\",\"shortName\":\"NO\",\"showName\":\"+47(Norway)\"},{\"chineseName\":\"阿曼\",\"country\":\"Oman\",\"region\":\"+968\",\"shortName\":\"OM\",\"showName\":\"+968(Oman)\"},{\"chineseName\":\"巴基斯坦\",\"country\":\"Pakistan\",\"region\":\"+92\",\"shortName\":\"PK\",\"showName\":\"+92(Pakistan)\"},{\"chineseName\":\"巴拿马\",\"country\":\"Panama\",\"region\":\"+507\",\"shortName\":\"PA\",\"showName\":\"+507(Panama)\"},{\"chineseName\":\"巴布亚新几内亚\",\"country\":\"Papua New Cuinea\",\"region\":\"+675\",\"shortName\":\"PG\",\"showName\":\"+675(Papua New Cuinea)\"},{\"chineseName\":\"巴拉圭\",\"country\":\"Paraguay\",\"region\":\"+595\",\"shortName\":\"PY\",\"showName\":\"+595(Paraguay)\"},{\"chineseName\":\"秘鲁\",\"country\":\"Peru\",\"region\":\"+51\",\"shortName\":\"PE\",\"showName\":\"+51(Peru)\"},{\"chineseName\":\"菲律宾\",\"country\":\"Philippines \",\"region\":\"+63\",\"shortName\":\"PH\",\"showName\":\"+63(Philippines )\"},{\"chineseName\":\"波兰\",\"country\":\"Poland\",\"region\":\"+48\",\"shortName\":\"PL\",\"showName\":\"+48(Poland)\"},{\"chineseName\":\"法属玻利尼西亚\",\"country\":\"French Polynesia\",\"region\":\"+689\",\"shortName\":\"PF\",\"showName\":\"+689(French Polynesia)\"},{\"chineseName\":\"葡萄牙\",\"country\":\"Portugal\",\"region\":\"+351\",\"shortName\":\"PT\",\"showName\":\"+351(Portugal)\"},{\"chineseName\":\"波多黎各\",\"country\":\"PuertoRico\",\"region\":\"+1787\",\"shortName\":\"PR\",\"showName\":\"+1787(PuertoRico)\"},{\"chineseName\":\"卡塔尔\",\"country\":\"Qatar\",\"region\":\"+974\",\"shortName\":\"QA\",\"showName\":\"+974(Qatar)\"},{\"chineseName\":\"留尼旺\",\"country\":\"Reunion\",\"region\":\"+262\",\"shortName\":\"　\",\"showName\":\"+262(Reunion)\"},{\"chineseName\":\"罗马尼亚\",\"country\":\"Romania\",\"region\":\"+40\",\"shortName\":\"RO\",\"showName\":\"+40(Romania)\"},{\"chineseName\":\"俄罗斯\",\"country\":\"Russia\",\"region\":\"+7\",\"shortName\":\"RU\",\"showName\":\"+7(Russia)\"},{\"chineseName\":\"圣卢西亚\",\"country\":\"Saint Lueia\",\"region\":\"+1758\",\"shortName\":\"LC\",\"showName\":\"+1758(Saint Lueia)\"},{\"chineseName\":\"圣文森特岛 \",\"country\":\"Saint Vincent\",\"region\":\"+1784\",\"shortName\":\"VC\",\"showName\":\"+1784(Saint Vincent)\"},{\"chineseName\":\"东萨摩亚(美)\",\"country\":\"Samoa Eastern\",\"region\":\"+684\",\"shortName\":\"　\",\"showName\":\"+684(Samoa Eastern)\"},{\"chineseName\":\"西萨摩亚\",\"country\":\"Samoa Western\",\"region\":\"+685\",\"shortName\":\"　\",\"showName\":\"+685(Samoa Western)\"},{\"chineseName\":\"圣马力诺\",\"country\":\"San Marino\",\"region\":\"+378\",\"shortName\":\"SM\",\"showName\":\"+378(San Marino)\"},{\"chineseName\":\"圣多美和普林西比\",\"country\":\"Sao Tome and Principe\",\"region\":\"+239\",\"shortName\":\"ST\",\"showName\":\"+239(Sao Tome and Principe)\"},{\"chineseName\":\"沙特阿拉伯\",\"country\":\"Saudi Arabia\",\"region\":\"+966\",\"shortName\":\"SA\",\"showName\":\"+966(Saudi Arabia)\"},{\"chineseName\":\"塞内加尔\",\"country\":\"Senegal\",\"region\":\"+221\",\"shortName\":\"SN\",\"showName\":\"+221(Senegal)\"},{\"chineseName\":\"塞舌尔\",\"country\":\"Seychelles\",\"region\":\"+248\",\"shortName\":\"SC\",\"showName\":\"+248(Seychelles)\"},{\"chineseName\":\"塞拉利昂\",\"country\":\"Sierra Leone\",\"region\":\"+232\",\"shortName\":\"SL\",\"showName\":\"+232(Sierra Leone)\"},{\"chineseName\":\"新加坡\",\"country\":\"Singapore\",\"region\":\"+65\",\"shortName\":\"SG\",\"showName\":\"+65(Singapore)\"},{\"chineseName\":\"斯洛伐克\",\"country\":\"Slovakia\",\"region\":\"+421\",\"shortName\":\"SK\",\"showName\":\"+421(Slovakia)\"},{\"chineseName\":\"斯洛文尼亚 \",\"country\":\"Slovenia\",\"region\":\"+386\",\"shortName\":\"SI\",\"showName\":\"+386(Slovenia)\"},{\"chineseName\":\"所罗门群岛\",\"country\":\"Solomon Is\",\"region\":\"+677\",\"shortName\":\"SB\",\"showName\":\"+677(Solomon Is)\"},{\"chineseName\":\"索马里\",\"country\":\"Somali\",\"region\":\"+252\",\"shortName\":\"SO\",\"showName\":\"+252(Somali)\"},{\"chineseName\":\"南非\",\"country\":\"South Africa\",\"region\":\"+27\",\"shortName\":\"ZA\",\"showName\":\"+27(South Africa)\"},{\"chineseName\":\"西班牙\",\"country\":\"Spain\",\"region\":\"+34\",\"shortName\":\"ES\",\"showName\":\"+34(Spain)\"},{\"chineseName\":\"斯里兰卡\",\"country\":\"Sri Lanka\",\"region\":\"+94\",\"shortName\":\"LK\",\"showName\":\"+94(Sri Lanka)\"},{\"chineseName\":\"圣卢西亚\",\"country\":\"St.Lucia\",\"region\":\"+1758\",\"shortName\":\"LC\",\"showName\":\"+1758(St.Lucia)\"},{\"chineseName\":\"圣文森特\",\"country\":\"St.Vincent\",\"region\":\"+1784\",\"shortName\":\"VC\",\"showName\":\"+1784(St.Vincent)\"},{\"chineseName\":\"苏丹\",\"country\":\"Sudan\",\"region\":\"+249\",\"shortName\":\"SD\",\"showName\":\"+249(Sudan)\"},{\"chineseName\":\"苏里南\",\"country\":\"Suriname\",\"region\":\"+597\",\"shortName\":\"SR\",\"showName\":\"+597(Suriname)\"},{\"chineseName\":\"斯威士兰\",\"country\":\"Swaziland\",\"region\":\"+268\",\"shortName\":\"SZ\",\"showName\":\"+268(Swaziland)\"},{\"chineseName\":\"瑞典\",\"country\":\"Sweden\",\"region\":\"+46\",\"shortName\":\"SE\",\"showName\":\"+46(Sweden)\"},{\"chineseName\":\"瑞士\",\"country\":\"Switzerland \",\"region\":\"+41\",\"shortName\":\"CH\",\"showName\":\"+41(Switzerland )\"},{\"chineseName\":\"叙利亚\",\"country\":\"Syria\",\"region\":\"+963\",\"shortName\":\"SY\",\"showName\":\"+963(Syria)\"},{\"chineseName\":\"台湾省\",\"country\":\"Taiwan\",\"region\":\"+886\",\"shortName\":\"TW\",\"showName\":\"+886(Taiwan)\"},{\"chineseName\":\"塔吉克斯坦 \",\"country\":\"Tajikstan\",\"region\":\"+992\",\"shortName\":\"TJ\",\"showName\":\"+992(Tajikstan)\"},{\"chineseName\":\"坦桑尼亚\",\"country\":\"Tanzania\",\"region\":\"+255\",\"shortName\":\"TZ\",\"showName\":\"+255(Tanzania)\"},{\"chineseName\":\"泰国\",\"country\":\"Thailand\",\"region\":\"+66\",\"shortName\":\"TH\",\"showName\":\"+66(Thailand)\"},{\"chineseName\":\"多哥\",\"country\":\"Togo\",\"region\":\"+228\",\"shortName\":\"TG\",\"showName\":\"+228(Togo)\"},{\"chineseName\":\"汤加\",\"country\":\"Tonga\",\"region\":\"+676\",\"shortName\":\"TO\",\"showName\":\"+676(Tonga)\"},{\"chineseName\":\"特立尼达和多巴哥\",\"country\":\"Trinidad and Tobago\",\"region\":\"+1809\",\"shortName\":\"TT\",\"showName\":\"+1809(Trinidad and Tobago)\"},{\"chineseName\":\"突尼斯\",\"country\":\"Tunisia\",\"region\":\"+216\",\"shortName\":\"TN\",\"showName\":\"+216(Tunisia)\"},{\"chineseName\":\"土耳其\",\"country\":\"Turkey\",\"region\":\"+90\",\"shortName\":\"TR\",\"showName\":\"+90(Turkey)\"},{\"chineseName\":\"土库曼斯坦 \",\"country\":\"Turkmenistan\",\"region\":\"+993\",\"shortName\":\"TM\",\"showName\":\"+993(Turkmenistan)\"},{\"chineseName\":\"乌干达\",\"country\":\"Uganda\",\"region\":\"+256\",\"shortName\":\"UG\",\"showName\":\"+256(Uganda)\"},{\"chineseName\":\"乌克兰\",\"country\":\"Ukraine\",\"region\":\"+380\",\"shortName\":\"UA\",\"showName\":\"+380(Ukraine)\"},{\"chineseName\":\"阿拉伯联合酋长国\",\"country\":\"United Arab Emirates\",\"region\":\"+971\",\"shortName\":\"AE\",\"showName\":\"+971(United Arab Emirates)\"},{\"chineseName\":\"英国\",\"country\":\"United Kiongdom\",\"region\":\"+44\",\"shortName\":\"GB\",\"showName\":\"+44(United Kiongdom)\"},{\"chineseName\":\"美国\",\"country\":\"United States of America\",\"region\":\"+1\",\"shortName\":\"US\",\"showName\":\"+1(United States of America)\"},{\"chineseName\":\"乌拉圭\",\"country\":\"Uruguay\",\"region\":\"+598\",\"shortName\":\"UY\",\"showName\":\"+598(Uruguay)\"},{\"chineseName\":\"乌兹别克斯坦\",\"country\":\"Uzbekistan\",\"region\":\"+233\",\"shortName\":\"UZ\",\"showName\":\"+233(Uzbekistan)\"},{\"chineseName\":\"委内瑞拉\",\"country\":\"Venezuela\",\"region\":\"+58\",\"shortName\":\"VE\",\"showName\":\"+58(Venezuela)\"},{\"chineseName\":\"越南\",\"country\":\"Vietnam\",\"region\":\"+84\",\"shortName\":\"VN\",\"showName\":\"+84(Vietnam)\"},{\"chineseName\":\"也门\",\"country\":\"Yemen\",\"region\":\"+967\",\"shortName\":\"YE\",\"showName\":\"+967(Yemen)\"},{\"chineseName\":\"南斯拉夫\",\"country\":\"Yugoslavia\",\"region\":\"+381\",\"shortName\":\"YU\",\"showName\":\"+381(Yugoslavia)\"},{\"chineseName\":\"津巴布韦\",\"country\":\"Zimbabwe\",\"region\":\"+263\",\"shortName\":\"ZW\",\"showName\":\"+263(Zimbabwe)\"},{\"chineseName\":\"扎伊尔\",\"country\":\"Zaire\",\"region\":\"+243\",\"shortName\":\"ZR\",\"showName\":\"+243(Zaire)\"},{\"chineseName\":\"赞比亚\",\"country\":\"Zambia\",\"region\":\"+260\",\"shortName\":\"ZM\",\"showName\":\"+260(Zambia)\"}]");
 
 /***/ })
 

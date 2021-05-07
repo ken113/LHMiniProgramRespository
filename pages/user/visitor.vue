@@ -34,11 +34,15 @@
         </view>
       </view>
     </view>
-
-    <view class="visitor-bottom">
-      <button class="btn-invite">请好友填写</button>
-      <button class="btn-add">新增常用游客</button>
-    </view>
+	
+	<view class="visitor-bottom">
+		<view class="btn-box">
+			<button class="btn-invite"><text class="iconfont">&#xe7dd;</text>邀请好友填写</button>
+			<button class="btn-add"><text class="iconfont">&#xe7a7;</text>新增常用游客</button>
+		</view>
+	</view>
+   
+	
   </view>
 </template>
 
@@ -53,15 +57,15 @@ export default {
 
 <style lang="scss" scoped>
 .user-visitor {
-  font-size: $rate * 20;
+  font-size: 20rpx;
   .visitor-list {
-    padding: 0 $rate * 24;
+    padding: 0 24rpx;
 
     .visitor-item {
       background: #ffffff;
       border-radius: 10px;
-      margin-top: $rate * 24;
-      padding: $rate * 24;
+      margin-top: 24rpx;
+      padding: 24rpx;
       .top {
         overflow: hidden;
         border-bottom: 1px solid #eeeeee;
@@ -69,11 +73,11 @@ export default {
 
         .name-box {
           float: left;
-          font-size: $rate * 24;
-
+          font-size: 24rpx;
+			
           .iconfont {
-            font-size: $rate * 24;
-            padding-right: $rate * 10;
+            font-size: 24rpx;
+            padding-right: 10rpx;
           }
           .lhddmale {
             color: #4992e7;
@@ -84,48 +88,70 @@ export default {
         }
         .edit {
           float: right;
-          line-height: $rate * 24;
+          line-height: 24rpx;
           .iconfont {
-            font-size: $rate * 36;
+            font-size: 36rpx;
             vertical-align: middle;
           }
         }
       }
       .bottom {
         overflow: hidden;
-        padding-top: $rate * 20;
+        padding-top: 20rpx;
         .post {
           float: left;
+		  font-size:24rpx;
         }
         .birthday {
           float: right;
+		  font-size:24rpx;
         }
       }
     }
   }
+  
+  .btn-box {
+  	margin-top: 20rpx;
+  	overflow: hidden;
+  	display: flex;
+  	//flex-direction: row;
+  	align-items: center;
+  	justify-content: space-between;
+  	padding: 0  24rpx;
+  	
+  	.iconfont{
+  		margin-right: 10rpx;
+  	}
+  	.btn-invite {
+  		width:  195rpx;
+  		height:  54rpx;
+  		line-height:  54rpx;
+  		border: 1px solid #4992e7;
+  		border-radius: 0;
+  		margin-right:  24rpx;
+  		font-size:  24rpx;
+  		
+  		
+  	}
+  
+  	.btn-add {
+  		width:  442rpx;
+  		height:  54rpx;
+  		line-height:  54rpx;
+  		border: 1px solid #4992e7;
+  		border-radius: 0;
+  		font-size:  24rpx;
+  	}
+  }
+  
   .visitor-bottom {
     position: fixed;
-    bottom: $rate * 50;
+    bottom: 50rpx;
     width: 100%;
-    font-size: $rate * 20;
+    font-size: 20rpx;
     overflow: hidden;
 
-    .btn-invite {
-      width: $rate * 195;
-      height: $rate * 75;
-      line-height: $rate * 75;
-      border: 1px solid #4992e7;
-      float: left;
-      border-radius: 0;
-      margin-right: $rate * 24;
-    }
-    .btn-add {
-      height: $rate * 75;
-      line-height: $rate * 75;
-      background: #4992e7;
-      color: #ffffff;
-      border-radius: 0;
-    }
+    
   }
 }
 </style>

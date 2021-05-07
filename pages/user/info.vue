@@ -1,7 +1,7 @@
 <template>
   <view class="user-info">
     <view class="lh-title">基本资料</view>
-    <view class="user-info-box">
+    <view class="user-info-box lhform">
       <view class="uib-item">
         <view class="item-left">中文姓名</view>
         <view class="item-right">
@@ -58,48 +58,28 @@ export default {
 
 <style lang="scss" scoped>
 .user-info {
-  font-size: $rate * 20;
+  font-size: 20rpx;
   .title {
-    height: $rate * 66;
-    line-height: $rate * 66;
-    font-size: $rate * 18;
+    height:  66rpx;
+    line-height: 66rpx;
+    font-size: 22rpx;
     color: #999999;
-    padding-left: $rate * 24;
+    padding-left: 24rpx;
   }
   .user-info-box {
     background: #ffffff;
-
-    .uib-item {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      height: $rate * 66;
-      border-top: 1px solid #eeeeee;
-
-      .item-left {
-        width: $rate * 160;
-        padding-left: $rate * 24;
-      }
-      .item-right {
-        text-align: left;
-        flex: 1;
-        min-width: 0;
-      }
-    }
   }
   .user-info-bottom {
-    margin-top: $rate * 90;
-    padding: 0 $rate * 24;
+    margin-top: 90rpx;
+    padding: 0 24rpx;
     .btn {
       display: inline-block;
       width: 100%;
-      height: $rate * 75;
-      line-height: $rate * 75;
+      height:  75rpx;
+      line-height: 75rpx;
       background: #4992e7;
       color: #ffffff;
-      font-size: $rate * 20;
-
+      font-size:  24rpx;
       border-radius: 0;
     }
   }
