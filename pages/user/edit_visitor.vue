@@ -88,15 +88,15 @@
 </template>
 
 <script>
-import uniPopup from "@/components/uni-popup/uni-popup.vue";
-import uniPopupMessage from "@/components/uni-popup/uni-popup-message.vue";
-import uniPopupDialog from "@/components/uni-popup/uni-popup-dialog.vue";
+// import uniPopup from "@/components/uni-popup/uni-popup.vue";
+// import uniPopupMessage from "@/components/uni-popup/uni-popup-message.vue";
+// import uniPopupDialog from "@/components/uni-popup/uni-popup-dialog.vue";
 
 export default {
   components: {
-    uniPopup,
-    uniPopupMessage,
-    uniPopupDialog,
+    // uniPopup,
+    // uniPopupMessage,
+    // uniPopupDialog,
   },
   data() {
     const currentDate = this.getDate({
@@ -153,12 +153,12 @@ export default {
   .title {
     height: 56rpx;
     line-height: 56rpx;
-    font-size: 18rpx;
+    font-size: 20rpx;
     color: #999999;
     padding-left: 24rpx;
   }
   .page-tips {
-    font-size: 18rpx;
+    font-size: 20rpx;
     color: #999999;
     padding: 10px 24rpx;
   }

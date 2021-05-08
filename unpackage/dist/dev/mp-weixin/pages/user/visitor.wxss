@@ -90,7 +90,7 @@
   -webkit-border-radius: 0;
           border-radius: 0;
   margin-right: 24rpx;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .user-visitor .btn-box .btn-add.data-v-1ff95223 {
   width: 442rpx;
@@ -99,13 +99,13 @@
   border: 1px solid #4992e7;
   -webkit-border-radius: 0;
           border-radius: 0;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .user-visitor .visitor-bottom.data-v-1ff95223 {
   position: fixed;
   bottom: 50rpx;
   width: 100%;
-  font-size: 20rpx;
+  font-size: 24rpx;
   overflow: hidden;
 }
 

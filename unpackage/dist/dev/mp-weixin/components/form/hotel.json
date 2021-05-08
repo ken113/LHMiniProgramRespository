@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "uni-data-picker": "/uni_modules/uni-data-picker/components/uni-data-picker/uni-data-picker"
+  },
   "component": true
 }

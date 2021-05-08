@@ -96,11 +96,11 @@ export default {
 
         .text1 {
           color: #999999;
-          font-size:  22rpx;
+          font-size:  24rpx;
         }
         .text2 {
           color: #303030;
-          font-size:  22rpx;
+          font-size:  24rpx;
         }
         .ubb-left {
           width: 50%;

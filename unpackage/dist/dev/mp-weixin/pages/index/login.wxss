@@ -15,7 +15,7 @@
 /*浪花管家*/
 .page-login.data-v-c3d8bbfa {
   height: 100%;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-login .top-image.data-v-c3d8bbfa {
   width: 100%;
@@ -43,7 +43,7 @@
   top: 100rpx;
   left: 0;
   color: #ccc;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-login .ctn .cmd-box .btn-paste.data-v-c3d8bbfa {
   position: absolute;
@@ -64,7 +64,7 @@
   text-align: right;
   line-height: 28rpx;
   color: #797979;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-login .ctn .logo.data-v-c3d8bbfa {
   height: 44rpx;

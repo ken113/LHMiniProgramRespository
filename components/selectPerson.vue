@@ -6,8 +6,8 @@
 			<view class="btn-ok">确定</view>
 		</view>
 		<view class="btn-box">
-			<button class="btn-invite"><text class="iconfont">&#xe7dd;</text>邀请好友填写</button>
-			<button class="btn-add"><text class="iconfont">&#xe7a7;</text>新增常用游客</button>
+			<button class="btn-invite "><text class="iconfont">&#xe7dd;</text>邀请好友填写</button>
+			<button class="btn-add "><text class="iconfont">&#xe7a7;</text>新增常用游客</button>
 		</view>
 		
 		<view class="person-list">
@@ -77,9 +77,9 @@
 			align-items: center;
 			justify-content: space-between;
 			height: 60rpx;
-			font-size:  24rpx;
+			//font-size:  24rpx;
 			padding: 0  24rpx;
-
+			
 			.btn-cancel {
 				font-size:  24rpx;
 				color: #303030;
@@ -114,7 +114,7 @@
 				border: 1px solid #4992e7;
 				border-radius: 0;
 				margin-right:  24rpx;
-				font-size:  22rpx;
+				font-size:  24rpx;
 			}
 
 			.btn-add {
@@ -123,7 +123,7 @@
 				line-height:  65rpx;
 				border: 1px solid #4992e7;
 				border-radius: 0;
-				font-size:  22rpx;
+				font-size:  24rpx;
 			}
 		}
 		.person-list{

@@ -16,9 +16,11 @@
 		<view class="uib-item">
 			<view class="item-left">酒店区域</view>
 			<view class="item-right">
-				<picker class="select" @change="bindPickerChange" :value="index" :range="array">
+				<!-- <picker class="select" @change="bindPickerChange" :value="index" :range="array">
 					<view class="select-item">{{array[index]}}</view>
-				</picker>
+				</picker> -->
+				<uni-data-picker class="select" :localdata="items" popup-title="请选择酒店区域" @change="onchange"
+					@nodeclick="onnodeclick"></uni-data-picker>
 			</view>
 		</view>
 		
@@ -48,9 +50,11 @@
 			<view class="uib-item">
 				<view class="item-left">返回酒店区域</view>
 				<view class="item-right">
-					<picker class="select" @change="bindPickerChange" :value="index" :range="array">
+					<!-- <picker class="select" @change="bindPickerChange" :value="index" :range="array">
 						<view class="select-item">{{array[index]}}</view>
-					</picker>
+					</picker> -->
+					<uni-data-picker class="select" :localdata="items" popup-title="请选择酒店区域" @change="onchange"
+						@nodeclick="onnodeclick"></uni-data-picker>
 				</view>
 			</view>
 			
@@ -66,6 +70,15 @@
 				array: ['南山区', '福田区'],
 				radioIndex:1,
 				showReturnHotel:false,
+				items: [{
+						text: "场次1",
+						value: "1"
+					},
+					{
+						text: "场次2",
+						value: "2"
+					}
+				]
 			};
 		},
 		methods: {
@@ -81,6 +94,10 @@
 					this.showReturnHotel = true;
 				}
 			},
+			onchange(e) {
+				const value = e.detail.value
+			},
+			onnodeclick(node) {}
 		}
 	}
 </script>

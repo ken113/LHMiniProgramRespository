@@ -52,11 +52,11 @@
 }
 .page-user .user-top .user-box .user-box-bottom .text1.data-v-137d5072 {
   color: #999999;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-user .user-top .user-box .user-box-bottom .text2.data-v-137d5072 {
   color: #303030;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-user .user-top .user-box .user-box-bottom .ubb-left.data-v-137d5072 {
   width: 50%;

@@ -2,6 +2,7 @@
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "uni-calendar": "/components/uni-calendar/uni-calendar"
+    "uni-datetime-picker": "/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker",
+    "uni-calendar": "/uni_modules/uni-calendar/components/uni-calendar/uni-calendar"
   }
 }

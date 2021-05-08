@@ -19,12 +19,12 @@
 .user-edit-visitor .title.data-v-3a658554 {
   height: 56rpx;
   line-height: 56rpx;
-  font-size: 18rpx;
+  font-size: 20rpx;
   color: #999999;
   padding-left: 24rpx;
 }
 .user-edit-visitor .page-tips.data-v-3a658554 {
-  font-size: 18rpx;
+  font-size: 20rpx;
   color: #999999;
   padding: 10px 24rpx;
 }

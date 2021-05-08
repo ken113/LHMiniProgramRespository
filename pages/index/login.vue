@@ -41,7 +41,7 @@ export default {
 <style lang="scss" scoped>
 .page-login {
   height: 100%;
-  font-size: 22rpx;
+  font-size: 24rpx;
   .top-image {
     width: 100%;
     height: 496rpx;
@@ -68,7 +68,7 @@ export default {
         top: 100rpx;
         left: 0;
         color: #ccc;
-		font-size:22rpx;
+		font-size:24rpx;
       }
       .btn-paste {
         position: absolute;
@@ -90,7 +90,7 @@ export default {
       text-align: right;
       line-height:  28rpx;
       color: #797979;
-	  font-size:22rpx;
+	  font-size:24rpx;
     }
     .logo {
       height: 44rpx ;

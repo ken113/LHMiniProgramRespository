@@ -3,7 +3,7 @@
 		<view class="uib-item" >
 			<view class="item-left">航班起飞时间</view>
 			<view class="item-right">
-				<uni-datetime-picker type="datetime" placeholder="请选择航班起飞时间"></uni-datetime-picker>
+				<uni-datetime-picker border="false" class="datetime" type="datetime" placeholder="请选择航班起飞时间"></uni-datetime-picker>
 			</view>
 		</view>
 		

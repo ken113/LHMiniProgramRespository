@@ -3,13 +3,13 @@
 		<view class="uib-item" >
 			<view class="item-left">出行日期</view>
 			<view class="item-right">
-				<input class="input" v-model="travelDate" placeholder="请填写" @click="open(1)"/>
+				<uni-datetime-picker border="false" class="datetime" type="date" placeholder="请选择出行日期"></uni-datetime-picker>
 			</view>
 		</view>
 		<view class="uib-item" >
 			<view class="item-left">返回日期</view>
 			<view class="item-right">
-				<input class="input" v-model="backDate" placeholder="请填写" @click="open(2)"/>
+				<uni-datetime-picker border="false" class="datetime" type="date" placeholder="请选择返回日期"></uni-datetime-picker>
 			</view>
 		</view>
 		

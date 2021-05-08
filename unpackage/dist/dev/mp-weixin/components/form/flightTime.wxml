@@ -1,1 +1,1 @@
-<view class="lhform form-flight-time"><view class="uib-item"><view class="item-left">航班起飞时间</view><view class="item-right"><uni-datetime-picker vue-id="deb260ee-1" type="datetime" placeholder="请选择航班起飞时间" bind:__l="__l"></uni-datetime-picker></view></view></view>
+<view class="lhform form-flight-time"><view class="uib-item"><view class="item-left">航班起飞时间</view><view class="item-right"><uni-datetime-picker class="datetime" vue-id="deb260ee-1" border="false" type="datetime" placeholder="请选择航班起飞时间" bind:__l="__l"></uni-datetime-picker></view></view></view>

@@ -1,9 +1,8 @@
 {
   "navigationBarTitleText": "编辑常用游客",
   "usingComponents": {
-    "uni-calendar": "/components/uni-calendar/uni-calendar",
-    "uni-popup": "/components/uni-popup/uni-popup",
-    "uni-popup-message": "/components/uni-popup/uni-popup-message",
-    "uni-popup-dialog": "/components/uni-popup/uni-popup-dialog"
+    "uni-calendar": "/uni_modules/uni-calendar/components/uni-calendar/uni-calendar",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "uni-popup-dialog": "/uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog"
   }
 }

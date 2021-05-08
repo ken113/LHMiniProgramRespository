@@ -84,7 +84,7 @@
 		margin-bottom: 30rpx;
 
 		.order-extra {
-			font-size: 22rpx;
+			font-size: 24rpx;
 			height: 80rpx;
 			line-height: 80rpx;
 			padding: 0 24rpx;
@@ -92,7 +92,7 @@
 		}
 
 		.order-extra-number {
-			font-size: 22rpx;
+			font-size: 24rpx;
 			height: 80rpx;
 			line-height: 80rpx;
 			padding: 0 24rpx;
@@ -106,7 +106,7 @@
 			margin-top: 20rpx;
 		}
 		.notice{
-			font-size: 22rpx;
+			font-size: 24rpx;
 			height: 80rpx;
 			padding: 0 24rpx;
 			color: #999;
@@ -121,7 +121,7 @@
 				line-height: 24rpx;
 			}
 			.link{
-				font-size: 22rpx;
+				font-size: 24rpx;
 				color:#4992E7;
 			}
 		}
@@ -134,7 +134,7 @@
 				line-height: 90rpx;
 				background: #4992E7;
 				color:#fff;
-				font-size:22rpx;
+				font-size:24rpx;
 				border-radius: 0;
 			}
 			.save2-btn{
@@ -143,7 +143,7 @@
 				line-height: 90rpx;
 				background: #fff;
 				border:1px solid #4992E7;
-				font-size:22rpx;
+				font-size:24rpx;
 				margin:0 24rpx;
 				border-radius: 0;
 			}

@@ -129,7 +129,7 @@ export default {
   		border: 1px solid #4992e7;
   		border-radius: 0;
   		margin-right:  24rpx;
-  		font-size:  22rpx;
+  		font-size:  24rpx;
   		
   		
   	}
@@ -140,7 +140,7 @@ export default {
   		line-height:  65rpx;
   		border: 1px solid #4992e7;
   		border-radius: 0;
-  		font-size:  22rpx;
+  		font-size:  24rpx;
   	}
   }
   
@@ -148,10 +148,8 @@ export default {
     position: fixed;
     bottom: 50rpx;
     width: 100%;
-    font-size: 20rpx;
+    font-size: 24rpx;
     overflow: hidden;
-
-    
   }
 }
 </style>

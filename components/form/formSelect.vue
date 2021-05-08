@@ -6,7 +6,7 @@
 				<!-- <picker class="select" @change="bindPickerChange" :value="index" :range="array">
 					<view class="select-item" :key="index">{{array[index]}}</view>
 				</picker> -->
-				<uni-data-picker class="select" :localdata="items" popup-title="请选择服务场次" @change="onchange"
+				<uni-data-picker class="select" v-model="selectValue" :localdata="items" popup-title="请选择服务场次" @change="onchange"
 					@nodeclick="onnodeclick"></uni-data-picker>
 			</view>
 		</view>
@@ -20,13 +20,14 @@
 			return {
 				index: 0,
 				array: ['中国', '美国', '巴西', '日本'],
+				selectValue:'',
 				items: [{
-						text: "二年级",
-						value: "2-0"
+						text: "场次1",
+						value: "1"
 					},
 					{
-						text: "三年级",
-						value: "3-0"
+						text: "场次2",
+						value: "2"
 					}
 				]
 

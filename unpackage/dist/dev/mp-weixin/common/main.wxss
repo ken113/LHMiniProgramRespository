@@ -25,7 +25,7 @@
 }
 /*通用 */
 view{
-	font-size:28rpx;
+	font-size:24rpx;
 	line-height:1.8;
 	font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
@@ -1629,6 +1629,12 @@ page {
 	height: 100%;
 	color: #303030;
 }
+.font1{
+	font-size: 24rpx;
+}
+.font2{
+	font-size: 26rpx;
+}
 .uni-picker-container .uni-picker-action.uni-picker-action-confirm {
 	color: #4992e7;
 }
@@ -1637,7 +1643,7 @@ page {
 	padding: 0 !important;
 }
 .uni-datetime-picker-time {
-	font-size: 22rpx;
+	font-size: 24rpx;
 }
 .uni-calendar__header-text.cancel{
 	color:#303030 !important;
@@ -1646,9 +1652,9 @@ page {
 		color:#4992E7 !important;
 }
 .lh-title {
-	height: 66rpx;
-	line-height: 66rpx;
-	font-size: 22rpx;
+	height: 80rpx;
+	line-height:80rpx;
+	font-size: 24rpx;
 	color: #999999;
 	padding-left: 24rpx;
 }
@@ -1661,7 +1667,7 @@ button::after {
 	line-height: 90rpx;
 	background: #4992E7;
 	color: #fff;
-	font-size: 22rpx;
+	font-size: 24rpx;
 	-webkit-border-radius: 0;
 	        border-radius: 0;
 }
@@ -1671,7 +1677,7 @@ button::after {
 	line-height: 90rpx;
 	background: #fff;
 	color: #303030;
-	font-size: 22rpx;
+	font-size: 24rpx;
 	-webkit-border-radius: 0;
 	        border-radius: 0;
 }
@@ -1699,7 +1705,7 @@ button::after {
 .lhform .uib-item .item-left {
 	width: 180rpx;
 	padding-left: 24rpx;
-	font-size: 22rpx;
+	font-size: 24rpx;
 }
 .lhform .uib-item .item-right {
 	text-align: left;
@@ -1707,9 +1713,9 @@ button::after {
 	-webkit-flex: 1;
 	        flex: 1;
 	min-width: 0;
-	font-size: 22rpx;
-	height: 66rpx;
-	line-height: 66rpx;
+	font-size: 24rpx;
+	height: 80rpx;
+	line-height: 80rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -1719,23 +1725,24 @@ button::after {
 }
 .lhform .uib-item .item-right .text {
 	float: right;
-	font-size: 22rpx;
+	font-size: 24rpx;
 }
 .lhform .uib-item .item-right .iconright {
 	float: right;
 	margin-right: 24rpx;
 	width: 24rpx;
+	color:#797979;
 }
 .lhform .uib-item .item-right .input {
-	font-size: 22rpx;
+	font-size: 24rpx;
 	width: 100%;
 }
 .lhform .uib-item .item-right .select {
 	width: 100%;
-	font-size: 22rpx;
+	font-size: 24rpx;
 }
 .lhform .uib-item .item-right .select-item {
-	font-size: 22rpx;
+	font-size: 24rpx;
 }
 .lhform .uib-item .item-right .radio {
 	font-size: 22rpx;
@@ -1758,6 +1765,9 @@ button::after {
 	line-height: 80rpx;
 	vertical-align: top;
 }
+.lhform .uib-item .item-right .selected-area.placeholder{
+	font-size: 24rpx;
+}
 .lhform .uib-item .item-right .label {
 	display: inline-block;
 	height: 80rpx;
@@ -1771,6 +1781,24 @@ button::after {
 }
 .lhform .uib-item .item-right .uni-datetime-picker-down-arrow{
 	display: none;
+}
+.lhform .uib-item .item-right .datetime{
+	width:100%;
+}
+.lhform .uib-item .item-right .uni-date-x--border {
+	border:none !important;
+}
+.lhform .uib-item .item-right .uni-date__input{
+	font-size: 24rpx;
+}
+.lhform .uib-item .item-right .uni-date-x{
+		padding: 0 !important;
+}
+.lhform .uib-item .item-right .uni-date__icon-logo{
+		display: none;
+}
+.lhform .uib-item .item-right .uni-date__input{
+	padding: 0 !important;
 }
 
 

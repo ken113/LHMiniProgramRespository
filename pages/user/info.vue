@@ -62,7 +62,7 @@ export default {
   .title {
     height:  66rpx;
     line-height: 66rpx;
-    font-size: 22rpx;
+    font-size: 24rpx;
     color: #999999;
     padding-left: 24rpx;
   }

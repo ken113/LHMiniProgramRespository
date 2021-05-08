@@ -65,13 +65,13 @@ export default {
   .title {
     height:  56rpx;
     line-height:  56rpx;
-    font-size:  18rpx;
+    font-size:  20rpx;
     color: #999999;
     padding-left: 24rpx;
   }
   .user-means-tips {
     padding:  24rpx;
-    font-size:  18rpx;
+    font-size:  20rpx;
     color: #ccc;
 
     .text {
@@ -87,7 +87,7 @@ export default {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      height:  66rpx;
+      height:  80rpx;
       border-top: 1px solid #eeeeee;
       position: relative;
 
@@ -99,8 +99,8 @@ export default {
           position: absolute;
           top: 0;
           right:  24rpx;
-          height: 66rpx;
-          line-height:  66rpx;
+          height: 80rpx;
+          line-height:  80rpx;
         }
       }
     }

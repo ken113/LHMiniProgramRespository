@@ -143,6 +143,9 @@
 	import indexBackgroundImage from "@/static/3.png";
 
 	export default {
+		components:{
+			//uCard
+		},
 		data() {
 			return {
 				indexBackgroundImage: indexBackgroundImage,
@@ -226,7 +229,7 @@
 
 <style lang="scss" scoped>
 	.page-order {
-		font-size: 22rpx;
+		font-size: 24rpx;
 
 		.uni-tab-bar {
 			height: 80rpx;
@@ -302,7 +305,7 @@
 		.order-item-null {
 			margin: 40rpx auto;
 			text-align: center;
-			font-size: 22rpx;
+			font-size: 24rpx;
 
 			.center {
 				margin: 0 auto;
@@ -322,7 +325,7 @@
 
 				.text {
 					color: #999;
-					font-size: 22rpx;
+					font-size: 24rpx;
 				}
 			}
 
@@ -339,14 +342,14 @@
 					width: 204rpx;
 					transform: translate(0, -14rpx);
 					position: relative;
-					font-size: 22rpx;
+					font-size: 24rpx;
 				}
 
 				.txt2 {
 					display: inline-block;
 					width: 200rpx;
 					text-align: center;
-					font-size: 22rpx;
+					font-size: 24rpx;
 				}
 
 				.txt1:after {
@@ -397,14 +400,14 @@
 
 				.goods-name {
 					margin-top: 12rpx;
-					font-size: 22rpx;
+					font-size: 24rpx;
 					width: 100%;
 					line-height: 24rpx;
 				}
 
 				.goods-bottom {
 					margin-top: 12rpx;
-					line-height: 22rpx;
+					line-height: 24rpx;
 					overflow: hidden;
 					height: 40rpx;
 
@@ -414,7 +417,7 @@
 						font-weight: 600;
 						height: 40rpx;
 						line-height: 40rpx;
-						font-size: 22rpx;
+						font-size: 24rpx;
 					}
 
 					.goods-link {
@@ -472,14 +475,14 @@
 						line-height: 72rpx;
 
 						.order-number {
-							font-size: 22rpx;
+							font-size: 24rpx;
 							color: #999;
 							float: left;
 						}
 
 						.order-status {
 							float: right;
-							font-size: 22rpx;
+							font-size: 24rpx;
 							
 							&.ok{
 								color:#4992E7;
@@ -505,7 +508,7 @@
 
 					.item-bottom {
 						overflow: hidden;
-						font-size: 22rpx;
+						font-size: 24rpx;
 						//padding-bottom: 10rpx;
 						height: 72rpx;
 						line-height: 72rpx;
@@ -525,7 +528,7 @@
 						border-top: 1px solid #eeeeee;
 						//padding: 8rpx 0;
 						color: #ff6600;
-						font-size: 22rpx;
+						font-size: 24rpx;
 						height: 72rpx;
 						line-height: 72rpx;
 					}

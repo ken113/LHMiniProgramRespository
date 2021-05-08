@@ -14,7 +14,7 @@
 /* 文章场景相关 */
 /*浪花管家*/
 .page-order.data-v-0ca91b30 {
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-order .uni-tab-bar.data-v-0ca91b30 {
   height: 80rpx;
@@ -85,7 +85,7 @@
 .page-order .order-item-null.data-v-0ca91b30 {
   margin: 40rpx auto;
   text-align: center;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-order .order-item-null .center.data-v-0ca91b30 {
   margin: 0 auto;
@@ -103,7 +103,7 @@
 }
 .page-order .order-item-null .center .text.data-v-0ca91b30 {
   color: #999;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-order .order-item-null .bottom.data-v-0ca91b30 {
   margin-top: 20rpx;
@@ -123,13 +123,13 @@
   -webkit-transform: translate(0, -14rpx);
           transform: translate(0, -14rpx);
   position: relative;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-order .order-item-null .bottom .txt2.data-v-0ca91b30 {
   display: inline-block;
   width: 200rpx;
   text-align: center;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-order .order-item-null .bottom .txt1.data-v-0ca91b30:after {
   content: "";
@@ -180,13 +180,13 @@
 }
 .page-order .goods-list .goods-item .goods-name.data-v-0ca91b30 {
   margin-top: 12rpx;
-  font-size: 22rpx;
+  font-size: 24rpx;
   width: 100%;
   line-height: 24rpx;
 }
 .page-order .goods-list .goods-item .goods-bottom.data-v-0ca91b30 {
   margin-top: 12rpx;
-  line-height: 22rpx;
+  line-height: 24rpx;
   overflow: hidden;
   height: 40rpx;
 }
@@ -196,7 +196,7 @@
   font-weight: 600;
   height: 40rpx;
   line-height: 40rpx;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-order .goods-list .goods-item .goods-bottom .goods-link.data-v-0ca91b30 {
   float: right;
@@ -245,13 +245,13 @@
   line-height: 72rpx;
 }
 .page-order .order-list-ctn .order-list .order-item-box .item-top .order-number.data-v-0ca91b30 {
-  font-size: 22rpx;
+  font-size: 24rpx;
   color: #999;
   float: left;
 }
 .page-order .order-list-ctn .order-list .order-item-box .item-top .order-status.data-v-0ca91b30 {
   float: right;
-  font-size: 22rpx;
+  font-size: 24rpx;
 }
 .page-order .order-list-ctn .order-list .order-item-box .item-top .order-status.ok.data-v-0ca91b30 {
   color: #4992E7;
@@ -269,7 +269,7 @@
 }
 .page-order .order-list-ctn .order-list .order-item-box .item-bottom.data-v-0ca91b30 {
   overflow: hidden;
-  font-size: 22rpx;
+  font-size: 24rpx;
   height: 72rpx;
   line-height: 72rpx;
 }
@@ -283,7 +283,7 @@
 .page-order .order-list-ctn .order-list .order-item-box .item-bottom2.data-v-0ca91b30 {
   border-top: 1px solid #eeeeee;
   color: #ff6600;
-  font-size: 22rpx;
+  font-size: 24rpx;
   height: 72rpx;
   line-height: 72rpx;
 }
