@@ -87,7 +87,7 @@
 }
 .page-user .user-logout.data-v-137d5072 {
   width: 700rpx;
-  height: 66rpx;
+  height: 80rpx;
   margin: 0 auto;
   background: #ffffff;
   margin-top: 70rpx;
@@ -96,7 +96,7 @@
   text-align: center;
   color: #ff0000;
   font-size: 24rpx;
-  line-height: 66rpx;
+  line-height: 80rpx;
 }
 .langhua-menu-list.data-v-137d5072 {
   display: -webkit-box;
@@ -112,7 +112,7 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  height: 66rpx;
+  height: 80rpx;
 }
 .langhua-menu-list .iconleft.data-v-137d5072 {
   padding-left: 24rpx;

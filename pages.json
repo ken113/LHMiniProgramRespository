@@ -1,6 +1,18 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	{
+		"path": "pages/order/index",
+		"style": {
+			"navigationBarTitleText": "浪花朵朵行程管家"
+		}
+	},
+	{
+		"path": "pages/index/login",
+		"style": {
+			"navigationBarTitleText": "登录"
+		}
+	},
+	{
 		"path": "pages/user/index",
 		"style": {
 			"navigationBarTitleText": "个人中心"
@@ -13,12 +25,7 @@
 		}
 	},
 	
-	{
-		"path": "pages/order/index",
-		"style": {
-			"navigationBarTitleText": "浪花朵朵行程管家"
-		}
-	},
+	
 		{
 			"path": "pages/order/edit",
 			"style": {
@@ -31,12 +38,7 @@
 				"navigationBarTitleText": "选择客人"
 			}
 		},
-		{
-			"path": "pages/index/login",
-			"style": {
-				"navigationBarTitleText": "填写订单"
-			}
-		},
+		
 		
 		
 		{

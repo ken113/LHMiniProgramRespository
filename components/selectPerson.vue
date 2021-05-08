@@ -109,23 +109,21 @@
 			}
 			.btn-invite {
 				width:  195rpx;
-				height:  54rpx;
-				line-height:  54rpx;
+				height:  65rpx;
+				line-height:  65rpx;
 				border: 1px solid #4992e7;
 				border-radius: 0;
 				margin-right:  24rpx;
-				font-size:  24rpx;
-				
-				
+				font-size:  22rpx;
 			}
 
 			.btn-add {
 				width:  442rpx;
-				height:  54rpx;
-				line-height:  54rpx;
+				height:  65rpx;
+				line-height:  65rpx;
 				border: 1px solid #4992e7;
 				border-radius: 0;
-				font-size:  24rpx;
+				font-size:  22rpx;
 			}
 		}
 		.person-list{

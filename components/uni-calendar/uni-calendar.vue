@@ -4,10 +4,10 @@
 		<view v-if="insert || show" class="uni-calendar__content" :class="{'uni-calendar--fixed':!insert,'uni-calendar--ani-show':aniMaskShow}">
 			<view v-if="!insert" class="uni-calendar__header uni-calendar--fixed-top">
 				<view class="uni-calendar__header-btn-box" @click="close">
-					<text class="uni-calendar__header-text uni-calendar--fixed-width">取消</text>
+					<text class="uni-calendar__header-text uni-calendar--fixed-width cancel">取消</text>
 				</view>
 				<view class="uni-calendar__header-btn-box" @click="confirm">
-					<text class="uni-calendar__header-text uni-calendar--fixed-width">确定</text>
+					<text class="uni-calendar__header-text uni-calendar--fixed-width ok">确定</text>
 				</view>
 			</view>
 			<view class="uni-calendar__header">

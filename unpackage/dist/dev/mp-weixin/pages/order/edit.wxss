@@ -17,16 +17,16 @@
   margin-bottom: 30rpx;
 }
 .order-edit .order-extra.data-v-46b67838 {
-  font-size: 24rpx;
-  height: 66rpx;
-  line-height: 66rpx;
+  font-size: 22rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   padding: 0 24rpx;
   color: #999;
 }
 .order-edit .order-extra-number.data-v-46b67838 {
-  font-size: 24rpx;
-  height: 66rpx;
-  line-height: 66rpx;
+  font-size: 22rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   padding: 0 24rpx;
   background: #ffffff;
   border-top: 1px solid #eeeeee;
@@ -38,7 +38,7 @@
 }
 .order-edit .notice.data-v-46b67838 {
   font-size: 22rpx;
-  height: 66rpx;
+  height: 80rpx;
   padding: 0 24rpx;
   color: #999;
   display: -webkit-box;
@@ -63,21 +63,21 @@
 .order-edit .form-btn .save-btn.data-v-46b67838 {
   display: block;
   margin: 24rpx;
-  height: 75rpx;
-  line-height: 75rpx;
+  height: 90rpx;
+  line-height: 90rpx;
   background: #4992E7;
   color: #fff;
-  font-size: 24rpx;
+  font-size: 22rpx;
   -webkit-border-radius: 0;
           border-radius: 0;
 }
 .order-edit .form-btn .save2-btn.data-v-46b67838 {
   display: block;
-  height: 75rpx;
-  line-height: 75rpx;
+  height: 90rpx;
+  line-height: 90rpx;
   background: #fff;
   border: 1px solid #4992E7;
-  font-size: 24rpx;
+  font-size: 22rpx;
   margin: 0 24rpx;
   -webkit-border-radius: 0;
           border-radius: 0;

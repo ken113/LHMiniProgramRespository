@@ -44,7 +44,7 @@ export default {
   font-size: 22rpx;
   .top-image {
     width: 100%;
-    height: 414rpx;
+    height: 496rpx;
   }
   .ctn {
     padding: 24rpx;
@@ -52,31 +52,33 @@ export default {
 
     .cmd-box {
       width: 100%;
-      height: 240rpx;
+      height: 288rpx;
       position: relative;
 
       .textarea {
         border: 1px solid #797979;
         display: inline-block;
         width: 100%;
-        height: 240rpx;
+        height: 288rpx;
       }
       .text {
         position: absolute;
         width: 100%;
         text-align: center;
-        top: 75rpx;
+        top: 100rpx;
         left: 0;
         color: #ccc;
+		font-size:22rpx;
       }
       .btn-paste {
         position: absolute;
         width: 120rpx;
-        height:  36rpx;
-        line-height:36rpx;
-        top: 115rpx;
+        height:  44rpx;
+        line-height:44rpx;
+        //top: 144rpx;
+		bottom: 100rpx;
         left: 50%;
-        margin-left: 60rpx;
+        margin-left: -60rpx;
         border: 1px solid #797979;
         border-radius: 5px;
       }
@@ -88,6 +90,7 @@ export default {
       text-align: right;
       line-height:  28rpx;
       color: #797979;
+	  font-size:22rpx;
     }
     .logo {
       height: 44rpx ;

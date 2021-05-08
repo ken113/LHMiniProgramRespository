@@ -84,22 +84,22 @@
 }
 .user-visitor .btn-box .btn-invite.data-v-1ff95223 {
   width: 195rpx;
-  height: 54rpx;
-  line-height: 54rpx;
+  height: 65rpx;
+  line-height: 65rpx;
   border: 1px solid #4992e7;
   -webkit-border-radius: 0;
           border-radius: 0;
   margin-right: 24rpx;
-  font-size: 24rpx;
+  font-size: 22rpx;
 }
 .user-visitor .btn-box .btn-add.data-v-1ff95223 {
   width: 442rpx;
-  height: 54rpx;
-  line-height: 54rpx;
+  height: 65rpx;
+  line-height: 65rpx;
   border: 1px solid #4992e7;
   -webkit-border-radius: 0;
           border-radius: 0;
-  font-size: 24rpx;
+  font-size: 22rpx;
 }
 .user-visitor .visitor-bottom.data-v-1ff95223 {
   position: fixed;

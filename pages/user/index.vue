@@ -132,7 +132,7 @@ export default {
   }
   .user-logout {
     width:  700rpx;
-    height:  66rpx;
+    height:  80rpx;
     margin: 0 auto;
     background: #ffffff;
     margin-top:  70rpx;
@@ -140,7 +140,7 @@ export default {
     text-align: center;
     color: #ff0000;
     font-size:  24rpx;
-    line-height:  66rpx;
+    line-height:  80rpx;
   }
 }
 
@@ -149,7 +149,7 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height:  66rpx;
+  height:  80rpx;
 }
 .langhua-menu-list .iconleft {
   padding-left:  24rpx;

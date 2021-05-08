@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/order/index",
+    "pages/index/login",
     "pages/user/index",
     "pages/user/edit_visitor",
-    "pages/order/index",
     "pages/order/edit",
     "components/selectPerson",
-    "pages/index/login",
     "pages/order/base",
     "pages/user/means",
     "pages/user/visitor",

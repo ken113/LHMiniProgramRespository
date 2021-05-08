@@ -19,7 +19,7 @@
 }
 .page-login .top-image.data-v-c3d8bbfa {
   width: 100%;
-  height: 414rpx;
+  height: 496rpx;
 }
 .page-login .ctn.data-v-c3d8bbfa {
   padding: 24rpx;
@@ -27,31 +27,32 @@
 }
 .page-login .ctn .cmd-box.data-v-c3d8bbfa {
   width: 100%;
-  height: 240rpx;
+  height: 288rpx;
   position: relative;
 }
 .page-login .ctn .cmd-box .textarea.data-v-c3d8bbfa {
   border: 1px solid #797979;
   display: inline-block;
   width: 100%;
-  height: 240rpx;
+  height: 288rpx;
 }
 .page-login .ctn .cmd-box .text.data-v-c3d8bbfa {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 75rpx;
+  top: 100rpx;
   left: 0;
   color: #ccc;
+  font-size: 22rpx;
 }
 .page-login .ctn .cmd-box .btn-paste.data-v-c3d8bbfa {
   position: absolute;
   width: 120rpx;
-  height: 36rpx;
-  line-height: 36rpx;
-  top: 115rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  bottom: 100rpx;
   left: 50%;
-  margin-left: 60rpx;
+  margin-left: -60rpx;
   border: 1px solid #797979;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -63,6 +64,7 @@
   text-align: right;
   line-height: 28rpx;
   color: #797979;
+  font-size: 22rpx;
 }
 .page-login .ctn .logo.data-v-c3d8bbfa {
   height: 44rpx;

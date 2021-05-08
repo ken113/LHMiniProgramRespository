@@ -130,220 +130,291 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
-{
-  data: function data() {
-    return {
-      title: "Hello",
-      tabIndex: 0, // 选中的
-      tabLineLeft: 0,
-      height: 0,
-      tabBars: [
-      { name: "全部", id: "all", num: 12 },
-      { name: "待处理", id: "pending", num: 0 },
-      { name: "处理中", id: "processing", num: 10 },
-      { name: "已确认", id: "confirm", num: 999 },
-      { name: "已取消", id: "cancel", num: 0 }],
-
-      carinfos: [
-      {
-        carinfo: "全部" },
-
-      {
-        carinfo: "待处理" },
-
-      {
-        carinfo: "处理中" },
-
-      {
-        carinfo: "已确认" },
-
-      {
-        carinfo: "已取消" }] };
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
-  },
-  onLoad: function onLoad() {
-    this.setScrollLeft(0);
 
-    this.height =
-    uni.getSystemInfoSync().windowHeight -
-    66 * 1.2 / 750 * uni.getSystemInfoSync().windowHeight;
-  },
-  methods: {
-    tabtap: function tabtap(index) {
-      this.tabIndex = index;
-      this.setScrollLeft(index);
-    },
-    swiperChange: function swiperChange(e) {
-      var index = e.target.current || e.detail.current;
-      this.tabIndex = index;
-      this.setScrollLeft(index);
-    },
-    setScrollLeft: function setScrollLeft(tabIndex) {
-      var winWidth = uni.getSystemInfoSync().windowWidth,
-      tabLineWidth = Math.floor(
-      96 / 750 * uni.getSystemInfoSync().windowWidth);
 
-      this.tabLineLeft =
-      (Math.floor(winWidth / 5) - tabLineWidth) / 2 +
-      Math.floor(winWidth / 5) * tabIndex;
-    } } };exports.default = _default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _ = _interopRequireDefault(__webpack_require__(/*! @/static/3.png */ 210));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { indexBackgroundImage: _.default, title: "Hello", tabIndex: 0, // 选中的
+      tabLineLeft: 0, height: 0, tabBars: [{ name: "全部", id: "all", num: 12 }, { name: "待处理", id: "pending", num: 0 }, { name: "处理中", id: "processing", num: 10 }, { name: "已确认", id: "confirm", num: 999 }, { name: "已取消", id: "cancel", num: 0 }], carinfos: [{ carinfo: "全部" }, { carinfo: "待处理" }, { carinfo: "处理中" }, { carinfo: "已确认" }, { carinfo: "已取消" }] };}, onLoad: function onLoad() {this.setScrollLeft(0);this.height = uni.getSystemInfoSync().windowHeight - 66 * 1.2 / 750 * uni.getSystemInfoSync().windowHeight;}, methods: { tabtap: function tabtap(index) {this.tabIndex = index;this.setScrollLeft(index);}, swiperChange: function swiperChange(e) {var index = e.target.current || e.detail.current;this.tabIndex = index;this.setScrollLeft(index);}, setScrollLeft: function setScrollLeft(tabIndex) {var winWidth = uni.getSystemInfoSync().windowWidth,tabLineWidth = Math.floor(96 / 750 * uni.getSystemInfoSync().windowWidth);this.tabLineLeft = (Math.floor(winWidth / 5) - tabLineWidth) / 2 + Math.floor(winWidth / 5) * tabIndex;} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
