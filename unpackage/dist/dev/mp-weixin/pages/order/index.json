@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "浪花朵朵行程管家",
-  "usingComponents": {}
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "select-user": "/components/selectUser"
+  }
 }

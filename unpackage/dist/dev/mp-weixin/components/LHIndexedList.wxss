@@ -15,6 +15,43 @@
 /*浪花管家*/
 .lh-indexedList.data-v-547b3930 {
   font-size: 24rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.lh-indexedList .indexedList-top.data-v-547b3930 {
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 0 24rpx;
+}
+.lh-indexedList .indexedList-top .iconfont.data-v-547b3930 {
+  font-size: 32rpx;
+  font-weight: 600;
+  width: 50rpx;
+}
+.lh-indexedList .indexedList-top .text.data-v-547b3930 {
+  font-size: 26rpx;
+}
+.lh-indexedList .indexedList-top .fill.data-v-547b3930 {
+  width: 50rpx;
+}
+.lh-indexedList .uni-indexed-list__scroll.data-v-547b3930 {
+  height: calc( 100% - 80rpx);
+  overflow-y: auto;
 }
 .lh-indexedList .city-box .title.data-v-547b3930 {
   height: 84rpx;

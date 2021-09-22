@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.createSubpackageApp = createSubpackageApp;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
+Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.createPlugin = createPlugin;exports.createSubpackageApp = createSubpackageApp;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
 
 var _toString = Object.prototype.toString;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -681,7 +681,7 @@ var customize = cached(function (str) {
 
 function initTriggerEvent(mpInstance) {
   {
-    if (!wx.canIUse('nextTick')) {
+    if (!wx.canIUse || !wx.canIUse('nextTick')) {
       return;
     }
   }
@@ -822,7 +822,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -1295,11 +1295,63 @@ function initEventChannel() {
   };
 }
 
+function initScopedSlotsParams() {
+  var center = {};
+  var parents = {};
+
+  _vue.default.prototype.$hasScopedSlotsParams = function (vueId) {
+    var has = center[vueId];
+    if (!has) {
+      parents[vueId] = this;
+      this.$on('hook:destory', function () {
+        delete parents[vueId];
+      });
+    }
+    return has;
+  };
+
+  _vue.default.prototype.$getScopedSlotsParams = function (vueId, name, key) {
+    var data = center[vueId];
+    if (data) {
+      var object = data[name] || {};
+      return key ? object[key] : object;
+    } else {
+      parents[vueId] = this;
+      this.$on('hook:destory', function () {
+        delete parents[vueId];
+      });
+    }
+  };
+
+  _vue.default.prototype.$setScopedSlotsParams = function (name, value) {
+    var vueId = this.$options.propsData.vueId;
+    var object = center[vueId] = center[vueId] || {};
+    object[name] = value;
+    if (parents[vueId]) {
+      parents[vueId].$forceUpdate();
+    }
+  };
+
+  _vue.default.mixin({
+    destroyed: function destroyed() {
+      var propsData = this.$options.propsData;
+      var vueId = propsData && propsData.vueId;
+      if (vueId) {
+        delete center[vueId];
+        delete parents[vueId];
+      }
+    } });
+
+}
+
 function parseBaseApp(vm, _ref3)
 
 
 {var mocks = _ref3.mocks,initRefs = _ref3.initRefs;
   initEventChannel();
+  {
+    initScopedSlotsParams();
+  }
   if (vm.$options.store) {
     _vue.default.prototype.$store = vm.$options.store;
   }
@@ -1323,7 +1375,7 @@ function parseBaseApp(vm, _ref3)
 
       delete this.$options.mpType;
       delete this.$options.mpInstance;
-      if (this.mpType === 'page') {// hack vue-i18n
+      if (this.mpType === 'page' && typeof getApp === 'function') {// hack vue-i18n
         var app = getApp();
         if (app.$vm && app.$vm.$i18n) {
           this._i18n = app.$vm.$i18n;
@@ -1342,7 +1394,7 @@ function parseBaseApp(vm, _ref3)
         return;
       }
       {
-        if (!wx.canIUse('nextTick')) {// 事实 上2.2.3 即可，简单使用 2.3.0 的 nextTick 判断
+        if (wx.canIUse && !wx.canIUse('nextTick')) {// 事实 上2.2.3 即可，简单使用 2.3.0 的 nextTick 判断
           console.error('当前微信基础库版本过低，请将 微信开发者工具-详情-项目设置-调试基础库版本 更换为`2.3.0`以上');
         }
       }
@@ -1711,6 +1763,25 @@ function createSubpackageApp(vm) {
   return vm;
 }
 
+function createPlugin(vm) {
+  var appOptions = parseApp(vm);
+  if (isFn(appOptions.onShow) && wx.onAppShow) {
+    wx.onAppShow(function () {for (var _len7 = arguments.length, args = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {args[_key7] = arguments[_key7];}
+      appOptions.onShow.apply(vm, args);
+    });
+  }
+  if (isFn(appOptions.onHide) && wx.onAppHide) {
+    wx.onAppHide(function () {for (var _len8 = arguments.length, args = new Array(_len8), _key8 = 0; _key8 < _len8; _key8++) {args[_key8] = arguments[_key8];}
+      appOptions.onHide.apply(vm, args);
+    });
+  }
+  if (isFn(appOptions.onLaunch)) {
+    var args = wx.getLaunchOptionsSync && wx.getLaunchOptionsSync();
+    appOptions.onLaunch.call(vm, args);
+  }
+  return vm;
+}
+
 todos.forEach(function (todoApi) {
   protocols[todoApi] = false;
 });
@@ -1791,6 +1862,7 @@ wx.createApp = createApp;
 wx.createPage = createPage;
 wx.createComponent = createComponent;
 wx.createSubpackageApp = createSubpackageApp;
+wx.createPlugin = createPlugin;
 
 var uni$1 = uni;var _default =
 
@@ -1928,14 +2000,51 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 11:
-/*!***********************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/common/util.js ***!
-  \***********************************************************/
+/*!**************************************************!*\
+  !*** E:/LHMiniProgramRespository/common/util.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  autoUpdater: function autoUpdater() {
+    var updateManager = wx.getUpdateManager();
+
+    updateManager.onCheckForUpdate(function (res) {
+
+      console.log('版本检测', res);
+      if (res.hasUpdate) {
+        updateManager.onUpdateReady(function () {
+
+          wx.showModal({
+            title: '更新提示',
+            content: '新的版本已准备好，是否重启应用?',
+            success: function success(res) {
+              if (res.confirm) {
+                updateManager.applyUpdate();
+              }
+              if (res.cancel) {
+                wx.showModal({
+                  title: '温馨提示~',
+                  content: '本次版本更新涉及到新的功能添加，旧版本无法正常访问的哦~' });
+
+              }
+            } });
+
+
+        });
+
+        // 新版本下载失败
+        updateManager.onUpdateFailed(function (res) {
+          wx.showModal({
+            title: '已经有新版本了哟~',
+            content: '新的版本已经上线拉~，请您删除当前小程序，重新搜索打开哟~ ' });
+
+        });
+      }
+    });
+  },
   getRect: function getRect(selector) {
     return new Promise(function (resolve) {
       var view = uni.createSelectorQuery().select(selector);
@@ -1947,3114 +2056,216 @@ function normalizeComponent (
         resolve(res);
       }).exec();
     });
+  },
+  dateFormat: function dateFormat(pdate, len) {
+
+    var date = new Date(pdate),
+    _year = date.getFullYear(),
+    _month = date.getMonth() + 1,
+    _date = date.getDate(),
+    _h = date.getHours(),
+    _m = date.getMinutes(),
+    _s = date.getSeconds();
+
+
+    _month = _month > 9 ? _month : '0' + _month;
+    _date = _date > 9 ? _date : '0' + _date;
+    _h = _h > 9 ? _h : '0' + _h;
+    _m = _m > 9 ? _m : '0' + _m;
+    _s = _s > 9 ? _s : '0' + _s;
+
+    var dateStr = _year + '-' + _month + '-' + _date + ' ' + _h + ':' + _m + ':' + _s;
+
+    if (len === 'd') {
+      return dateStr.substring(0, 10);
+    }
+    return dateStr;
+  },
+  isChineseChar: function isChineseChar(str) {
+    var reg = /^[\u4E00-\u9FA5\uF900-\uFA2D]+$/;
+    return reg.test(str);
+  },
+  isEnChar: function isEnChar(str) {
+    var reg = /^[a-zA-Z]+$/;
+    return reg.test(str);
+  },
+  isNumber: function isNumber(str) {
+    var reg = /^[0-9]+$/;
+    return reg.test(str);
+  },
+  isEmail: function isEmail(str) {
+    var reg = /^([a-zA-Z0-9_#*~$^`|;:"'/?<>,&\\\(\)={}\[\]\%\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{1,10})+$/;
+    return reg.test(str);
+  },
+  isDate: function isDate(dateStr) {
+    if (!/^(\d{4})-(\d{2})-(\d{2})$/.test(dateStr)) {
+      return false;
+    }
+
+    //使用捕获组获取日期
+    var date = {
+      year: RegExp.$1,
+      month: RegExp.$2,
+      day: RegExp.$3 };
+
+
+    //使用 Date() 对象，新建对象时会将日期转化为合法日期
+    //比如 2020-02-30 被转化为 2020-3-1
+    var dateObj = new Date(date.year, date.month - 1, date.day);
+
+    if (date.year != dateObj.getFullYear() || date.month != dateObj.getMonth() + 1 || date.day != dateObj.
+    getDate()) {
+      return false;
+    }
+
+    return true;
+  },
+  getPersonAge: function getPersonAge(strBirthday, date2) {
+    var returnAge = -1;
+    if (!strBirthday) {
+      return -1;
+    }
+    strBirthday = strBirthday.substring(0, 10);
+    if (strBirthday == '0001-01-01' || strBirthday == '1900-01-01') {
+      return -1;
+    }
+    var strBirthdayArr = strBirthday.split("-");
+    var birthYear = strBirthdayArr[0];
+    var birthMonth = strBirthdayArr[1];
+    var birthDay = strBirthdayArr[2];
+
+    var d = new Date(date2);
+
+    //已选中的出行日期为准，判断年龄
+    var ServiceDate = date2.substring(0, 10);
+    if (ServiceDate == '0001-01-01' || ServiceDate == '1900-01-01') {
+      d = new Date();
+    }
+
+    var nowYear = d.getFullYear();
+    var nowMonth = d.getMonth() + 1;
+    var nowDay = d.getDate();
+
+    if (nowYear == birthYear) {
+      returnAge = 0; //同年 则为0岁  
+    } else {
+      var ageDiff = nowYear - birthYear; //年之差  
+      if (ageDiff > 0) {
+        if (nowMonth == birthMonth) {
+          var dayDiff = nowDay - birthDay; //日之差  
+          if (dayDiff < 0) {
+            returnAge = ageDiff - 1;
+          } else {
+            returnAge = ageDiff;
+          }
+        } else {
+          var monthDiff = nowMonth - birthMonth; //月之差  
+          if (monthDiff < 0) {
+            returnAge = ageDiff - 1;
+          } else {
+            returnAge = ageDiff;
+          }
+        }
+      } else {
+        returnAge = -1; //返回-1 表示出生日期输入错误 晚于今天  
+      }
+    }
+    return returnAge; //返回周岁年龄  
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
-/***/ 123:
-/*!*****************************************************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/uni_modules/uni-calendar/components/uni-calendar/util.js ***!
-  \*****************************************************************************************************/
+/***/ 12:
+/*!*************************************************!*\
+  !*** E:/LHMiniProgramRespository/common/api.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 124));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.sendRequest = void 0;function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // 全局请求路径，也就是后端的请求基准路径
+var BASE_URL_DEV = 'http://192.168.3.181:9021';
 
-Calendar = /*#__PURE__*/function () {
-  function Calendar()
+var BASE_URL_TEST = 'http://order.test.dodotour.cn:9021';
 
+var BASE_URL_PROD = 'https://wxopen.dodotour.cn';
 
+// 同时发送异步代码的次数，防止一次点击中有多次请求，用于处理
+var ajaxTimes = 0;
+// 封装请求方法，并向外暴露该方法
+var sendRequest = function sendRequest(options) {
+  // 解构请求头参数
+  var header = _objectSpread({},
+  options.header);
 
+  // 当前请求不是登录时请求，在header中加上后端返回的token
 
+  var sessionId = uni.getStorageSync("sessionId");
 
-  {var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},date = _ref.date,selected = _ref.selected,startDate = _ref.startDate,endDate = _ref.endDate,range = _ref.range;_classCallCheck(this, Calendar);
-    // 当前日期
-    this.date = this.getDate(new Date()); // 当前初入日期
-    // 打点信息
-    this.selected = selected || [];
-    // 范围开始
-    this.startDate = startDate;
-    // 范围结束
-    this.endDate = endDate;
-    this.range = range;
-    // 多选状态
-    this.cleanMultipleStatus();
-    // 每周日期
-    this.weeks = {};
-    // this._getWeek(this.date.fullDate)
+  var data = Object.assign({}, options.data || {}, {
+    sessionId: sessionId });
+
+  ajaxTimes++;
+  // 显示加载中 效果
+  if (options.loadding === false) {} else {
+    // uni.showLoading({
+    // 	title: "加载中",
+    //     mask: true,
+    // });
   }
-  /**
-     * 设置日期
-     * @param {Object} date
-     */_createClass(Calendar, [{ key: "setDate", value: function setDate(
-    date) {
-      this.selectDate = this.getDate(date);
-      this._getWeek(this.selectDate.fullDate);
-    }
+  return new Promise(function (resolve, reject) {
 
-    /**
-       * 清理多选状态
-       */ }, { key: "cleanMultipleStatus", value: function cleanMultipleStatus()
-    {
-      this.multipleStatus = {
-        before: '',
-        after: '',
-        data: [] };
+    uni.request({
+      url: BASE_URL_PROD + options.url,
+      method: options.method || 'POST',
+      data: data,
+      header: header,
+      success: function success(res) {
+        resolve(res.data);
+        if (res.data.Code === 403) {
+          uni.redirectTo({
+            url: '/pages/index/login' });
 
-    }
-
-    /**
-       * 重置开始日期
-       */ }, { key: "resetSatrtDate", value: function resetSatrtDate(
-    startDate) {
-      // 范围开始
-      this.startDate = startDate;
-
-    }
-
-    /**
-       * 重置结束日期
-       */ }, { key: "resetEndDate", value: function resetEndDate(
-    endDate) {
-      // 范围结束
-      this.endDate = endDate;
-    }
-
-    /**
-       * 获取任意时间
-       */ }, { key: "getDate", value: function getDate(
-    date) {var AddDayCount = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;var str = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'day';
-      if (!date) {
-        date = new Date();
-      }
-      if (typeof date !== 'object') {
-        date = date.replace(/-/g, '/');
-      }
-      var dd = new Date(date);
-      switch (str) {
-        case 'day':
-          dd.setDate(dd.getDate() + AddDayCount); // 获取AddDayCount天后的日期
-          break;
-        case 'month':
-          if (dd.getDate() === 31) {
-            dd.setDate(dd.getDate() + AddDayCount);
-          } else {
-            dd.setMonth(dd.getMonth() + AddDayCount); // 获取AddDayCount天后的日期
-          }
-          break;
-        case 'year':
-          dd.setFullYear(dd.getFullYear() + AddDayCount); // 获取AddDayCount天后的日期
-          break;}
-
-      var y = dd.getFullYear();
-      var m = dd.getMonth() + 1 < 10 ? '0' + (dd.getMonth() + 1) : dd.getMonth() + 1; // 获取当前月份的日期，不足10补0
-      var d = dd.getDate() < 10 ? '0' + dd.getDate() : dd.getDate(); // 获取当前几号，不足10补0
-      return {
-        fullDate: y + '-' + m + '-' + d,
-        year: y,
-        month: m,
-        date: d,
-        day: dd.getDay() };
-
-    }
-
-
-    /**
-       * 获取上月剩余天数
-       */ }, { key: "_getLastMonthDays", value: function _getLastMonthDays(
-    firstDay, full) {
-      var dateArr = [];
-      for (var i = firstDay; i > 0; i--) {
-        var beforeDate = new Date(full.year, full.month - 1, -i + 1).getDate();
-        dateArr.push({
-          date: beforeDate,
-          month: full.month - 1,
-          lunar: this.getlunar(full.year, full.month - 1, beforeDate),
-          disable: true });
-
-      }
-      return dateArr;
-    }
-    /**
-       * 获取本月天数
-       */ }, { key: "_currentMonthDys", value: function _currentMonthDys(
-    dateData, full) {var _this = this;
-      var dateArr = [];
-      var fullDate = this.date.fullDate;var _loop = function _loop(
-      i) {
-        var isinfo = false;
-        var nowDate = full.year + '-' + (full.month < 10 ?
-        full.month : full.month) + '-' + (i < 10 ?
-        '0' + i : i);
-        // 是否今天
-        var isDay = fullDate === nowDate;
-        // 获取打点信息
-        var info = _this.selected && _this.selected.find(function (item) {
-          if (_this.dateEqual(nowDate, item.date)) {
-            return item;
-          }
-        });
-
-        // 日期禁用
-        var disableBefore = true;
-        var disableAfter = true;
-        if (_this.startDate) {
-          var dateCompBefore = _this.dateCompare(_this.startDate, fullDate);
-          disableBefore = _this.dateCompare(dateCompBefore ? _this.startDate : fullDate, nowDate);
         }
+      },
+      fail: function fail(err) {
+        uni.showToast({
+          icon: 'error',
+          title: '服务异常' });
 
-        if (_this.endDate) {
-          var dateCompAfter = _this.dateCompare(fullDate, _this.endDate);
-          disableAfter = _this.dateCompare(nowDate, dateCompAfter ? _this.endDate : fullDate);
+        reject(err);
+
+      },
+      // 完成之后关闭加载效果
+      complete: function complete(result) {
+        if (result && result.statusCode && result.statusCode === 500) {
+          uni.showToast({
+            icon: 'error',
+            title: '服务器异常' });
+
         }
-        var multiples = _this.multipleStatus.data;
-        var checked = false;
-        var multiplesStatus = -1;
-        if (_this.range) {
-          if (multiples) {
-            multiplesStatus = multiples.findIndex(function (item) {
-              return _this.dateEqual(item, nowDate);
-            });
-          }
-          if (multiplesStatus !== -1) {
-            checked = true;
-          }
+        ajaxTimes--;
+        if (ajaxTimes === 0) {
+          //  关闭正在等待的图标
+          uni.hideLoading();
         }
-        var data = {
-          fullDate: nowDate,
-          year: full.year,
-          date: i,
-          multiple: _this.range ? checked : false,
-          beforeMultiple: _this.dateEqual(_this.multipleStatus.before, nowDate),
-          afterMultiple: _this.dateEqual(_this.multipleStatus.after, nowDate),
-          month: full.month,
-          lunar: _this.getlunar(full.year, full.month, i),
-          disable: !disableBefore || !disableAfter,
-          isDay: isDay };
+      } });
 
-        if (info) {
-          data.extraInfo = info;
-        }
-
-        dateArr.push(data);};for (var i = 1; i <= dateData; i++) {_loop(i);
-      }
-      return dateArr;
-    }
-    /**
-       * 获取下月天数
-       */ }, { key: "_getNextMonthDays", value: function _getNextMonthDays(
-    surplus, full) {
-      var dateArr = [];
-      for (var i = 1; i < surplus + 1; i++) {
-        dateArr.push({
-          date: i,
-          month: Number(full.month) + 1,
-          lunar: this.getlunar(full.year, Number(full.month) + 1, i),
-          disable: true });
-
-      }
-      return dateArr;
-    }
-
-    /**
-       * 获取当前日期详情
-       * @param {Object} date
-       */ }, { key: "getInfo", value: function getInfo(
-    date) {var _this2 = this;
-      if (!date) {
-        date = new Date();
-      }
-      var dateInfo = this.canlender.find(function (item) {return item.fullDate === _this2.getDate(date).fullDate;});
-      return dateInfo;
-    }
-
-    /**
-       * 比较时间大小
-       */ }, { key: "dateCompare", value: function dateCompare(
-    startDate, endDate) {
-      // 计算截止时间
-      startDate = new Date(startDate.replace('-', '/').replace('-', '/'));
-      // 计算详细项的截止时间
-      endDate = new Date(endDate.replace('-', '/').replace('-', '/'));
-      if (startDate <= endDate) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-    /**
-       * 比较时间是否相等
-       */ }, { key: "dateEqual", value: function dateEqual(
-    before, after) {
-      // 计算截止时间
-      before = new Date(before.replace('-', '/').replace('-', '/'));
-      // 计算详细项的截止时间
-      after = new Date(after.replace('-', '/').replace('-', '/'));
-      if (before.getTime() - after.getTime() === 0) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-
-    /**
-       * 获取日期范围内所有日期
-       * @param {Object} begin
-       * @param {Object} end
-       */ }, { key: "geDateAll", value: function geDateAll(
-    begin, end) {
-      var arr = [];
-      var ab = begin.split('-');
-      var ae = end.split('-');
-      var db = new Date();
-      db.setFullYear(ab[0], ab[1] - 1, ab[2]);
-      var de = new Date();
-      de.setFullYear(ae[0], ae[1] - 1, ae[2]);
-      var unixDb = db.getTime() - 24 * 60 * 60 * 1000;
-      var unixDe = de.getTime() - 24 * 60 * 60 * 1000;
-      for (var k = unixDb; k <= unixDe;) {
-        k = k + 24 * 60 * 60 * 1000;
-        arr.push(this.getDate(new Date(parseInt(k))).fullDate);
-      }
-      return arr;
-    }
-    /**
-       * 计算阴历日期显示
-       */ }, { key: "getlunar", value: function getlunar(
-    year, month, date) {
-      return _calendar.default.solar2lunar(year, month, date);
-    }
-    /**
-       * 设置打点
-       */ }, { key: "setSelectInfo", value: function setSelectInfo(
-    data, value) {
-      this.selected = value;
-      this._getWeek(data);
-    }
-
-    /**
-       *  获取多选状态
-       */ }, { key: "setMultiple", value: function setMultiple(
-    fullDate) {var _this$multipleStatus =
-
-
-
-      this.multipleStatus,before = _this$multipleStatus.before,after = _this$multipleStatus.after;
-
-      if (!this.range) return;
-      if (before && after) {
-        this.multipleStatus.before = '';
-        this.multipleStatus.after = '';
-        this.multipleStatus.data = [];
-      } else {
-        if (!before) {
-          this.multipleStatus.before = fullDate;
-        } else {
-          this.multipleStatus.after = fullDate;
-          if (this.dateCompare(this.multipleStatus.before, this.multipleStatus.after)) {
-            this.multipleStatus.data = this.geDateAll(this.multipleStatus.before, this.multipleStatus.after);
-          } else {
-            this.multipleStatus.data = this.geDateAll(this.multipleStatus.after, this.multipleStatus.before);
-          }
-        }
-      }
-      this._getWeek(fullDate);
-    }
-
-    /**
-       * 获取每周数据
-       * @param {Object} dateData
-       */ }, { key: "_getWeek", value: function _getWeek(
-    dateData) {var _this$getDate =
-
-
-
-
-
-
-      this.getDate(dateData),fullDate = _this$getDate.fullDate,year = _this$getDate.year,month = _this$getDate.month,date = _this$getDate.date,day = _this$getDate.day;
-      var firstDay = new Date(year, month - 1, 1).getDay();
-      var currentDay = new Date(year, month, 0).getDate();
-      var dates = {
-        lastMonthDays: this._getLastMonthDays(firstDay, this.getDate(dateData)), // 上个月末尾几天
-        currentMonthDys: this._currentMonthDys(currentDay, this.getDate(dateData)), // 本月天数
-        nextMonthDays: [], // 下个月开始几天
-        weeks: [] };
-
-      var canlender = [];
-      var surplus = 42 - (dates.lastMonthDays.length + dates.currentMonthDys.length);
-      dates.nextMonthDays = this._getNextMonthDays(surplus, this.getDate(dateData));
-      canlender = canlender.concat(dates.lastMonthDays, dates.currentMonthDys, dates.nextMonthDays);
-      var weeks = {};
-      // 拼接数组  上个月开始几天 + 本月天数+ 下个月开始几天
-      for (var i = 0; i < canlender.length; i++) {
-        if (i % 7 === 0) {
-          weeks[parseInt(i / 7)] = new Array(7);
-        }
-        weeks[parseInt(i / 7)][i % 7] = canlender[i];
-      }
-      this.canlender = canlender;
-      this.weeks = weeks;
-    }
-
-    //静态方法
-    // static init(date) {
-    // 	if (!this.instance) {
-    // 		this.instance = new Calendar(date);
-    // 	}
-    // 	return this.instance;
-    // }
-  }]);return Calendar;}();var _default =
-
-
-Calendar;exports.default = _default;
-
-/***/ }),
-
-/***/ 124:
-/*!*********************************************************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/uni_modules/uni-calendar/components/uni-calendar/calendar.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                     * @1900-2100区间内的公历、农历互转
-                                                                                                     * @charset UTF-8
-                                                                                                     * @github  https://github.com/jjonline/calendar.js
-                                                                                                     * @Author  Jea杨(JJonline@JJonline.Cn)
-                                                                                                     * @Time    2014-7-21
-                                                                                                     * @Time    2016-8-13 Fixed 2033hex、Attribution Annals
-                                                                                                     * @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
-                                                                                                     * @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
-                                                                                                     * @Version 1.0.3
-                                                                                                     * @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
-                                                                                                     * @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
-                                                                                                     */
-/* eslint-disable */
-var calendar = {
-
-  /**
-                     * 农历1900-2100的润大小信息表
-                     * @Array Of Property
-                     * @return Hex
-                     */
-  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2, // 1900-1909
-  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977, // 1910-1919
-  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970, // 1920-1929
-  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950, // 1930-1939
-  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557, // 1940-1949
-  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0, // 1950-1959
-  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0, // 1960-1969
-  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6, // 1970-1979
-  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570, // 1980-1989
-  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0, // 1990-1999
-  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5, // 2000-2009
-  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930, // 2010-2019
-  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530, // 2020-2029
-  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45, // 2030-2039
-  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0, // 2040-2049
-  /** Add By JJonline@JJonline.Cn**/
-  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0, // 2050-2059
-  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4, // 2060-2069
-  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0, // 2070-2079
-  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160, // 2080-2089
-  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252, // 2090-2099
-  0x0d520], // 2100
-
-  /**
-      * 公历每个月份的天数普通表
-      * @Array Of Property
-      * @return Number
-      */
-  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
-
-  /**
-                                                                    * 天干地支之天干速查表
-                                                                    * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
-                                                                    * @return Cn string
-                                                                    */
-  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
-
-  /**
-                                                                                                                 * 天干地支之地支速查表
-                                                                                                                 * @Array Of Property
-                                                                                                                 * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
-                                                                                                                 * @return Cn string
-                                                                                                                 */
-  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
-
-  /**
-                                                                                                                                     * 天干地支之地支速查表<=>生肖
-                                                                                                                                     * @Array Of Property
-                                                                                                                                     * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
-                                                                                                                                     * @return Cn string
-                                                                                                                                     */
-  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
-
-  /**
-                                                                                                                                         * 24节气速查表
-                                                                                                                                         * @Array Of Property
-                                                                                                                                         * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
-                                                                                                                                         * @return Cn string
-                                                                                                                                         */
-  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
-
-  /**
-                                                                                                                                                                                                                                                                                                                                                                                                                   * 1900-2100各年的24节气日期速查表
-                                                                                                                                                                                                                                                                                                                                                                                                                   * @Array Of Property
-                                                                                                                                                                                                                                                                                                                                                                                                                   * @return 0x string For splice
-                                                                                                                                                                                                                                                                                                                                                                                                                   */
-  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f',
-  '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f',
-  'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f',
-  '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa',
-  '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f',
-  '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f',
-  '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f',
-  '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e',
-  '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722',
-  '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e',
-  '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2',
-  '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5',
-  '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722',
-  '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35',
-  '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd',
-  '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35',
-  '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5',
-  '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35',
-  '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35',
-  '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
-
-  /**
-                                                                                                             * 数字转中文速查表
-                                                                                                             * @Array Of Property
-                                                                                                             * @trans ['日','一','二','三','四','五','六','七','八','九','十']
-                                                                                                             * @return Cn string
-                                                                                                             */
-  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
-
-  /**
-                                                                                                                             * 日期转农历称呼速查表
-                                                                                                                             * @Array Of Property
-                                                                                                                             * @trans ['初','十','廿','卅']
-                                                                                                                             * @return Cn string
-                                                                                                                             */
-  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
-
-  /**
-                                                       * 月份转农历称呼速查表
-                                                       * @Array Of Property
-                                                       * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
-                                                       * @return Cn string
-                                                       */
-  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
-
-  /**
-                                                                                                                                       * 返回农历y年一整年的总天数
-                                                                                                                                       * @param lunar Year
-                                                                                                                                       * @return Number
-                                                                                                                                       * @eg:var count = calendar.lYearDays(1987) ;//count=387
-                                                                                                                                       */
-  lYearDays: function lYearDays(y) {
-    var i;var sum = 348;
-    for (i = 0x8000; i > 0x8; i >>= 1) {sum += this.lunarInfo[y - 1900] & i ? 1 : 0;}
-    return sum + this.leapDays(y);
-  },
-
-  /**
-         * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
-         * @param lunar Year
-         * @return Number (0-12)
-         * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
-         */
-  leapMonth: function leapMonth(y) {// 闰字编码 \u95f0
-    return this.lunarInfo[y - 1900] & 0xf;
-  },
-
-  /**
-         * 返回农历y年闰月的天数 若该年没有闰月则返回0
-         * @param lunar Year
-         * @return Number (0、29、30)
-         * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
-         */
-  leapDays: function leapDays(y) {
-    if (this.leapMonth(y)) {
-      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
-    }
-    return 0;
-  },
-
-  /**
-         * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
-         * @param lunar Year
-         * @return Number (-1、29、30)
-         * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
-         */
-  monthDays: function monthDays(y, m) {
-    if (m > 12 || m < 1) {return -1;} // 月份参数从1至12，参数错误返回-1
-    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
-  },
-
-  /**
-         * 返回公历(!)y年m月的天数
-         * @param solar Year
-         * @return Number (-1、28、29、30、31)
-         * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
-         */
-  solarDays: function solarDays(y, m) {
-    if (m > 12 || m < 1) {return -1;} // 若参数错误 返回-1
-    var ms = m - 1;
-    if (ms == 1) {// 2月份的闰平规律测算后确认返回28或29
-      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
-    } else {
-      return this.solarMonth[ms];
-    }
-  },
-
-  /**
-        * 农历年份转换为干支纪年
-        * @param  lYear 农历年的年份数
-        * @return Cn string
-        */
-  toGanZhiYear: function toGanZhiYear(lYear) {
-    var ganKey = (lYear - 3) % 10;
-    var zhiKey = (lYear - 3) % 12;
-    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
-    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
-    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
-  },
-
-  /**
-        * 公历月、日判断所属星座
-        * @param  cMonth [description]
-        * @param  cDay [description]
-        * @return Cn string
-        */
-  toAstro: function toAstro(cMonth, cDay) {
-    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
-    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
-    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
-  },
-
-  /**
-         * 传入offset偏移量返回干支
-         * @param offset 相对甲子的偏移量
-         * @return Cn string
-         */
-  toGanZhi: function toGanZhi(offset) {
-    return this.Gan[offset % 10] + this.Zhi[offset % 12];
-  },
-
-  /**
-         * 传入公历(!)y年获得该年第n个节气的公历日期
-         * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
-         * @return day Number
-         * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
-         */
-  getTerm: function getTerm(y, n) {
-    if (y < 1900 || y > 2100) {return -1;}
-    if (n < 1 || n > 24) {return -1;}
-    var _table = this.sTermInfo[y - 1900];
-    var _info = [
-    parseInt('0x' + _table.substr(0, 5)).toString(),
-    parseInt('0x' + _table.substr(5, 5)).toString(),
-    parseInt('0x' + _table.substr(10, 5)).toString(),
-    parseInt('0x' + _table.substr(15, 5)).toString(),
-    parseInt('0x' + _table.substr(20, 5)).toString(),
-    parseInt('0x' + _table.substr(25, 5)).toString()];
-
-    var _calday = [
-    _info[0].substr(0, 1),
-    _info[0].substr(1, 2),
-    _info[0].substr(3, 1),
-    _info[0].substr(4, 2),
-
-    _info[1].substr(0, 1),
-    _info[1].substr(1, 2),
-    _info[1].substr(3, 1),
-    _info[1].substr(4, 2),
-
-    _info[2].substr(0, 1),
-    _info[2].substr(1, 2),
-    _info[2].substr(3, 1),
-    _info[2].substr(4, 2),
-
-    _info[3].substr(0, 1),
-    _info[3].substr(1, 2),
-    _info[3].substr(3, 1),
-    _info[3].substr(4, 2),
-
-    _info[4].substr(0, 1),
-    _info[4].substr(1, 2),
-    _info[4].substr(3, 1),
-    _info[4].substr(4, 2),
-
-    _info[5].substr(0, 1),
-    _info[5].substr(1, 2),
-    _info[5].substr(3, 1),
-    _info[5].substr(4, 2)];
-
-    return parseInt(_calday[n - 1]);
-  },
-
-  /**
-         * 传入农历数字月份返回汉语通俗表示法
-         * @param lunar month
-         * @return Cn string
-         * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
-         */
-  toChinaMonth: function toChinaMonth(m) {// 月 => \u6708
-    if (m > 12 || m < 1) {return -1;} // 若参数错误 返回-1
-    var s = this.nStr3[m - 1];
-    s += "\u6708"; // 加上月字
-    return s;
-  },
-
-  /**
-         * 传入农历日期数字返回汉字表示法
-         * @param lunar day
-         * @return Cn string
-         * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
-         */
-  toChinaDay: function toChinaDay(d) {// 日 => \u65e5
-    var s;
-    switch (d) {
-      case 10:
-        s = "\u521D\u5341";break;
-      case 20:
-        s = "\u4E8C\u5341";break;
-        break;
-      case 30:
-        s = "\u4E09\u5341";break;
-        break;
-      default:
-        s = this.nStr2[Math.floor(d / 10)];
-        s += this.nStr1[d % 10];}
-
-    return s;
-  },
-
-  /**
-         * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
-         * @param y year
-         * @return Cn string
-         * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
-         */
-  getAnimal: function getAnimal(y) {
-    return this.Animals[(y - 4) % 12];
-  },
-
-  /**
-         * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
-         * @param y  solar year
-         * @param m  solar month
-         * @param d  solar day
-         * @return JSON object
-         * @eg:console.log(calendar.solar2lunar(1987,11,01));
-         */
-  solar2lunar: function solar2lunar(y, m, d) {// 参数区间1900.1.31~2100.12.31
-    // 年份限定、上限
-    if (y < 1900 || y > 2100) {
-      return -1; // undefined转换为数字变为NaN
-    }
-    // 公历传参最下限
-    if (y == 1900 && m == 1 && d < 31) {
-      return -1;
-    }
-    // 未传参  获得当天
-    if (!y) {
-      var objDate = new Date();
-    } else {
-      var objDate = new Date(y, parseInt(m) - 1, d);
-    }
-    var i;var leap = 0;var temp = 0;
-    // 修正ymd参数
-    var y = objDate.getFullYear();
-    var m = objDate.getMonth() + 1;
-    var d = objDate.getDate();
-    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
-    for (i = 1900; i < 2101 && offset > 0; i++) {
-      temp = this.lYearDays(i);
-      offset -= temp;
-    }
-    if (offset < 0) {
-      offset += temp;i--;
-    }
-
-    // 是否今天
-    var isTodayObj = new Date();
-    var isToday = false;
-    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
-      isToday = true;
-    }
-    // 星期几
-    var nWeek = objDate.getDay();
-    var cWeek = this.nStr1[nWeek];
-    // 数字表示周几顺应天朝周一开始的惯例
-    if (nWeek == 0) {
-      nWeek = 7;
-    }
-    // 农历年
-    var year = i;
-    var leap = this.leapMonth(i); // 闰哪个月
-    var isLeap = false;
-
-    // 效验闰月
-    for (i = 1; i < 13 && offset > 0; i++) {
-      // 闰月
-      if (leap > 0 && i == leap + 1 && isLeap == false) {
-        --i;
-        isLeap = true;temp = this.leapDays(year); // 计算农历闰月天数
-      } else {
-        temp = this.monthDays(year, i); // 计算农历普通月天数
-      }
-      // 解除闰月
-      if (isLeap == true && i == leap + 1) {isLeap = false;}
-      offset -= temp;
-    }
-    // 闰月导致数组下标重叠取反
-    if (offset == 0 && leap > 0 && i == leap + 1) {
-      if (isLeap) {
-        isLeap = false;
-      } else {
-        isLeap = true;--i;
-      }
-    }
-    if (offset < 0) {
-      offset += temp;--i;
-    }
-    // 农历月
-    var month = i;
-    // 农历日
-    var day = offset + 1;
-    // 天干地支处理
-    var sm = m - 1;
-    var gzY = this.toGanZhiYear(year);
-
-    // 当月的两个节气
-    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
-    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
-    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
-
-    // 依据12节气修正干支月
-    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
-    if (d >= firstNode) {
-      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
-    }
-
-    // 传入的日期的节气与否
-    var isTerm = false;
-    var Term = null;
-    if (firstNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 2];
-    }
-    if (secondNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 1];
-    }
-    // 日柱 当月一日与 1900/1/1 相差天数
-    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
-    var gzD = this.toGanZhi(dayCyclical + d - 1);
-    // 该日期所属的星座
-    var astro = this.toAstro(m, d);
-
-    return { 'lYear': year, 'lMonth': month, 'lDay': day, 'Animal': this.getAnimal(year), 'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month), 'IDayCn': this.toChinaDay(day), 'cYear': y, 'cMonth': m, 'cDay': d, 'gzYear': gzY, 'gzMonth': gzM, 'gzDay': gzD, 'isToday': isToday, 'isLeap': isLeap, 'nWeek': nWeek, 'ncWeek': "\u661F\u671F" + cWeek, 'isTerm': isTerm, 'Term': Term, 'astro': astro };
-  },
-
-  /**
-         * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
-         * @param y  lunar year
-         * @param m  lunar month
-         * @param d  lunar day
-         * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
-         * @return JSON object
-         * @eg:console.log(calendar.lunar2solar(1987,9,10));
-         */
-  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {// 参数区间1900.1.31~2100.12.1
-    var isLeapMonth = !!isLeapMonth;
-    var leapOffset = 0;
-    var leapMonth = this.leapMonth(y);
-    var leapDay = this.leapDays(y);
-    if (isLeapMonth && leapMonth != m) {return -1;} // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
-    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {return -1;} // 超出了最大极限值
-    var day = this.monthDays(y, m);
-    var _day = day;
-    // bugFix 2016-9-25
-    // if month is leap, _day use leapDays method
-    if (isLeapMonth) {
-      _day = this.leapDays(y, m);
-    }
-    if (y < 1900 || y > 2100 || d > _day) {return -1;} // 参数合法性效验
-
-    // 计算农历的时间差
-    var offset = 0;
-    for (var i = 1900; i < y; i++) {
-      offset += this.lYearDays(i);
-    }
-    var leap = 0;var isAdd = false;
-    for (var i = 1; i < m; i++) {
-      leap = this.leapMonth(y);
-      if (!isAdd) {// 处理闰月
-        if (leap <= i && leap > 0) {
-          offset += this.leapDays(y);isAdd = true;
-        }
-      }
-      offset += this.monthDays(y, i);
-    }
-    // 转换闰月农历 需补充该年闰月的前一个月的时差
-    if (isLeapMonth) {offset += day;}
-    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
-    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
-    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
-    var cY = calObj.getUTCFullYear();
-    var cM = calObj.getUTCMonth() + 1;
-    var cD = calObj.getUTCDate();
-
-    return this.solar2lunar(cY, cM, cD);
-  } };var _default =
-
-
-calendar;exports.default = _default;
-
-/***/ }),
-
-/***/ 139:
-/*!************************************************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/uni_modules/uni-popup/components/uni-popup/popup.js ***!
-  \************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
-{
-  data: function data() {
-    return {};
-
-
-  },
-  created: function created() {
-    this.popup = this.getParent();
-  },
-  methods: {
-    /**
-              * 获取父元素实例
-              */
-    getParent: function getParent() {var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'uniPopup';
-      var parent = this.$parent;
-      var parentName = parent.$options.name;
-      while (parentName !== name) {
-        parent = parent.$parent;
-        if (!parent) return false;
-        parentName = parent.$options.name;
-      }
-      return parent;
-    } } };exports.default = _default;
-
-/***/ }),
-
-/***/ 174:
-/*!********************************************************************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
-  \********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.createAnimation = createAnimation;function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} // const defaultOption = {
-// 	duration: 300,
-// 	timingFunction: 'linear',
-// 	delay: 0,
-// 	transformOrigin: '50% 50% 0'
-// }
-var
-
-
-MPAnimation = /*#__PURE__*/function () {
-  function MPAnimation(options, _this) {_classCallCheck(this, MPAnimation);
-    this.options = options;
-    this.animation = uni.createAnimation(options);
-    this.currentStepAnimates = {};
-    this.next = 0;
-    this.$ = _this;
-
-  }_createClass(MPAnimation, [{ key: "_nvuePushAnimates", value: function _nvuePushAnimates(
-
-    type, args) {
-      var aniObj = this.currentStepAnimates[this.next];
-      var styles = {};
-      if (!aniObj) {
-        styles = {
-          styles: {},
-          config: {} };
-
-      } else {
-        styles = aniObj;
-      }
-      if (animateTypes1.includes(type)) {
-        if (!styles.styles.transform) {
-          styles.styles.transform = '';
-        }
-        var unit = '';
-        if (type === 'rotate') {
-          unit = 'deg';
-        }
-        styles.styles.transform += "".concat(type, "(").concat(args + unit, ") ");
-      } else {
-        styles.styles[type] = "".concat(args);
-      }
-      this.currentStepAnimates[this.next] = styles;
-    } }, { key: "_animateRun", value: function _animateRun()
-    {var styles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var ref = this.$.$refs['ani'].ref;
-      if (!ref) return;
-      return new Promise(function (resolve, reject) {
-        nvueAnimation.transition(ref, _objectSpread({
-          styles: styles },
-        config),
-        function (res) {
-          resolve();
-        });
-      });
-    } }, { key: "_nvueNextAnimate", value: function _nvueNextAnimate(
-
-    animates) {var _this2 = this;var step = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;var fn = arguments.length > 2 ? arguments[2] : undefined;
-      var obj = animates[step];
-      if (obj) {var
-
-        styles =
-
-        obj.styles,config = obj.config;
-        this._animateRun(styles, config).then(function () {
-          step += 1;
-          _this2._nvueNextAnimate(animates, step, fn);
-        });
-      } else {
-        this.currentStepAnimates = {};
-        typeof fn === 'function' && fn();
-        this.isEnd = true;
-      }
-    } }, { key: "step", value: function step()
-
-    {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-      this.animation.step(config);
-
-
-
-
-
-
-      return this;
-    } }, { key: "run", value: function run(
-
-    fn) {
-
-      this.$.animationData = this.animation.export();
-      this.$.timer = setTimeout(function () {
-        typeof fn === 'function' && fn();
-      }, this.$.durationTime);
-
-
-
-
-
-
-    } }]);return MPAnimation;}();
-
-
-
-var animateTypes1 = ['matrix', 'matrix3d', 'rotate', 'rotate3d', 'rotateX', 'rotateY', 'rotateZ', 'scale', 'scale3d',
-'scaleX', 'scaleY', 'scaleZ', 'skew', 'skewX', 'skewY', 'translate', 'translate3d', 'translateX', 'translateY',
-'translateZ'];
-
-var animateTypes2 = ['opacity', 'backgroundColor'];
-var animateTypes3 = ['width', 'height', 'left', 'right', 'top', 'bottom'];
-animateTypes1.concat(animateTypes2, animateTypes3).forEach(function (type) {
-  MPAnimation.prototype[type] = function () {var _this$animation;
-
-    (_this$animation = this.animation)[type].apply(_this$animation, arguments);
-
-
-
-
-    return this;
-  };
-});
-
-function createAnimation(option, _this) {
-  if (!_this) return;
-  clearTimeout(_this.timer);
-  return new MPAnimation(option, _this);
-}
+  });
+};exports.sendRequest = sendRequest;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
-/***/ 18:
-/*!*********************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/static/3.png ***!
-  \*********************************************************/
+/***/ 19:
+/*!**************************************************!*\
+  !*** E:/LHMiniProgramRespository/static/u55.png ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,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"
-
-/***/ }),
-
-/***/ 187:
-/*!**************************************************************************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/uni_modules/uni-data-picker/components/uni-data-pickerview/uni-data-picker.js ***!
-  \**************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uniCloud) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default2 = {
-  props: {
-    localdata: {
-      type: [Array, Object],
-      default: function _default() {
-        return [];
-      } },
-
-    collection: {
-      type: String,
-      default: '' },
-
-    action: {
-      type: String,
-      default: '' },
-
-    field: {
-      type: String,
-      default: '' },
-
-    orderby: {
-      type: String,
-      default: '' },
-
-    where: {
-      type: [String, Object],
-      default: '' },
-
-    pageData: {
-      type: String,
-      default: 'add' },
-
-    pageCurrent: {
-      type: Number,
-      default: 1 },
-
-    pageSize: {
-      type: Number,
-      default: 20 },
-
-    getcount: {
-      type: [Boolean, String],
-      default: false },
-
-    getone: {
-      type: [Boolean, String],
-      default: false },
-
-    gettree: {
-      type: [Boolean, String],
-      default: false },
-
-    manual: {
-      type: Boolean,
-      default: false },
-
-    value: {
-      type: [Array, String, Number],
-      default: function _default() {
-        return [];
-      } },
-
-    preload: {
-      type: Boolean,
-      default: false },
-
-    stepSearh: {
-      type: Boolean,
-      default: true },
-
-    selfField: {
-      type: String,
-      default: '' },
-
-    parentField: {
-      type: String,
-      default: '' },
-
-    multiple: {
-      type: Boolean,
-      default: false } },
-
-
-  data: function data() {
-    return {
-      loading: false,
-      errorMessage: '',
-      loadMore: {
-        contentdown: '',
-        contentrefresh: '',
-        contentnomore: '' },
-
-      dataList: [],
-      selected: [],
-      selectedIndex: 0,
-      page: {
-        current: this.pageCurrent,
-        size: this.pageSize,
-        count: 0 } };
-
-
-  },
-  computed: {
-    isLocaldata: function isLocaldata() {
-      return this.localdata.length > 0;
-    },
-    postField: function postField() {
-      var fields = [this.field];
-      if (this.parentField) {
-        fields.push("".concat(this.parentField, " as parent_value"));
-      }
-      return fields.join(',');
-    } },
-
-  created: function created() {var _this = this;
-    this.$watch(function () {
-      var al = [];
-      ['pageCurrent',
-      'pageSize',
-      'value',
-      'localdata',
-      'collection',
-      'action',
-      'field',
-      'orderby',
-      'where',
-      'getont',
-      'getcount',
-      'gettree'].
-      forEach(function (key) {
-        al.push(_this[key]);
-      });
-      return al;
-    }, function (newValue, oldValue) {
-      var needReset = false;
-      for (var i = 2; i < newValue.length; i++) {
-        if (newValue[i] != oldValue[i]) {
-          needReset = true;
-          break;
-        }
-      }
-      if (newValue[0] != oldValue[0]) {
-        _this.page.current = _this.pageCurrent;
-      }
-      _this.page.size = _this.pageSize;
-
-      _this.onPropsChange();
-    });
-    this._treeData = [];
-  },
-  methods: {
-    onPropsChange: function onPropsChange() {
-      this._treeData = [];
-    },
-    getCommand: function getCommand() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      /* eslint-disable no-undef */
-      var db = uniCloud.database();
-
-      var action = options.action || this.action;
-      if (action) {
-        db = db.action(action);
-      }
-
-      var collection = options.collection || this.collection;
-      db = db.collection(collection);
-
-      var where = options.where || this.where;
-      if (!(!where || !Object.keys(where).length)) {
-        db = db.where(where);
-      }
-
-      var field = options.field || this.field;
-      if (field) {
-        db = db.field(field);
-      }
-
-      var orderby = options.orderby || this.orderby;
-      if (orderby) {
-        db = db.orderBy(orderby);
-      }
-
-      var current = options.pageCurrent !== undefined ? options.pageCurrent : this.page.current;
-      var size = options.pageSize !== undefined ? options.pageSize : this.page.size;
-      var getCount = options.getcount !== undefined ? options.getcount : this.getcount;
-      var getTree = options.gettree !== undefined ? options.gettree : this.gettree;
-
-      var getOptions = {
-        getCount: getCount,
-        getTree: getTree };
-
-      if (options.getTreePath) {
-        getOptions.getTreePath = options.getTreePath;
-      }
-
-      db = db.skip(size * (current - 1)).limit(size).get(getOptions);
-
-      return db;
-    },
-    getNodeData: function getNodeData(callback) {var _this2 = this;
-      if (this.loading) {
-        return;
-      }
-      this.loading = true;
-      this.getCommand({
-        field: this.postField,
-        where: this._pathWhere() }).
-      then(function (res) {
-        _this2.loading = false;
-        _this2.selected = res.result.data;
-        callback && callback();
-      }).catch(function (err) {
-        _this2.loading = false;
-        _this2.errorMessage = err;
-      });
-    },
-    getTreePath: function getTreePath(callback) {var _this3 = this;
-      if (this.loading) {
-        return;
-      }
-      this.loading = true;
-
-      this.getCommand({
-        field: this.postField,
-        getTreePath: {
-          startWith: "".concat(this.selfField, "=='").concat(this.value, "'") } }).
-
-      then(function (res) {
-        _this3.loading = false;
-        var treePath = [];
-        _this3._extractTreePath(res.result.data, treePath);
-        _this3.selected = treePath;
-        callback && callback();
-      }).catch(function (err) {
-        _this3.loading = false;
-        _this3.errorMessage = err;
-      });
-    },
-    loadData: function loadData() {var _this4 = this;
-      if (this.isLocaldata) {
-        this._processLocalData();
-        return;
-      }
-
-      if (this.value.length) {
-        this._loadNodeData(function (data) {
-          _this4._treeData = data;
-          _this4._updateBindData();
-          _this4._updateSelected();
-        });
-        return;
-      }
-
-      if (this.stepSearh) {
-        this._loadNodeData(function (data) {
-          _this4._treeData = data;
-          _this4._updateBindData();
-        });
-      } else {
-        this._loadAllData(function (data) {
-          _this4._treeData = [];
-          _this4._extractTree(data, _this4._treeData, null);
-          _this4._updateBindData();
-        });
-      }
-    },
-    _loadAllData: function _loadAllData(callback) {var _this5 = this;
-      if (this.loading) {
-        return;
-      }
-      this.loading = true;
-
-      this.getCommand({
-        field: this.postField,
-        gettree: true,
-        startwith: "".concat(this.selfField, "=='").concat(this.value, "'") }).
-      then(function (res) {
-        _this5.loading = false;
-        callback(res.result.data);
-        _this5.onDataChange();
-      }).catch(function (err) {
-        _this5.loading = false;
-        _this5.errorMessage = err;
-      });
-    },
-    _loadNodeData: function _loadNodeData(callback, pw) {var _this6 = this;
-      if (this.loading) {
-        return;
-      }
-      this.loading = true;
-
-      this.getCommand({
-        field: this.postField,
-        where: pw || this._postWhere(),
-        pageSize: 500 }).
-      then(function (res) {
-        _this6.loading = false;
-        callback(res.result.data);
-        _this6.onDataChange();
-      }).catch(function (err) {
-        _this6.loading = false;
-        _this6.errorMessage = err;
-      });
-    },
-    _pathWhere: function _pathWhere() {
-      var result = [];
-      var where_field = this._getParentNameByField();
-      if (where_field) {
-        result.push("".concat(where_field, " == '").concat(this.value, "'"));
-      }
-
-      if (this.where) {
-        return "(".concat(this.where, ") && (").concat(result.join(' || '), ")");
-      }
-
-      return result.join(' || ');
-    },
-    _postWhere: function _postWhere() {
-      var result = [];
-      var selected = this.selected;
-      var parentField = this.parentField;
-      if (parentField) {
-        result.push("".concat(parentField, " == null || ").concat(parentField, " == \"\""));
-      }
-      if (selected.length) {
-        for (var i = 0; i < selected.length - 1; i++) {
-          result.push("".concat(parentField, " == '").concat(selected[i].value, "'"));
-        }
-      }
-
-      var where = [];
-      if (this.where) {
-        where.push("(".concat(this.where, ")"));
-      }
-      if (result.length) {
-        where.push("(".concat(result.join(' || '), ")"));
-      }
-
-      return where.join(' && ');
-    },
-    _nodeWhere: function _nodeWhere() {
-      var result = [];
-      var selected = this.selected;
-      if (selected.length) {
-        result.push("".concat(this.parentField, " == '").concat(selected[selected.length - 1].value, "'"));
-      }
-
-      if (this.where) {
-        return "(".concat(this.where, ") && (").concat(result.join(' || '), ")");
-      }
-
-      return result.join(' || ');
-    },
-    _getParentNameByField: function _getParentNameByField() {
-      var fields = this.field.split(',');
-      var where_field = null;
-      for (var i = 0; i < fields.length; i++) {
-        var items = fields[i].split('as');
-        if (items.length < 2) {
-          continue;
-        }
-        if (items[1].trim() === 'value') {
-          where_field = items[0].trim();
-          break;
-        }
-      }
-      return where_field;
-    },
-    _isTreeView: function _isTreeView() {
-      return this.parentField && this.selfField;
-    },
-    _updateSelected: function _updateSelected() {
-      var dl = this.dataList;
-      var sl = this.selected;
-      for (var i = 0; i < sl.length; i++) {
-        var value = sl[i].value;
-        var dl2 = dl[i];
-        for (var j = 0; j < dl2.length; j++) {
-          var item2 = dl2[j];
-          if (item2.value === value) {
-            sl[i].text = item2.text;
-            break;
-          }
-        }
-      }
-    },
-    _updateBindData: function _updateBindData(node) {var _this$_filterData =
-
-
-
-      this._filterData(this._treeData, this.selected),dataList = _this$_filterData.dataList,hasNodes = _this$_filterData.hasNodes;
-
-      var isleaf = this._stepSearh === false && !hasNodes;
-
-      if (node) {
-        node.isleaf = isleaf;
-      }
-
-      this.dataList = dataList;
-      this.selectedIndex = dataList.length - 1;
-
-      if (!isleaf && this.selected.length < dataList.length) {
-        this.selected.push({
-          value: null,
-          text: "请选择" });
-
-      }
-
-      return {
-        isleaf: isleaf,
-        hasNodes: hasNodes };
-
-    },
-    _filterData: function _filterData(data, paths) {
-      var dataList = [];
-
-      var hasNodes = true;
-
-      dataList.push(data.filter(function (item) {
-        return item.parent_value === undefined;
-      }));
-      for (var i = 0; i < paths.length; i++) {
-        var value = paths[i].value;
-        var nodes = data.filter(function (item) {
-          return item.parent_value === value;
-        });
-
-        if (nodes.length) {
-          dataList.push(nodes);
-        } else {
-          hasNodes = false;
-        }
-      }
-
-      return {
-        dataList: dataList,
-        hasNodes: hasNodes };
-
-    },
-    _extractTree: function _extractTree(nodes, result, parent_value) {
-      var list = result || [];
-      for (var i = 0; i < nodes.length; i++) {
-        var node = nodes[i];
-
-        var child = {};
-        for (var key in node) {
-          if (key !== 'children') {
-            child[key] = node[key];
-          }
-        }
-        if (parent_value !== undefined) {
-          child.parent_value = parent_value;
-        }
-        result.push(child);
-
-        var children = node.children;
-        if (children) {
-          this._extractTree(children, result, node.value);
-        }
-      }
-    },
-    _extractTreePath: function _extractTreePath(nodes, result) {
-      var list = result || [];
-      for (var i = 0; i < nodes.length; i++) {
-        var node = nodes[i];
-
-        var child = {};
-        for (var key in node) {
-          if (key !== 'children') {
-            child[key] = node[key];
-          }
-        }
-        result.push(child);
-
-        var children = node.children;
-        if (children) {
-          this._extractTreePath(children, result);
-        }
-      }
-    },
-    _findNodePath: function _findNodePath(key, nodes) {var path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-      for (var i = 0; i < nodes.length; i++) {var _nodes$i =
-
-
-
-
-        nodes[i],value = _nodes$i.value,text = _nodes$i.text,children = _nodes$i.children;
-
-        path.push({
-          value: value,
-          text: text });
-
-
-        if (value === key) {
-          return path;
-        }
-
-        if (children) {
-          var p = this._findNodePath(key, children, path);
-          if (p.length) {
-            return p;
-          }
-        }
-
-        path.pop();
-      }
-      return [];
-    },
-    _processLocalData: function _processLocalData() {
-      this._treeData = [];
-      this._extractTree(this.localdata, this._treeData);
-
-      var inputValue = this.value;
-      if (inputValue === undefined) {
-        return;
-      }
-
-      if (Array.isArray(inputValue)) {
-        inputValue = inputValue[inputValue.length - 1];
-        if (typeof inputValue === 'object' && inputValue.value) {
-          inputValue = inputValue.value;
-        }
-      }
-
-      this.selected = this._findNodePath(inputValue, this.localdata);
-    } } };exports.default = _default2;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js */ 188)["default"]))
-
-/***/ }),
-
-/***/ 188:
-/*!************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js ***!
-  \************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global, uni, process) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 191));var _uniI18n = __webpack_require__(/*! @dcloudio/uni-i18n */ 194);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _createForOfIteratorHelper(o, allowArrayLike) {var it;if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {if (it) o = it;var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e22) {throw _e22;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e23) {didErr = true;err = _e23;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _createSuper(Derived) {var hasNativeReflectConstruct = _isNativeReflectConstruct();return function _createSuperInternal() {var Super = _getPrototypeOf(Derived),result;if (hasNativeReflectConstruct) {var NewTarget = _getPrototypeOf(this).constructor;result = Reflect.construct(Super, arguments, NewTarget);} else {result = Super.apply(this, arguments);}return _possibleConstructorReturn(this, result);};}function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _wrapNativeSuper(Class) {var _cache = typeof Map === "function" ? new Map() : undefined;_wrapNativeSuper = function _wrapNativeSuper(Class) {if (Class === null || !_isNativeFunction(Class)) return Class;if (typeof Class !== "function") {throw new TypeError("Super expression must either be null or a function");}if (typeof _cache !== "undefined") {if (_cache.has(Class)) return _cache.get(Class);_cache.set(Class, Wrapper);}function Wrapper() {return _construct(Class, arguments, _getPrototypeOf(this).constructor);}Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } });return _setPrototypeOf(Wrapper, Class);};return _wrapNativeSuper(Class);}function _construct(Parent, args, Class) {if (_isNativeReflectConstruct()) {_construct = Reflect.construct;} else {_construct = function _construct(Parent, args, Class) {var a = [null];a.push.apply(a, args);var Constructor = Function.bind.apply(Parent, a);var instance = new Constructor();if (Class) _setPrototypeOf(instance, Class.prototype);return instance;};}return _construct.apply(null, arguments);}function _isNativeReflectConstruct() {if (typeof Reflect === "undefined" || !Reflect.construct) return false;if (Reflect.construct.sham) return false;if (typeof Proxy === "function") return true;try {Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));return true;} catch (e) {return false;}}function _isNativeFunction(fn) {return Function.toString.call(fn).indexOf("[native code]") !== -1;}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}"undefined" != typeof globalThis ? globalThis : "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self && self;function t(e) {return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;}function s(e, t, s) {return e(s = { path: t, exports: {}, require: function require(e, t) {return function () {throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs");}(null == t && s.path);} }, s.exports), s.exports;}var n = s(function (e, t) {var s;e.exports = (s = s || function (e, t) {var s = Object.create || function () {function e() {}return function (t) {var s;return e.prototype = t, s = new e(), e.prototype = null, s;};}(),n = {},r = n.lib = {},o = r.Base = { extend: function extend(e) {var t = s(this);return e && t.mixIn(e), t.hasOwnProperty("init") && this.init !== t.init || (t.init = function () {t.$super.init.apply(this, arguments);}), t.init.prototype = t, t.$super = this, t;}, create: function create() {var e = this.extend();return e.init.apply(e, arguments), e;}, init: function init() {}, mixIn: function mixIn(e) {for (var t in e) {e.hasOwnProperty(t) && (this[t] = e[t]);}e.hasOwnProperty("toString") && (this.toString = e.toString);}, clone: function clone() {return this.init.prototype.extend(this);} },i = r.WordArray = o.extend({ init: function init(e, t) {e = this.words = e || [], this.sigBytes = null != t ? t : 4 * e.length;}, toString: function toString(e) {return (e || c).stringify(this);}, concat: function concat(e) {var t = this.words,s = e.words,n = this.sigBytes,r = e.sigBytes;if (this.clamp(), n % 4) for (var o = 0; o < r; o++) {var i = s[o >>> 2] >>> 24 - o % 4 * 8 & 255;t[n + o >>> 2] |= i << 24 - (n + o) % 4 * 8;} else for (o = 0; o < r; o += 4) {t[n + o >>> 2] = s[o >>> 2];}return this.sigBytes += r, this;}, clamp: function clamp() {var t = this.words,s = this.sigBytes;t[s >>> 2] &= 4294967295 << 32 - s % 4 * 8, t.length = e.ceil(s / 4);}, clone: function clone() {var e = o.clone.call(this);return e.words = this.words.slice(0), e;}, random: function random(t) {for (var s, n = [], r = function r(t) {t = t;var s = 987654321,n = 4294967295;return function () {var r = ((s = 36969 * (65535 & s) + (s >> 16) & n) << 16) + (t = 18e3 * (65535 & t) + (t >> 16) & n) & n;return r /= 4294967296, (r += .5) * (e.random() > .5 ? 1 : -1);};}, o = 0; o < t; o += 4) {var a = r(4294967296 * (s || e.random()));s = 987654071 * a(), n.push(4294967296 * a() | 0);}return new i.init(n, t);} }),a = n.enc = {},c = a.Hex = { stringify: function stringify(e) {for (var t = e.words, s = e.sigBytes, n = [], r = 0; r < s; r++) {var o = t[r >>> 2] >>> 24 - r % 4 * 8 & 255;n.push((o >>> 4).toString(16)), n.push((15 & o).toString(16));}return n.join("");}, parse: function parse(e) {for (var t = e.length, s = [], n = 0; n < t; n += 2) {s[n >>> 3] |= parseInt(e.substr(n, 2), 16) << 24 - n % 8 * 4;}return new i.init(s, t / 2);} },u = a.Latin1 = { stringify: function stringify(e) {for (var t = e.words, s = e.sigBytes, n = [], r = 0; r < s; r++) {var o = t[r >>> 2] >>> 24 - r % 4 * 8 & 255;n.push(String.fromCharCode(o));}return n.join("");}, parse: function parse(e) {for (var t = e.length, s = [], n = 0; n < t; n++) {s[n >>> 2] |= (255 & e.charCodeAt(n)) << 24 - n % 4 * 8;}return new i.init(s, t);} },h = a.Utf8 = { stringify: function stringify(e) {try {return decodeURIComponent(escape(u.stringify(e)));} catch (e) {throw new Error("Malformed UTF-8 data");}}, parse: function parse(e) {return u.parse(unescape(encodeURIComponent(e)));} },l = r.BufferedBlockAlgorithm = o.extend({ reset: function reset() {this._data = new i.init(), this._nDataBytes = 0;}, _append: function _append(e) {"string" == typeof e && (e = h.parse(e)), this._data.concat(e), this._nDataBytes += e.sigBytes;}, _process: function _process(t) {var s = this._data,n = s.words,r = s.sigBytes,o = this.blockSize,a = r / (4 * o),c = (a = t ? e.ceil(a) : e.max((0 | a) - this._minBufferSize, 0)) * o,u = e.min(4 * c, r);if (c) {for (var h = 0; h < c; h += o) {this._doProcessBlock(n, h);}var l = n.splice(0, c);s.sigBytes -= u;}return new i.init(l, u);}, clone: function clone() {var e = o.clone.call(this);return e._data = this._data.clone(), e;}, _minBufferSize: 0 }),d = (r.Hasher = l.extend({ cfg: o.extend(), init: function init(e) {this.cfg = this.cfg.extend(e), this.reset();}, reset: function reset() {l.reset.call(this), this._doReset();}, update: function update(e) {return this._append(e), this._process(), this;}, finalize: function finalize(e) {return e && this._append(e), this._doFinalize();}, blockSize: 16, _createHelper: function _createHelper(e) {return function (t, s) {return new e.init(s).finalize(t);};}, _createHmacHelper: function _createHmacHelper(e) {return function (t, s) {return new d.HMAC.init(e, s).finalize(t);};} }), n.algo = {});return n;}(Math), s);}),r = (s(function (e, t) {var s;e.exports = (s = n, function (e) {var t = s,n = t.lib,r = n.WordArray,o = n.Hasher,i = t.algo,a = [];!function () {for (var t = 0; t < 64; t++) {a[t] = 4294967296 * e.abs(e.sin(t + 1)) | 0;}}();var c = i.MD5 = o.extend({ _doReset: function _doReset() {this._hash = new r.init([1732584193, 4023233417, 2562383102, 271733878]);}, _doProcessBlock: function _doProcessBlock(e, t) {for (var s = 0; s < 16; s++) {var n = t + s,r = e[n];e[n] = 16711935 & (r << 8 | r >>> 24) | 4278255360 & (r << 24 | r >>> 8);}var o = this._hash.words,i = e[t + 0],c = e[t + 1],f = e[t + 2],p = e[t + 3],g = e[t + 4],m = e[t + 5],y = e[t + 6],_ = e[t + 7],v = e[t + 8],w = e[t + 9],S = e[t + 10],k = e[t + 11],T = e[t + 12],A = e[t + 13],I = e[t + 14],P = e[t + 15],E = o[0],O = o[1],U = o[2],b = o[3];E = u(E, O, U, b, i, 7, a[0]), b = u(b, E, O, U, c, 12, a[1]), U = u(U, b, E, O, f, 17, a[2]), O = u(O, U, b, E, p, 22, a[3]), E = u(E, O, U, b, g, 7, a[4]), b = u(b, E, O, U, m, 12, a[5]), U = u(U, b, E, O, y, 17, a[6]), O = u(O, U, b, E, _, 22, a[7]), E = u(E, O, U, b, v, 7, a[8]), b = u(b, E, O, U, w, 12, a[9]), U = u(U, b, E, O, S, 17, a[10]), O = u(O, U, b, E, k, 22, a[11]), E = u(E, O, U, b, T, 7, a[12]), b = u(b, E, O, U, A, 12, a[13]), U = u(U, b, E, O, I, 17, a[14]), E = h(E, O = u(O, U, b, E, P, 22, a[15]), U, b, c, 5, a[16]), b = h(b, E, O, U, y, 9, a[17]), U = h(U, b, E, O, k, 14, a[18]), O = h(O, U, b, E, i, 20, a[19]), E = h(E, O, U, b, m, 5, a[20]), b = h(b, E, O, U, S, 9, a[21]), U = h(U, b, E, O, P, 14, a[22]), O = h(O, U, b, E, g, 20, a[23]), E = h(E, O, U, b, w, 5, a[24]), b = h(b, E, O, U, I, 9, a[25]), U = h(U, b, E, O, p, 14, a[26]), O = h(O, U, b, E, v, 20, a[27]), E = h(E, O, U, b, A, 5, a[28]), b = h(b, E, O, U, f, 9, a[29]), U = h(U, b, E, O, _, 14, a[30]), E = l(E, O = h(O, U, b, E, T, 20, a[31]), U, b, m, 4, a[32]), b = l(b, E, O, U, v, 11, a[33]), U = l(U, b, E, O, k, 16, a[34]), O = l(O, U, b, E, I, 23, a[35]), E = l(E, O, U, b, c, 4, a[36]), b = l(b, E, O, U, g, 11, a[37]), U = l(U, b, E, O, _, 16, a[38]), O = l(O, U, b, E, S, 23, a[39]), E = l(E, O, U, b, A, 4, a[40]), b = l(b, E, O, U, i, 11, a[41]), U = l(U, b, E, O, p, 16, a[42]), O = l(O, U, b, E, y, 23, a[43]), E = l(E, O, U, b, w, 4, a[44]), b = l(b, E, O, U, T, 11, a[45]), U = l(U, b, E, O, P, 16, a[46]), E = d(E, O = l(O, U, b, E, f, 23, a[47]), U, b, i, 6, a[48]), b = d(b, E, O, U, _, 10, a[49]), U = d(U, b, E, O, I, 15, a[50]), O = d(O, U, b, E, m, 21, a[51]), E = d(E, O, U, b, T, 6, a[52]), b = d(b, E, O, U, p, 10, a[53]), U = d(U, b, E, O, S, 15, a[54]), O = d(O, U, b, E, c, 21, a[55]), E = d(E, O, U, b, v, 6, a[56]), b = d(b, E, O, U, P, 10, a[57]), U = d(U, b, E, O, y, 15, a[58]), O = d(O, U, b, E, A, 21, a[59]), E = d(E, O, U, b, g, 6, a[60]), b = d(b, E, O, U, k, 10, a[61]), U = d(U, b, E, O, f, 15, a[62]), O = d(O, U, b, E, w, 21, a[63]), o[0] = o[0] + E | 0, o[1] = o[1] + O | 0, o[2] = o[2] + U | 0, o[3] = o[3] + b | 0;}, _doFinalize: function _doFinalize() {var t = this._data,s = t.words,n = 8 * this._nDataBytes,r = 8 * t.sigBytes;s[r >>> 5] |= 128 << 24 - r % 32;var o = e.floor(n / 4294967296),i = n;s[15 + (r + 64 >>> 9 << 4)] = 16711935 & (o << 8 | o >>> 24) | 4278255360 & (o << 24 | o >>> 8), s[14 + (r + 64 >>> 9 << 4)] = 16711935 & (i << 8 | i >>> 24) | 4278255360 & (i << 24 | i >>> 8), t.sigBytes = 4 * (s.length + 1), this._process();for (var a = this._hash, c = a.words, u = 0; u < 4; u++) {var h = c[u];c[u] = 16711935 & (h << 8 | h >>> 24) | 4278255360 & (h << 24 | h >>> 8);}return a;}, clone: function clone() {var e = o.clone.call(this);return e._hash = this._hash.clone(), e;} });function u(e, t, s, n, r, o, i) {var a = e + (t & s | ~t & n) + r + i;return (a << o | a >>> 32 - o) + t;}function h(e, t, s, n, r, o, i) {var a = e + (t & n | s & ~n) + r + i;return (a << o | a >>> 32 - o) + t;}function l(e, t, s, n, r, o, i) {var a = e + (t ^ s ^ n) + r + i;return (a << o | a >>> 32 - o) + t;}function d(e, t, s, n, r, o, i) {var a = e + (s ^ (t | ~n)) + r + i;return (a << o | a >>> 32 - o) + t;}t.MD5 = o._createHelper(c), t.HmacMD5 = o._createHmacHelper(c);}(Math), s.MD5);}), s(function (e, t) {var s, r, o;e.exports = (r = (s = n).lib.Base, o = s.enc.Utf8, void (s.algo.HMAC = r.extend({ init: function init(e, t) {e = this._hasher = new e.init(), "string" == typeof t && (t = o.parse(t));var s = e.blockSize,n = 4 * s;t.sigBytes > n && (t = e.finalize(t)), t.clamp();for (var r = this._oKey = t.clone(), i = this._iKey = t.clone(), a = r.words, c = i.words, u = 0; u < s; u++) {a[u] ^= 1549556828, c[u] ^= 909522486;}r.sigBytes = i.sigBytes = n, this.reset();}, reset: function reset() {var e = this._hasher;e.reset(), e.update(this._iKey);}, update: function update(e) {return this._hasher.update(e), this;}, finalize: function finalize(e) {var t = this._hasher,s = t.finalize(e);return t.reset(), t.finalize(this._oKey.clone().concat(s));} })));}), s(function (e, t) {e.exports = n.HmacMD5;}));function o(e) {return function (t) {if (!((t = t || {}).success || t.fail || t.complete)) return e.call(this, t);e.call(this, t).then(function (e) {t.success && t.success(e), t.complete && t.complete(e);}, function (e) {t.fail && t.fail(e), t.complete && t.complete(e);});};}var i = /*#__PURE__*/function (_Error) {_inherits(i, _Error);var _super = _createSuper(i);function i(e) {var _this;_classCallCheck(this, i);_this = _super.call(this, e.message), _this.errMsg = e.message || "", Object.defineProperties(_assertThisInitialized(_this), { code: { get: function get() {return e.code;} }, requestId: { get: function get() {return e.requestId;} }, message: { get: function get() {return this.errMsg;}, set: function set(e) {this.errMsg = e;} } });return _this;}return i;}( /*#__PURE__*/_wrapNativeSuper(Error));var _e2 = (0, _uniI18n.initVueI18n)({ "zh-Hans": { "uniCloud.init.paramRequired": "缺少参数：{param}", "uniCloud.uploadFile.fileError": "filePath应为File对象" }, "zh-Hant": { "uniCloud.init.paramRequired": "缺少参数：{param}", "uniCloud.uploadFile.fileError": "filePath应为File对象" }, en: { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" }, fr: { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" }, es: { "uniCloud.init.paramRequired": "{param} required", "uniCloud.uploadFile.fileError": "filePath should be instance of File" } }, "zh-Hans"),a = _e2.t,c = _e2.setLocale,u = _e2.getLocale;var h, l, d;try {h = __webpack_require__(/*! uni-stat-config */ 195).default || __webpack_require__(/*! uni-stat-config */ 195);} catch (e) {h = { appid: "" };}function f() {var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 8;var t = "";for (; t.length < e;) {t += Math.random().toString(32).substring(2);}return t.substring(0, e);}function p() {if ("n" === g()) {try {l = plus.runtime.getDCloudId();} catch (e) {l = "";}return l;}return l || (l = f(32), uni.setStorage({ key: "__DC_CLOUD_UUID", data: l })), l;}function g() {var _appPlus$h5$mpWeixi;return (_appPlus$h5$mpWeixi = { "app-plus": "n", h5: "h5", "mp-weixin": "wx" }, _defineProperty(_appPlus$h5$mpWeixi, ["y", "a", "p", "mp-ali"].reverse().join(""), "ali"), _defineProperty(_appPlus$h5$mpWeixi, "mp-baidu", "bd"), _defineProperty(_appPlus$h5$mpWeixi, "mp-toutiao", "tt"), _defineProperty(_appPlus$h5$mpWeixi, "mp-qq", "qq"), _defineProperty(_appPlus$h5$mpWeixi, "quickapp-native", "qn"), _appPlus$h5$mpWeixi)["mp-weixin"];}var m = { sign: function sign(e, t) {var s = "";return Object.keys(e).sort().forEach(function (t) {e[t] && (s = s + "&" + t + "=" + e[t]);}), s = s.slice(1), r(s, t).toString();}, wrappedRequest: function wrappedRequest(e, t) {return new Promise(function (s, n) {t(Object.assign(e, { complete: function complete(e) {e || (e = {}),  false && false;var t = e.data && e.data.header && e.data.header["x-serverless-request-id"] || e.header && e.header["request-id"];if (!e.statusCode || e.statusCode >= 400) return n(new i({ code: "SYS_ERR", message: e.errMsg || "request:fail", requestId: t }));var r = e.data;if (r.error) return n(new i({ code: r.error.code, message: r.error.message, requestId: t }));r.result = r.data, r.requestId = t, delete r.data, s(r);} }));});} };var y = { request: function request(e) {return uni.request(e);}, uploadFile: function uploadFile(e) {return uni.uploadFile(e);}, setStorageSync: function setStorageSync(e, t) {return uni.setStorageSync(e, t);}, getStorageSync: function getStorageSync(e) {return uni.getStorageSync(e);}, removeStorageSync: function removeStorageSync(e) {return uni.removeStorageSync(e);}, clearStorageSync: function clearStorageSync() {return uni.clearStorageSync();} };var _ = /*#__PURE__*/function () {function _(e) {_classCallCheck(this, _);["spaceId", "clientSecret"].forEach(function (t) {if (!Object.prototype.hasOwnProperty.call(e, t)) throw new Error(a("uniCloud.init.paramRequired", { param: t }));}), this.config = Object.assign({}, { endpoint: "https://api.bspapp.com" }, e), this.config.provider = "aliyun", this.config.requestUrl = this.config.endpoint + "/client", this.config.envType = this.config.envType || "public", this.config.accessTokenKey = "access_token_" + this.config.spaceId, this.adapter = y;}_createClass(_, [{ key: "setAccessToken", value: function setAccessToken(e) {this.accessToken = e;} }, { key: "requestWrapped", value: function requestWrapped(e) {return m.wrappedRequest(e, this.adapter.request);} }, { key: "requestAuth", value: function requestAuth(e) {return this.requestWrapped(e);} }, { key: "request", value: function request(e, t) {var _this2 = this;return Promise.resolve().then(function () {return _this2.hasAccessToken ? t ? _this2.requestWrapped(e) : _this2.requestWrapped(e).catch(function (t) {return new Promise(function (e, s) {!t || "GATEWAY_INVALID_TOKEN" !== t.code && "InvalidParameter.InvalidToken" !== t.code ? s(t) : e();}).then(function () {return _this2.getAccessToken();}).then(function () {var t = _this2.rebuildRequest(e);return _this2.request(t, !0);});}) : _this2.getAccessToken().then(function () {var t = _this2.rebuildRequest(e);return _this2.request(t, !0);});});} }, { key: "rebuildRequest", value: function rebuildRequest(e) {var t = Object.assign({}, e);return t.data.token = this.accessToken, t.header["x-basement-token"] = this.accessToken, t.header["x-serverless-sign"] = m.sign(t.data, this.config.clientSecret), t;} }, { key: "setupRequest", value: function setupRequest(e, t) {var s = Object.assign({}, e, { spaceId: this.config.spaceId, timestamp: Date.now() }),n = { "Content-Type": "application/json" };return "auth" !== t && (s.token = this.accessToken, n["x-basement-token"] = this.accessToken), n["x-serverless-sign"] = m.sign(s, this.config.clientSecret), { url: this.config.requestUrl, method: "POST", data: s, dataType: "json", header: n };} }, { key: "getAccessToken", value: function getAccessToken() {var _this3 = this;return this.requestAuth(this.setupRequest({ method: "serverless.auth.user.anonymousAuthorize", params: "{}" }, "auth")).then(function (e) {return new Promise(function (t, s) {e.result && e.result.accessToken ? (_this3.setAccessToken(e.result.accessToken), t(_this3.accessToken)) : s(new i({ code: "AUTH_FAILED", message: "获取accessToken失败" }));});});} }, { key: "authorize", value: function authorize() {this.getAccessToken();} }, { key: "callFunction", value: function callFunction(e) {var t = { method: "serverless.function.runtime.invoke", params: JSON.stringify({ functionTarget: e.name, functionArgs: e.data || {} }) };return this.request(this.setupRequest(t));} }, { key: "getOSSUploadOptionsFromPath", value: function getOSSUploadOptionsFromPath(e) {var t = { method: "serverless.file.resource.generateProximalSign", params: JSON.stringify(e) };return this.request(this.setupRequest(t));} }, { key: "uploadFileToOSS", value: function uploadFileToOSS(_ref) {var _this4 = this;var e = _ref.url,t = _ref.formData,s = _ref.name,n = _ref.filePath,r = _ref.fileType,o = _ref.onUploadProgress;return new Promise(function (a, c) {var u = _this4.adapter.uploadFile({ url: e, formData: t, name: s, filePath: n, fileType: r, header: { "X-OSS-server-side-encrpytion": "AES256" }, success: function success(e) {e && e.statusCode < 400 ? a(e) : c(new i({ code: "UPLOAD_FAILED", message: "文件上传失败" }));}, fail: function fail(e) {c(new i({ code: e.code || "UPLOAD_FAILED", message: e.message || e.errMsg || "文件上传失败" }));} });"function" == typeof o && u && "function" == typeof u.onProgressUpdate && u.onProgressUpdate(function (e) {o({ loaded: e.totalBytesSent, total: e.totalBytesExpectedToSend });});});} }, { key: "reportOSSUpload", value: function reportOSSUpload(e) {var t = { method: "serverless.file.resource.report", params: JSON.stringify(e) };return this.request(this.setupRequest(t));} }, { key: "uploadFile", value: function uploadFile(_ref2) {var _this5 = this;var e = _ref2.filePath,t = _ref2.cloudPath,_ref2$fileType = _ref2.fileType,s = _ref2$fileType === void 0 ? "image" : _ref2$fileType,n = _ref2.onUploadProgress,r = _ref2.config;if (!t) throw new i({ code: "CLOUDPATH_REQUIRED", message: "cloudPath不可为空" });var o = r && r.envType || this.config.envType;var a, c;return this.getOSSUploadOptionsFromPath({ env: o, filename: t }).then(function (t) {var r = t.result;a = r.id, c = "https://" + r.cdnDomain + "/" + r.ossPath;var o = { url: "https://" + r.host, formData: { "Cache-Control": "max-age=2592000", "Content-Disposition": "attachment", OSSAccessKeyId: r.accessKeyId, Signature: r.signature, host: r.host, id: a, key: r.ossPath, policy: r.policy, success_action_status: 200 }, fileName: "file", name: "file", filePath: e, fileType: s };return _this5.uploadFileToOSS(Object.assign({}, o, { onUploadProgress: n }));}).then(function () {return _this5.reportOSSUpload({ id: a });}).then(function (t) {return new Promise(function (s, n) {t.success ? s({ success: !0, filePath: e, fileID: c }) : n(new i({ code: "UPLOAD_FAILED", message: "文件上传失败" }));});});} }, { key: "deleteFile", value: function deleteFile(_ref3) {var e = _ref3.fileList;var t = { method: "serverless.file.resource.delete", params: JSON.stringify({ id: e[0] }) };return this.request(this.setupRequest(t));} }, { key: "getTempFileURL", value: function getTempFileURL() {var _ref4 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref4.fileList;return new Promise(function (t, s) {Array.isArray(e) && 0 !== e.length || s(new i({ code: "INVALID_PARAM", message: "fileList的元素必须是非空的字符串" })), t({ fileList: e.map(function (e) {return { fileID: e, tempFileURL: e };}) });});} }, { key: "hasAccessToken", get: function get() {return !!this.accessToken;} }]);return _;}();var v = { init: function init(e) {var t = new _(e);["deleteFile", "getTempFileURL"].forEach(function (e) {t[e] = o(t[e]).bind(t);});var s = { signInAnonymously: function signInAnonymously() {return t.authorize();}, getLoginState: function getLoginState() {return Promise.resolve(!1);} };return t.auth = function () {return s;}, t.customAuth = t.auth, t;} },w = "undefined" != typeof location && "http:" === location.protocol ? "http:" : "https:",S = "undefined" != typeof process && "e2e" === "development" && "pre" === Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).END_POINT ? "//tcb-pre.tencentcloudapi.com/web" : "//tcb-api.tencentcloudapi.com/web";var k;!function (e) {e.local = "local", e.none = "none", e.session = "session";}(k || (k = {}));var T = function T() {};s(function (e, t) {var s;e.exports = (s = n, function (e) {var t = s,n = t.lib,r = n.WordArray,o = n.Hasher,i = t.algo,a = [],c = [];!function () {function t(t) {for (var s = e.sqrt(t), n = 2; n <= s; n++) {if (!(t % n)) return !1;}return !0;}function s(e) {return 4294967296 * (e - (0 | e)) | 0;}for (var n = 2, r = 0; r < 64;) {t(n) && (r < 8 && (a[r] = s(e.pow(n, .5))), c[r] = s(e.pow(n, 1 / 3)), r++), n++;}}();var u = [],h = i.SHA256 = o.extend({ _doReset: function _doReset() {this._hash = new r.init(a.slice(0));}, _doProcessBlock: function _doProcessBlock(e, t) {for (var s = this._hash.words, n = s[0], r = s[1], o = s[2], i = s[3], a = s[4], h = s[5], l = s[6], d = s[7], f = 0; f < 64; f++) {if (f < 16) u[f] = 0 | e[t + f];else {var p = u[f - 15],g = (p << 25 | p >>> 7) ^ (p << 14 | p >>> 18) ^ p >>> 3,m = u[f - 2],y = (m << 15 | m >>> 17) ^ (m << 13 | m >>> 19) ^ m >>> 10;u[f] = g + u[f - 7] + y + u[f - 16];}var _ = n & r ^ n & o ^ r & o,v = (n << 30 | n >>> 2) ^ (n << 19 | n >>> 13) ^ (n << 10 | n >>> 22),w = d + ((a << 26 | a >>> 6) ^ (a << 21 | a >>> 11) ^ (a << 7 | a >>> 25)) + (a & h ^ ~a & l) + c[f] + u[f];d = l, l = h, h = a, a = i + w | 0, i = o, o = r, r = n, n = w + (v + _) | 0;}s[0] = s[0] + n | 0, s[1] = s[1] + r | 0, s[2] = s[2] + o | 0, s[3] = s[3] + i | 0, s[4] = s[4] + a | 0, s[5] = s[5] + h | 0, s[6] = s[6] + l | 0, s[7] = s[7] + d | 0;}, _doFinalize: function _doFinalize() {var t = this._data,s = t.words,n = 8 * this._nDataBytes,r = 8 * t.sigBytes;return s[r >>> 5] |= 128 << 24 - r % 32, s[14 + (r + 64 >>> 9 << 4)] = e.floor(n / 4294967296), s[15 + (r + 64 >>> 9 << 4)] = n, t.sigBytes = 4 * s.length, this._process(), this._hash;}, clone: function clone() {var e = o.clone.call(this);return e._hash = this._hash.clone(), e;} });t.SHA256 = o._createHelper(h), t.HmacSHA256 = o._createHmacHelper(h);}(Math), s.SHA256);}), s(function (e, t) {e.exports = n.HmacSHA256;}), s(function (e, t) {var s, r, o;e.exports = (r = (s = o = n).lib.WordArray, s.enc.Base64 = { stringify: function stringify(e) {var t = e.words,s = e.sigBytes,n = this._map;e.clamp();for (var r = [], o = 0; o < s; o += 3) {for (var i = (t[o >>> 2] >>> 24 - o % 4 * 8 & 255) << 16 | (t[o + 1 >>> 2] >>> 24 - (o + 1) % 4 * 8 & 255) << 8 | t[o + 2 >>> 2] >>> 24 - (o + 2) % 4 * 8 & 255, a = 0; a < 4 && o + .75 * a < s; a++) {r.push(n.charAt(i >>> 6 * (3 - a) & 63));}}var c = n.charAt(64);if (c) for (; r.length % 4;) {r.push(c);}return r.join("");}, parse: function parse(e) {var t = e.length,s = this._map,n = this._reverseMap;if (!n) {n = this._reverseMap = [];for (var o = 0; o < s.length; o++) {n[s.charCodeAt(o)] = o;}}var i = s.charAt(64);if (i) {var a = e.indexOf(i);-1 !== a && (t = a);}return function (e, t, s) {for (var n = [], o = 0, i = 0; i < t; i++) {if (i % 4) {var a = s[e.charCodeAt(i - 1)] << i % 4 * 2,c = s[e.charCodeAt(i)] >>> 6 - i % 4 * 2;n[o >>> 2] |= (a | c) << 24 - o % 4 * 8, o++;}}return r.create(n, o);}(e, t, n);}, _map: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=" }, o.enc.Base64);}), s(function (e, t) {e.exports = n.enc.Utf8;});var A = function A() {var e;if (!Promise) {e = function e() {}, e.promise = {};var _t = function _t() {throw new Error('Your Node runtime does support ES6 Promises. Set "global.Promise" to your preferred implementation of promises.');};return Object.defineProperty(e.promise, "then", { get: _t }), Object.defineProperty(e.promise, "catch", { get: _t }), e;}var t = new Promise(function (t, s) {e = function e(_e3, n) {return _e3 ? s(_e3) : t(n);};});return e.promise = t, e;};function I(e) {return void 0 === e;}function P(e) {return "[object Null]" === Object.prototype.toString.call(e);}var E;function O(e) {var t = (s = e, "[object Array]" === Object.prototype.toString.call(s) ? e : [e]);var s;var _iterator = _createForOfIteratorHelper(t),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var _e4 = _step.value;var _t2 = _e4.isMatch,_s = _e4.genAdapter,_n = _e4.runtime;if (_t2()) return { adapter: _s(), runtime: _n };}} catch (err) {_iterator.e(err);} finally {_iterator.f();}}!function (e) {e.WEB = "web", e.WX_MP = "wx_mp";}(E || (E = {}));var U = { adapter: null, runtime: void 0 },b = ["anonymousUuidKey"];var C = /*#__PURE__*/function (_T) {_inherits(C, _T);var _super2 = _createSuper(C);function C() {var _this6;_classCallCheck(this, C);_this6 = _super2.call(this), U.adapter.root.tcbObject || (U.adapter.root.tcbObject = {});return _this6;}_createClass(C, [{ key: "setItem", value: function setItem(e, t) {U.adapter.root.tcbObject[e] = t;} }, { key: "getItem", value: function getItem(e) {return U.adapter.root.tcbObject[e];} }, { key: "removeItem", value: function removeItem(e) {delete U.adapter.root.tcbObject[e];} }, { key: "clear", value: function clear() {delete U.adapter.root.tcbObject;} }]);return C;}(T);function D(e, t) {switch (e) {case "local":return t.localStorage || new C();case "none":return new C();default:return t.sessionStorage || new C();}}var R = /*#__PURE__*/function () {function R(e) {_classCallCheck(this, R);if (!this._storage) {this._persistence = U.adapter.primaryStorage || e.persistence, this._storage = D(this._persistence, U.adapter);var _t3 = "access_token_" + e.env,_s2 = "access_token_expire_" + e.env,_n2 = "refresh_token_" + e.env,_r = "anonymous_uuid_" + e.env,_o = "login_type_" + e.env,_i = "user_info_" + e.env;this.keys = { accessTokenKey: _t3, accessTokenExpireKey: _s2, refreshTokenKey: _n2, anonymousUuidKey: _r, loginTypeKey: _o, userInfoKey: _i };}}_createClass(R, [{ key: "updatePersistence", value: function updatePersistence(e) {if (e === this._persistence) return;var t = "local" === this._persistence;this._persistence = e;var s = D(e, U.adapter);for (var _e5 in this.keys) {var _n3 = this.keys[_e5];if (t && b.includes(_e5)) continue;var _r2 = this._storage.getItem(_n3);I(_r2) || P(_r2) || (s.setItem(_n3, _r2), this._storage.removeItem(_n3));}this._storage = s;} }, { key: "setStore", value: function setStore(e, t, s) {if (!this._storage) return;var n = { version: s || "localCachev1", content: t },r = JSON.stringify(n);try {this._storage.setItem(e, r);} catch (e) {throw e;}} }, { key: "getStore", value: function getStore(e, t) {try {if (!this._storage) return;} catch (e) {return "";}t = t || "localCachev1";var s = this._storage.getItem(e);if (!s) return "";if (s.indexOf(t) >= 0) {return JSON.parse(s).content;}return "";} }, { key: "removeStore", value: function removeStore(e) {this._storage.removeItem(e);} }]);return R;}();var x = {},q = {};function F(e) {return x[e];}var L = function L(e, t) {_classCallCheck(this, L);this.data = t || null, this.name = e;};var N = /*#__PURE__*/function (_L) {_inherits(N, _L);var _super3 = _createSuper(N);function N(e, t) {var _this7;_classCallCheck(this, N);_this7 = _super3.call(this, "error", { error: e, data: t }), _this7.error = e;return _this7;}return N;}(L);var M = new ( /*#__PURE__*/function () {function _class() {_classCallCheck(this, _class);this._listeners = {};}_createClass(_class, [{ key: "on", value: function on(e, t) {return function (e, t, s) {s[e] = s[e] || [], s[e].push(t);}(e, t, this._listeners), this;} }, { key: "off", value: function off(e, t) {return function (e, t, s) {if (s && s[e]) {var _n4 = s[e].indexOf(t);-1 !== _n4 && s[e].splice(_n4, 1);}}(e, t, this._listeners), this;} }, { key: "fire", value: function fire(e, t) {if (e instanceof N) return console.error(e.error), this;var s = "string" == typeof e ? new L(e, t || {}) : e;var n = s.name;if (this._listens(n)) {s.target = this;var _e6 = this._listeners[n] ? _toConsumableArray(this._listeners[n]) : [];var _iterator2 = _createForOfIteratorHelper(_e6),_step2;try {for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {var _t4 = _step2.value;_t4.call(this, s);}} catch (err) {_iterator2.e(err);} finally {_iterator2.f();}}return this;} }, { key: "_listens", value: function _listens(e) {return this._listeners[e] && this._listeners[e].length > 0;} }]);return _class;}())();function $(e, t) {M.on(e, t);}function K(e) {var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};M.fire(e, t);}function B(e, t) {M.off(e, t);}var j = "loginStateChanged",H = "loginStateExpire",W = "loginTypeChanged",V = "anonymousConverted",z = "refreshAccessToken";var Y;!function (e) {e.ANONYMOUS = "ANONYMOUS", e.WECHAT = "WECHAT", e.WECHAT_PUBLIC = "WECHAT-PUBLIC", e.WECHAT_OPEN = "WECHAT-OPEN", e.CUSTOM = "CUSTOM", e.EMAIL = "EMAIL", e.USERNAME = "USERNAME", e.NULL = "NULL";}(Y || (Y = {}));var J = ["auth.getJwt", "auth.logout", "auth.signInWithTicket", "auth.signInAnonymously", "auth.signIn", "auth.fetchAccessTokenWithRefreshToken", "auth.signUpWithEmailAndPassword", "auth.activateEndUserMail", "auth.sendPasswordResetEmail", "auth.resetPasswordWithToken", "auth.isUsernameRegistered"],X = { "X-SDK-Version": "1.3.5" };function G(e, t, s) {var n = e[t];e[t] = function (t) {var r = {},o = {};s.forEach(function (s) {var _s$call = s.call(e, t),n = _s$call.data,i = _s$call.headers;Object.assign(r, n), Object.assign(o, i);});var i = t.data;return i && function () {var e;if (e = i, "[object FormData]" !== Object.prototype.toString.call(e)) t.data = _objectSpread(_objectSpread({}, i), r);else for (var _e7 in r) {i.append(_e7, r[_e7]);}}(), t.headers = _objectSpread(_objectSpread({}, t.headers || {}), o), n.call(e, t);};}function Q() {var e = Math.random().toString(16).slice(2);return { data: { seqId: e }, headers: _objectSpread(_objectSpread({}, X), {}, { "x-seqid": e }) };}var Z = /*#__PURE__*/function () {function Z() {var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};_classCallCheck(this, Z);var t;this.config = e, this._reqClass = new U.adapter.reqClass({ timeout: this.config.timeout, timeoutMsg: "\u8BF7\u6C42\u5728".concat(this.config.timeout / 1e3, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD"), restrictedMethods: ["post"] }), this._cache = F(this.config.env), this._localCache = (t = this.config.env, q[t]), G(this._reqClass, "post", [Q]), G(this._reqClass, "upload", [Q]), G(this._reqClass, "download", [Q]);}_createClass(Z, [{ key: "post", value: function () {var _post = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return this._reqClass.post(e);case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee, this);}));function post(_x) {return _post.apply(this, arguments);}return post;}() }, { key: "upload", value: function () {var _upload = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2(e) {return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return this._reqClass.upload(e);case 2:return _context2.abrupt("return", _context2.sent);case 3:case "end":return _context2.stop();}}}, _callee2, this);}));function upload(_x2) {return _upload.apply(this, arguments);}return upload;}() }, { key: "download", value: function () {var _download = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3(e) {return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return this._reqClass.download(e);case 2:return _context3.abrupt("return", _context3.sent);case 3:case "end":return _context3.stop();}}}, _callee3, this);}));function download(_x3) {return _download.apply(this, arguments);}return download;}() }, { key: "refreshAccessToken", value: function () {var _refreshAccessToken2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee4() {var e, t;return _regenerator.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:this._refreshAccessTokenPromise || (this._refreshAccessTokenPromise = this._refreshAccessToken());_context4.prev = 1;_context4.next = 4;return this._refreshAccessTokenPromise;case 4:e = _context4.sent;_context4.next = 10;break;case 7:_context4.prev = 7;_context4.t0 = _context4["catch"](1);t = _context4.t0;case 10:if (!(this._refreshAccessTokenPromise = null, this._shouldRefreshAccessTokenHook = null, t)) {_context4.next = 12;break;}throw t;case 12:return _context4.abrupt("return", e);case 13:case "end":return _context4.stop();}}}, _callee4, this, [[1, 7]]);}));function refreshAccessToken() {return _refreshAccessToken2.apply(this, arguments);}return refreshAccessToken;}() }, { key: "_refreshAccessToken", value: function () {var _refreshAccessToken3 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee5() {var _this$_cache$keys, e, t, s, n, r, o, i, a, _e8, _e9, _t5, _n5;return _regenerator.default.wrap(function _callee5$(_context5) {while (1) {switch (_context5.prev = _context5.next) {case 0:_this$_cache$keys = this._cache.keys, e = _this$_cache$keys.accessTokenKey, t = _this$_cache$keys.accessTokenExpireKey, s = _this$_cache$keys.refreshTokenKey, n = _this$_cache$keys.loginTypeKey, r = _this$_cache$keys.anonymousUuidKey;this._cache.removeStore(e), this._cache.removeStore(t);o = this._cache.getStore(s);if (o) {_context5.next = 5;break;}throw new Error("未登录CloudBase");case 5:i = { refresh_token: o };_context5.next = 8;return this.request("auth.fetchAccessTokenWithRefreshToken", i);case 8:a = _context5.sent;if (!a.data.code) {_context5.next = 21;break;}_e8 = a.data.code;if (!("SIGN_PARAM_INVALID" === _e8 || "REFRESH_TOKEN_EXPIRED" === _e8 || "INVALID_REFRESH_TOKEN" === _e8)) {_context5.next = 20;break;}if (!(this._cache.getStore(n) === Y.ANONYMOUS && "INVALID_REFRESH_TOKEN" === _e8)) {_context5.next = 19;break;}_e9 = this._cache.getStore(r);_t5 = this._cache.getStore(s);_context5.next = 17;return this.send("auth.signInAnonymously", { anonymous_uuid: _e9, refresh_token: _t5 });case 17:_n5 = _context5.sent;return _context5.abrupt("return", (this.setRefreshToken(_n5.refresh_token), this._refreshAccessToken()));case 19:K(H), this._cache.removeStore(s);case 20:throw new Error("刷新access token失败：" + a.data.code);case 21:if (!a.data.access_token) {_context5.next = 23;break;}return _context5.abrupt("return", (K(z), this._cache.setStore(e, a.data.access_token), this._cache.setStore(t, a.data.access_token_expire + Date.now()), { accessToken: a.data.access_token, accessTokenExpire: a.data.access_token_expire }));case 23:a.data.refresh_token && (this._cache.removeStore(s), this._cache.setStore(s, a.data.refresh_token), this._refreshAccessToken());case 24:case "end":return _context5.stop();}}}, _callee5, this);}));function _refreshAccessToken() {return _refreshAccessToken3.apply(this, arguments);}return _refreshAccessToken;}() }, { key: "getAccessToken", value: function () {var _getAccessToken = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee6() {var _this$_cache$keys2, e, t, s, n, r, o;return _regenerator.default.wrap(function _callee6$(_context6) {while (1) {switch (_context6.prev = _context6.next) {case 0:_this$_cache$keys2 = this._cache.keys, e = _this$_cache$keys2.accessTokenKey, t = _this$_cache$keys2.accessTokenExpireKey, s = _this$_cache$keys2.refreshTokenKey;if (this._cache.getStore(s)) {_context6.next = 3;break;}throw new Error("refresh token不存在，登录状态异常");case 3:n = this._cache.getStore(e), r = this._cache.getStore(t), o = !0;_context6.t0 = this._shouldRefreshAccessTokenHook;if (!_context6.t0) {_context6.next = 9;break;}_context6.next = 8;return this._shouldRefreshAccessTokenHook(n, r);case 8:_context6.t0 = !_context6.sent;case 9:_context6.t1 = _context6.t0;if (!_context6.t1) {_context6.next = 12;break;}o = !1;case 12:return _context6.abrupt("return", (!n || !r || r < Date.now()) && o ? this.refreshAccessToken() : { accessToken: n, accessTokenExpire: r });case 13:case "end":return _context6.stop();}}}, _callee6, this);}));function getAccessToken() {return _getAccessToken.apply(this, arguments);}return getAccessToken;}() }, { key: "request", value: function () {var _request = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee7(e, t, s) {var n, r, o, _e10, i, _e11, _e12, a, c, u, h, l, d, f, p, g;return _regenerator.default.wrap(function _callee7$(_context7) {while (1) {switch (_context7.prev = _context7.next) {case 0:n = "x-tcb-trace_" + this.config.env;r = "application/x-www-form-urlencoded";o = _objectSpread({ action: e, env: this.config.env, dataVersion: "2019-08-16" }, t);if (!(-1 === J.indexOf(e))) {_context7.next = 10;break;}_e10 = this._cache.keys.refreshTokenKey;_context7.t0 = this._cache.getStore(_e10);if (!_context7.t0) {_context7.next = 10;break;}_context7.next = 9;return this.getAccessToken();case 9:o.access_token = _context7.sent.accessToken;case 10:if ("storage.uploadFile" === e) {i = new FormData();for (_e11 in i) {i.hasOwnProperty(_e11) && void 0 !== i[_e11] && i.append(_e11, o[_e11]);}r = "multipart/form-data";} else {r = "application/json;charset=UTF-8", i = {};for (_e12 in o) {void 0 !== o[_e12] && (i[_e12] = o[_e12]);}}a = { headers: { "content-type": r } };s && s.onUploadProgress && (a.onUploadProgress = s.onUploadProgress);c = this._localCache.getStore(n);c && (a.headers["X-TCB-Trace"] = c);u = t.parse, h = t.inQuery, l = t.search;d = { env: this.config.env };u && (d.parse = !0), h && (d = _objectSpread(_objectSpread({}, h), d));f = function (e, t) {var s = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};var n = /\?/.test(t);var r = "";for (var _e13 in s) {"" === r ? !n && (t += "?") : r += "&", r += "".concat(_e13, "=").concat(encodeURIComponent(s[_e13]));}return /^http(s)?\:\/\//.test(t += r) ? t : "".concat(e).concat(t);}(w, S, d);l && (f += l);_context7.next = 22;return this.post(_objectSpread({ url: f, data: i }, a));case 22:p = _context7.sent;g = p.header && p.header["x-tcb-trace"];if (!(g && this._localCache.setStore(n, g), 200 !== Number(p.status) && 200 !== Number(p.statusCode) || !p.data)) {_context7.next = 26;break;}throw new Error("network request error");case 26:return _context7.abrupt("return", p);case 27:case "end":return _context7.stop();}}}, _callee7, this);}));function request(_x4, _x5, _x6) {return _request.apply(this, arguments);}return request;}() }, { key: "send", value: function () {var _send = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee8(e) {var t,s,_s3,_args8 = arguments;return _regenerator.default.wrap(function _callee8$(_context8) {while (1) {switch (_context8.prev = _context8.next) {case 0:t = _args8.length > 1 && _args8[1] !== undefined ? _args8[1] : {};_context8.next = 3;return this.request(e, t, { onUploadProgress: t.onUploadProgress });case 3:s = _context8.sent;if (!("ACCESS_TOKEN_EXPIRED" === s.data.code && -1 === J.indexOf(e))) {_context8.next = 13;break;}_context8.next = 7;return this.refreshAccessToken();case 7:_context8.next = 9;return this.request(e, t, { onUploadProgress: t.onUploadProgress });case 9:_s3 = _context8.sent;if (!_s3.data.code) {_context8.next = 12;break;}throw new Error("[".concat(_s3.data.code, "] ").concat(_s3.data.message));case 12:return _context8.abrupt("return", _s3.data);case 13:if (!s.data.code) {_context8.next = 15;break;}throw new Error("[".concat(s.data.code, "] ").concat(s.data.message));case 15:return _context8.abrupt("return", s.data);case 16:case "end":return _context8.stop();}}}, _callee8, this);}));function send(_x7) {return _send.apply(this, arguments);}return send;}() }, { key: "setRefreshToken", value: function setRefreshToken(e) {var _this$_cache$keys3 = this._cache.keys,t = _this$_cache$keys3.accessTokenKey,s = _this$_cache$keys3.accessTokenExpireKey,n = _this$_cache$keys3.refreshTokenKey;this._cache.removeStore(t), this._cache.removeStore(s), this._cache.setStore(n, e);} }]);return Z;}();var ee = {};function te(e) {return ee[e];}var se = /*#__PURE__*/function () {function se(e) {_classCallCheck(this, se);this.config = e, this._cache = F(e.env), this._request = te(e.env);}_createClass(se, [{ key: "setRefreshToken", value: function setRefreshToken(e) {var _this$_cache$keys4 = this._cache.keys,t = _this$_cache$keys4.accessTokenKey,s = _this$_cache$keys4.accessTokenExpireKey,n = _this$_cache$keys4.refreshTokenKey;this._cache.removeStore(t), this._cache.removeStore(s), this._cache.setStore(n, e);} }, { key: "setAccessToken", value: function setAccessToken(e, t) {var _this$_cache$keys5 = this._cache.keys,s = _this$_cache$keys5.accessTokenKey,n = _this$_cache$keys5.accessTokenExpireKey;this._cache.setStore(s, e), this._cache.setStore(n, t);} }, { key: "refreshUserInfo", value: function () {var _refreshUserInfo = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee9() {var _yield$this$_request$, e;return _regenerator.default.wrap(function _callee9$(_context9) {while (1) {switch (_context9.prev = _context9.next) {case 0:_context9.next = 2;return this._request.send("auth.getUserInfo", {});case 2:_yield$this$_request$ = _context9.sent;e = _yield$this$_request$.data;return _context9.abrupt("return", (this.setLocalUserInfo(e), e));case 5:case "end":return _context9.stop();}}}, _callee9, this);}));function refreshUserInfo() {return _refreshUserInfo.apply(this, arguments);}return refreshUserInfo;}() }, { key: "setLocalUserInfo", value: function setLocalUserInfo(e) {var t = this._cache.keys.userInfoKey;this._cache.setStore(t, e);} }]);return se;}();var ne = /*#__PURE__*/function () {function ne(e) {_classCallCheck(this, ne);if (!e) throw new Error("envId is not defined");this._envId = e, this._cache = F(this._envId), this._request = te(this._envId), this.setUserInfo();}_createClass(ne, [{ key: "linkWithTicket", value: function linkWithTicket(e) {if ("string" != typeof e) throw new Error("ticket must be string");return this._request.send("auth.linkWithTicket", { ticket: e });} }, { key: "linkWithRedirect", value: function linkWithRedirect(e) {e.signInWithRedirect();} }, { key: "updatePassword", value: function updatePassword(e, t) {return this._request.send("auth.updatePassword", { oldPassword: t, newPassword: e });} }, { key: "updateEmail", value: function updateEmail(e) {return this._request.send("auth.updateEmail", { newEmail: e });} }, { key: "updateUsername", value: function updateUsername(e) {if ("string" != typeof e) throw new Error("username must be a string");return this._request.send("auth.updateUsername", { username: e });} }, { key: "getLinkedUidList", value: function () {var _getLinkedUidList = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee10() {var _yield$this$_request$2, e, t, s;return _regenerator.default.wrap(function _callee10$(_context10) {while (1) {switch (_context10.prev = _context10.next) {case 0:_context10.next = 2;return this._request.send("auth.getLinkedUidList", {});case 2:_yield$this$_request$2 = _context10.sent;e = _yield$this$_request$2.data;t = !1;s = e.users;return _context10.abrupt("return", (s.forEach(function (e) {e.wxOpenId && e.wxPublicId && (t = !0);}), { users: s, hasPrimaryUid: t }));case 7:case "end":return _context10.stop();}}}, _callee10, this);}));function getLinkedUidList() {return _getLinkedUidList.apply(this, arguments);}return getLinkedUidList;}() }, { key: "setPrimaryUid", value: function setPrimaryUid(e) {return this._request.send("auth.setPrimaryUid", { uid: e });} }, { key: "unlink", value: function unlink(e) {return this._request.send("auth.unlink", { platform: e });} }, { key: "update", value: function () {var _update = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee11(e) {var t, s, n, r, o, i, _yield$this$_request$3, a;return _regenerator.default.wrap(function _callee11$(_context11) {while (1) {switch (_context11.prev = _context11.next) {case 0:t = e.nickName;s = e.gender;n = e.avatarUrl;r = e.province;o = e.country;i = e.city;_context11.next = 8;return this._request.send("auth.updateUserInfo", { nickName: t, gender: s, avatarUrl: n, province: r, country: o, city: i });case 8:_yield$this$_request$3 = _context11.sent;a = _yield$this$_request$3.data;this.setLocalUserInfo(a);case 11:case "end":return _context11.stop();}}}, _callee11, this);}));function update(_x8) {return _update.apply(this, arguments);}return update;}() }, { key: "refresh", value: function () {var _refresh = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee12() {var _yield$this$_request$4, e;return _regenerator.default.wrap(function _callee12$(_context12) {while (1) {switch (_context12.prev = _context12.next) {case 0:_context12.next = 2;return this._request.send("auth.getUserInfo", {});case 2:_yield$this$_request$4 = _context12.sent;e = _yield$this$_request$4.data;return _context12.abrupt("return", (this.setLocalUserInfo(e), e));case 5:case "end":return _context12.stop();}}}, _callee12, this);}));function refresh() {return _refresh.apply(this, arguments);}return refresh;}() }, { key: "setUserInfo", value: function setUserInfo() {var _this8 = this;var e = this._cache.keys.userInfoKey,t = this._cache.getStore(e);["uid", "loginType", "openid", "wxOpenId", "wxPublicId", "unionId", "qqMiniOpenId", "email", "hasPassword", "customUserId", "nickName", "gender", "avatarUrl"].forEach(function (e) {_this8[e] = t[e];}), this.location = { country: t.country, province: t.province, city: t.city };} }, { key: "setLocalUserInfo", value: function setLocalUserInfo(e) {var t = this._cache.keys.userInfoKey;this._cache.setStore(t, e), this.setUserInfo();} }]);return ne;}();var re = /*#__PURE__*/function () {function re(e) {_classCallCheck(this, re);if (!e) throw new Error("envId is not defined");this._cache = F(e);var _this$_cache$keys6 = this._cache.keys,t = _this$_cache$keys6.refreshTokenKey,s = _this$_cache$keys6.accessTokenKey,n = _this$_cache$keys6.accessTokenExpireKey,r = this._cache.getStore(t),o = this._cache.getStore(s),i = this._cache.getStore(n);this.credential = { refreshToken: r, accessToken: o, accessTokenExpire: i }, this.user = new ne(e);}_createClass(re, [{ key: "isAnonymousAuth", get: function get() {return this.loginType === Y.ANONYMOUS;} }, { key: "isCustomAuth", get: function get() {return this.loginType === Y.CUSTOM;} }, { key: "isWeixinAuth", get: function get() {return this.loginType === Y.WECHAT || this.loginType === Y.WECHAT_OPEN || this.loginType === Y.WECHAT_PUBLIC;} }, { key: "loginType", get: function get() {return this._cache.getStore(this._cache.keys.loginTypeKey);} }]);return re;}();var oe = /*#__PURE__*/function (_se) {_inherits(oe, _se);var _super4 = _createSuper(oe);function oe() {_classCallCheck(this, oe);return _super4.apply(this, arguments);}_createClass(oe, [{ key: "signIn", value: function () {var _signIn = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee13() {var _this$_cache$keys7, e, t, s, n, r, _e14;return _regenerator.default.wrap(function _callee13$(_context13) {while (1) {switch (_context13.prev = _context13.next) {case 0:this._cache.updatePersistence("local");_this$_cache$keys7 = this._cache.keys;e = _this$_cache$keys7.anonymousUuidKey;t = _this$_cache$keys7.refreshTokenKey;s = this._cache.getStore(e) || void 0;n = this._cache.getStore(t) || void 0;_context13.next = 8;return this._request.send("auth.signInAnonymously", { anonymous_uuid: s, refresh_token: n });case 8:r = _context13.sent;if (!(r.uuid && r.refresh_token)) {_context13.next = 20;break;}this._setAnonymousUUID(r.uuid);this.setRefreshToken(r.refresh_token);_context13.next = 14;return this._request.refreshAccessToken();case 14:K(j);K(W, { env: this.config.env, loginType: Y.ANONYMOUS, persistence: "local" });_e14 = new re(this.config.env);_context13.next = 19;return _e14.user.refresh();case 19:return _context13.abrupt("return", _e14);case 20:throw new Error("匿名登录失败");case 21:case "end":return _context13.stop();}}}, _callee13, this);}));function signIn() {return _signIn.apply(this, arguments);}return signIn;}() }, { key: "linkAndRetrieveDataWithTicket", value: function () {var _linkAndRetrieveDataWithTicket = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee14(e) {var _this$_cache$keys8, t, s, n, r, o;return _regenerator.default.wrap(function _callee14$(_context14) {while (1) {switch (_context14.prev = _context14.next) {case 0:_this$_cache$keys8 = this._cache.keys;t = _this$_cache$keys8.anonymousUuidKey;s = _this$_cache$keys8.refreshTokenKey;n = this._cache.getStore(t);r = this._cache.getStore(s);_context14.next = 7;return this._request.send("auth.linkAndRetrieveDataWithTicket", { anonymous_uuid: n, refresh_token: r, ticket: e });case 7:o = _context14.sent;if (!o.refresh_token) {_context14.next = 16;break;}this._clearAnonymousUUID();this.setRefreshToken(o.refresh_token);_context14.next = 13;return this._request.refreshAccessToken();case 13:K(V, { env: this.config.env });K(W, { loginType: Y.CUSTOM, persistence: "local" });return _context14.abrupt("return", { credential: { refreshToken: o.refresh_token } });case 16:throw new Error("匿名转化失败");case 17:case "end":return _context14.stop();}}}, _callee14, this);}));function linkAndRetrieveDataWithTicket(_x9) {return _linkAndRetrieveDataWithTicket.apply(this, arguments);}return linkAndRetrieveDataWithTicket;}() }, { key: "_setAnonymousUUID", value: function _setAnonymousUUID(e) {var _this$_cache$keys9 = this._cache.keys,t = _this$_cache$keys9.anonymousUuidKey,s = _this$_cache$keys9.loginTypeKey;this._cache.removeStore(t), this._cache.setStore(t, e), this._cache.setStore(s, Y.ANONYMOUS);} }, { key: "_clearAnonymousUUID", value: function _clearAnonymousUUID() {this._cache.removeStore(this._cache.keys.anonymousUuidKey);} }]);return oe;}(se);var ie = /*#__PURE__*/function (_se2) {_inherits(ie, _se2);var _super5 = _createSuper(ie);function ie() {_classCallCheck(this, ie);return _super5.apply(this, arguments);}_createClass(ie, [{ key: "signIn", value: function () {var _signIn2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee15(e) {var t, s;return _regenerator.default.wrap(function _callee15$(_context15) {while (1) {switch (_context15.prev = _context15.next) {case 0:if (!("string" != typeof e)) {_context15.next = 2;break;}throw new Error("ticket must be a string");case 2:t = this._cache.keys.refreshTokenKey;_context15.next = 5;return this._request.send("auth.signInWithTicket", { ticket: e, refresh_token: this._cache.getStore(t) || "" });case 5:s = _context15.sent;if (!s.refresh_token) {_context15.next = 15;break;}this.setRefreshToken(s.refresh_token);_context15.next = 10;return this._request.refreshAccessToken();case 10:K(j);K(W, { env: this.config.env, loginType: Y.CUSTOM, persistence: this.config.persistence });_context15.next = 14;return this.refreshUserInfo();case 14:return _context15.abrupt("return", new re(this.config.env));case 15:throw new Error("自定义登录失败");case 16:case "end":return _context15.stop();}}}, _callee15, this);}));function signIn(_x10) {return _signIn2.apply(this, arguments);}return signIn;}() }]);return ie;}(se);var ae = /*#__PURE__*/function (_se3) {_inherits(ae, _se3);var _super6 = _createSuper(ae);function ae() {_classCallCheck(this, ae);return _super6.apply(this, arguments);}_createClass(ae, [{ key: "signIn", value: function () {var _signIn3 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee16(e, t) {var s, n, r, o, i;return _regenerator.default.wrap(function _callee16$(_context16) {while (1) {switch (_context16.prev = _context16.next) {case 0:if (!("string" != typeof e)) {_context16.next = 2;break;}throw new Error("email must be a string");case 2:s = this._cache.keys.refreshTokenKey;_context16.next = 5;return this._request.send("auth.signIn", { loginType: "EMAIL", email: e, password: t, refresh_token: this._cache.getStore(s) || "" });case 5:n = _context16.sent;r = n.refresh_token;o = n.access_token;i = n.access_token_expire;if (!r) {_context16.next = 22;break;}this.setRefreshToken(r);if (!(o && i)) {_context16.next = 15;break;}this.setAccessToken(o, i);_context16.next = 17;break;case 15:_context16.next = 17;return this._request.refreshAccessToken();case 17:_context16.next = 19;return this.refreshUserInfo();case 19:K(j);K(W, { env: this.config.env, loginType: Y.EMAIL, persistence: this.config.persistence });return _context16.abrupt("return", new re(this.config.env));case 22:throw n.code ? new Error("\u90AE\u7BB1\u767B\u5F55\u5931\u8D25: [".concat(n.code, "] ").concat(n.message)) : new Error("邮箱登录失败");case 23:case "end":return _context16.stop();}}}, _callee16, this);}));function signIn(_x11, _x12) {return _signIn3.apply(this, arguments);}return signIn;}() }, { key: "activate", value: function () {var _activate = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee17(e) {return _regenerator.default.wrap(function _callee17$(_context17) {while (1) {switch (_context17.prev = _context17.next) {case 0:return _context17.abrupt("return", this._request.send("auth.activateEndUserMail", { token: e }));case 1:case "end":return _context17.stop();}}}, _callee17, this);}));function activate(_x13) {return _activate.apply(this, arguments);}return activate;}() }, { key: "resetPasswordWithToken", value: function () {var _resetPasswordWithToken = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee18(e, t) {return _regenerator.default.wrap(function _callee18$(_context18) {while (1) {switch (_context18.prev = _context18.next) {case 0:return _context18.abrupt("return", this._request.send("auth.resetPasswordWithToken", { token: e, newPassword: t }));case 1:case "end":return _context18.stop();}}}, _callee18, this);}));function resetPasswordWithToken(_x14, _x15) {return _resetPasswordWithToken.apply(this, arguments);}return resetPasswordWithToken;}() }]);return ae;}(se);var ce = /*#__PURE__*/function (_se4) {_inherits(ce, _se4);var _super7 = _createSuper(ce);function ce() {_classCallCheck(this, ce);return _super7.apply(this, arguments);}_createClass(ce, [{ key: "signIn", value: function () {var _signIn4 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee19(e, t) {var s, n, r, o, i;return _regenerator.default.wrap(function _callee19$(_context19) {while (1) {switch (_context19.prev = _context19.next) {case 0:if (!("string" != typeof e)) {_context19.next = 2;break;}throw new Error("username must be a string");case 2:"string" != typeof t && (t = "", console.warn("password is empty"));s = this._cache.keys.refreshTokenKey;_context19.next = 6;return this._request.send("auth.signIn", { loginType: Y.USERNAME, username: e, password: t, refresh_token: this._cache.getStore(s) || "" });case 6:n = _context19.sent;r = n.refresh_token;o = n.access_token_expire;i = n.access_token;if (!r) {_context19.next = 23;break;}this.setRefreshToken(r);if (!(i && o)) {_context19.next = 16;break;}this.setAccessToken(i, o);_context19.next = 18;break;case 16:_context19.next = 18;return this._request.refreshAccessToken();case 18:_context19.next = 20;return this.refreshUserInfo();case 20:K(j);K(W, { env: this.config.env, loginType: Y.USERNAME, persistence: this.config.persistence });return _context19.abrupt("return", new re(this.config.env));case 23:throw n.code ? new Error("\u7528\u6237\u540D\u5BC6\u7801\u767B\u5F55\u5931\u8D25: [".concat(n.code, "] ").concat(n.message)) : new Error("用户名密码登录失败");case 24:case "end":return _context19.stop();}}}, _callee19, this);}));function signIn(_x16, _x17) {return _signIn4.apply(this, arguments);}return signIn;}() }]);return ce;}(se);var ue = /*#__PURE__*/function () {function ue(e) {_classCallCheck(this, ue);this.config = e, this._cache = F(e.env), this._request = te(e.env), this._onAnonymousConverted = this._onAnonymousConverted.bind(this), this._onLoginTypeChanged = this._onLoginTypeChanged.bind(this), $(W, this._onLoginTypeChanged);}_createClass(ue, [{ key: "anonymousAuthProvider", value: function anonymousAuthProvider() {return new oe(this.config);} }, { key: "customAuthProvider", value: function customAuthProvider() {return new ie(this.config);} }, { key: "emailAuthProvider", value: function emailAuthProvider() {return new ae(this.config);} }, { key: "usernameAuthProvider", value: function usernameAuthProvider() {return new ce(this.config);} }, { key: "signInAnonymously", value: function () {var _signInAnonymously = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee20() {return _regenerator.default.wrap(function _callee20$(_context20) {while (1) {switch (_context20.prev = _context20.next) {case 0:return _context20.abrupt("return", new oe(this.config).signIn());case 1:case "end":return _context20.stop();}}}, _callee20, this);}));function signInAnonymously() {return _signInAnonymously.apply(this, arguments);}return signInAnonymously;}() }, { key: "signInWithEmailAndPassword", value: function () {var _signInWithEmailAndPassword = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee21(e, t) {return _regenerator.default.wrap(function _callee21$(_context21) {while (1) {switch (_context21.prev = _context21.next) {case 0:return _context21.abrupt("return", new ae(this.config).signIn(e, t));case 1:case "end":return _context21.stop();}}}, _callee21, this);}));function signInWithEmailAndPassword(_x18, _x19) {return _signInWithEmailAndPassword.apply(this, arguments);}return signInWithEmailAndPassword;}() }, { key: "signInWithUsernameAndPassword", value: function signInWithUsernameAndPassword(e, t) {return new ce(this.config).signIn(e, t);} }, { key: "linkAndRetrieveDataWithTicket", value: function () {var _linkAndRetrieveDataWithTicket2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee22(e) {return _regenerator.default.wrap(function _callee22$(_context22) {while (1) {switch (_context22.prev = _context22.next) {case 0:this._anonymousAuthProvider || (this._anonymousAuthProvider = new oe(this.config)), $(V, this._onAnonymousConverted);_context22.next = 3;return this._anonymousAuthProvider.linkAndRetrieveDataWithTicket(e);case 3:return _context22.abrupt("return", _context22.sent);case 4:case "end":return _context22.stop();}}}, _callee22, this);}));function linkAndRetrieveDataWithTicket(_x20) {return _linkAndRetrieveDataWithTicket2.apply(this, arguments);}return linkAndRetrieveDataWithTicket;}() }, { key: "signOut", value: function () {var _signOut = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee23() {var _this$_cache$keys10, e, t, s, n, r;return _regenerator.default.wrap(function _callee23$(_context23) {while (1) {switch (_context23.prev = _context23.next) {case 0:if (!(this.loginType === Y.ANONYMOUS)) {_context23.next = 2;break;}throw new Error("匿名用户不支持登出操作");case 2:_this$_cache$keys10 = this._cache.keys, e = _this$_cache$keys10.refreshTokenKey, t = _this$_cache$keys10.accessTokenKey, s = _this$_cache$keys10.accessTokenExpireKey, n = this._cache.getStore(e);if (n) {_context23.next = 5;break;}return _context23.abrupt("return");case 5:_context23.next = 7;return this._request.send("auth.logout", { refresh_token: n });case 7:r = _context23.sent;return _context23.abrupt("return", (this._cache.removeStore(e), this._cache.removeStore(t), this._cache.removeStore(s), K(j), K(W, { env: this.config.env, loginType: Y.NULL, persistence: this.config.persistence }), r));case 9:case "end":return _context23.stop();}}}, _callee23, this);}));function signOut() {return _signOut.apply(this, arguments);}return signOut;}() }, { key: "signUpWithEmailAndPassword", value: function () {var _signUpWithEmailAndPassword = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee24(e, t) {return _regenerator.default.wrap(function _callee24$(_context24) {while (1) {switch (_context24.prev = _context24.next) {case 0:return _context24.abrupt("return", this._request.send("auth.signUpWithEmailAndPassword", { email: e, password: t }));case 1:case "end":return _context24.stop();}}}, _callee24, this);}));function signUpWithEmailAndPassword(_x21, _x22) {return _signUpWithEmailAndPassword.apply(this, arguments);}return signUpWithEmailAndPassword;}() }, { key: "sendPasswordResetEmail", value: function () {var _sendPasswordResetEmail = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee25(e) {return _regenerator.default.wrap(function _callee25$(_context25) {while (1) {switch (_context25.prev = _context25.next) {case 0:return _context25.abrupt("return", this._request.send("auth.sendPasswordResetEmail", { email: e }));case 1:case "end":return _context25.stop();}}}, _callee25, this);}));function sendPasswordResetEmail(_x23) {return _sendPasswordResetEmail.apply(this, arguments);}return sendPasswordResetEmail;}() }, { key: "onLoginStateChanged", value: function onLoginStateChanged(e) {var _this9 = this;$(j, function () {var t = _this9.hasLoginState();e.call(_this9, t);});var t = this.hasLoginState();e.call(this, t);} }, { key: "onLoginStateExpired", value: function onLoginStateExpired(e) {$(H, e.bind(this));} }, { key: "onAccessTokenRefreshed", value: function onAccessTokenRefreshed(e) {$(z, e.bind(this));} }, { key: "onAnonymousConverted", value: function onAnonymousConverted(e) {$(V, e.bind(this));} }, { key: "onLoginTypeChanged", value: function onLoginTypeChanged(e) {var _this10 = this;$(W, function () {var t = _this10.hasLoginState();e.call(_this10, t);});} }, { key: "getAccessToken", value: function () {var _getAccessToken2 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee26() {return _regenerator.default.wrap(function _callee26$(_context26) {while (1) {switch (_context26.prev = _context26.next) {case 0:_context26.next = 2;return this._request.getAccessToken();case 2:_context26.t0 = _context26.sent.accessToken;_context26.t1 = this.config.env;return _context26.abrupt("return", { accessToken: _context26.t0, env: _context26.t1 });case 5:case "end":return _context26.stop();}}}, _callee26, this);}));function getAccessToken() {return _getAccessToken2.apply(this, arguments);}return getAccessToken;}() }, { key: "hasLoginState", value: function hasLoginState() {var e = this._cache.keys.refreshTokenKey;return this._cache.getStore(e) ? new re(this.config.env) : null;} }, { key: "isUsernameRegistered", value: function () {var _isUsernameRegistered = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee27(e) {var _yield$this$_request$5, t;return _regenerator.default.wrap(function _callee27$(_context27) {while (1) {switch (_context27.prev = _context27.next) {case 0:if (!("string" != typeof e)) {_context27.next = 2;break;}throw new Error("username must be a string");case 2:_context27.next = 4;return this._request.send("auth.isUsernameRegistered", { username: e });case 4:_yield$this$_request$5 = _context27.sent;t = _yield$this$_request$5.data;return _context27.abrupt("return", t && t.isRegistered);case 7:case "end":return _context27.stop();}}}, _callee27, this);}));function isUsernameRegistered(_x24) {return _isUsernameRegistered.apply(this, arguments);}return isUsernameRegistered;}() }, { key: "getLoginState", value: function getLoginState() {return Promise.resolve(this.hasLoginState());} }, { key: "signInWithTicket", value: function () {var _signInWithTicket = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee28(e) {return _regenerator.default.wrap(function _callee28$(_context28) {while (1) {switch (_context28.prev = _context28.next) {case 0:return _context28.abrupt("return", new ie(this.config).signIn(e));case 1:case "end":return _context28.stop();}}}, _callee28, this);}));function signInWithTicket(_x25) {return _signInWithTicket.apply(this, arguments);}return signInWithTicket;}() }, { key: "shouldRefreshAccessToken", value: function shouldRefreshAccessToken(e) {this._request._shouldRefreshAccessTokenHook = e.bind(this);} }, { key: "getUserInfo", value: function getUserInfo() {return this._request.send("auth.getUserInfo", {}).then(function (e) {return e.code ? e : _objectSpread(_objectSpread({}, e.data), {}, { requestId: e.seqId });});} }, { key: "getAuthHeader", value: function getAuthHeader() {var _this$_cache$keys11 = this._cache.keys,e = _this$_cache$keys11.refreshTokenKey,t = _this$_cache$keys11.accessTokenKey,s = this._cache.getStore(e);return { "x-cloudbase-credentials": this._cache.getStore(t) + "/@@/" + s };} }, { key: "_onAnonymousConverted", value: function _onAnonymousConverted(e) {var t = e.data.env;t === this.config.env && this._cache.updatePersistence(this.config.persistence);} }, { key: "_onLoginTypeChanged", value: function _onLoginTypeChanged(e) {var _e$data = e.data,t = _e$data.loginType,s = _e$data.persistence,n = _e$data.env;n === this.config.env && (this._cache.updatePersistence(s), this._cache.setStore(this._cache.keys.loginTypeKey, t));} }, { key: "currentUser", get: function get() {var e = this.hasLoginState();return e && e.user || null;} }, { key: "loginType", get: function get() {return this._cache.getStore(this._cache.keys.loginTypeKey);} }]);return ue;}();var he = function he(e, t) {t = t || A();var s = te(this.config.env),n = e.cloudPath,r = e.filePath,o = e.onUploadProgress,_e$fileType = e.fileType,i = _e$fileType === void 0 ? "image" : _e$fileType;return s.send("storage.getUploadMetadata", { path: n }).then(function (e) {var _e$data2 = e.data,a = _e$data2.url,c = _e$data2.authorization,u = _e$data2.token,h = _e$data2.fileId,l = _e$data2.cosFileId,d = e.requestId,f = { key: n, signature: c, "x-cos-meta-fileid": l, success_action_status: "201", "x-cos-security-token": u };s.upload({ url: a, data: f, file: r, name: n, fileType: i, onUploadProgress: o }).then(function (e) {201 === e.statusCode ? t(null, { fileID: h, requestId: d }) : t(new Error("STORAGE_REQUEST_FAIL: " + e.data));}).catch(function (e) {t(e);});}).catch(function (e) {t(e);}), t.promise;},le = function le(e, t) {t = t || A();var s = te(this.config.env),n = e.cloudPath;return s.send("storage.getUploadMetadata", { path: n }).then(function (e) {t(null, e);}).catch(function (e) {t(e);}), t.promise;},de = function de(_ref5, t) {var e = _ref5.fileList;if (t = t || A(), !e || !Array.isArray(e)) return { code: "INVALID_PARAM", message: "fileList必须是非空的数组" };var _iterator3 = _createForOfIteratorHelper(e),_step3;try {for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {var _t6 = _step3.value;if (!_t6 || "string" != typeof _t6) return { code: "INVALID_PARAM", message: "fileList的元素必须是非空的字符串" };}} catch (err) {_iterator3.e(err);} finally {_iterator3.f();}var s = { fileid_list: e };return te(this.config.env).send("storage.batchDeleteFile", s).then(function (e) {e.code ? t(null, e) : t(null, { fileList: e.data.delete_list, requestId: e.requestId });}).catch(function (e) {t(e);}), t.promise;},fe = function fe(_ref6, t) {var e = _ref6.fileList;t = t || A(), e && Array.isArray(e) || t(null, { code: "INVALID_PARAM", message: "fileList必须是非空的数组" });var s = [];var _iterator4 = _createForOfIteratorHelper(e),_step4;try {for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {var _n6 = _step4.value;"object" == typeof _n6 ? (_n6.hasOwnProperty("fileID") && _n6.hasOwnProperty("maxAge") || t(null, { code: "INVALID_PARAM", message: "fileList的元素必须是包含fileID和maxAge的对象" }), s.push({ fileid: _n6.fileID, max_age: _n6.maxAge })) : "string" == typeof _n6 ? s.push({ fileid: _n6 }) : t(null, { code: "INVALID_PARAM", message: "fileList的元素必须是字符串" });}} catch (err) {_iterator4.e(err);} finally {_iterator4.f();}var n = { file_list: s };return te(this.config.env).send("storage.batchGetDownloadUrl", n).then(function (e) {e.code ? t(null, e) : t(null, { fileList: e.data.download_list, requestId: e.requestId });}).catch(function (e) {t(e);}), t.promise;},pe = /*#__PURE__*/function () {var _ref8 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee29(_ref7, t) {var e, s, n, r;return _regenerator.default.wrap(function _callee29$(_context29) {while (1) {switch (_context29.prev = _context29.next) {case 0:e = _ref7.fileID;_context29.next = 3;return fe.call(this, { fileList: [{ fileID: e, maxAge: 600 }] });case 3:s = _context29.sent.fileList[0];if (!("SUCCESS" !== s.code)) {_context29.next = 6;break;}return _context29.abrupt("return", t ? t(s) : new Promise(function (e) {e(s);}));case 6:n = te(this.config.env);r = s.download_url;if (!(r = encodeURI(r), !t)) {_context29.next = 10;break;}return _context29.abrupt("return", n.download({ url: r }));case 10:_context29.t0 = t;_context29.next = 13;return n.download({ url: r });case 13:_context29.t1 = _context29.sent;(0, _context29.t0)(_context29.t1);case 15:case "end":return _context29.stop();}}}, _callee29, this);}));return function pe(_x26, _x27) {return _ref8.apply(this, arguments);};}(),ge = function ge(_ref9, o) {var e = _ref9.name,t = _ref9.data,s = _ref9.query,n = _ref9.parse,r = _ref9.search;var i = o || A();var a;try {a = t ? JSON.stringify(t) : "";} catch (e) {return Promise.reject(e);}if (!e) return Promise.reject(new Error("函数名不能为空"));var c = { inQuery: s, parse: n, search: r, function_name: e, request_data: a };return te(this.config.env).send("functions.invokeFunction", c).then(function (e) {if (e.code) i(null, e);else {var _t7 = e.data.response_data;if (n) i(null, { result: _t7, requestId: e.requestId });else try {_t7 = JSON.parse(e.data.response_data), i(null, { result: _t7, requestId: e.requestId });} catch (e) {i(new Error("response data must be json"));}}return i.promise;}).catch(function (e) {i(e);}), i.promise;},me = { timeout: 15e3, persistence: "session" },ye = {};var _e = /*#__PURE__*/function () {function _e(e) {_classCallCheck(this, _e);this.config = e || this.config, this.authObj = void 0;}_createClass(_e, [{ key: "init", value: function init(e) {switch (U.adapter || (this.requestClient = new U.adapter.reqClass({ timeout: e.timeout || 5e3, timeoutMsg: "\u8BF7\u6C42\u5728".concat((e.timeout || 5e3) / 1e3, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD") })), this.config = _objectSpread(_objectSpread({}, me), e), !0) {case this.config.timeout > 6e5:console.warn("timeout大于可配置上限[10分钟]，已重置为上限数值"), this.config.timeout = 6e5;break;case this.config.timeout < 100:console.warn("timeout小于可配置下限[100ms]，已重置为下限数值"), this.config.timeout = 100;}return new _e(this.config);} }, { key: "auth", value: function auth() {var _ref10 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref10.persistence;if (this.authObj) return this.authObj;var t = e || U.adapter.primaryStorage || me.persistence;var s;return t !== this.config.persistence && (this.config.persistence = t), function (e) {var t = e.env;x[t] = new R(e), q[t] = new R(_objectSpread(_objectSpread({}, e), {}, { persistence: "local" }));}(this.config), s = this.config, ee[s.env] = new Z(s), this.authObj = new ue(this.config), this.authObj;} }, { key: "on", value: function on(e, t) {return $.apply(this, [e, t]);} }, { key: "off", value: function off(e, t) {return B.apply(this, [e, t]);} }, { key: "callFunction", value: function callFunction(e, t) {return ge.apply(this, [e, t]);} }, { key: "deleteFile", value: function deleteFile(e, t) {return de.apply(this, [e, t]);} }, { key: "getTempFileURL", value: function getTempFileURL(e, t) {return fe.apply(this, [e, t]);} }, { key: "downloadFile", value: function downloadFile(e, t) {return pe.apply(this, [e, t]);} }, { key: "uploadFile", value: function uploadFile(e, t) {return he.apply(this, [e, t]);} }, { key: "getUploadMetadata", value: function getUploadMetadata(e, t) {return le.apply(this, [e, t]);} }, { key: "registerExtension", value: function registerExtension(e) {ye[e.name] = e;} }, { key: "invokeExtension", value: function () {var _invokeExtension = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee30(e, t) {var s;return _regenerator.default.wrap(function _callee30$(_context30) {while (1) {switch (_context30.prev = _context30.next) {case 0:s = ye[e];if (s) {_context30.next = 3;break;}throw Error("\u6269\u5C55".concat(e, " \u5FC5\u987B\u5148\u6CE8\u518C"));case 3:_context30.next = 5;return s.invoke(t, this);case 5:return _context30.abrupt("return", _context30.sent);case 6:case "end":return _context30.stop();}}}, _callee30, this);}));function invokeExtension(_x28, _x29) {return _invokeExtension.apply(this, arguments);}return invokeExtension;}() }, { key: "useAdapters", value: function useAdapters(e) {var _ref11 = O(e) || {},t = _ref11.adapter,s = _ref11.runtime;t && (U.adapter = t), s && (U.runtime = s);} }]);return _e;}();var ve = new _e();function we(e, t, s) {void 0 === s && (s = {});var n = /\?/.test(t),r = "";for (var o in s) {"" === r ? !n && (t += "?") : r += "&", r += o + "=" + encodeURIComponent(s[o]);}return /^http(s)?:\/\//.test(t += r) ? t : "" + e + t;}var Se = /*#__PURE__*/function () {function Se() {_classCallCheck(this, Se);}_createClass(Se, [{ key: "post", value: function post(e) {var t = e.url,s = e.data,n = e.headers;return new Promise(function (e, r) {y.request({ url: we("https:", t), data: s, method: "POST", header: n, success: function success(t) {e(t);}, fail: function fail(e) {r(e);} });});} }, { key: "upload", value: function upload(e) {return new Promise(function (t, s) {var n = e.url,r = e.file,o = e.data,i = e.headers,a = e.fileType,c = y.uploadFile({ url: we("https:", n), name: "file", formData: Object.assign({}, o), filePath: r, fileType: a, header: i, success: function success(e) {var s = { statusCode: e.statusCode, data: e.data || {} };200 === e.statusCode && o.success_action_status && (s.statusCode = parseInt(o.success_action_status, 10)), t(s);}, fail: function fail(e) { false && false, s(new Error(e.errMsg || "uploadFile:fail"));} });"function" == typeof e.onUploadProgress && c && "function" == typeof c.onProgressUpdate && c.onProgressUpdate(function (t) {e.onUploadProgress({ loaded: t.totalBytesSent, total: t.totalBytesExpectedToSend });});});} }]);return Se;}();var ke = { setItem: function setItem(e, t) {y.setStorageSync(e, t);}, getItem: function getItem(e) {return y.getStorageSync(e);}, removeItem: function removeItem(e) {y.removeStorageSync(e);}, clear: function clear() {y.clearStorageSync();} };var Te = { genAdapter: function genAdapter() {return { root: {}, reqClass: Se, localStorage: ke, primaryStorage: "local" };}, isMatch: function isMatch() {return !0;}, runtime: "uni_app" };ve.useAdapters(Te);var Ae = ve,Ie = Ae.init;var Pe, Ee;function Oe(_ref12) {var e = _ref12.name,t = _ref12.data,s = _ref12.spaceId,n = _ref12.provider;Pe || (Pe = function () {var _uni$getSystemInfoSyn = uni.getSystemInfoSync(),e = _uni$getSystemInfoSyn.deviceId;return { PLATFORM: "mp-weixin", OS: d, APPID: h.appid, LOCALE: u(), DEVICEID: e, CLIENT_SDK_VERSION: "1.0.0" };}(), Ee = { ak: h.appid, p: "android" === d ? "a" : "i", ut: g(), uuid: p() });var r = JSON.parse(JSON.stringify(t || {})),o = e,i = s,a = { tencent: "t", aliyun: "a" }[n];{var _e15 = Object.assign({}, Ee, { fn: o, sid: i, pvd: a });Object.assign(r, { clientInfo: Pe, uniCloudClientInfo: encodeURIComponent(JSON.stringify(_e15)) });var _uni$getSystemInfoSyn2 = uni.getSystemInfoSync(),_t8 = _uni$getSystemInfoSyn2.deviceId;r.uniCloudDeviceId = _t8;}if (!r.uniIdToken) {var _e16 = y.getStorageSync("uni_id_token") || y.getStorageSync("uniIdToken");_e16 && (r.uniIdToken = _e16);}return r;}function Ue(_ref13) {var _this11 = this;var e = _ref13.name,t = _ref13.data;var s = this.localAddress,n = this.localPort,r = { aliyun: "aliyun", tencent: "tcb" }[this.config.provider],o = this.config.spaceId,a = "http://".concat(s, ":").concat(n, "/system/check-function"),c = "http://".concat(s, ":").concat(n, "/cloudfunctions/").concat(e);return new Promise(function (t, s) {y.request({ method: "POST", url: a, data: { name: e, platform: "mp-weixin", provider: r, spaceId: o }, timeout: 3e3, success: function success(e) {t(e);}, fail: function fail() {t({ data: { code: "NETWORK_ERROR", message: "连接本地调试服务失败，请检查客户端是否和主机在同一局域网下，自动切换为已部署的云函数。" } });} });}).then(function () {var _ref14 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref14.data;var _ref15 = e || {},t = _ref15.code,s = _ref15.message;return { code: 0 === t ? 0 : t || "SYS_ERR", message: s || "SYS_ERR" };}).then(function (_ref16) {var s = _ref16.code,n = _ref16.message;if (0 !== s) {switch (s) {case "MODULE_ENCRYPTED":console.error("\u6B64\u4E91\u51FD\u6570\uFF08".concat(e, "\uFF09\u4F9D\u8D56\u52A0\u5BC6\u516C\u5171\u6A21\u5757\u4E0D\u53EF\u672C\u5730\u8C03\u8BD5\uFF0C\u81EA\u52A8\u5207\u6362\u4E3A\u4E91\u7AEF\u5DF2\u90E8\u7F72\u7684\u4E91\u51FD\u6570"));break;case "FUNCTION_ENCRYPTED":console.error("\u6B64\u4E91\u51FD\u6570\uFF08".concat(e, "\uFF09\u5DF2\u52A0\u5BC6\u4E0D\u53EF\u672C\u5730\u8C03\u8BD5\uFF0C\u81EA\u52A8\u5207\u6362\u4E3A\u4E91\u7AEF\u5DF2\u90E8\u7F72\u7684\u4E91\u51FD\u6570"));break;case "ACTION_ENCRYPTED":console.error(n || "需要访问加密的uni-clientDB-action，自动切换为云端环境");break;case "NETWORK_ERROR":{var _e17 = "连接本地调试服务失败，请检查客户端是否和主机在同一局域网下";throw console.error(_e17), new Error(_e17);}case "SWITCH_TO_CLOUD":break;default:{var _e18 = "\u68C0\u6D4B\u672C\u5730\u8C03\u8BD5\u670D\u52A1\u51FA\u73B0\u9519\u8BEF\uFF1A".concat(n, "\uFF0C\u8BF7\u68C0\u67E5\u7F51\u7EDC\u73AF\u5883\u6216\u91CD\u542F\u5BA2\u6237\u7AEF\u518D\u8BD5");throw console.error(_e18), new Error(_e18);}}return _this11.originCallFunction({ name: e, data: t });}return new Promise(function (s, n) {var a = Oe({ name: e, data: t, provider: _this11.config.provider, spaceId: o });y.request({ method: "POST", url: c, data: { provider: r, platform: "mp-weixin", param: a }, success: function success() {var _ref17 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref17.statusCode,t = _ref17.data;return !e || e >= 400 ? n(new i({ code: t.code || "SYS_ERR", message: t.message || "request:fail" })) : s({ result: t });}, fail: function fail(e) {n(new i({ code: e.code || e.errCode || "SYS_ERR", message: e.message || e.errMsg || "request:fail" }));} });});});}function be(e) {var t = e.callFunction;e.callFunction = function (e) {var _this12 = this;var s;return s = this.isReady ? Promise.resolve() : this.initUniCloud, s.then(function () {e.data = Oe({ name: e.name, data: e.data, provider: _this12.config.provider, spaceId: _this12.config.spaceId });var s = { aliyun: "aliyun", tencent: "tcb" }[_this12.config.provider];return new Promise(function (n, r) {t.call(_this12, e).then(function (t) {if (_this12.config.useDebugFunction && t && t.requestId) {var _n7 = JSON.stringify({ spaceId: _this12.config.spaceId, functionName: e.name, requestId: t.requestId });console.log("[".concat(s, "-request]").concat(_n7, "[/").concat(s, "-request]"));}n(t);}).catch(function (t) {if (_this12.config.useDebugFunction && t && t.requestId) {var _n8 = JSON.stringify({ spaceId: _this12.config.spaceId, functionName: e.name, requestId: t.requestId });console.log("[".concat(s, "-request]").concat(_n8, "[/").concat(s, "-request]"));}t && t.message && (t.message = "[".concat(e.name, "]: ").concat(t.message)), r(t);});});});};var s = e.callFunction;e.originCallFunction = e.callFunction, e.callFunction = function (t) {return o(function (t) {var _this13 = this;var n;return n = e.isReady ? Promise.resolve() : e.initUniCloud, n.then(function () {return  true && e.debugInfo && !e.debugInfo.forceRemote && [] ? Ue.call(_this13, t) : s.call(_this13, t);});}).call(this, t);};}Ae.init = function (e) {e.env = e.spaceId;var t = Ie.call(this, e);t.config.provider = "tencent", t.config.spaceId = e.spaceId;var s = t.auth;t.auth = function (e) {var t = s.call(this, e);return ["linkAndRetrieveDataWithTicket", "signInAnonymously", "signOut", "getAccessToken", "getLoginState", "signInWithTicket", "getUserInfo"].forEach(function (e) {t[e] = o(t[e]).bind(t);}), t;}, t.customAuth = t.auth;return ["deleteFile", "getTempFileURL", "downloadFile"].forEach(function (e) {t[e] = o(t[e]).bind(t);}), t;};var Ce = Symbol("CLIENT_DB_INTERNAL");function De(e, t) {return e.then = "DoNotReturnProxyWithAFunctionNamedThen", e._internalType = Ce, new Proxy(e, { get: function get(e, s, n) {return function (e, t) {return Object.prototype.hasOwnProperty.call(e, t);}(e, s) || e[s] || "string" != typeof s ? e[s] : t.get(e, s, n);} });}var Re = /*#__PURE__*/function (_Error2) {_inherits(Re, _Error2);var _super8 = _createSuper(Re);function Re(e, t) {var _this14;_classCallCheck(this, Re);_this14 = _super8.call(this, e), _this14.code = t;return _this14;}return Re;}( /*#__PURE__*/_wrapNativeSuper(Error));function xe(e) {switch (t = e, Object.prototype.toString.call(t).slice(8, -1).toLowerCase()) {case "array":return e.map(function (e) {return xe(e);});case "object":return e._internalType === Ce || Object.keys(e).forEach(function (t) {e[t] = xe(e[t]);}), e;case "regexp":return { $regexp: { source: e.source, flags: e.flags } };case "date":return { $date: e.toISOString() };default:return e;}var t;}function qe() {var e = y.getStorageSync("uni_id_token") || "",t = e.split(".");if (!e || 3 !== t.length) return { uid: null, role: [], permission: [] };var s;try {s = JSON.parse((n = t[1], decodeURIComponent(atob(n).split("").map(function (e) {return "%" + ("00" + e.charCodeAt(0).toString(16)).slice(-2);}).join(""))));} catch (e) {throw new Error("获取当前用户信息出错，详细错误信息为：" + e.message);}var n;return s;}var Fe = t(s(function (e, t) {Object.defineProperty(t, "__esModule", { value: !0 });var s = "chooseAndUploadFile:fail";function n(e, t) {return e.tempFiles.forEach(function (e, s) {e.name || (e.name = e.path.substring(e.path.lastIndexOf("/") + 1)), t && (e.fileType = t), e.cloudPath = Date.now() + "_" + s + e.name.substring(e.name.lastIndexOf("."));}), e.tempFilePaths || (e.tempFilePaths = e.tempFiles.map(function (e) {return e.path;})), e;}function r(e, t, _ref18) {var s = _ref18.onChooseFile,n = _ref18.onUploadProgress;return t.then(function (e) {if (s) {var _t9 = s(e);if (void 0 !== _t9) return Promise.resolve(_t9).then(function (t) {return void 0 === t ? e : t;});}return e;}).then(function (t) {return !1 === t ? { errMsg: "chooseAndUploadFile:ok", tempFilePaths: [], tempFiles: [] } : function (e, t) {var s = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 5;var n = arguments.length > 3 ? arguments[3] : undefined;(t = Object.assign({}, t)).errMsg = "chooseAndUploadFile:ok";var r = t.tempFiles,o = r.length;var i = 0;return new Promise(function (a) {for (; i < s;) {c();}function c() {var s = i++;if (s >= o) return void (!r.find(function (e) {return !e.url && !e.errMsg;}) && a(t));var u = r[s];e.uploadFile({ filePath: u.path, cloudPath: u.cloudPath, fileType: u.fileType, onUploadProgress: function onUploadProgress(e) {e.index = s, e.tempFile = u, e.tempFilePath = u.path, n && n(e);} }).then(function (e) {u.url = e.fileID, s < o && c();}).catch(function (e) {u.errMsg = e.errMsg || e.message, s < o && c();});}});}(e, t, 5, n);});}t.initChooseAndUploadFile = function (e) {return function () {var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { type: "all" };return "image" === t.type ? r(e, function (e) {var t = e.count,r = e.sizeType,o = e.sourceType,i = e.extension;return new Promise(function (e, a) {uni.chooseImage({ count: t, sizeType: r, sourceType: o, extension: i, success: function success(t) {e(n(t, "image"));}, fail: function fail(e) {a({ errMsg: e.errMsg.replace("chooseImage:fail", s) });} });});}(t), t) : "video" === t.type ? r(e, function (e) {var t = e.camera,r = e.compressed,o = e.maxDuration,i = e.sourceType,a = e.extension;return new Promise(function (e, c) {uni.chooseVideo({ camera: t, compressed: r, maxDuration: o, sourceType: i, extension: a, success: function success(t) {var s = t.tempFilePath,r = t.duration,o = t.size,i = t.height,a = t.width;e(n({ errMsg: "chooseVideo:ok", tempFilePaths: [s], tempFiles: [{ name: t.tempFile && t.tempFile.name || "", path: s, size: o, type: t.tempFile && t.tempFile.type || "", width: a, height: i, duration: r, fileType: "video", cloudPath: "" }] }, "video"));}, fail: function fail(e) {c({ errMsg: e.errMsg.replace("chooseVideo:fail", s) });} });});}(t), t) : r(e, function (e) {var t = e.count,r = e.extension;return new Promise(function (e, o) {var i = uni.chooseFile;if ("undefined" != typeof wx && "function" == typeof wx.chooseMessageFile && (i = wx.chooseMessageFile), "function" != typeof i) return o({ errMsg: s + " 请指定 type 类型，该平台仅支持选择 image 或 video。" });i({ type: "all", count: t, extension: r, success: function success(t) {e(n(t));}, fail: function fail(e) {o({ errMsg: e.errMsg.replace("chooseFile:fail", s) });} });});}(t), t);};};}));function Le(_x30, _x31) {return _Le.apply(this, arguments);}function _Le() {_Le = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee32(e, t) {var s, _e24, n;return _regenerator.default.wrap(function _callee32$(_context32) {while (1) {switch (_context32.prev = _context32.next) {case 0:s = "http://".concat(e, ":").concat(t, "/system/ping");_context32.prev = 1;_context32.next = 4;return n = { url: s, timeout: 500 }, new Promise(function (e, t) {y.request(_objectSpread(_objectSpread({}, n), {}, { success: function success(t) {e(t);}, fail: function fail(e) {t(e);} }));});case 4:_e24 = _context32.sent;return _context32.abrupt("return", !(!_e24.data || 0 !== _e24.data.code));case 8:_context32.prev = 8;_context32.t0 = _context32["catch"](1);return _context32.abrupt("return", !1);case 11:case "end":return _context32.stop();}}}, _callee32, null, [[1, 8]]);}));return _Le.apply(this, arguments);}var Ne = new ( /*#__PURE__*/function () {function _class2() {_classCallCheck(this, _class2);}_createClass(_class2, [{ key: "init", value: function init(e) {var t = {};var s = !1 !== e.debugFunction && "development" === "development" && ( false || "app-plus" === "mp-weixin");switch (e.provider) {case "tencent":t = Ae.init(Object.assign(e, { useDebugFunction: s }));break;case "aliyun":t = v.init(Object.assign(e, { useDebugFunction: s }));break;default:throw new Error("未提供正确的provider参数");}var n = undefined; true && n && !n.code && (t.debugInfo = n), t.isReady = !1;var r = t.auth();return t.initUniCloud = r.getLoginState().then(function (e) {return e ? Promise.resolve() : r.signInAnonymously();}).then(function () {if ( true && t.debugInfo) {var _t$debugInfo = t.debugInfo,_e19 = _t$debugInfo.address,_s4 = _t$debugInfo.servePort;return function () {var _ref19 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee31(e, t) {var s, _n9, _r3;return _regenerator.default.wrap(function _callee31$(_context31) {while (1) {switch (_context31.prev = _context31.next) {case 0:_n9 = 0;case 1:if (!(_n9 < e.length)) {_context31.next = 11;break;}_r3 = e[_n9];_context31.next = 5;return Le(_r3, t);case 5:if (!_context31.sent) {_context31.next = 8;break;}s = _r3;return _context31.abrupt("break", 11);case 8:_n9++;_context31.next = 1;break;case 11:return _context31.abrupt("return", { address: s, port: t });case 12:case "end":return _context31.stop();}}}, _callee31);}));return function (_x32, _x33) {return _ref19.apply(this, arguments);};}()(_e19, _s4);}return Promise.resolve();}).then(function () {var _ref20 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},e = _ref20.address,s = _ref20.port;if (e) t.localAddress = e, t.localPort = s;else if (t.debugInfo) {var _e20 =  false ? undefined : "warn",_s5 = console[_e20];"remote" === t.debugInfo.initialLaunchType ? (t.debugInfo.forceRemote = !0, _s5("当前客户端和HBuilderX不在同一局域网下（或其他网络原因无法连接HBuilderX），uniCloud本地调试服务不对当前客户端生效。\n- 如果不使用uniCloud本地调试服务，请直接忽略此信息。\n- 如需使用uniCloud本地调试服务，请将客户端与主机连接到同一局域网下并重新运行到客户端。\n- 如果在HBuilderX开启的状态下切换过网络环境，请重启HBuilderX后再试")) : _s5("无法连接uniCloud本地调试服务，请检查当前客户端是否与主机在同一局域网下。\n- 如需使用uniCloud本地调试服务，请将客户端与主机连接到同一局域网下并重新运行到客户端。\n- 如果在HBuilderX开启的状态下切换过网络环境，请重启HBuilderX后再试");}}).then(function () {return function () {if (true) return;if (uni.getStorageSync("__LAST_DCLOUD_APPID") === h.appid) return;uni.setStorageSync("__LAST_DCLOUD_APPID", h.appid), uni.removeStorageSync("uni_id_token") && (console.warn("检测到当前项目与上次运行到此端口的项目不一致，自动清理uni-id保存的token信息（仅开发调试时生效）"), uni.removeStorageSync("uni_id_token"), uni.removeStorageSync("uni_id_token_expired"));}(), new Promise(function (e) { false ? (undefined) : setTimeout(function () {d = uni.getSystemInfoSync().platform, l = uni.getStorageSync("__DC_CLOUD_UUID") || f(32), e();}, 0);});}).then(function () {t.isReady = !0;}), be(t), function (e) {var t = e.uploadFile;e.uploadFile = function (e) {var _this15 = this;var s;return s = this.isReady ? Promise.resolve() : this.initUniCloud, s.then(function () {return t.call(_this15, e);});};var s = e.uploadFile;e.uploadFile = function (e) {return o(s).call(this, e);};}(t), function (e) {e.database = function () {if (this._database) return this._database;var t = {},s = {};var n = /*#__PURE__*/function () {function n(e, t, s) {_classCallCheck(this, n);this.content = e, this.prevStage = t, this.actionName = s;}_createClass(n, [{ key: "toJSON", value: function toJSON() {var e = this;var t = [e.content];for (; e.prevStage;) {e = e.prevStage, t.push(e.content);}return { $db: t.reverse().map(function (e) {return { $method: e.$method, $param: e.$param };}) };} }, { key: "get", value: function get() {return this._send("get", Array.from(arguments));} }, { key: "add", value: function add() {return this._send("add", Array.from(arguments));} }, { key: "remove", value: function remove() {return this._send("remove", Array.from(arguments));} }, { key: "update", value: function update() {return this._send("update", Array.from(arguments));} }, { key: "end", value: function end() {return this._send("end", Array.from(arguments));} }, { key: "set", value: function set() {throw new Error("clientDB禁止使用set方法");} }, { key: "_send", value: function _send(n, r) {var o = this.toJSON();return o.$db.push({ $method: n, $param: r }), e.callFunction({ name: "DCloud-clientDB", data: { action: this.actionName, command: o } }).then(function (e) {var _e$result = e.result,n = _e$result.code,r = _e$result.message,o = _e$result.token,i = _e$result.tokenExpired;return n ? Promise.reject(new Re(r, n)) : (o && i && t.refreshToken && t.refreshToken.forEach(function (e) {e({ token: o, tokenExpired: i });}), o && i && s.refreshToken && s.refreshToken.forEach(function (e) {e({ token: o, tokenExpired: i });}), Promise.resolve(e));}).catch(function (e) {var t = new Re(e.message, e.code || "SYSTEM_ERROR");return s.error && s.error.forEach(function (e) {e(t);}), /fc_function_not_found|FUNCTION_NOT_FOUND/g.test(e.message) && console.warn("clientDB未初始化，请在web控制台保存一次schema以开启clientDB"), Promise.reject(e);});} }, { key: "useAggregate", get: function get() {var e = this,t = !1;for (; e.prevStage;) {e = e.prevStage;var _s6 = e.content.$method;if ("aggregate" === _s6 || "pipeline" === _s6) {t = !0;break;}}return t;} }, { key: "count", get: function get() {if (!this.useAggregate) return function () {return this._send("count", Array.from(arguments));};var e = this;return function () {return i({ $method: "count", $param: xe(Array.from(arguments)) }, e, e.actionName);};} }]);return n;}();var r = ["db.Geo", "db.command", "command.aggregate"];function o(e, t) {return r.indexOf("".concat(e, ".").concat(t)) > -1;}function i(e, t, s) {return De(new n(e, t, s), { get: function get(e, t) {var n = "db";return e && e.content && (n = e.content.$method), o(n, t) ? i({ $method: t }, e, s) : function () {return i({ $method: t, $param: xe(Array.from(arguments)) }, e, s);};} });}function a(_ref21) {var e = _ref21.path,t = _ref21.method;return /*#__PURE__*/function () {function _class3() {_classCallCheck(this, _class3);this.param = Array.from(arguments);}_createClass(_class3, [{ key: "toJSON", value: function toJSON() {return { $newDb: [].concat(_toConsumableArray(e.map(function (e) {return { $method: e };})), [{ $method: t, $param: this.param }]) };} }]);return _class3;}();}var c = { auth: { on: function on(e, s) {t[e] = t[e] || [], t[e].indexOf(s) > -1 || t[e].push(s);}, off: function off(e, s) {t[e] = t[e] || [];var n = t[e].indexOf(s);-1 !== n && t[e].splice(n, 1);} }, on: function on(e, t) {s[e] = s[e] || [], s[e].indexOf(t) > -1 || s[e].push(t);}, off: function off(e, t) {s[e] = s[e] || [];var n = s[e].indexOf(t);-1 !== n && s[e].splice(n, 1);}, env: De({}, { get: function get(e, t) {return { $env: t };} }), action: function action(e) {return De({}, { get: function get(t, s) {return o("db", s) ? i({ $method: s }, null, e) : function () {return i({ $method: s, $param: xe(Array.from(arguments)) }, null, e);};} });}, Geo: De({}, { get: function get(e, t) {return a({ path: ["Geo"], method: t });} }), getCloudEnv: function getCloudEnv(e) {if ("string" != typeof e || !e.trim()) throw new Error("getCloudEnv参数错误");return { $env: e.replace("$cloudEnv_", "") };}, get serverDate() {return a({ path: [], method: "serverDate" });}, get RegExp() {return a({ path: [], method: "RegExp" });} },u = De(c, { get: function get(e, t) {return o("db", t) ? i({ $method: t }) : function () {return i({ $method: t, $param: xe(Array.from(arguments)) });};} });return this._database = u, u;};}(t), function (e) {e.getCurrentUserInfo = qe, e.chooseAndUploadFile = o(Fe.initChooseAndUploadFile(e));}(t), t.init = this.init, t;} }]);return _class2;}())();(function () {{var e = {};if (1 === [].length) e = [][0], Ne = Ne.init(e);else {var _e21 = ["auth", "callFunction", "uploadFile", "deleteFile", "getTempFileURL", "downloadFile", "database", "getCurrentUSerInfo"],t = [].length > 0 ? "应用有多个服务空间，请通过uniCloud.init方法指定要使用的服务空间" : "应用未关联服务空间，请在cloudfunctions目录右键关联服务空间";_e21.forEach(function (e) {Ne[e] = function () {return console.error(t), Promise.reject(new i({ code: "SYS_ERR", message: t }));};});}Object.assign(Ne, { get mixinDatacom() {return e = Ne, { props: { localdata: { type: Array, default: function _default() {return [];} }, options: { type: [Object, Array], default: function _default() {return {};} }, collection: { type: String, default: "" }, action: { type: String, default: "" }, field: { type: String, default: "" }, orderby: { type: String, default: "" }, where: { type: [String, Object], default: "" }, pageData: { type: String, default: "add" }, pageCurrent: { type: Number, default: 1 }, pageSize: { type: Number, default: 20 }, getcount: { type: [Boolean, String], default: !1 }, gettree: { type: [Boolean, String], default: !1 }, gettreepath: { type: [Boolean, String], default: !1 }, startwith: { type: String, default: "" }, limitlevel: { type: Number, default: 10 }, groupby: { type: String, default: "" }, groupField: { type: String, default: "" }, distinct: { type: [Boolean, String], default: !1 }, manual: { type: Boolean, default: !1 } }, data: function data() {return { mixinDatacomLoading: !1, mixinDatacomHasMore: !1, mixinDatacomResData: [], mixinDatacomErrorMessage: "", mixinDatacomPage: {} };}, created: function created() {var _this16 = this;this.mixinDatacomPage = { current: this.pageCurrent, size: this.pageSize, count: 0 }, this.$watch(function () {var e = [];return ["pageCurrent", "pageSize", "localdata", "collection", "action", "field", "orderby", "where", "getont", "getcount", "gettree", "groupby", "groupField", "distinct"].forEach(function (t) {e.push(_this16[t]);}), e;}, function (e, t) {var s = !1;var n = [];for (var _r4 = 2; _r4 < e.length; _r4++) {e[_r4] !== t[_r4] && (n.push(e[_r4]), s = !0);}e[0] !== t[0] && (_this16.mixinDatacomPage.current = _this16.pageCurrent), _this16.mixinDatacomPage.size = _this16.pageSize, _this16.onMixinDatacomPropsChange(s, n);});}, methods: { onMixinDatacomPropsChange: function onMixinDatacomPropsChange(e, t) {}, mixinDatacomEasyGet: function mixinDatacomEasyGet() {var _this17 = this;var _ref22 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref22$getone = _ref22.getone,e = _ref22$getone === void 0 ? !1 : _ref22$getone,t = _ref22.success,s = _ref22.fail;this.mixinDatacomLoading || (this.mixinDatacomLoading = !0, this.mixinDatacomErrorMessage = "", this.mixinDatacomGet().then(function (s) {_this17.mixinDatacomLoading = !1;var _s$result = s.result,n = _s$result.data,r = _s$result.count;_this17.getcount && (_this17.mixinDatacomPage.count = r), _this17.mixinDatacomHasMore = n.length < _this17.pageSize;var o = e ? n.length ? n[0] : void 0 : n;_this17.mixinDatacomResData = o, t && t(o);}).catch(function (e) {_this17.mixinDatacomLoading = !1, _this17.mixinDatacomErrorMessage = e, s && s(e);}));}, mixinDatacomGet: function mixinDatacomGet() {var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var s = e.database();var n = t.action || this.action;n && (s = s.action(n));var r = t.collection || this.collection;s = s.collection(r);var o = t.where || this.where;o && Object.keys(o).length && (s = s.where(o));var i = t.field || this.field;i && (s = s.field(i));var a = t.groupby || this.groupby;a && (s = s.groupBy(a));var c = t.groupField || this.groupField;c && (s = s.groupField(c)), !0 === (void 0 !== t.distinct ? t.distinct : this.distinct) && (s = s.distinct());var u = t.orderby || this.orderby;u && (s = s.orderBy(u));var h = void 0 !== t.pageCurrent ? t.pageCurrent : this.mixinDatacomPage.current,l = void 0 !== t.pageSize ? t.pageSize : this.mixinDatacomPage.size,d = void 0 !== t.getcount ? t.getcount : this.getcount,f = void 0 !== t.gettree ? t.gettree : this.gettree,p = void 0 !== t.gettreepath ? t.gettreepath : this.gettreepath,g = { getCount: d },m = { limitLevel: void 0 !== t.limitlevel ? t.limitlevel : this.limitlevel, startWith: void 0 !== t.startwith ? t.startwith : this.startwith };return f && (g.getTree = m), p && (g.getTreePath = m), s = s.skip(l * (h - 1)).limit(l).get(g), s;} } };var e;} });}})();var Me = Ne;var _default2 = Me;exports.default = _default2;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 3), __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../../../node-libs-browser/mock/process.js */ 189)))
-
-/***/ }),
-
-/***/ 189:
-/*!********************************************************!*\
-  !*** ./node_modules/node-libs-browser/mock/process.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports.nextTick = function nextTick(fn) {
-    var args = Array.prototype.slice.call(arguments);
-    args.shift();
-    setTimeout(function () {
-        fn.apply(null, args);
-    }, 0);
-};
-
-exports.platform = exports.arch = 
-exports.execPath = exports.title = 'browser';
-exports.pid = 1;
-exports.browser = true;
-exports.env = {};
-exports.argv = [];
-
-exports.binding = function (name) {
-	throw new Error('No such module. (Possibly not yet loaded)')
-};
-
-(function () {
-    var cwd = '/';
-    var path;
-    exports.cwd = function () { return cwd };
-    exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 190);
-        cwd = path.resolve(dir, cwd);
-    };
-})();
-
-exports.exit = exports.kill = 
-exports.umask = exports.dlopen = 
-exports.uptime = exports.memoryUsage = 
-exports.uvCounters = function() {};
-exports.features = {};
-
-
-/***/ }),
-
-/***/ 190:
-/*!***********************************************!*\
-  !*** ./node_modules/path-browserify/index.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {// .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
-// backported and transplited with Babel, with backwards-compat fixes
-
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-// resolves . and .. elements in a path array with directory names there
-// must be no slashes, empty elements, or device names (c:\) in the array
-// (so also no leading and trailing slashes - it does not distinguish
-// relative and absolute paths)
-function normalizeArray(parts, allowAboveRoot) {
-  // if the path tries to go above the root, `up` ends up > 0
-  var up = 0;
-  for (var i = parts.length - 1; i >= 0; i--) {
-    var last = parts[i];
-    if (last === '.') {
-      parts.splice(i, 1);
-    } else if (last === '..') {
-      parts.splice(i, 1);
-      up++;
-    } else if (up) {
-      parts.splice(i, 1);
-      up--;
-    }
-  }
-
-  // if the path is allowed to go above the root, restore leading ..s
-  if (allowAboveRoot) {
-    for (; up--; up) {
-      parts.unshift('..');
-    }
-  }
-
-  return parts;
-}
-
-// path.resolve([from ...], to)
-// posix version
-exports.resolve = function() {
-  var resolvedPath = '',
-      resolvedAbsolute = false;
-
-  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
-    var path = (i >= 0) ? arguments[i] : process.cwd();
-
-    // Skip empty and invalid entries
-    if (typeof path !== 'string') {
-      throw new TypeError('Arguments to path.resolve must be strings');
-    } else if (!path) {
-      continue;
-    }
-
-    resolvedPath = path + '/' + resolvedPath;
-    resolvedAbsolute = path.charAt(0) === '/';
-  }
-
-  // At this point the path should be resolved to a full absolute path, but
-  // handle relative paths to be safe (might happen when process.cwd() fails)
-
-  // Normalize the path
-  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function(p) {
-    return !!p;
-  }), !resolvedAbsolute).join('/');
-
-  return ((resolvedAbsolute ? '/' : '') + resolvedPath) || '.';
-};
-
-// path.normalize(path)
-// posix version
-exports.normalize = function(path) {
-  var isAbsolute = exports.isAbsolute(path),
-      trailingSlash = substr(path, -1) === '/';
-
-  // Normalize the path
-  path = normalizeArray(filter(path.split('/'), function(p) {
-    return !!p;
-  }), !isAbsolute).join('/');
-
-  if (!path && !isAbsolute) {
-    path = '.';
-  }
-  if (path && trailingSlash) {
-    path += '/';
-  }
-
-  return (isAbsolute ? '/' : '') + path;
-};
-
-// posix version
-exports.isAbsolute = function(path) {
-  return path.charAt(0) === '/';
-};
-
-// posix version
-exports.join = function() {
-  var paths = Array.prototype.slice.call(arguments, 0);
-  return exports.normalize(filter(paths, function(p, index) {
-    if (typeof p !== 'string') {
-      throw new TypeError('Arguments to path.join must be strings');
-    }
-    return p;
-  }).join('/'));
-};
-
-
-// path.relative(from, to)
-// posix version
-exports.relative = function(from, to) {
-  from = exports.resolve(from).substr(1);
-  to = exports.resolve(to).substr(1);
-
-  function trim(arr) {
-    var start = 0;
-    for (; start < arr.length; start++) {
-      if (arr[start] !== '') break;
-    }
-
-    var end = arr.length - 1;
-    for (; end >= 0; end--) {
-      if (arr[end] !== '') break;
-    }
-
-    if (start > end) return [];
-    return arr.slice(start, end - start + 1);
-  }
-
-  var fromParts = trim(from.split('/'));
-  var toParts = trim(to.split('/'));
-
-  var length = Math.min(fromParts.length, toParts.length);
-  var samePartsLength = length;
-  for (var i = 0; i < length; i++) {
-    if (fromParts[i] !== toParts[i]) {
-      samePartsLength = i;
-      break;
-    }
-  }
-
-  var outputParts = [];
-  for (var i = samePartsLength; i < fromParts.length; i++) {
-    outputParts.push('..');
-  }
-
-  outputParts = outputParts.concat(toParts.slice(samePartsLength));
-
-  return outputParts.join('/');
-};
-
-exports.sep = '/';
-exports.delimiter = ':';
-
-exports.dirname = function (path) {
-  if (typeof path !== 'string') path = path + '';
-  if (path.length === 0) return '.';
-  var code = path.charCodeAt(0);
-  var hasRoot = code === 47 /*/*/;
-  var end = -1;
-  var matchedSlash = true;
-  for (var i = path.length - 1; i >= 1; --i) {
-    code = path.charCodeAt(i);
-    if (code === 47 /*/*/) {
-        if (!matchedSlash) {
-          end = i;
-          break;
-        }
-      } else {
-      // We saw the first non-path separator
-      matchedSlash = false;
-    }
-  }
-
-  if (end === -1) return hasRoot ? '/' : '.';
-  if (hasRoot && end === 1) {
-    // return '//';
-    // Backwards-compat fix:
-    return '/';
-  }
-  return path.slice(0, end);
-};
-
-function basename(path) {
-  if (typeof path !== 'string') path = path + '';
-
-  var start = 0;
-  var end = -1;
-  var matchedSlash = true;
-  var i;
-
-  for (i = path.length - 1; i >= 0; --i) {
-    if (path.charCodeAt(i) === 47 /*/*/) {
-        // If we reached a path separator that was not part of a set of path
-        // separators at the end of the string, stop now
-        if (!matchedSlash) {
-          start = i + 1;
-          break;
-        }
-      } else if (end === -1) {
-      // We saw the first non-path separator, mark this as the end of our
-      // path component
-      matchedSlash = false;
-      end = i + 1;
-    }
-  }
-
-  if (end === -1) return '';
-  return path.slice(start, end);
-}
-
-// Uses a mixed approach for backwards-compatibility, as ext behavior changed
-// in new Node.js versions, so only basename() above is backported here
-exports.basename = function (path, ext) {
-  var f = basename(path);
-  if (ext && f.substr(-1 * ext.length) === ext) {
-    f = f.substr(0, f.length - ext.length);
-  }
-  return f;
-};
-
-exports.extname = function (path) {
-  if (typeof path !== 'string') path = path + '';
-  var startDot = -1;
-  var startPart = 0;
-  var end = -1;
-  var matchedSlash = true;
-  // Track the state of characters (if any) we see before our first dot and
-  // after any path separator we find
-  var preDotState = 0;
-  for (var i = path.length - 1; i >= 0; --i) {
-    var code = path.charCodeAt(i);
-    if (code === 47 /*/*/) {
-        // If we reached a path separator that was not part of a set of path
-        // separators at the end of the string, stop now
-        if (!matchedSlash) {
-          startPart = i + 1;
-          break;
-        }
-        continue;
-      }
-    if (end === -1) {
-      // We saw the first non-path separator, mark this as the end of our
-      // extension
-      matchedSlash = false;
-      end = i + 1;
-    }
-    if (code === 46 /*.*/) {
-        // If this is our first dot, mark it as the start of our extension
-        if (startDot === -1)
-          startDot = i;
-        else if (preDotState !== 1)
-          preDotState = 1;
-    } else if (startDot !== -1) {
-      // We saw a non-dot and non-path separator before our dot, so we should
-      // have a good chance at having a non-empty extension
-      preDotState = -1;
-    }
-  }
-
-  if (startDot === -1 || end === -1 ||
-      // We saw a non-dot character immediately before the dot
-      preDotState === 0 ||
-      // The (right-most) trimmed path component is exactly '..'
-      preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {
-    return '';
-  }
-  return path.slice(startDot, end);
-};
-
-function filter (xs, f) {
-    if (xs.filter) return xs.filter(f);
-    var res = [];
-    for (var i = 0; i < xs.length; i++) {
-        if (f(xs[i], i, xs)) res.push(xs[i]);
-    }
-    return res;
-}
-
-// String.prototype.substr - negative index don't work in IE8
-var substr = 'ab'.substr(-1) === 'b'
-    ? function (str, start, len) { return str.substr(start, len) }
-    : function (str, start, len) {
-        if (start < 0) start = str.length + start;
-        return str.substr(start, len);
-    }
-;
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 189)))
-
-/***/ }),
-
-/***/ 191:
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! regenerator-runtime */ 192);
-
-/***/ }),
-
-/***/ 192:
-/*!************************************************************!*\
-  !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// This method of obtaining a reference to the global object needs to be
-// kept identical to the way it is obtained in runtime.js
-var g = (function() {
-  return this || (typeof self === "object" && self);
-})() || Function("return this")();
-
-// Use `getOwnPropertyNames` because not all browsers support calling
-// `hasOwnProperty` on the global `self` object in a worker. See #183.
-var hadRuntime = g.regeneratorRuntime &&
-  Object.getOwnPropertyNames(g).indexOf("regeneratorRuntime") >= 0;
-
-// Save the old regeneratorRuntime in case it needs to be restored later.
-var oldRuntime = hadRuntime && g.regeneratorRuntime;
-
-// Force reevalutation of runtime.js.
-g.regeneratorRuntime = undefined;
-
-module.exports = __webpack_require__(/*! ./runtime */ 193);
-
-if (hadRuntime) {
-  // Restore the original runtime.
-  g.regeneratorRuntime = oldRuntime;
-} else {
-  // Remove the global property added by runtime.js.
-  try {
-    delete g.regeneratorRuntime;
-  } catch(e) {
-    g.regeneratorRuntime = undefined;
-  }
-}
-
-
-/***/ }),
-
-/***/ 193:
-/*!*****************************************************!*\
-  !*** ./node_modules/regenerator-runtime/runtime.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-!(function(global) {
-  "use strict";
-
-  var Op = Object.prototype;
-  var hasOwn = Op.hasOwnProperty;
-  var undefined; // More compressible than void 0.
-  var $Symbol = typeof Symbol === "function" ? Symbol : {};
-  var iteratorSymbol = $Symbol.iterator || "@@iterator";
-  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
-  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
-
-  var inModule = typeof module === "object";
-  var runtime = global.regeneratorRuntime;
-  if (runtime) {
-    if (inModule) {
-      // If regeneratorRuntime is defined globally and we're in a module,
-      // make the exports object identical to regeneratorRuntime.
-      module.exports = runtime;
-    }
-    // Don't bother evaluating the rest of this file if the runtime was
-    // already defined globally.
-    return;
-  }
-
-  // Define the runtime globally (as expected by generated code) as either
-  // module.exports (if we're in a module) or a new, empty object.
-  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
-
-  function wrap(innerFn, outerFn, self, tryLocsList) {
-    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
-    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
-    var generator = Object.create(protoGenerator.prototype);
-    var context = new Context(tryLocsList || []);
-
-    // The ._invoke method unifies the implementations of the .next,
-    // .throw, and .return methods.
-    generator._invoke = makeInvokeMethod(innerFn, self, context);
-
-    return generator;
-  }
-  runtime.wrap = wrap;
-
-  // Try/catch helper to minimize deoptimizations. Returns a completion
-  // record like context.tryEntries[i].completion. This interface could
-  // have been (and was previously) designed to take a closure to be
-  // invoked without arguments, but in all the cases we care about we
-  // already have an existing method we want to call, so there's no need
-  // to create a new function object. We can even get away with assuming
-  // the method takes exactly one argument, since that happens to be true
-  // in every case, so we don't have to touch the arguments object. The
-  // only additional allocation required is the completion record, which
-  // has a stable shape and so hopefully should be cheap to allocate.
-  function tryCatch(fn, obj, arg) {
-    try {
-      return { type: "normal", arg: fn.call(obj, arg) };
-    } catch (err) {
-      return { type: "throw", arg: err };
-    }
-  }
-
-  var GenStateSuspendedStart = "suspendedStart";
-  var GenStateSuspendedYield = "suspendedYield";
-  var GenStateExecuting = "executing";
-  var GenStateCompleted = "completed";
-
-  // Returning this object from the innerFn has the same effect as
-  // breaking out of the dispatch switch statement.
-  var ContinueSentinel = {};
-
-  // Dummy constructor functions that we use as the .constructor and
-  // .constructor.prototype properties for functions that return Generator
-  // objects. For full spec compliance, you may wish to configure your
-  // minifier not to mangle the names of these two functions.
-  function Generator() {}
-  function GeneratorFunction() {}
-  function GeneratorFunctionPrototype() {}
-
-  // This is a polyfill for %IteratorPrototype% for environments that
-  // don't natively support it.
-  var IteratorPrototype = {};
-  IteratorPrototype[iteratorSymbol] = function () {
-    return this;
-  };
-
-  var getProto = Object.getPrototypeOf;
-  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
-  if (NativeIteratorPrototype &&
-      NativeIteratorPrototype !== Op &&
-      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
-    // This environment has a native %IteratorPrototype%; use it instead
-    // of the polyfill.
-    IteratorPrototype = NativeIteratorPrototype;
-  }
-
-  var Gp = GeneratorFunctionPrototype.prototype =
-    Generator.prototype = Object.create(IteratorPrototype);
-  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
-  GeneratorFunctionPrototype.constructor = GeneratorFunction;
-  GeneratorFunctionPrototype[toStringTagSymbol] =
-    GeneratorFunction.displayName = "GeneratorFunction";
-
-  // Helper for defining the .next, .throw, and .return methods of the
-  // Iterator interface in terms of a single ._invoke method.
-  function defineIteratorMethods(prototype) {
-    ["next", "throw", "return"].forEach(function(method) {
-      prototype[method] = function(arg) {
-        return this._invoke(method, arg);
-      };
-    });
-  }
-
-  runtime.isGeneratorFunction = function(genFun) {
-    var ctor = typeof genFun === "function" && genFun.constructor;
-    return ctor
-      ? ctor === GeneratorFunction ||
-        // For the native GeneratorFunction constructor, the best we can
-        // do is to check its .name property.
-        (ctor.displayName || ctor.name) === "GeneratorFunction"
-      : false;
-  };
-
-  runtime.mark = function(genFun) {
-    if (Object.setPrototypeOf) {
-      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
-    } else {
-      genFun.__proto__ = GeneratorFunctionPrototype;
-      if (!(toStringTagSymbol in genFun)) {
-        genFun[toStringTagSymbol] = "GeneratorFunction";
-      }
-    }
-    genFun.prototype = Object.create(Gp);
-    return genFun;
-  };
-
-  // Within the body of any async function, `await x` is transformed to
-  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
-  // `hasOwn.call(value, "__await")` to determine if the yielded value is
-  // meant to be awaited.
-  runtime.awrap = function(arg) {
-    return { __await: arg };
-  };
-
-  function AsyncIterator(generator) {
-    function invoke(method, arg, resolve, reject) {
-      var record = tryCatch(generator[method], generator, arg);
-      if (record.type === "throw") {
-        reject(record.arg);
-      } else {
-        var result = record.arg;
-        var value = result.value;
-        if (value &&
-            typeof value === "object" &&
-            hasOwn.call(value, "__await")) {
-          return Promise.resolve(value.__await).then(function(value) {
-            invoke("next", value, resolve, reject);
-          }, function(err) {
-            invoke("throw", err, resolve, reject);
-          });
-        }
-
-        return Promise.resolve(value).then(function(unwrapped) {
-          // When a yielded Promise is resolved, its final value becomes
-          // the .value of the Promise<{value,done}> result for the
-          // current iteration.
-          result.value = unwrapped;
-          resolve(result);
-        }, function(error) {
-          // If a rejected Promise was yielded, throw the rejection back
-          // into the async generator function so it can be handled there.
-          return invoke("throw", error, resolve, reject);
-        });
-      }
-    }
-
-    var previousPromise;
-
-    function enqueue(method, arg) {
-      function callInvokeWithMethodAndArg() {
-        return new Promise(function(resolve, reject) {
-          invoke(method, arg, resolve, reject);
-        });
-      }
-
-      return previousPromise =
-        // If enqueue has been called before, then we want to wait until
-        // all previous Promises have been resolved before calling invoke,
-        // so that results are always delivered in the correct order. If
-        // enqueue has not been called before, then it is important to
-        // call invoke immediately, without waiting on a callback to fire,
-        // so that the async generator function has the opportunity to do
-        // any necessary setup in a predictable way. This predictability
-        // is why the Promise constructor synchronously invokes its
-        // executor callback, and why async functions synchronously
-        // execute code before the first await. Since we implement simple
-        // async functions in terms of async generators, it is especially
-        // important to get this right, even though it requires care.
-        previousPromise ? previousPromise.then(
-          callInvokeWithMethodAndArg,
-          // Avoid propagating failures to Promises returned by later
-          // invocations of the iterator.
-          callInvokeWithMethodAndArg
-        ) : callInvokeWithMethodAndArg();
-    }
-
-    // Define the unified helper method that is used to implement .next,
-    // .throw, and .return (see defineIteratorMethods).
-    this._invoke = enqueue;
-  }
-
-  defineIteratorMethods(AsyncIterator.prototype);
-  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
-    return this;
-  };
-  runtime.AsyncIterator = AsyncIterator;
-
-  // Note that simple async functions are implemented on top of
-  // AsyncIterator objects; they just return a Promise for the value of
-  // the final result produced by the iterator.
-  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
-    var iter = new AsyncIterator(
-      wrap(innerFn, outerFn, self, tryLocsList)
-    );
-
-    return runtime.isGeneratorFunction(outerFn)
-      ? iter // If outerFn is a generator, return the full iterator.
-      : iter.next().then(function(result) {
-          return result.done ? result.value : iter.next();
-        });
-  };
-
-  function makeInvokeMethod(innerFn, self, context) {
-    var state = GenStateSuspendedStart;
-
-    return function invoke(method, arg) {
-      if (state === GenStateExecuting) {
-        throw new Error("Generator is already running");
-      }
-
-      if (state === GenStateCompleted) {
-        if (method === "throw") {
-          throw arg;
-        }
-
-        // Be forgiving, per 25.3.3.3.3 of the spec:
-        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
-        return doneResult();
-      }
-
-      context.method = method;
-      context.arg = arg;
-
-      while (true) {
-        var delegate = context.delegate;
-        if (delegate) {
-          var delegateResult = maybeInvokeDelegate(delegate, context);
-          if (delegateResult) {
-            if (delegateResult === ContinueSentinel) continue;
-            return delegateResult;
-          }
-        }
-
-        if (context.method === "next") {
-          // Setting context._sent for legacy support of Babel's
-          // function.sent implementation.
-          context.sent = context._sent = context.arg;
-
-        } else if (context.method === "throw") {
-          if (state === GenStateSuspendedStart) {
-            state = GenStateCompleted;
-            throw context.arg;
-          }
-
-          context.dispatchException(context.arg);
-
-        } else if (context.method === "return") {
-          context.abrupt("return", context.arg);
-        }
-
-        state = GenStateExecuting;
-
-        var record = tryCatch(innerFn, self, context);
-        if (record.type === "normal") {
-          // If an exception is thrown from innerFn, we leave state ===
-          // GenStateExecuting and loop back for another invocation.
-          state = context.done
-            ? GenStateCompleted
-            : GenStateSuspendedYield;
-
-          if (record.arg === ContinueSentinel) {
-            continue;
-          }
-
-          return {
-            value: record.arg,
-            done: context.done
-          };
-
-        } else if (record.type === "throw") {
-          state = GenStateCompleted;
-          // Dispatch the exception by looping back around to the
-          // context.dispatchException(context.arg) call above.
-          context.method = "throw";
-          context.arg = record.arg;
-        }
-      }
-    };
-  }
-
-  // Call delegate.iterator[context.method](context.arg) and handle the
-  // result, either by returning a { value, done } result from the
-  // delegate iterator, or by modifying context.method and context.arg,
-  // setting context.delegate to null, and returning the ContinueSentinel.
-  function maybeInvokeDelegate(delegate, context) {
-    var method = delegate.iterator[context.method];
-    if (method === undefined) {
-      // A .throw or .return when the delegate iterator has no .throw
-      // method always terminates the yield* loop.
-      context.delegate = null;
-
-      if (context.method === "throw") {
-        if (delegate.iterator.return) {
-          // If the delegate iterator has a return method, give it a
-          // chance to clean up.
-          context.method = "return";
-          context.arg = undefined;
-          maybeInvokeDelegate(delegate, context);
-
-          if (context.method === "throw") {
-            // If maybeInvokeDelegate(context) changed context.method from
-            // "return" to "throw", let that override the TypeError below.
-            return ContinueSentinel;
-          }
-        }
-
-        context.method = "throw";
-        context.arg = new TypeError(
-          "The iterator does not provide a 'throw' method");
-      }
-
-      return ContinueSentinel;
-    }
-
-    var record = tryCatch(method, delegate.iterator, context.arg);
-
-    if (record.type === "throw") {
-      context.method = "throw";
-      context.arg = record.arg;
-      context.delegate = null;
-      return ContinueSentinel;
-    }
-
-    var info = record.arg;
-
-    if (! info) {
-      context.method = "throw";
-      context.arg = new TypeError("iterator result is not an object");
-      context.delegate = null;
-      return ContinueSentinel;
-    }
-
-    if (info.done) {
-      // Assign the result of the finished delegate to the temporary
-      // variable specified by delegate.resultName (see delegateYield).
-      context[delegate.resultName] = info.value;
-
-      // Resume execution at the desired location (see delegateYield).
-      context.next = delegate.nextLoc;
-
-      // If context.method was "throw" but the delegate handled the
-      // exception, let the outer generator proceed normally. If
-      // context.method was "next", forget context.arg since it has been
-      // "consumed" by the delegate iterator. If context.method was
-      // "return", allow the original .return call to continue in the
-      // outer generator.
-      if (context.method !== "return") {
-        context.method = "next";
-        context.arg = undefined;
-      }
-
-    } else {
-      // Re-yield the result returned by the delegate method.
-      return info;
-    }
-
-    // The delegate iterator is finished, so forget it and continue with
-    // the outer generator.
-    context.delegate = null;
-    return ContinueSentinel;
-  }
-
-  // Define Generator.prototype.{next,throw,return} in terms of the
-  // unified ._invoke helper method.
-  defineIteratorMethods(Gp);
-
-  Gp[toStringTagSymbol] = "Generator";
-
-  // A Generator should always return itself as the iterator object when the
-  // @@iterator function is called on it. Some browsers' implementations of the
-  // iterator prototype chain incorrectly implement this, causing the Generator
-  // object to not be returned from this call. This ensures that doesn't happen.
-  // See https://github.com/facebook/regenerator/issues/274 for more details.
-  Gp[iteratorSymbol] = function() {
-    return this;
-  };
-
-  Gp.toString = function() {
-    return "[object Generator]";
-  };
-
-  function pushTryEntry(locs) {
-    var entry = { tryLoc: locs[0] };
-
-    if (1 in locs) {
-      entry.catchLoc = locs[1];
-    }
-
-    if (2 in locs) {
-      entry.finallyLoc = locs[2];
-      entry.afterLoc = locs[3];
-    }
-
-    this.tryEntries.push(entry);
-  }
-
-  function resetTryEntry(entry) {
-    var record = entry.completion || {};
-    record.type = "normal";
-    delete record.arg;
-    entry.completion = record;
-  }
-
-  function Context(tryLocsList) {
-    // The root entry object (effectively a try statement without a catch
-    // or a finally block) gives us a place to store values thrown from
-    // locations where there is no enclosing try statement.
-    this.tryEntries = [{ tryLoc: "root" }];
-    tryLocsList.forEach(pushTryEntry, this);
-    this.reset(true);
-  }
-
-  runtime.keys = function(object) {
-    var keys = [];
-    for (var key in object) {
-      keys.push(key);
-    }
-    keys.reverse();
-
-    // Rather than returning an object with a next method, we keep
-    // things simple and return the next function itself.
-    return function next() {
-      while (keys.length) {
-        var key = keys.pop();
-        if (key in object) {
-          next.value = key;
-          next.done = false;
-          return next;
-        }
-      }
-
-      // To avoid creating an additional object, we just hang the .value
-      // and .done properties off the next function object itself. This
-      // also ensures that the minifier will not anonymize the function.
-      next.done = true;
-      return next;
-    };
-  };
-
-  function values(iterable) {
-    if (iterable) {
-      var iteratorMethod = iterable[iteratorSymbol];
-      if (iteratorMethod) {
-        return iteratorMethod.call(iterable);
-      }
-
-      if (typeof iterable.next === "function") {
-        return iterable;
-      }
-
-      if (!isNaN(iterable.length)) {
-        var i = -1, next = function next() {
-          while (++i < iterable.length) {
-            if (hasOwn.call(iterable, i)) {
-              next.value = iterable[i];
-              next.done = false;
-              return next;
-            }
-          }
-
-          next.value = undefined;
-          next.done = true;
-
-          return next;
-        };
-
-        return next.next = next;
-      }
-    }
-
-    // Return an iterator with no values.
-    return { next: doneResult };
-  }
-  runtime.values = values;
-
-  function doneResult() {
-    return { value: undefined, done: true };
-  }
-
-  Context.prototype = {
-    constructor: Context,
-
-    reset: function(skipTempReset) {
-      this.prev = 0;
-      this.next = 0;
-      // Resetting context._sent for legacy support of Babel's
-      // function.sent implementation.
-      this.sent = this._sent = undefined;
-      this.done = false;
-      this.delegate = null;
-
-      this.method = "next";
-      this.arg = undefined;
-
-      this.tryEntries.forEach(resetTryEntry);
-
-      if (!skipTempReset) {
-        for (var name in this) {
-          // Not sure about the optimal order of these conditions:
-          if (name.charAt(0) === "t" &&
-              hasOwn.call(this, name) &&
-              !isNaN(+name.slice(1))) {
-            this[name] = undefined;
-          }
-        }
-      }
-    },
-
-    stop: function() {
-      this.done = true;
-
-      var rootEntry = this.tryEntries[0];
-      var rootRecord = rootEntry.completion;
-      if (rootRecord.type === "throw") {
-        throw rootRecord.arg;
-      }
-
-      return this.rval;
-    },
-
-    dispatchException: function(exception) {
-      if (this.done) {
-        throw exception;
-      }
-
-      var context = this;
-      function handle(loc, caught) {
-        record.type = "throw";
-        record.arg = exception;
-        context.next = loc;
-
-        if (caught) {
-          // If the dispatched exception was caught by a catch block,
-          // then let that catch block handle the exception normally.
-          context.method = "next";
-          context.arg = undefined;
-        }
-
-        return !! caught;
-      }
-
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        var record = entry.completion;
-
-        if (entry.tryLoc === "root") {
-          // Exception thrown outside of any try block that could handle
-          // it, so set the completion value of the entire function to
-          // throw the exception.
-          return handle("end");
-        }
-
-        if (entry.tryLoc <= this.prev) {
-          var hasCatch = hasOwn.call(entry, "catchLoc");
-          var hasFinally = hasOwn.call(entry, "finallyLoc");
-
-          if (hasCatch && hasFinally) {
-            if (this.prev < entry.catchLoc) {
-              return handle(entry.catchLoc, true);
-            } else if (this.prev < entry.finallyLoc) {
-              return handle(entry.finallyLoc);
-            }
-
-          } else if (hasCatch) {
-            if (this.prev < entry.catchLoc) {
-              return handle(entry.catchLoc, true);
-            }
-
-          } else if (hasFinally) {
-            if (this.prev < entry.finallyLoc) {
-              return handle(entry.finallyLoc);
-            }
-
-          } else {
-            throw new Error("try statement without catch or finally");
-          }
-        }
-      }
-    },
-
-    abrupt: function(type, arg) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc <= this.prev &&
-            hasOwn.call(entry, "finallyLoc") &&
-            this.prev < entry.finallyLoc) {
-          var finallyEntry = entry;
-          break;
-        }
-      }
-
-      if (finallyEntry &&
-          (type === "break" ||
-           type === "continue") &&
-          finallyEntry.tryLoc <= arg &&
-          arg <= finallyEntry.finallyLoc) {
-        // Ignore the finally entry if control is not jumping to a
-        // location outside the try/catch block.
-        finallyEntry = null;
-      }
-
-      var record = finallyEntry ? finallyEntry.completion : {};
-      record.type = type;
-      record.arg = arg;
-
-      if (finallyEntry) {
-        this.method = "next";
-        this.next = finallyEntry.finallyLoc;
-        return ContinueSentinel;
-      }
-
-      return this.complete(record);
-    },
-
-    complete: function(record, afterLoc) {
-      if (record.type === "throw") {
-        throw record.arg;
-      }
-
-      if (record.type === "break" ||
-          record.type === "continue") {
-        this.next = record.arg;
-      } else if (record.type === "return") {
-        this.rval = this.arg = record.arg;
-        this.method = "return";
-        this.next = "end";
-      } else if (record.type === "normal" && afterLoc) {
-        this.next = afterLoc;
-      }
-
-      return ContinueSentinel;
-    },
-
-    finish: function(finallyLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.finallyLoc === finallyLoc) {
-          this.complete(entry.completion, entry.afterLoc);
-          resetTryEntry(entry);
-          return ContinueSentinel;
-        }
-      }
-    },
-
-    "catch": function(tryLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc === tryLoc) {
-          var record = entry.completion;
-          if (record.type === "throw") {
-            var thrown = record.arg;
-            resetTryEntry(entry);
-          }
-          return thrown;
-        }
-      }
-
-      // The context.catch method must only be called with a location
-      // argument that corresponds to a known catch block.
-      throw new Error("illegal catch attempt");
-    },
-
-    delegateYield: function(iterable, resultName, nextLoc) {
-      this.delegate = {
-        iterator: values(iterable),
-        resultName: resultName,
-        nextLoc: nextLoc
-      };
-
-      if (this.method === "next") {
-        // Deliberately forget the last sent value so that we don't
-        // accidentally pass it on to the delegate.
-        this.arg = undefined;
-      }
-
-      return ContinueSentinel;
-    }
-  };
-})(
-  // In sloppy mode, unbound `this` refers to the global object, fallback to
-  // Function constructor if we're in global strict mode. That is sadly a form
-  // of indirect eval which violates Content Security Policy.
-  (function() {
-    return this || (typeof self === "object" && self);
-  })() || Function("return this")()
-);
-
-
-/***/ }),
-
-/***/ 194:
-/*!**************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-i18n/dist/uni-i18n.esm.js ***!
-  \**************************************************************/
-/*! exports provided: I18n, initVueI18n */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(uni) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I18n", function() { return I18n; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initVueI18n", function() { return initVueI18n; });
-const isObject = (val) => val !== null && typeof val === 'object';
-class BaseFormatter {
-    constructor() {
-        this._caches = Object.create(null);
-    }
-    interpolate(message, values) {
-        if (!values) {
-            return [message];
-        }
-        let tokens = this._caches[message];
-        if (!tokens) {
-            tokens = parse(message);
-            this._caches[message] = tokens;
-        }
-        return compile(tokens, values);
-    }
-}
-const RE_TOKEN_LIST_VALUE = /^(?:\d)+/;
-const RE_TOKEN_NAMED_VALUE = /^(?:\w)+/;
-function parse(format) {
-    const tokens = [];
-    let position = 0;
-    let text = '';
-    while (position < format.length) {
-        let char = format[position++];
-        if (char === '{') {
-            if (text) {
-                tokens.push({ type: 'text', value: text });
-            }
-            text = '';
-            let sub = '';
-            char = format[position++];
-            while (char !== undefined && char !== '}') {
-                sub += char;
-                char = format[position++];
-            }
-            const isClosed = char === '}';
-            const type = RE_TOKEN_LIST_VALUE.test(sub)
-                ? 'list'
-                : isClosed && RE_TOKEN_NAMED_VALUE.test(sub)
-                    ? 'named'
-                    : 'unknown';
-            tokens.push({ value: sub, type });
-        }
-        else if (char === '%') {
-            // when found rails i18n syntax, skip text capture
-            if (format[position] !== '{') {
-                text += char;
-            }
-        }
-        else {
-            text += char;
-        }
-    }
-    text && tokens.push({ type: 'text', value: text });
-    return tokens;
-}
-function compile(tokens, values) {
-    const compiled = [];
-    let index = 0;
-    const mode = Array.isArray(values)
-        ? 'list'
-        : isObject(values)
-            ? 'named'
-            : 'unknown';
-    if (mode === 'unknown') {
-        return compiled;
-    }
-    while (index < tokens.length) {
-        const token = tokens[index];
-        switch (token.type) {
-            case 'text':
-                compiled.push(token.value);
-                break;
-            case 'list':
-                compiled.push(values[parseInt(token.value, 10)]);
-                break;
-            case 'named':
-                if (mode === 'named') {
-                    compiled.push(values[token.value]);
-                }
-                else {
-                    if (true) {
-                        console.warn(`Type of token '${token.type}' and format of value '${mode}' don't match!`);
-                    }
-                }
-                break;
-            case 'unknown':
-                if (true) {
-                    console.warn(`Detect 'unknown' type of token!`);
-                }
-                break;
-        }
-        index++;
-    }
-    return compiled;
-}
-
-const hasOwnProperty = Object.prototype.hasOwnProperty;
-const hasOwn = (val, key) => hasOwnProperty.call(val, key);
-const defaultFormatter = new BaseFormatter();
-function include(str, parts) {
-    return !!parts.find((part) => str.indexOf(part) !== -1);
-}
-function startsWith(str, parts) {
-    return parts.find((part) => str.indexOf(part) === 0);
-}
-function normalizeLocale(locale, messages) {
-    if (!locale) {
-        return;
-    }
-    locale = locale.trim().replace(/_/g, '-');
-    if (messages[locale]) {
-        return locale;
-    }
-    locale = locale.toLowerCase();
-    if (locale.indexOf('zh') === 0) {
-        if (locale.indexOf('-hans') !== -1) {
-            return 'zh-Hans';
-        }
-        if (locale.indexOf('-hant') !== -1) {
-            return 'zh-Hant';
-        }
-        if (include(locale, ['-tw', '-hk', '-mo', '-cht'])) {
-            return 'zh-Hant';
-        }
-        return 'zh-Hans';
-    }
-    const lang = startsWith(locale, ['en', 'fr', 'es']);
-    if (lang) {
-        return lang;
-    }
-}
-class I18n {
-    constructor({ locale, fallbackLocale, messages, watcher, formater, }) {
-        this.locale = 'en';
-        this.fallbackLocale = 'en';
-        this.message = {};
-        this.messages = {};
-        this.watchers = [];
-        if (fallbackLocale) {
-            this.fallbackLocale = fallbackLocale;
-        }
-        this.formater = formater || defaultFormatter;
-        this.messages = messages;
-        this.setLocale(locale);
-        if (watcher) {
-            this.watchLocale(watcher);
-        }
-    }
-    setLocale(locale) {
-        const oldLocale = this.locale;
-        this.locale = normalizeLocale(locale, this.messages) || this.fallbackLocale;
-        this.message = this.messages[this.locale];
-        this.watchers.forEach((watcher) => {
-            watcher(this.locale, oldLocale);
-        });
-    }
-    getLocale() {
-        return this.locale;
-    }
-    watchLocale(fn) {
-        const index = this.watchers.push(fn) - 1;
-        return () => {
-            this.watchers.splice(index, 1);
-        };
-    }
-    t(key, locale, values) {
-        let message = this.message;
-        if (typeof locale === 'string') {
-            locale = normalizeLocale(locale, this.messages);
-            locale && (message = this.messages[locale]);
-        }
-        else {
-            values = locale;
-        }
-        if (!hasOwn(message, key)) {
-            console.warn(`Cannot translate the value of keypath ${key}. Use the value of keypath as default.`);
-            return key;
-        }
-        return this.formater.interpolate(message[key], values).join('');
-    }
-}
-
-function initLocaleWatcher(appVm, i18n) {
-    appVm.$i18n &&
-        appVm.$i18n.vm.$watch('locale', (newLocale) => {
-            i18n.setLocale(newLocale);
-        }, {
-            immediate: true,
-        });
-}
-function getDefaultLocale() {
-    if (typeof navigator !== 'undefined') {
-        return navigator.userLanguage || navigator.language;
-    }
-    if (typeof plus !== 'undefined') {
-        // TODO 待调整为最新的获取语言代码
-        return plus.os.language;
-    }
-    return uni.getSystemInfoSync().language;
-}
-function initVueI18n(messages, fallbackLocale = 'en', locale) {
-    const i18n = new I18n({
-        locale: locale || fallbackLocale,
-        fallbackLocale,
-        messages,
-    });
-    let t = (key, values) => {
-        if (typeof getApp !== 'function') {
-            // app-plus view
-            /* eslint-disable no-func-assign */
-            t = function (key, values) {
-                return i18n.t(key, values);
-            };
-        }
-        else {
-            const appVm = getApp().$vm;
-            if (!appVm.$t || !appVm.$i18n) {
-                if (!locale) {
-                    i18n.setLocale(getDefaultLocale());
-                }
-                /* eslint-disable no-func-assign */
-                t = function (key, values) {
-                    return i18n.t(key, values);
-                };
-            }
-            else {
-                initLocaleWatcher(appVm, i18n);
-                /* eslint-disable no-func-assign */
-                t = function (key, values) {
-                    const $i18n = appVm.$i18n;
-                    const silentTranslationWarn = $i18n.silentTranslationWarn;
-                    $i18n.silentTranslationWarn = true;
-                    const msg = appVm.$t(key, values);
-                    $i18n.silentTranslationWarn = silentTranslationWarn;
-                    if (msg !== key) {
-                        return msg;
-                    }
-                    return i18n.t(key, $i18n.locale, values);
-                };
-            }
-        }
-        return t(key, values);
-    };
-    return {
-        t(key, values) {
-            return t(key, values);
-        },
-        getLocale() {
-            return i18n.getLocale();
-        },
-        setLocale(newLocale) {
-            return i18n.setLocale(newLocale);
-        },
-        mixin: {
-            beforeCreate() {
-                const unwatch = i18n.watchLocale(() => {
-                    this.$forceUpdate();
-                });
-                this.$once('hook:beforeDestroy', function () {
-                    unwatch();
-                });
-            },
-            methods: {
-                $$t(key, values) {
-                    return t(key, values);
-                },
-            },
-        },
-    };
-}
-
-
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 195:
-/*!***********************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/pages.json?{"type":"stat"} ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__7C8468A" };exports.default = _default;
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAAArCAMAAABl52utAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMBQTFRF2trawsLCzs7OyMjIv7+/y8vLxMTE0dHRxsbGtbW1+vr6/v7+09PT7+/v4uLi/Pz89vb28fHx/f393d3d+/v7+fn5vLy84eHhurq6uLi4ubm5tra22NjYwMDAvb296+vr9fX15eXl3Nzc6Ojo6urq9/f35+fn4ODgzMzM1tbW3t7ezc3N9PT01dXV1NTU7Ozs8PDwwcHB4+Pj6enp7u7u+Pj4u7u719fX0tLSt7e38/Pz39/f7e3t5OTktLS0////OBQnewAAAEB0Uk5T////////////////////////////////////////////////////////////////////////////////////AMJ7sUQAAAXSSURBVHjaxJhpe7I6EIbDorwsgqCgoKK471vdl+T//6uTDUSkrV/qmetqbWNMbiczz0wA6Nn20XFWlMNQKCxHNvqcgfQ/ViQF8GGqAAb/A4dVC2HWzsvypzl2Asyz4PpZDqDCb6zgfo7DEuH3Jtuf4rAK8Cerr79fYGB00v9GlXjh/mPQsUvYdnP9KSnWbDDNIcKfLZxndnc6ZM3y2p5fYWVur5NoLrT4Ln4zmfwVx38x5dihFw9eEg4Af7Oi9cxxglOE+ufk/UYbD1YlueU3WtRktb4JDTrXbtRHq3a7vTqqXqIDazU0+aCscY62+isHXDxzGHCE0AKCrWneTXML6PtVYyx6vijOZjNxrLbEQpfOncB2fGgwPjX82RL/qwZNxuEIv2NAdfV6LoZKvomDfzTV4G/MNvxcguRcZjD2gqsu48FxPfbwHk4YxxS+Y9JriFKOKBikOco2D8ZSvHnZF8hLFY9XG/G0jl+MBzWVcVTltzhgP5/Dht00hyMp5KU/jSfZLRgR/7Tu+JcngwrxoS3T5SwZv2UdZDCtAnxov5qs1LGc5XMgqZjicAp0V2R4OrJooVQaPURPjgTLPYAq0QCx8fUYrPnQ7wAkMfmegWnXkOp56jFycFhBP1VpOtdOwrGfPzicMayxfPLQWqAB6LA40FQaorpOj+11EAx8stfYnUdR74KcntjIynqZC0ztwSFCEf9ewu1t1b7t2rctpAGo42ksDYzDEZ5H5ARqOKVqNXOqju81/Lo1ezmDtS/Qo0FoKTQpZHGF3G7aKSqgX4Ck1CwlQkKP5t7DTIqnzmIOzN9hSZs1T8NfIGsbQBfbPZYMcSBND8mZ0MNFF+IkQc/ExxIOd/cDnLSHEd19CrcryqEDqHLvWWVNUe3BwFabWpkarprVsmY0ngcBqSxy55Bi85uWA+hpwZYdaw1hcvPitBTU8aTLFcuIPURfhMMu4k/qz9N4KCTWbFSfBgHxeHH17KXDCO0VLLLSPpFxYqXcfCkF/rrj+Wwq4eiqjejk5XLoTh4HmQrqtNRkg1MooZIwS4qKkKsgjAOtD4F35tL9Be19418HfcMxKuqvHCUJOxqQhtRzNy86vqiiZKkyK2hfKYbaKOFAtgfjdor4Y+6Qbdw8jigpNSkOm9Qq6g+4a77KRu+xaelFUbskcQ1oVzWXBEY9uD04qI9gYT4ol/UUB5Esy5s9c9BKKGAlBNQTx6qXza5SRzC05FtS2z04jmOLwEBVpYXHDgQ23o+DyKQuHNK0SsUp8JzX+LjDC6L5AutapvYXrBV2lMw9MGSSu8/ER3XabDYnVMcv3B9Vsxr3aVssUPRwbDJD39JWyoqr322CfaWbVGOsG9ZTpikK6vmpzDV526ye6LI9pjX6X/anvMwBmvUsREXNlZISR/qOG/PRn/bJPBfgUkdDRaiHUnOOasGzsLM4nf5tv/6Pb9iKmN/1XqY/K2jUZ+f533KYjxwZV0Ygp/T7/jcNWSXvYuMCJzu0MN/gcL33+rHh64c395wVbU/LDkmTd+5R4C2MYjZbTKnSithJTiWD57S7HFdkxlE2pCv7zNQPuSi2C2MmQtrRQoBdwEYjpUc53mtQexmMCC5F7qPJuStsLN6Gg1ad5romF7s+88Mo4ELUVpdKgwpdJ3T1DUMq+NKI3V+Gb2AoWUeKLeQcInZFqOAaQZEGqon6dY1p8AUdebWLz0UUkB4uEg4mvVIzuc8tfsVovdz5FczhZTn2mGPFOHqYo5nhmGH15xyeq7c4xzXhcKRfMILXi3YEj6f4XHzzn8z0XKxfhYD+6YaSGSye47SvNicqrQDaAUzP6ywHcos/YvjtnAjHcVq5sC69K514M783xvcKy9v5SeryDI7iCtkbj3nJimZXUE49GOCNg/uTRw6rzz0Pck7fZ+wcfY4DZ02Yf8E+Oh9+XuiC4JWi8KGHqE/PT92u8NQOhcrHHuWCbHWYKtJGDkO5OAN963PPk/8TYAALA9H3zU59EgAAAABJRU5ErkJggg=="
 
 /***/ }),
 
@@ -10584,7 +7795,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -10605,14 +7816,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -10698,7 +7909,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"LHMiniProgramRespository","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -10874,7 +8085,7 @@ function internalMixin(Vue) {
     Vue.util.warn(("Error in " + info + ": \"" + (err.toString()) + "\""), vm);
     console.error(err);
     /* eslint-disable no-undef */
-    var app = getApp();
+    var app = typeof getApp === 'function' && getApp();
     if (app && app.onError) {
       app.onError(err);
     }
@@ -11106,1124 +8317,6 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 203:
-/*!************************************************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/uni_modules/uni-icons/components/uni-icons/icons.js ***!
-  \************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  "pulldown": "\uE588",
-  "refreshempty": "\uE461",
-  "back": "\uE471",
-  "forward": "\uE470",
-  "more": "\uE507",
-  "more-filled": "\uE537",
-  "scan": "\uE612",
-  "qq": "\uE264",
-  "weibo": "\uE260",
-  "weixin": "\uE261",
-  "pengyouquan": "\uE262",
-  "loop": "\uE565",
-  "refresh": "\uE407",
-  "refresh-filled": "\uE437",
-  "arrowthindown": "\uE585",
-  "arrowthinleft": "\uE586",
-  "arrowthinright": "\uE587",
-  "arrowthinup": "\uE584",
-  "undo-filled": "\uE7D6",
-  "undo": "\uE406",
-  "redo": "\uE405",
-  "redo-filled": "\uE7D9",
-  "bars": "\uE563",
-  "chatboxes": "\uE203",
-  "camera": "\uE301",
-  "chatboxes-filled": "\uE233",
-  "camera-filled": "\uE7EF",
-  "cart-filled": "\uE7F4",
-  "cart": "\uE7F5",
-  "checkbox-filled": "\uE442",
-  "checkbox": "\uE7FA",
-  "arrowleft": "\uE582",
-  "arrowdown": "\uE581",
-  "arrowright": "\uE583",
-  "smallcircle-filled": "\uE801",
-  "arrowup": "\uE580",
-  "circle": "\uE411",
-  "eye-filled": "\uE568",
-  "eye-slash-filled": "\uE822",
-  "eye-slash": "\uE823",
-  "eye": "\uE824",
-  "flag-filled": "\uE825",
-  "flag": "\uE508",
-  "gear-filled": "\uE532",
-  "reload": "\uE462",
-  "gear": "\uE502",
-  "hand-thumbsdown-filled": "\uE83B",
-  "hand-thumbsdown": "\uE83C",
-  "hand-thumbsup-filled": "\uE83D",
-  "heart-filled": "\uE83E",
-  "hand-thumbsup": "\uE83F",
-  "heart": "\uE840",
-  "home": "\uE500",
-  "info": "\uE504",
-  "home-filled": "\uE530",
-  "info-filled": "\uE534",
-  "circle-filled": "\uE441",
-  "chat-filled": "\uE847",
-  "chat": "\uE263",
-  "mail-open-filled": "\uE84D",
-  "email-filled": "\uE231",
-  "mail-open": "\uE84E",
-  "email": "\uE201",
-  "checkmarkempty": "\uE472",
-  "list": "\uE562",
-  "locked-filled": "\uE856",
-  "locked": "\uE506",
-  "map-filled": "\uE85C",
-  "map-pin": "\uE85E",
-  "map-pin-ellipse": "\uE864",
-  "map": "\uE364",
-  "minus-filled": "\uE440",
-  "mic-filled": "\uE332",
-  "minus": "\uE410",
-  "micoff": "\uE360",
-  "mic": "\uE302",
-  "clear": "\uE434",
-  "smallcircle": "\uE868",
-  "close": "\uE404",
-  "closeempty": "\uE460",
-  "paperclip": "\uE567",
-  "paperplane": "\uE503",
-  "paperplane-filled": "\uE86E",
-  "person-filled": "\uE131",
-  "contact-filled": "\uE130",
-  "person": "\uE101",
-  "contact": "\uE100",
-  "images-filled": "\uE87A",
-  "phone": "\uE200",
-  "images": "\uE87B",
-  "image": "\uE363",
-  "image-filled": "\uE877",
-  "location-filled": "\uE333",
-  "location": "\uE303",
-  "plus-filled": "\uE439",
-  "plus": "\uE409",
-  "plusempty": "\uE468",
-  "help-filled": "\uE535",
-  "help": "\uE505",
-  "navigate-filled": "\uE884",
-  "navigate": "\uE501",
-  "mic-slash-filled": "\uE892",
-  "search": "\uE466",
-  "settings": "\uE560",
-  "sound": "\uE590",
-  "sound-filled": "\uE8A1",
-  "spinner-cycle": "\uE465",
-  "download-filled": "\uE8A4",
-  "personadd-filled": "\uE132",
-  "videocam-filled": "\uE8AF",
-  "personadd": "\uE102",
-  "upload": "\uE402",
-  "upload-filled": "\uE8B1",
-  "starhalf": "\uE463",
-  "star-filled": "\uE438",
-  "star": "\uE408",
-  "trash": "\uE401",
-  "phone-filled": "\uE230",
-  "compose": "\uE400",
-  "videocam": "\uE300",
-  "trash-filled": "\uE8DC",
-  "download": "\uE403",
-  "chatbubble-filled": "\uE232",
-  "chatbubble": "\uE202",
-  "cloud-download": "\uE8E4",
-  "cloud-upload-filled": "\uE8E5",
-  "cloud-upload": "\uE8E6",
-  "cloud-download-filled": "\uE8E9",
-  "headphones": "\uE8BF",
-  "shop": "\uE609" };exports.default = _default;
-
-/***/ }),
-
-/***/ 211:
-/*!*************************************************************************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/uni_modules/uni-datetime-picker/components/uni-datetime-picker/basic/util.js ***!
-  \*************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 212));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
-
-Calendar = /*#__PURE__*/function () {
-  function Calendar()
-
-
-
-
-
-
-  {var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},date = _ref.date,selected = _ref.selected,startDate = _ref.startDate,endDate = _ref.endDate,range = _ref.range;_classCallCheck(this, Calendar);
-    // 当前日期
-    this.date = this.getDate(new Date()); // 当前初入日期
-    // 打点信息
-    this.selected = selected || [];
-    // 范围开始
-    this.startDate = startDate;
-    // 范围结束
-    this.endDate = endDate;
-    this.range = range;
-    // 多选状态
-    this.cleanMultipleStatus();
-    // 每周日期
-    this.weeks = {};
-    // this._getWeek(this.date.fullDate)
-    // this.multipleStatus = multipleStatus
-    this.lastHover = false;
-  }
-  /**
-     * 设置日期
-     * @param {Object} date
-     */_createClass(Calendar, [{ key: "setDate", value: function setDate(
-    date) {
-      this.selectDate = this.getDate(date);
-      this._getWeek(this.selectDate.fullDate);
-    }
-
-    /**
-       * 清理多选状态
-       */ }, { key: "cleanMultipleStatus", value: function cleanMultipleStatus()
-    {
-      this.multipleStatus = {
-        before: '',
-        after: '',
-        data: [] };
-
-    }
-
-    /**
-       * 重置开始日期
-       */ }, { key: "resetSatrtDate", value: function resetSatrtDate(
-    startDate) {
-      // 范围开始
-      this.startDate = startDate;
-
-    }
-
-    /**
-       * 重置结束日期
-       */ }, { key: "resetEndDate", value: function resetEndDate(
-    endDate) {
-      // 范围结束
-      this.endDate = endDate;
-    }
-
-    /**
-       * 获取任意时间
-       */ }, { key: "getDate", value: function getDate(
-    date) {var AddDayCount = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;var str = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'day';
-      if (!date) {
-        date = new Date();
-      }
-      if (typeof date !== 'object') {
-        date = date.replace(/-/g, '/');
-      }
-      var dd = new Date(date);
-      switch (str) {
-        case 'day':
-          dd.setDate(dd.getDate() + AddDayCount); // 获取AddDayCount天后的日期
-          break;
-        case 'month':
-          if (dd.getDate() === 31) {
-            dd.setDate(dd.getDate() + AddDayCount);
-          } else {
-            dd.setMonth(dd.getMonth() + AddDayCount); // 获取AddDayCount天后的日期
-          }
-          break;
-        case 'year':
-          dd.setFullYear(dd.getFullYear() + AddDayCount); // 获取AddDayCount天后的日期
-          break;}
-
-      var y = dd.getFullYear();
-      var m = dd.getMonth() + 1 < 10 ? '0' + (dd.getMonth() + 1) : dd.getMonth() + 1; // 获取当前月份的日期，不足10补0
-      var d = dd.getDate() < 10 ? '0' + dd.getDate() : dd.getDate(); // 获取当前几号，不足10补0
-      return {
-        fullDate: y + '-' + m + '-' + d,
-        year: y,
-        month: m,
-        date: d,
-        day: dd.getDay() };
-
-    }
-
-
-    /**
-       * 获取上月剩余天数
-       */ }, { key: "_getLastMonthDays", value: function _getLastMonthDays(
-    firstDay, full) {
-      var dateArr = [];
-      for (var i = firstDay; i > 0; i--) {
-        var beforeDate = new Date(full.year, full.month - 1, -i + 1).getDate();
-        dateArr.push({
-          date: beforeDate,
-          month: full.month - 1,
-          lunar: this.getlunar(full.year, full.month - 1, beforeDate),
-          disable: true });
-
-      }
-      return dateArr;
-    }
-    /**
-       * 获取本月天数
-       */ }, { key: "_currentMonthDys", value: function _currentMonthDys(
-    dateData, full) {var _this = this;
-      var dateArr = [];
-      var fullDate = this.date.fullDate;var _loop = function _loop(
-      i) {
-        var isinfo = false;
-        var nowDate = full.year + '-' + (full.month < 10 ?
-        full.month : full.month) + '-' + (i < 10 ?
-        '0' + i : i);
-        // 是否今天
-        var isDay = fullDate === nowDate;
-        // 获取打点信息
-        var info = _this.selected && _this.selected.find(function (item) {
-          if (_this.dateEqual(nowDate, item.date)) {
-            return item;
-          }
-        });
-
-        // 日期禁用
-        var disableBefore = true;
-        var disableAfter = true;
-        if (_this.startDate) {
-          // let dateCompBefore = this.dateCompare(this.startDate, fullDate)
-          // disableBefore = this.dateCompare(dateCompBefore ? this.startDate : fullDate, nowDate)
-          disableBefore = _this.dateCompare(_this.startDate, nowDate);
-        }
-
-        if (_this.endDate) {
-          // let dateCompAfter = this.dateCompare(fullDate, this.endDate)
-          // disableAfter = this.dateCompare(nowDate, dateCompAfter ? this.endDate : fullDate)
-          disableAfter = _this.dateCompare(nowDate, _this.endDate);
-        }
-        var multiples = _this.multipleStatus.data;
-        var checked = false;
-        var multiplesStatus = -1;
-        if (_this.range) {
-          if (multiples) {
-            multiplesStatus = multiples.findIndex(function (item) {
-              return _this.dateEqual(item, nowDate);
-            });
-          }
-          if (multiplesStatus !== -1) {
-            checked = true;
-          }
-        }
-        var data = {
-          fullDate: nowDate,
-          year: full.year,
-          date: i,
-          multiple: _this.range ? checked : false,
-          beforeMultiple: _this.dateEqual(_this.multipleStatus.before, nowDate),
-          afterMultiple: _this.dateEqual(_this.multipleStatus.after, nowDate),
-          month: full.month,
-          lunar: _this.getlunar(full.year, full.month, i),
-          disable: !(disableBefore && disableAfter),
-          isDay: isDay };
-
-        if (info) {
-          data.extraInfo = info;
-        }
-
-        dateArr.push(data);};for (var i = 1; i <= dateData; i++) {_loop(i);
-      }
-      return dateArr;
-    }
-    /**
-       * 获取下月天数
-       */ }, { key: "_getNextMonthDays", value: function _getNextMonthDays(
-    surplus, full) {
-      var dateArr = [];
-      for (var i = 1; i < surplus + 1; i++) {
-        dateArr.push({
-          date: i,
-          month: Number(full.month) + 1,
-          lunar: this.getlunar(full.year, Number(full.month) + 1, i),
-          disable: true });
-
-      }
-      return dateArr;
-    }
-
-    /**
-       * 获取当前日期详情
-       * @param {Object} date
-       */ }, { key: "getInfo", value: function getInfo(
-    date) {var _this2 = this;
-      if (!date) {
-        date = new Date();
-      }
-      var dateInfo = this.canlender.find(function (item) {return item.fullDate === _this2.getDate(date).fullDate;});
-      return dateInfo;
-    }
-
-    /**
-       * 比较时间大小
-       */ }, { key: "dateCompare", value: function dateCompare(
-    startDate, endDate) {
-      // 计算截止时间
-      startDate = new Date(startDate.replace('-', '/').replace('-', '/'));
-      // 计算详细项的截止时间
-      endDate = new Date(endDate.replace('-', '/').replace('-', '/'));
-      if (startDate <= endDate) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-    /**
-       * 比较时间是否相等
-       */ }, { key: "dateEqual", value: function dateEqual(
-    before, after) {
-      // 计算截止时间
-      before = new Date(before.replace('-', '/').replace('-', '/'));
-      // 计算详细项的截止时间
-      after = new Date(after.replace('-', '/').replace('-', '/'));
-      if (before.getTime() - after.getTime() === 0) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-
-    /**
-       * 获取日期范围内所有日期
-       * @param {Object} begin
-       * @param {Object} end
-       */ }, { key: "geDateAll", value: function geDateAll(
-    begin, end) {
-      var arr = [];
-      var ab = begin.split('-');
-      var ae = end.split('-');
-      var db = new Date();
-      db.setFullYear(ab[0], ab[1] - 1, ab[2]);
-      var de = new Date();
-      de.setFullYear(ae[0], ae[1] - 1, ae[2]);
-      var unixDb = db.getTime() - 24 * 60 * 60 * 1000;
-      var unixDe = de.getTime() - 24 * 60 * 60 * 1000;
-      for (var k = unixDb; k <= unixDe;) {
-        k = k + 24 * 60 * 60 * 1000;
-        arr.push(this.getDate(new Date(parseInt(k))).fullDate);
-      }
-      return arr;
-    }
-    /**
-       * 计算阴历日期显示
-       */ }, { key: "getlunar", value: function getlunar(
-    year, month, date) {
-      return _calendar.default.solar2lunar(year, month, date);
-    }
-    /**
-       * 设置打点
-       */ }, { key: "setSelectInfo", value: function setSelectInfo(
-    data, value) {
-      this.selected = value;
-      this._getWeek(data);
-    }
-
-    /**
-       *  获取多选状态
-       */ }, { key: "setMultiple", value: function setMultiple(
-    fullDate) {var _this$multipleStatus =
-
-
-
-      this.multipleStatus,before = _this$multipleStatus.before,after = _this$multipleStatus.after;
-
-      if (!this.range) return;
-      if (before && after) {
-        if (!this.lastHover) {
-          this.lastHover = true;
-          return;
-        }
-        this.multipleStatus.before = '';
-        this.multipleStatus.after = '';
-        this.multipleStatus.data = [];
-        this.multipleStatus.fulldate = '';
-        this.lastHover = false;
-      } else {
-        this.lastHover = false;
-        if (!before) {
-          this.multipleStatus.before = fullDate;
-        } else {
-          this.multipleStatus.after = fullDate;
-          if (this.dateCompare(this.multipleStatus.before, this.multipleStatus.after)) {
-            this.multipleStatus.data = this.geDateAll(this.multipleStatus.before, this.multipleStatus.
-            after);
-          } else {
-            this.multipleStatus.data = this.geDateAll(this.multipleStatus.after, this.multipleStatus.
-            before);
-          }
-        }
-      }
-      this._getWeek(fullDate);
-    }
-
-    /**
-       *  鼠标 hover 更新多选状态
-       */ }, { key: "setHoverMultiple", value: function setHoverMultiple(
-    fullDate) {var _this$multipleStatus2 =
-
-
-
-      this.multipleStatus,before = _this$multipleStatus2.before,after = _this$multipleStatus2.after;
-
-      if (!this.range) return;
-      if (this.lastHover) return;
-
-      if (!before) {
-        this.multipleStatus.before = fullDate;
-      } else {
-        this.multipleStatus.after = fullDate;
-        if (this.dateCompare(this.multipleStatus.before, this.multipleStatus.after)) {
-          this.multipleStatus.data = this.geDateAll(this.multipleStatus.before, this.multipleStatus.after);
-        } else {
-          this.multipleStatus.data = this.geDateAll(this.multipleStatus.after, this.multipleStatus.before);
-        }
-      }
-      this._getWeek(fullDate);
-    }
-
-    /**
-       * 更新默认值多选状态
-       */ }, { key: "setDefaultMultiple", value: function setDefaultMultiple(
-    before, after) {
-      this.multipleStatus.before = before;
-      this.multipleStatus.after = after;
-      if (before && after) {
-        if (this.dateCompare(before, after)) {
-          this.multipleStatus.data = this.geDateAll(before, after);
-          this._getWeek(after);
-        } else {
-          this.multipleStatus.data = this.geDateAll(after, before);
-          this._getWeek(before);
-        }
-      }
-    }
-
-    /**
-       * 获取每周数据
-       * @param {Object} dateData
-       */ }, { key: "_getWeek", value: function _getWeek(
-    dateData) {var _this$getDate =
-
-
-
-
-
-
-      this.getDate(dateData),fullDate = _this$getDate.fullDate,year = _this$getDate.year,month = _this$getDate.month,date = _this$getDate.date,day = _this$getDate.day;
-      var firstDay = new Date(year, month - 1, 1).getDay();
-      var currentDay = new Date(year, month, 0).getDate();
-      var dates = {
-        lastMonthDays: this._getLastMonthDays(firstDay, this.getDate(dateData)), // 上个月末尾几天
-        currentMonthDys: this._currentMonthDys(currentDay, this.getDate(dateData)), // 本月天数
-        nextMonthDays: [], // 下个月开始几天
-        weeks: [] };
-
-      var canlender = [];
-      var surplus = 42 - (dates.lastMonthDays.length + dates.currentMonthDys.length);
-      dates.nextMonthDays = this._getNextMonthDays(surplus, this.getDate(dateData));
-      canlender = canlender.concat(dates.lastMonthDays, dates.currentMonthDys, dates.nextMonthDays);
-      var weeks = {};
-      // 拼接数组  上个月开始几天 + 本月天数+ 下个月开始几天
-      for (var i = 0; i < canlender.length; i++) {
-        if (i % 7 === 0) {
-          weeks[parseInt(i / 7)] = new Array(7);
-        }
-        weeks[parseInt(i / 7)][i % 7] = canlender[i];
-      }
-      this.canlender = canlender;
-      this.weeks = weeks;
-    }
-
-    //静态方法
-    // static init(date) {
-    // 	if (!this.instance) {
-    // 		this.instance = new Calendar(date);
-    // 	}
-    // 	return this.instance;
-    // }
-  }]);return Calendar;}();var _default =
-
-
-Calendar;exports.default = _default;
-
-/***/ }),
-
-/***/ 212:
-/*!*****************************************************************************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/uni_modules/uni-datetime-picker/components/uni-datetime-picker/basic/calendar.js ***!
-  \*****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                     * @1900-2100区间内的公历、农历互转
-                                                                                                     * @charset UTF-8
-                                                                                                     * @github  https://github.com/jjonline/calendar.js
-                                                                                                     * @Author  Jea杨(JJonline@JJonline.Cn)
-                                                                                                     * @Time    2014-7-21
-                                                                                                     * @Time    2016-8-13 Fixed 2033hex、Attribution Annals
-                                                                                                     * @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
-                                                                                                     * @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
-                                                                                                     * @Version 1.0.3
-                                                                                                     * @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
-                                                                                                     * @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
-                                                                                                     */
-/* eslint-disable */
-var calendar = {
-
-  /**
-                     * 农历1900-2100的润大小信息表
-                     * @Array Of Property
-                     * @return Hex
-                     */
-  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2, // 1900-1909
-  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977, // 1910-1919
-  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970, // 1920-1929
-  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950, // 1930-1939
-  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557, // 1940-1949
-  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0, // 1950-1959
-  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0, // 1960-1969
-  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6, // 1970-1979
-  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570, // 1980-1989
-  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0, // 1990-1999
-  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5, // 2000-2009
-  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930, // 2010-2019
-  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530, // 2020-2029
-  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45, // 2030-2039
-  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0, // 2040-2049
-  /** Add By JJonline@JJonline.Cn**/
-  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0, // 2050-2059
-  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4, // 2060-2069
-  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0, // 2070-2079
-  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160, // 2080-2089
-  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252, // 2090-2099
-  0x0d520], // 2100
-
-  /**
-      * 公历每个月份的天数普通表
-      * @Array Of Property
-      * @return Number
-      */
-  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
-
-  /**
-                                                                    * 天干地支之天干速查表
-                                                                    * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
-                                                                    * @return Cn string
-                                                                    */
-  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
-
-  /**
-                                                                                                                 * 天干地支之地支速查表
-                                                                                                                 * @Array Of Property
-                                                                                                                 * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
-                                                                                                                 * @return Cn string
-                                                                                                                 */
-  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
-
-  /**
-                                                                                                                                     * 天干地支之地支速查表<=>生肖
-                                                                                                                                     * @Array Of Property
-                                                                                                                                     * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
-                                                                                                                                     * @return Cn string
-                                                                                                                                     */
-  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
-
-  /**
-                                                                                                                                         * 24节气速查表
-                                                                                                                                         * @Array Of Property
-                                                                                                                                         * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
-                                                                                                                                         * @return Cn string
-                                                                                                                                         */
-  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
-
-  /**
-                                                                                                                                                                                                                                                                                                                                                                                                                   * 1900-2100各年的24节气日期速查表
-                                                                                                                                                                                                                                                                                                                                                                                                                   * @Array Of Property
-                                                                                                                                                                                                                                                                                                                                                                                                                   * @return 0x string For splice
-                                                                                                                                                                                                                                                                                                                                                                                                                   */
-  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f',
-  '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f',
-  'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f',
-  '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa',
-  '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f',
-  '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f',
-  '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f',
-  '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e',
-  '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722',
-  '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e',
-  '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2',
-  '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5',
-  '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722',
-  '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35',
-  '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd',
-  '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35',
-  '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5',
-  '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35',
-  '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35',
-  '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
-
-  /**
-                                                                                                             * 数字转中文速查表
-                                                                                                             * @Array Of Property
-                                                                                                             * @trans ['日','一','二','三','四','五','六','七','八','九','十']
-                                                                                                             * @return Cn string
-                                                                                                             */
-  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
-
-  /**
-                                                                                                                             * 日期转农历称呼速查表
-                                                                                                                             * @Array Of Property
-                                                                                                                             * @trans ['初','十','廿','卅']
-                                                                                                                             * @return Cn string
-                                                                                                                             */
-  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
-
-  /**
-                                                       * 月份转农历称呼速查表
-                                                       * @Array Of Property
-                                                       * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
-                                                       * @return Cn string
-                                                       */
-  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
-
-  /**
-                                                                                                                                       * 返回农历y年一整年的总天数
-                                                                                                                                       * @param lunar Year
-                                                                                                                                       * @return Number
-                                                                                                                                       * @eg:var count = calendar.lYearDays(1987) ;//count=387
-                                                                                                                                       */
-  lYearDays: function lYearDays(y) {
-    var i;var sum = 348;
-    for (i = 0x8000; i > 0x8; i >>= 1) {sum += this.lunarInfo[y - 1900] & i ? 1 : 0;}
-    return sum + this.leapDays(y);
-  },
-
-  /**
-         * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
-         * @param lunar Year
-         * @return Number (0-12)
-         * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
-         */
-  leapMonth: function leapMonth(y) {// 闰字编码 \u95f0
-    return this.lunarInfo[y - 1900] & 0xf;
-  },
-
-  /**
-         * 返回农历y年闰月的天数 若该年没有闰月则返回0
-         * @param lunar Year
-         * @return Number (0、29、30)
-         * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
-         */
-  leapDays: function leapDays(y) {
-    if (this.leapMonth(y)) {
-      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
-    }
-    return 0;
-  },
-
-  /**
-         * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
-         * @param lunar Year
-         * @return Number (-1、29、30)
-         * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
-         */
-  monthDays: function monthDays(y, m) {
-    if (m > 12 || m < 1) {return -1;} // 月份参数从1至12，参数错误返回-1
-    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
-  },
-
-  /**
-         * 返回公历(!)y年m月的天数
-         * @param solar Year
-         * @return Number (-1、28、29、30、31)
-         * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
-         */
-  solarDays: function solarDays(y, m) {
-    if (m > 12 || m < 1) {return -1;} // 若参数错误 返回-1
-    var ms = m - 1;
-    if (ms == 1) {// 2月份的闰平规律测算后确认返回28或29
-      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
-    } else {
-      return this.solarMonth[ms];
-    }
-  },
-
-  /**
-        * 农历年份转换为干支纪年
-        * @param  lYear 农历年的年份数
-        * @return Cn string
-        */
-  toGanZhiYear: function toGanZhiYear(lYear) {
-    var ganKey = (lYear - 3) % 10;
-    var zhiKey = (lYear - 3) % 12;
-    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
-    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
-    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
-  },
-
-  /**
-        * 公历月、日判断所属星座
-        * @param  cMonth [description]
-        * @param  cDay [description]
-        * @return Cn string
-        */
-  toAstro: function toAstro(cMonth, cDay) {
-    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
-    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
-    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
-  },
-
-  /**
-         * 传入offset偏移量返回干支
-         * @param offset 相对甲子的偏移量
-         * @return Cn string
-         */
-  toGanZhi: function toGanZhi(offset) {
-    return this.Gan[offset % 10] + this.Zhi[offset % 12];
-  },
-
-  /**
-         * 传入公历(!)y年获得该年第n个节气的公历日期
-         * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
-         * @return day Number
-         * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
-         */
-  getTerm: function getTerm(y, n) {
-    if (y < 1900 || y > 2100) {return -1;}
-    if (n < 1 || n > 24) {return -1;}
-    var _table = this.sTermInfo[y - 1900];
-    var _info = [
-    parseInt('0x' + _table.substr(0, 5)).toString(),
-    parseInt('0x' + _table.substr(5, 5)).toString(),
-    parseInt('0x' + _table.substr(10, 5)).toString(),
-    parseInt('0x' + _table.substr(15, 5)).toString(),
-    parseInt('0x' + _table.substr(20, 5)).toString(),
-    parseInt('0x' + _table.substr(25, 5)).toString()];
-
-    var _calday = [
-    _info[0].substr(0, 1),
-    _info[0].substr(1, 2),
-    _info[0].substr(3, 1),
-    _info[0].substr(4, 2),
-
-    _info[1].substr(0, 1),
-    _info[1].substr(1, 2),
-    _info[1].substr(3, 1),
-    _info[1].substr(4, 2),
-
-    _info[2].substr(0, 1),
-    _info[2].substr(1, 2),
-    _info[2].substr(3, 1),
-    _info[2].substr(4, 2),
-
-    _info[3].substr(0, 1),
-    _info[3].substr(1, 2),
-    _info[3].substr(3, 1),
-    _info[3].substr(4, 2),
-
-    _info[4].substr(0, 1),
-    _info[4].substr(1, 2),
-    _info[4].substr(3, 1),
-    _info[4].substr(4, 2),
-
-    _info[5].substr(0, 1),
-    _info[5].substr(1, 2),
-    _info[5].substr(3, 1),
-    _info[5].substr(4, 2)];
-
-    return parseInt(_calday[n - 1]);
-  },
-
-  /**
-         * 传入农历数字月份返回汉语通俗表示法
-         * @param lunar month
-         * @return Cn string
-         * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
-         */
-  toChinaMonth: function toChinaMonth(m) {// 月 => \u6708
-    if (m > 12 || m < 1) {return -1;} // 若参数错误 返回-1
-    var s = this.nStr3[m - 1];
-    s += "\u6708"; // 加上月字
-    return s;
-  },
-
-  /**
-         * 传入农历日期数字返回汉字表示法
-         * @param lunar day
-         * @return Cn string
-         * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
-         */
-  toChinaDay: function toChinaDay(d) {// 日 => \u65e5
-    var s;
-    switch (d) {
-      case 10:
-        s = "\u521D\u5341";break;
-      case 20:
-        s = "\u4E8C\u5341";break;
-        break;
-      case 30:
-        s = "\u4E09\u5341";break;
-        break;
-      default:
-        s = this.nStr2[Math.floor(d / 10)];
-        s += this.nStr1[d % 10];}
-
-    return s;
-  },
-
-  /**
-         * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
-         * @param y year
-         * @return Cn string
-         * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
-         */
-  getAnimal: function getAnimal(y) {
-    return this.Animals[(y - 4) % 12];
-  },
-
-  /**
-         * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
-         * @param y  solar year
-         * @param m  solar month
-         * @param d  solar day
-         * @return JSON object
-         * @eg:console.log(calendar.solar2lunar(1987,11,01));
-         */
-  solar2lunar: function solar2lunar(y, m, d) {// 参数区间1900.1.31~2100.12.31
-    // 年份限定、上限
-    if (y < 1900 || y > 2100) {
-      return -1; // undefined转换为数字变为NaN
-    }
-    // 公历传参最下限
-    if (y == 1900 && m == 1 && d < 31) {
-      return -1;
-    }
-    // 未传参  获得当天
-    if (!y) {
-      var objDate = new Date();
-    } else {
-      var objDate = new Date(y, parseInt(m) - 1, d);
-    }
-    var i;var leap = 0;var temp = 0;
-    // 修正ymd参数
-    var y = objDate.getFullYear();
-    var m = objDate.getMonth() + 1;
-    var d = objDate.getDate();
-    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
-    for (i = 1900; i < 2101 && offset > 0; i++) {
-      temp = this.lYearDays(i);
-      offset -= temp;
-    }
-    if (offset < 0) {
-      offset += temp;i--;
-    }
-
-    // 是否今天
-    var isTodayObj = new Date();
-    var isToday = false;
-    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
-      isToday = true;
-    }
-    // 星期几
-    var nWeek = objDate.getDay();
-    var cWeek = this.nStr1[nWeek];
-    // 数字表示周几顺应天朝周一开始的惯例
-    if (nWeek == 0) {
-      nWeek = 7;
-    }
-    // 农历年
-    var year = i;
-    var leap = this.leapMonth(i); // 闰哪个月
-    var isLeap = false;
-
-    // 效验闰月
-    for (i = 1; i < 13 && offset > 0; i++) {
-      // 闰月
-      if (leap > 0 && i == leap + 1 && isLeap == false) {
-        --i;
-        isLeap = true;temp = this.leapDays(year); // 计算农历闰月天数
-      } else {
-        temp = this.monthDays(year, i); // 计算农历普通月天数
-      }
-      // 解除闰月
-      if (isLeap == true && i == leap + 1) {isLeap = false;}
-      offset -= temp;
-    }
-    // 闰月导致数组下标重叠取反
-    if (offset == 0 && leap > 0 && i == leap + 1) {
-      if (isLeap) {
-        isLeap = false;
-      } else {
-        isLeap = true;--i;
-      }
-    }
-    if (offset < 0) {
-      offset += temp;--i;
-    }
-    // 农历月
-    var month = i;
-    // 农历日
-    var day = offset + 1;
-    // 天干地支处理
-    var sm = m - 1;
-    var gzY = this.toGanZhiYear(year);
-
-    // 当月的两个节气
-    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
-    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
-    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
-
-    // 依据12节气修正干支月
-    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
-    if (d >= firstNode) {
-      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
-    }
-
-    // 传入的日期的节气与否
-    var isTerm = false;
-    var Term = null;
-    if (firstNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 2];
-    }
-    if (secondNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 1];
-    }
-    // 日柱 当月一日与 1900/1/1 相差天数
-    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
-    var gzD = this.toGanZhi(dayCyclical + d - 1);
-    // 该日期所属的星座
-    var astro = this.toAstro(m, d);
-
-    return { 'lYear': year, 'lMonth': month, 'lDay': day, 'Animal': this.getAnimal(year), 'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month), 'IDayCn': this.toChinaDay(day), 'cYear': y, 'cMonth': m, 'cDay': d, 'gzYear': gzY, 'gzMonth': gzM, 'gzDay': gzD, 'isToday': isToday, 'isLeap': isLeap, 'nWeek': nWeek, 'ncWeek': "\u661F\u671F" + cWeek, 'isTerm': isTerm, 'Term': Term, 'astro': astro };
-  },
-
-  /**
-         * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
-         * @param y  lunar year
-         * @param m  lunar month
-         * @param d  lunar day
-         * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
-         * @return JSON object
-         * @eg:console.log(calendar.lunar2solar(1987,9,10));
-         */
-  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {// 参数区间1900.1.31~2100.12.1
-    var isLeapMonth = !!isLeapMonth;
-    var leapOffset = 0;
-    var leapMonth = this.leapMonth(y);
-    var leapDay = this.leapDays(y);
-    if (isLeapMonth && leapMonth != m) {return -1;} // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
-    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {return -1;} // 超出了最大极限值
-    var day = this.monthDays(y, m);
-    var _day = day;
-    // bugFix 2016-9-25
-    // if month is leap, _day use leapDays method
-    if (isLeapMonth) {
-      _day = this.leapDays(y, m);
-    }
-    if (y < 1900 || y > 2100 || d > _day) {return -1;} // 参数合法性效验
-
-    // 计算农历的时间差
-    var offset = 0;
-    for (var i = 1900; i < y; i++) {
-      offset += this.lYearDays(i);
-    }
-    var leap = 0;var isAdd = false;
-    for (var i = 1; i < m; i++) {
-      leap = this.leapMonth(y);
-      if (!isAdd) {// 处理闰月
-        if (leap <= i && leap > 0) {
-          offset += this.leapDays(y);isAdd = true;
-        }
-      }
-      offset += this.monthDays(y, i);
-    }
-    // 转换闰月农历 需补充该年闰月的前一个月的时差
-    if (isLeapMonth) {offset += day;}
-    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
-    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
-    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
-    var cY = calObj.getUTCFullYear();
-    var cM = calObj.getUTCMonth() + 1;
-    var cD = calObj.getUTCDate();
-
-    return this.solar2lunar(cY, cM, cD);
-  } };var _default =
-
-
-calendar;exports.default = _default;
-
-/***/ }),
-
 /***/ 3:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -12255,32 +8348,21 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 33:
-/*!************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/static/head.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAIGtJREFUeNrknXvQVWW5wBeGdBFTpKAwASXUckSMjAmMELWBM2Y6DgMzmI7p5B9NRhzHbOpMeaoT2WkkL1PmmGNhEzEnqqkkKzEKk4wgsLKIRDQKigzFLmhynt9y/755eN3f9+29v82lWjPvrL3X5V3veu63912D9uzZUx3MW4xvfOzGRRsbbXS0UdFGRhse7YhoQ6MNaVy+O9quaDuj7Yi2LdrWaFuibY62adCgQRsP5vcdfJABf1DsJkc7LdqkaBOjTYg2aAB9VoGE9HfP+tivi7Ym2v3RVsf5g4YqBx1oDonnHxq7M6JNj9/TAjhTCyDu621VtJXR7om2Ip771L8lQuK5J8duVrSZDYQcDBwKQpbHzztjv+HfAiHxPIB/fuzPjZcecxAgoRk3Phzta9GWxbkV/5IIiefMiN2caLOjDWsRMNX+EF/0z3OaPOuxaEujLYnjd/9LICT6PzV2FzbaiOqfc9sebXG8y+JDDjlk7T8lQqLfw2N3abRLGpZS2yKkL+5oh2u6+I5YaLdFuzWe/8Q/DUKiz+mxuzza3G6Llrw9/vjj1Z///Odqx44d1R//+MfqiSeeqK95wQteUL34xS+ujjjiiGrs2LHV0KFD20ZOP6Lyi9FujvP3HNQIeeaZZ2KMg94RP2kndkvR5t+bN2+uHnjggeonP/lJtWXLlhoZf/3rX6vdu3f33Dt48OC6HXroodWoUaOqKVOmVK9//eur8ePHD5hj0tgejHYTrZt+TNcQEv0cG7v50a4YiGLO17rftWtX9f3vf7/6wQ9+UP3yl7+sHnvssfoYQH/e855X7+GG5z//+dVhhx1W38f5v/3tb/X9cA7n3/CGN1TnnXdedeyxx3ZTlF0fbVE886GDBiHRx5TYXYk52w2ucI9Iuvvuu6tvfOMb1YMPPlgD+PDDD69CsdaIQDTx+8gjj6xF1NNPP13v4Qx+gxT6ffLJJ2sk/uUvf6mvPf/88+sGAvP790U4/RDVsmj/G+fvPeAIifvPid3V0aYOUC73ICNEX3XXXXdVS5YsqX79619X//jHP3q4QE4AIfwGSUcdddSzcaC4Bg7hPP0gyv7+97/Xe5CEuEPngKjXvva11Tvf+c7q5S9/ebc4BY9/YTz36wcMIXEvfsX7op3cLaX9u9/9rrrttttqEQWwhwwZUgMZoL/kJS+pf7/whS+sgQ+HgDyoXs7hHMfgLgAPMhv6re7797//fc0tIOboo4+uLr/88mrSpElti7BeiAvv/iNxfMl+R0jcNy92H4g2vlvI2LhxY/WpT32q+tWvflVT+ciRI6sRI0ZUL3vZy6phw4ZVL3rRi2qAcy2N31hQ7LkeoIMU3glkoujhDPZwCQYADZ2CVfab3/ymFm0XXXRRdfbZZ3dLrxBNvibGd8d+Q0iDMz7UDjL68ynWrFlTffazn63+9Kc/1XpgzJgx1SmnnFJTP4iAI9QdWlEgAQ7yv/1zXamPADxIeuqpp2rO2blzZ/Xoo49W69atq37605/WOmXu3Ll1P11Cyn91wimDO9QZ72sVGSKiL2RgOX3uc5+rlS9m6sknn1ydcMIJPWKIPkAEv3ODIwC0yKBxHZvXu2kE0BfiD8Qcc8wx1Stf+cpadKGz4Jy3ve1tz1H2HViLwOZ9cf2T7eqUQW3KTaypa1tR4K2KKTjiE5/4RC1KEFETJkyoxo0bV4ua0heRQ+QCrtHfEIhyi1zi+4kw/oNIY1cgFEQgJpctW1YTBMpe5DXz+NuIEqDor2rH+jqkTT/jyk6Q0RfSv/zlL9fKFqoFGXjWAh3AZeCxQdkoahrn2NQRXMNxgFxel/sSoVpmWGuvec1rqksvvbT6wx/+UN16661Nx9wXp/eyAasrG7DrHkIambz5nfoZzV6CY1Dlj370o9pygjJR4IqojAibQAXgAl6TOOsIkQGiaJzjPu+xLwEstx133HE1UtAt3/rWt7oVZQZm8xsw7BqHvKP0wFsRdf1dw0trtmJJoaClclpGggCV4gGsSFCPeMzrQIzWFr89V3KLiAEpiMs5c+ZU3/ve96qHHnqoW0i5ogHDgSOkESh8RyfR1r4UOWbnL37xixoIiCvM18wZmRMyEvwvwN3nWJZ9iCCRIafYlwjJhgfnTjrppGrq1KnV8uXL2/ZN+iLqBiw7R0gjhH55J4HC/l6EuBTOG8oTa0qlLBKzeGmmT/gtIjBjDTByLFN+1j+5n0ws2Uz297Rp0+rn46v0FU5pg0iB4eUNmHbMIZd2GkLvL4+BqaspitOHyJHaeVFN2yy2miFHIPKbMIl6Q64QaeoSuapEVDk+iITwyurVq3s1d/Ox/giwcX5uA6btI6SR6bukS5Hgvf5jZmJZgQzCITlgqBOXdUcp+8t+tZj0TbI4yyILhHkuc1+zMXIdPoohmFYkQF9ISci7pAHbtjmElOuEbiCkpK7t27fX/gd6A8sKZZ59BIFaWlmluQsCBHCRl+mJYXEf50GGiPU5XtNbLp+IAdzLePt7p2wS94WYODehAdvWEdIoSLiw2kcbyCAUjrmLhQVnZE+7lO85LJKVfhYl/NdR5JjA93wWZaXFlo2IDEzGAsE045BWCDAbDcW5CxswbplDiFWN6I0VW5SXvW6//e1v65fFMycwqCLNSjiLI73xjLjcsmjjv9cL1DKu1YyTshGQf0MwiNhW368J8Jtx4IgGjPtHSKNuanZ/7NnKQHrbtm3bViMCcSCguV/FWypcOYFrFW/ZMYTqzX3QR3b6DKXkIKRjNMSiCCxFJP0jVrNI7C+e1YbfMrsB636DixSxDdsXtVACEk/YdKsWUpb5ynkVs5HdHJ/KesYNMZgDiznSy7UQQeayzAkcz2LQ38bJOgB4f9uwhhe/oleENMo7z92XhWmwP0kinEGsrDLgJ+Vnq0gKZ5PSBXgWOWx45gBXpNAvXKMpncP4OVBpCKXkFhCSq1Y6sTD7gOe5cf6WXLZacgi1tmM6eWirGwDjel5ShGQTF+BxDSJIDjAdyx5qBUjkSLgfBCny3Kus5YTsLAp07hUppfkskdCPqeJ2gd1f2qGxjWnA/LkIaVShz+ymE9hs0Mp8gEorTVqDg1khyzEgC7HEfVppIsa+uMf7tdr8L5eIIO+VU3KUwP/Gydp97zakzMwYy3VW3ecnnVHtgyr0cmDEsKBQbPzMHQBBEQWABDAbgKNZgwWQ3EQgyFG0ZW9fayqHVVTuhm3Y079EkjnEtPA+3IT7XSVCpndiMbWDGOJCpEtRri996Uv3evHs4CnjfTZABjAAUWvKKC/X8F8E+jv7IopB9BfHOM8YjAhwjmfyH84TYfo2IG0fb9P3QkgjVj+tExHUKjJ4aQKKvKTlPNmq0mGTsjWDFSdWn7AXgABfESPn0A/UznWKpzJq7D30o3jKokmvXsOgWfawy9s0cEAFpBwyOWcCmwG9RSXV6wZgKHYjj01ToWspleESKVtq5bfVJTkaTL+KPv7TL8dU/jlqrDVHX1atWFKklSXgLXYQgdlp7JKFVWYWwcF9IuS0ZpWDHSqppvlngAKQ8HwFtKENxYNy3pSsXAOgoHruBYD6KFK+AJSbFHsiL4suOUFDwDqvjMDSF8mI6obE6GU7LSNkUjcnyzS7j5dDFqPMqS4BeMrwHG+ymp2Gv3L66afXQPrCF75QA5FKQ6Kw9GMflpSKCHUEwGYs9MkzrfXVCbRlvyRbYvStmZzLg/oj3g6JeFJW6hN767BZpUUn4QNkOqJKCyuLD2utDA5CrQCe6yyUBkAEJQHq8ccfX9133311LAzjgM3yUane6QhYdRQucK96QaBrXWlW6zQqChmfoZpOibTV+S5xbmItLRrzwCe049i0MqAySMeLwyFMIaCyJHvNOmpaM/wG8AAWq4ecxKmnnlrHwIi+0ieA2rp1a52Lt5/MGWYh4QyK4mjGp0AQipvrqP9imoIiK1tn2ZvvLaHVjqToh4gngAs4ZFxDw7dNBX3VKZVKkBfjpQGEsl0xw3WKHbOIIARk2A95bgrotIAmT568V7idPrmPRhSApkiztBSEQgyUrPKbay3EXrlyZZ22PfHEE3vGm4vzOtGjbV7PxeNAyNiSpVrtqJVK9rwBNDjFOtwyFQtwDccbX9LT1trRpLW8NBsHHKcZQbbmiqiyM6zgNsScSn7mzJk1ovGPeAachPGgghfh+2ly7FgQMrq3HHE3g4x6yHroyu2s9P0PMEUMyNP6EmFaSFpQmsnqkKzg0TOILc4R0MQ5ZcLOq171qmr06NG1ruL8G9/4xh4C0eM3UDkQE7fNasfRIGRUF9itJW4CeFCf/8sqkuy4cUxvWuADJBCkmcz1Ts4RkGVCCl0CAgyj0wdWF31zjKkJ7FH6cFOuE5ZrB5IHaUWhp20UTxtZ7acNYKADcuVgLmDIiGJTR+RAY84SZjPU+BdAt6TI4yCFgmqej/hCdOntZ+ssc1bm6qwTOyXUFu8bydOGd0M89TfdALEjRTcrCRUQKnatJsVZTvHmciGTWIgxOcC4lj6GfcEB9I3YdLob1zvnJFfZN3MK98P6K8NByBED1R2t3GNZp05ZWT2SOaS00vIqC5aPYh3p6Ml9OWFVcpGUnpW+0WW5RS6xnxwx7u1du7wCxRGMcuhAdUcr9wiInOFrZtuXVYa+mD4EwMMSQvZrbSmuVPJcY8pXLjIxpn/hXETzLFZC5ufr37RbXzAAbhoKQoZ0M7LbWz8ADPlNSCRTfKbGTJU5F+E1AAxkUGQHQLGSEFUAFOQY9eU3fogEwH3cY9955lWeSp2JICOkw1lmncBuyOBWKL9bOgZT82c/+1mNlHLeh8BQX+Qgn5SPeYpDh8Oo5aSOgAOyHgDIOptaThRXYPrarwDP1plFdRJRt/RpqzAEIbsHUtrSLrLMU8gFObKqgi+nrelpI6ZACsddGMB56C6nYe4ChCiWOIYHjrlLH1K/SNEBNY7Fb8ZiYUU3RHiLemY3CNk1kJBAfwXHZd/Z8836IfsfiKBcaK1XDfUCLBBAJBhOefjhh2sgY9q+7nWvq2uFuRbkwIkgzinVeOiUheawiB69jmfOvfeWS++Wo9xk28UTd7aLDGU1wFKhllHR0sIq53FkfyMjIs92yqKLcxYkcA3Vj+gTAI7ZSkjkxz/+cR0GQVeBLBJiGzZsqM4555x6lm1W7tmvMaiYy0o1Flqp0uzEyurl3E4QsqMdjoA6XfgFytSiYUoaGxQIsoxB4YRxj3KZ2NHw4cP3qoPKnJDrsrIDqejhvxFd+pSKjRibTeQe5yxyDbEsFyIw96JvVBZdq+xbiWF12crawdtsa4UjUIiPPPJIPetp06ZNdagBgFgkAIVK/YoYxYH6AmCceeaZPUDO1etyQjnjydUZEEkmiQC8mUN1CAB89atfXYfSsbCMKNMXYXr+4xgazs+ItLjCGi8DoQdg28aotvaFDID/pS99qV4SCaRA8Tm6mkVSDnmoA8wO5vB4rkwXIIoqkcJ5k0jWAGdRp54BsIRFWGjgFa94xV6+hTqCc/bLMdY84ZmZQ7NfpNXVxZWSWuWYrYPjwi293QwSrrvuunoBGGQ1L2kJDnsBJmLyNGUBan6DpBAAQzaXUwIyAvK0BBQzohClzG8LErzPei2pWRGX9QP/zc87nxEEwyXoIIOS6pEc1xrg4gFtJ/TAxeAA7GYHq9zk/7333luvrkAyBzbnpZSvIEDR4vE8BU0nD8QZmeXlETtSb7PZtjluBaCZUoa/kUtOLSnlmMV1tCxu3LIuMpxvoBI9RqM/s4meVxd1Atz+ENbP9LjNg9///vdv4roY8CAG6DJGcAcDlSOyZ21YAnFkhYgIFSkGEQWIFg73WLpTzpLK4gOgQAgYCVaFZOqFY1XkOVIrIuTC/ixAw/C8q+I2i8c+TNSuJO0yrqJtGvzxj3984+TJk9cH1ZyS8wC57il3lOtkDXPngjWBm+NIAh8vG1FBv4Y6soeea7NAMqYtCIdQyKMAfJ5FH5YGORY5D4QrzrDE+qLU7G/QP2NFZ371q1/tmdl1wQUX1D7MfsgYrmdd+sENU3VdAOiUXE+b5XFZ2qk1ZVzI0IVIytZTfhGsNKwzHbEcPMyhdRUywMeIUFRp6nLMeBWAUznrzdOHibAsqnIYHaTmzKTOInPT77zzzh7RzEICZ5111r6uyWJb11MGFFS1Jl74Ys3LTEGKhry6jrI/z2RSOaoD8hRmAY7nDJdA8dlENjeuAyhyASoUT3NOu/4DY2GsXKvMR7w5XkQQ56Bu19TynQih4OlTsWJFjAbFjBkz6sXTjJmxShDp3UysbYZDWr1mTa3fPvjBD1Y33HDDIUF1l2k1ldQkIrJszko5F59pWgrsnOeAuqnNwsrREnNijs/MnIVlZdGafQMka3Ltm/NYgvhIeXp1nkoN54AUrL2f//znz7rFgTQAbQSAMZJjx1/55je/WR8Teazd1YpvMoAVLv47jj9ac0iIgtXxkqsCMFOlWF9IYCtrc3JJLilnxZa6ISMUq41aKD33XJcrpWZu8beOpcf1F0wywUUYI3ADnGO/7DnGQjdEF1i/xOgC3GOlCtyoEztr1qx6YbPbb7+9vpcSIe6ZP39+fd0+0Ccs47S6R2QFZe0ZO3bsyqCGqRYiN7PDS+BnRy3nMDIS82R/qBFKhuosTjCuZOIoFzHADXkOu32YKcxmLc/Kc0NEmGF4DIT777+/1j+uZKpv5XiNBnD+Pe95T80ZVOxDKLgBPOvKK6/s0U9dWpSZbaVr/x6SorD3yP55An9O2mQRlUVMLsMp1xfJg+ZFER2IDF5SXyVTeTaLdUTzMhlyoIFIZ94a7sjLaqjXeC6IQC/ARRgXRImxqFjig/HAPVkUcs+HP/zhukDPxTQJXn7sYx+r946lXVO4FyTe01NQiA5hu/7667fEy5wegzk265Fy3nhW1s0m9pTIaZaqRUGTrNKSEiE5DGPe2/x5qctU/DYXoeEaxIxKGmpGJ1CfhdiC6jWNjQgYTLSpT4ADiy//8Ic/rDnMiAPrn5BoYzXTvpzIFvUHs3A/FMef2YtDQpQ8FQNZXlpHZYg8e+PNAJ5DFuU5xQiUumrVqp5paCprV/WBmuEkJ+HwHwsNJJgZtMiBvakA+jO6TCPCS+qW3yhryk8VS5l4uAeA03yuhgR6Bq4g7GP5EOe/+93v1uZxF+rYluev+vRwCNsnP/nJxwMA/xHWyJF58nwZfCvLYkox1SxgVy6XodlJrEpTV8+f+63hzf5JrlDhOgAkJ/lcEcEeBFu1iH4BkFhi6kmO6enneYdlXS8cxtrxrJwKlzkjjNA+Boo6r7e5iH3kTB6O41hX25siZMGCBduvvfba42KAkzOQy9KaZivy5N85NpXz5WVIH+olVoVY0QSGU4zE5omaeuK5MAKz1QIHDQOXgYULXSMeZ5RrQCBGRTYy8tRqk22GU7JDjKn+pje9qTZIGAvjZqwkwCRa647bMIU/H8+4fa9rSyVz1FFHnRFs/X8xoGF5JqpWUDPqzyZuVvIZ+CXyVNroEjJ6ACDPnuUeXlirKBdQ8+J5ATOnOki53AMiTMsiyqByuIVzORqNvuGcYX64FvGGzuE4560DkBOXLl1a3XLLLfWzFJWE+Mn1gDT66Wv5pgaCSO5fUH5S6TlJ46CmFeG8LY2b314u8pILEJop+oyIZggo8+i8KBTGC1x11VX13A82EEFSCcuHvVWGijIbx7kXZKj4BXQOKIIARKSZTP2ZHJ9zhq/1XrlqJefX+T179uxa1C5atKgWgYT0sdaIFIBMpjU0yzYWnLK02fetmmbx48WXxIudF4MYkREi9csp+SFZlJWDyXWxGSlS17x58+oJOVaSGLY332GoRHHgOCyYkGNEhgaJ4Y48Lc1pz5niHYtIdi4kkQJ9mxwP4zdrMjLmT3/60/WysiAPEUoyj9AQ5nIfKWB0xpLeyoCes4W1cffo0aMXxyAXlIopK6/ePvWQgd/XeQD/rne9q46oYkUZygdortuO2FA3GL3lt5WQOUOZE115YZrMuSKpLOLO0W1FG3sX929WcQkhhN6tU8dXX311T6qCtYjZ+kDK4t4+Mja4D+9ycQzirBjwhHJ6mrVLpcIuryvLhTK1SsW8jCs0GETUOTRaS/kO5w336/QZ/VUpmzgrl3gy6eZUaP0V38N0rY6mDiziUINDpOa0r++D7rjsssvqpWUZI4aDsTDqwQqk8B2rxX0VyjXdwptdG7b3bfHA6zJQc/iknIlaHisXLG5mAvPBFnLi6g7XM1FhmuzSUVOZey4XUpRJsWzxyU3G6jS1c6GcEYBa4wZCcALRDzqLeSw5tASxYMlxrXNPiASAFLYCKbfF77VtI6ThEfM1sskxmLmlCZtXhS6VdckheZ9FHhTNeutkJ6FGM4DmvVWsOSuY5/w5DkPw9q3SVlnnggrPu1yH06pFmtxntlJP3MCnIZqcISXOZYmRBgFIWr9+fc3xcA+OZfXsx8Ru7a+UtNctLJMngnpvjocybfrEcqGvUjdkTsih+3LuYrlUEpZKGfPiZTE5AQQWDdYLostyHqlci8vMZXbqREouS3VvgguKVhRlUZdXxTbOpgXGfRANSAHofAnIqhrOqZPoG0uxIX75iNjN/X1ur99ayVDw94SCvykGeUOWm9mLbrZmYrMYVsnqioreSm6czozJ6kJi3IOydCVsjgMs/Ad8h1xAnSfr5LW0yjmJRo/z+Ni70A2AhVvI5fAsuIfnc+zGG2+sg5UQDmY7iFIfAqPp06dbhnRTK5/Za+lzFUGhTJteFA+4IouePEu1XKskIySH5HOeRY7LXJdzKLmaXRGVTW5FhiKFF4eTAIretiU+Oc+iA5prhgFgnmZtetcyI0QOfeDIggjuueOOO+q8CVwD1zI9AnEFEaFTIJKPfvSjmMHXx/Pmt/J5vZaqicM52xMvyqfhjomOz89BxpzeLStJyhlNudq8nBItcHPNlpzoM/IsqDx12uMEBwmvQ/FQK8YC4s7KE/WGAUwdThGm35GtLrhDIsC/oFgQvcBSH4hafSAXKuA399Dw2uMevuC2qNVvHbb1QZd4uSlx/bXx0KneZ0glr56TzdqcMMpLHeVCOY+7SKVzNPI1GXD54y7qG8US4kOdYj4dBKB/9HNABmKHexFDlhVh4sIJAF4E6njqr3DsO9/5Tj29Gk7kGJzApy44B/cQR8MoWbhw4aog5KuCa1r+oEtb9fbBKfcG5S2Mn//Dgpk5pJInwIgkxYyTOkWMlKoJW2YarY0yTyJic4Yx6yEVrR/5koOgWqc9gwCiwIZYNKNzDA2qRtQATIKH9OnyHnAd3Ecyy+UF2aO3QCBIw9RF39HXnDlzNgSiFraDjLYR0qjs+HpQ22Hx0A+xNke2SjLV5gmd5QLJcpS6Ihc86C8o8/W+s2eeSz6N1kKZTuZxPryItlpFMzivAJTLmjSRAbyzraxFxnl1vUdz+TwDxPBcso+MgeOzZs3aOHXq1I8EQtv+pmFHM1LCYVoSVMS9H4gXG58r3q3M0MRtprDzvHLFkPmPPA8kp18VMaXl5HmoP39ADIq1olKg5xKlHOvKUx/yinMAuFytyHfyA5eMy6+Kcu2kSZM2vvWtb70mxHtH3zLseIpQiII7AilPx4vUH5YsRVf2TSyMywUSOYqaw/zOkrIqEQrUNM3ee549i1jKgU2LsiUQQ/nZb8qefUZCjgIAdJ1E30PLS24CEZzn9wknnLDhkksu+cjxxx/f8YclBzRnKwCxJNiaT8NdHS8wVdGVp67lAues3LPvonViVNc8h5WQynq95lx0keel+Fx0h7ErnmtxXRlbaxaP0yBQp2ClgRhLknIwUp+Ee8OiW3XRRRctDFE1oE+vDnj901CCDIBPwy3Lgy3NXRWtRQr5O4R5ToaAyssqiRynMudAoMUOPgukGWbXwPALbl6nuCyjB9lwsJHVdKUII830B7Ksjgxzedm8efOuCkX+9YHCsyuzGgMp94aJ+Z/xAo/E3ytKXVE6eL1NkClDMN6XTeAccba4wU1vPi9AZplQ5g79kpzRVASW09v4T5IMrtOHyVMmTjrppOtnzJixaMGCBV35fHfXppmGUn0oxBef1tvIR+6j9Xy3SsVeThkoZzBlsZar7NVPOoi5Oj+HPNQdfu/D8qDSyMiObF5vvqwVyHE6DAeitlqFYf4/GLriprFjx94UyOhaKWNX5/0GpzCwG8Muf6B69mNic/MCMNl/0Ewua7jKJZsy0LPMV9YLWFdk0DDQd/F3+c3CvhCSRVbmFMTgW97yFpD+xRBhN7/3ve+9p+rytk/W0A6bnYG+PV7w3fGi6zNQy8X3pWIrFPPn7vKqpVm/WLWY56loKosoTd0880rFXH68Mk86Lb8Gl8NDW7ZsWR865d3x++37Ahlth0462cKJPDWAciEtnjWi2ZcIypxK+Wk7xYzK3kiqvoSf9bYq0vkqVjhiKU2ZMqVWwmvXru2ZIien4F03Q0Iiou1x3eJA3OJA7Np9Ca9B+2ktQbxavrnEZ35mx8sNy0q7TGTldatU+iaPpHSPu06WoRbnPFpheNppp9WFCEwnYKMg4ZprrulR7HCHH/1qUuz3WIyJ6pAlQQR37w847TeEuIVNz5cAzo+XPDcAPiYr/tJP0BlTd2jmKkLKWly4QxEEMlhw+Stf+UpdYcgxxRoIAUmERixbLdLOD8f+a3FoWeiNFfsTPvsdIYlj8O75mMnM2J+h6MoOo5yhySt3WNBgXEnLx2lqVkB+5jOfqS6++OKeJZtELufe/OY313NFQBQ+RYMYVsSzlsf+zrDUNhwIuBwwhCTEECA6IwA1Pdq0AO7UnPHLBXLZQRQhIg8q19OHiyZOnFjPF7TYLVtWNIqlyXUHQlaFblnZyOatCKQ+dSDhMbg6wFtQJwDg2xl3HX300YMCEdQV83GASYGIidEmBHcM0m/JaV/lvhZZdhoxT52HnsThnkYZzrozzzxzzdlnn33/0qVLV4fY2lMdJNsB55AWkmLjA8DjAiks+Dw6EDYqADwykDM8/rNe5NDgniGNmNLuaLtCT+389re/vSMct23xflvj2i1xz+a4dhNTjw/m9/1/AQYAIR8eHCmeERgAAAAASUVORK5CYII="
-
-/***/ }),
-
 /***/ 36:
-/*!************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/static/mybg.png ***!
-  \************************************************************/
+/*!***************************************************!*\
+  !*** E:/LHMiniProgramRespository/static/mybg.png ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/static/mybg.png";
+module.exports = "data:image/png;base64,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"
 
 /***/ }),
 
 /***/ 4:
-/*!*******************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/pages.json ***!
-  \*******************************************************/
+/*!**********************************************!*\
+  !*** E:/LHMiniProgramRespository/pages.json ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -12288,14 +8370,25 @@ module.exports = "/static/mybg.png";
 
 /***/ }),
 
-/***/ 98:
-/*!********************************************************************!*\
-  !*** D:/MyWeb/LH/LHMiniProgramRespository/common/coutry_code.json ***!
-  \********************************************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, default */
-/***/ (function(module) {
+/***/ 59:
+/*!*********************************************************************!*\
+  !*** E:/LHMiniProgramRespository/static/dodotour_logo_cn_color.png ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-module.exports = JSON.parse("[{\"chineseName\":\"安哥拉\",\"country\":\"Angola\",\"region\":\"+244\",\"shortName\":\"AO\",\"showName\":\"+244(Angola)\"},{\"chineseName\":\"阿富汗\",\"country\":\"Afghanistan\",\"region\":\"+93\",\"shortName\":\"AF\",\"showName\":\"+93(Afghanistan)\"},{\"chineseName\":\"阿尔巴尼亚 \",\"country\":\"Albania\",\"region\":\"+355\",\"shortName\":\"AL\",\"showName\":\"+355(Albania)\"},{\"chineseName\":\"阿尔及利亚\",\"country\":\"Algeria\",\"region\":\"+213\",\"shortName\":\"DZ\",\"showName\":\"+213(Algeria)\"},{\"chineseName\":\"安道尔共和国\",\"country\":\"Andorra\",\"region\":\"+376\",\"shortName\":\"AD\",\"showName\":\"+376(Andorra)\"},{\"chineseName\":\"安圭拉岛\",\"country\":\"Anguilla\",\"region\":\"+1264\",\"shortName\":\"AI\",\"showName\":\"+1264(Anguilla)\"},{\"chineseName\":\"安提瓜和巴布达\",\"country\":\"Antigua and Barbuda\",\"region\":\"+1268\",\"shortName\":\"AG\",\"showName\":\"+1268(Antigua and Barbuda)\"},{\"chineseName\":\"阿根廷\",\"country\":\"Argentina\",\"region\":\"+54\",\"shortName\":\"AR\",\"showName\":\"+54(Argentina)\"},{\"chineseName\":\"亚美尼亚\",\"country\":\"Armenia\",\"region\":\"+374\",\"shortName\":\"AM\",\"showName\":\"+374(Armenia)\"},{\"chineseName\":\"阿森松\",\"country\":\"Ascension\",\"region\":\"+247\",\"shortName\":\"　\",\"showName\":\"+247(Ascension)\"},{\"chineseName\":\"澳大利亚\",\"country\":\"Australia\",\"region\":\"+61\",\"shortName\":\"AU\",\"showName\":\"+61(Australia)\"},{\"chineseName\":\"奥地利\",\"country\":\"Austria\",\"region\":\"+43\",\"shortName\":\"AT\",\"showName\":\"+43(Austria)\"},{\"chineseName\":\"阿塞拜疆\",\"country\":\"Azerbaijan\",\"region\":\"+994\",\"shortName\":\"AZ\",\"showName\":\"+994(Azerbaijan)\"},{\"chineseName\":\"巴哈马\",\"country\":\"Bahamas\",\"region\":\"+1242\",\"shortName\":\"BS\",\"showName\":\"+1242(Bahamas)\"},{\"chineseName\":\"巴林\",\"country\":\"Bahrain\",\"region\":\"+973\",\"shortName\":\"BH\",\"showName\":\"+973(Bahrain)\"},{\"chineseName\":\"孟加拉国\",\"country\":\"Bangladesh\",\"region\":\"+880\",\"shortName\":\"BD\",\"showName\":\"+880(Bangladesh)\"},{\"chineseName\":\"巴巴多斯\",\"country\":\"Barbados\",\"region\":\"+1246\",\"shortName\":\"BB\",\"showName\":\"+1246(Barbados)\"},{\"chineseName\":\"白俄罗斯\",\"country\":\"Belarus\",\"region\":\"+375\",\"shortName\":\"BY\",\"showName\":\"+375(Belarus)\"},{\"chineseName\":\"比利时\",\"country\":\"Belgium\",\"region\":\"+32\",\"shortName\":\"BE\",\"showName\":\"+32(Belgium)\"},{\"chineseName\":\"伯利兹\",\"country\":\"Belize\",\"region\":\"+501\",\"shortName\":\"BZ\",\"showName\":\"+501(Belize)\"},{\"chineseName\":\"贝宁\",\"country\":\"Benin\",\"region\":\"+229\",\"shortName\":\"BJ\",\"showName\":\"+229(Benin)\"},{\"chineseName\":\"百慕大群岛\",\"country\":\"BermudaIs.\",\"region\":\"+1441\",\"shortName\":\"BM\",\"showName\":\"+1441(BermudaIs.)\"},{\"chineseName\":\"玻利维亚\",\"country\":\"Bolivia\",\"region\":\"+591\",\"shortName\":\"BO\",\"showName\":\"+591(Bolivia)\"},{\"chineseName\":\"博茨瓦纳\",\"country\":\"Botswana\",\"region\":\"+267\",\"shortName\":\"BW\",\"showName\":\"+267(Botswana)\"},{\"chineseName\":\"巴西\",\"country\":\"Brazil\",\"region\":\"+55\",\"shortName\":\"BR\",\"showName\":\"+55(Brazil)\"},{\"chineseName\":\"文莱\",\"country\":\"Brunei\",\"region\":\"+673\",\"shortName\":\"BN\",\"showName\":\"+673(Brunei)\"},{\"chineseName\":\"保加利亚\",\"country\":\"Bulgaria\",\"region\":\"+359\",\"shortName\":\"BG\",\"showName\":\"+359(Bulgaria)\"},{\"chineseName\":\"布基纳法索\",\"country\":\"Burkina-faso\",\"region\":\"+226\",\"shortName\":\"BF\",\"showName\":\"+226(Burkina-faso)\"},{\"chineseName\":\"缅甸\",\"country\":\"Burma\",\"region\":\"+95\",\"shortName\":\"MM\",\"showName\":\"+95(Burma)\"},{\"chineseName\":\"布隆迪\",\"country\":\"Burundi\",\"region\":\"+257\",\"shortName\":\"BI\",\"showName\":\"+257(Burundi)\"},{\"chineseName\":\"喀麦隆\",\"country\":\"Cameroon\",\"region\":\"+237\",\"shortName\":\"CM\",\"showName\":\"+237(Cameroon)\"},{\"chineseName\":\"加拿大\",\"country\":\"Canada\",\"region\":\"+1\",\"shortName\":\"CA\",\"showName\":\"+1(Canada)\"},{\"chineseName\":\"开曼群岛\",\"country\":\"Cayman Is.\",\"region\":\"+1345\",\"shortName\":\"　\",\"showName\":\"+1345(Cayman Is.)\"},{\"chineseName\":\"中非共和国 \",\"country\":\"Central African Republic\",\"region\":\"+236\",\"shortName\":\"CF\",\"showName\":\"+236(Central African Republic)\"},{\"chineseName\":\"乍得\",\"country\":\"Chad\",\"region\":\"+235\",\"shortName\":\"TD\",\"showName\":\"+235(Chad)\"},{\"chineseName\":\"智利\",\"country\":\"Chile\",\"region\":\"+56\",\"shortName\":\"CL\",\"showName\":\"+56(Chile)\"},{\"chineseName\":\"中国\",\"country\":\"China\",\"region\":\"+86\",\"shortName\":\"CN\",\"showName\":\"+86(China)\"},{\"chineseName\":\"哥伦比亚\",\"country\":\"Colombia\",\"region\":\"+57\",\"shortName\":\"CO\",\"showName\":\"+57(Colombia)\"},{\"chineseName\":\"刚果\",\"country\":\"Congo\",\"region\":\"+242\",\"shortName\":\"CG\",\"showName\":\"+242(Congo)\"},{\"chineseName\":\"库克群岛\",\"country\":\"Cook Is.\",\"region\":\"+682\",\"shortName\":\"CK\",\"showName\":\"+682(Cook Is.)\"},{\"chineseName\":\"哥斯达黎加\",\"country\":\"Costa Rica\",\"region\":\"+506\",\"shortName\":\"CR\",\"showName\":\"+506(Costa Rica)\"},{\"chineseName\":\"古巴\",\"country\":\"Cuba\",\"region\":\"+53\",\"shortName\":\"CU\",\"showName\":\"+53(Cuba)\"},{\"chineseName\":\"塞浦路斯\",\"country\":\"Cyprus\",\"region\":\"+357\",\"shortName\":\"CY\",\"showName\":\"+357(Cyprus)\"},{\"chineseName\":\"捷克\",\"country\":\"Czech Republic\",\"region\":\"+420\",\"shortName\":\"CZ\",\"showName\":\"+420(Czech Republic)\"},{\"chineseName\":\"丹麦\",\"country\":\"Denmark\",\"region\":\"+45\",\"shortName\":\"DK\",\"showName\":\"+45(Denmark)\"},{\"chineseName\":\"吉布提\",\"country\":\"Djibouti\",\"region\":\"+253\",\"shortName\":\"DJ\",\"showName\":\"+253(Djibouti)\"},{\"chineseName\":\"多米尼加共和国\",\"country\":\"Dominica Rep.\",\"region\":\"+1890\",\"shortName\":\"DO\",\"showName\":\"+1890(Dominica Rep.)\"},{\"chineseName\":\"厄瓜多尔\",\"country\":\"Ecuador\",\"region\":\"+593\",\"shortName\":\"EC\",\"showName\":\"+593(Ecuador)\"},{\"chineseName\":\"埃及\",\"country\":\"Egypt\",\"region\":\"+20\",\"shortName\":\"EG\",\"showName\":\"+20(Egypt)\"},{\"chineseName\":\"萨尔瓦多\",\"country\":\"EISalvador\",\"region\":\"+503\",\"shortName\":\"SV\",\"showName\":\"+503(EISalvador)\"},{\"chineseName\":\"爱沙尼亚\",\"country\":\"Estonia\",\"region\":\"+372\",\"shortName\":\"EE\",\"showName\":\"+372(Estonia)\"},{\"chineseName\":\"埃塞俄比亚\",\"country\":\"Ethiopia\",\"region\":\"+251\",\"shortName\":\"ET\",\"showName\":\"+251(Ethiopia)\"},{\"chineseName\":\"斐济\",\"country\":\"Fiji\",\"region\":\"+679\",\"shortName\":\"FJ\",\"showName\":\"+679(Fiji)\"},{\"chineseName\":\"芬兰\",\"country\":\"Finland\",\"region\":\"+358\",\"shortName\":\"FI\",\"showName\":\"+358(Finland)\"},{\"chineseName\":\"法国\",\"country\":\"France\",\"region\":\"+33\",\"shortName\":\"FR\",\"showName\":\"+33(France)\"},{\"chineseName\":\"法属圭亚那\",\"country\":\"French Guiana\",\"region\":\"+594\",\"shortName\":\"GF\",\"showName\":\"+594(French Guiana)\"},{\"chineseName\":\"加蓬\",\"country\":\"Gabon\",\"region\":\"+241\",\"shortName\":\"GA\",\"showName\":\"+241(Gabon)\"},{\"chineseName\":\"冈比亚\",\"country\":\"Gambia\",\"region\":\"+220\",\"shortName\":\"GM\",\"showName\":\"+220(Gambia)\"},{\"chineseName\":\"格鲁吉亚\",\"country\":\"Georgia\",\"region\":\"+995\",\"shortName\":\"GE\",\"showName\":\"+995(Georgia)\"},{\"chineseName\":\"德国\",\"country\":\"Germany\",\"region\":\"+49\",\"shortName\":\"DE\",\"showName\":\"+49(Germany)\"},{\"chineseName\":\"加纳\",\"country\":\"Ghana\",\"region\":\"+233\",\"shortName\":\"GH\",\"showName\":\"+233(Ghana)\"},{\"chineseName\":\"直布罗陀\",\"country\":\"Gibraltar\",\"region\":\"+350\",\"shortName\":\"GI\",\"showName\":\"+350(Gibraltar)\"},{\"chineseName\":\"希腊\",\"country\":\"Greece\",\"region\":\"+30\",\"shortName\":\"GR\",\"showName\":\"+30(Greece)\"},{\"chineseName\":\"格林纳达\",\"country\":\"Grenada\",\"region\":\"+1809\",\"shortName\":\"GD\",\"showName\":\"+1809(Grenada)\"},{\"chineseName\":\"关岛\",\"country\":\"Guam\",\"region\":\"+1671\",\"shortName\":\"GU\",\"showName\":\"+1671(Guam)\"},{\"chineseName\":\"危地马拉\",\"country\":\"Guatemala\",\"region\":\"+502\",\"shortName\":\"GT\",\"showName\":\"+502(Guatemala)\"},{\"chineseName\":\"几内亚\",\"country\":\"Guinea\",\"region\":\"+224\",\"shortName\":\"GN\",\"showName\":\"+224(Guinea)\"},{\"chineseName\":\"圭亚那\",\"country\":\"Guyana\",\"region\":\"+592\",\"shortName\":\"GY\",\"showName\":\"+592(Guyana)\"},{\"chineseName\":\"海地\",\"country\":\"Haiti\",\"region\":\"+509\",\"shortName\":\"HT\",\"showName\":\"+509(Haiti)\"},{\"chineseName\":\"洪都拉斯\",\"country\":\"Honduras\",\"region\":\"+504\",\"shortName\":\"HN\",\"showName\":\"+504(Honduras)\"},{\"chineseName\":\"香港\",\"country\":\"Hongkong\",\"region\":\"+852\",\"shortName\":\"HK\",\"showName\":\"+852(Hongkong)\"},{\"chineseName\":\"匈牙利\",\"country\":\"Hungary\",\"region\":\"+36\",\"shortName\":\"HU\",\"showName\":\"+36(Hungary)\"},{\"chineseName\":\"冰岛\",\"country\":\"Iceland\",\"region\":\"+354\",\"shortName\":\"IS\",\"showName\":\"+354(Iceland)\"},{\"chineseName\":\"印度\",\"country\":\"India\",\"region\":\"+91\",\"shortName\":\"IN\",\"showName\":\"+91(India)\"},{\"chineseName\":\"印度尼西亚\",\"country\":\"Indonesia\",\"region\":\"+62\",\"shortName\":\"ID\",\"showName\":\"+62(Indonesia)\"},{\"chineseName\":\"伊朗\",\"country\":\"Iran\",\"region\":\"+98\",\"shortName\":\"IR\",\"showName\":\"+98(Iran)\"},{\"chineseName\":\"伊拉克\",\"country\":\"Iraq\",\"region\":\"+964\",\"shortName\":\"IQ\",\"showName\":\"+964(Iraq)\"},{\"chineseName\":\"爱尔兰\",\"country\":\"Ireland\",\"region\":\"+353\",\"shortName\":\"IE\",\"showName\":\"+353(Ireland)\"},{\"chineseName\":\"以色列\",\"country\":\"Israel\",\"region\":\"+972\",\"shortName\":\"IL\",\"showName\":\"+972(Israel)\"},{\"chineseName\":\"意大利\",\"country\":\"Italy\",\"region\":\"+39\",\"shortName\":\"IT\",\"showName\":\"+39(Italy)\"},{\"chineseName\":\"科特迪瓦\",\"country\":\"IvoryCoast\",\"region\":\"+225\",\"shortName\":\"　\",\"showName\":\"+225(IvoryCoast)\"},{\"chineseName\":\"牙买加\",\"country\":\"Jamaica\",\"region\":\"+1876\",\"shortName\":\"JM\",\"showName\":\"+1876(Jamaica)\"},{\"chineseName\":\"日本\",\"country\":\"Japan\",\"region\":\"+81\",\"shortName\":\"JP\",\"showName\":\"+81(Japan)\"},{\"chineseName\":\"约旦\",\"country\":\"Jordan\",\"region\":\"+962\",\"shortName\":\"JO\",\"showName\":\"+962(Jordan)\"},{\"chineseName\":\"柬埔寨\",\"country\":\"Kampuchea (Cambodia )\",\"region\":\"+855\",\"shortName\":\"KH\",\"showName\":\"+855(Kampuchea (Cambodia ))\"},{\"chineseName\":\"哈萨克斯坦 \",\"country\":\"Kazakstan\",\"region\":\"+327\",\"shortName\":\"KZ\",\"showName\":\"+327(Kazakstan)\"},{\"chineseName\":\"肯尼亚\",\"country\":\"Kenya\",\"region\":\"+254\",\"shortName\":\"KE\",\"showName\":\"+254(Kenya)\"},{\"chineseName\":\"韩国\",\"country\":\"Korea\",\"region\":\"+82\",\"shortName\":\"KR\",\"showName\":\"+82(Korea)\"},{\"chineseName\":\"科威特\",\"country\":\"Kuwait\",\"region\":\"+965\",\"shortName\":\"KW\",\"showName\":\"+965(Kuwait)\"},{\"chineseName\":\"吉尔吉斯坦 \",\"country\":\"Kyrgyzstan\",\"region\":\"+331\",\"shortName\":\"KG\",\"showName\":\"+331(Kyrgyzstan)\"},{\"chineseName\":\"老挝\",\"country\":\"Laos\",\"region\":\"+856\",\"shortName\":\"LA\",\"showName\":\"+856(Laos)\"},{\"chineseName\":\"拉脱维亚\",\"country\":\"Latvia\",\"region\":\"+371\",\"shortName\":\"LV\",\"showName\":\"+371(Latvia)\"},{\"chineseName\":\"黎巴嫩\",\"country\":\"Lebanon\",\"region\":\"+961\",\"shortName\":\"LB\",\"showName\":\"+961(Lebanon)\"},{\"chineseName\":\"莱索托\",\"country\":\"Lesotho\",\"region\":\"+266\",\"shortName\":\"LS\",\"showName\":\"+266(Lesotho)\"},{\"chineseName\":\"利比里亚\",\"country\":\"Liberia\",\"region\":\"+231\",\"shortName\":\"LR\",\"showName\":\"+231(Liberia)\"},{\"chineseName\":\"利比亚\",\"country\":\"Libya\",\"region\":\"+218\",\"shortName\":\"LY\",\"showName\":\"+218(Libya)\"},{\"chineseName\":\"列支敦士登\",\"country\":\"Liechtenstein\",\"region\":\"+423\",\"shortName\":\"LI\",\"showName\":\"+423(Liechtenstein)\"},{\"chineseName\":\"立陶宛\",\"country\":\"Lithuania\",\"region\":\"+370\",\"shortName\":\"LT\",\"showName\":\"+370(Lithuania)\"},{\"chineseName\":\"卢森堡\",\"country\":\"Luxembourg\",\"region\":\"+352\",\"shortName\":\"LU\",\"showName\":\"+352(Luxembourg)\"},{\"chineseName\":\"澳门\",\"country\":\"Macao\",\"region\":\"+853\",\"shortName\":\"MO\",\"showName\":\"+853(Macao)\"},{\"chineseName\":\"马达加斯加\",\"country\":\"Madagascar\",\"region\":\"+261\",\"shortName\":\"MG\",\"showName\":\"+261(Madagascar)\"},{\"chineseName\":\"马拉维\",\"country\":\"Malawi\",\"region\":\"+265\",\"shortName\":\"MW\",\"showName\":\"+265(Malawi)\"},{\"chineseName\":\"马来西亚\",\"country\":\"Malaysia\",\"region\":\"+60\",\"shortName\":\"MY\",\"showName\":\"+60(Malaysia)\"},{\"chineseName\":\"马尔代夫\",\"country\":\"Maldives\",\"region\":\"+960\",\"shortName\":\"MV\",\"showName\":\"+960(Maldives)\"},{\"chineseName\":\"马里\",\"country\":\"Mali\",\"region\":\"+223\",\"shortName\":\"ML\",\"showName\":\"+223(Mali)\"},{\"chineseName\":\"马耳他\",\"country\":\"Malta\",\"region\":\"+356\",\"shortName\":\"MT\",\"showName\":\"+356(Malta)\"},{\"chineseName\":\"马里亚那群岛\",\"country\":\"Mariana Is\",\"region\":\"+1670\",\"shortName\":\"　\",\"showName\":\"+1670(Mariana Is)\"},{\"chineseName\":\"马提尼克\",\"country\":\"Martinique\",\"region\":\"+596\",\"shortName\":\"　\",\"showName\":\"+596(Martinique)\"},{\"chineseName\":\"毛里求斯\",\"country\":\"Mauritius\",\"region\":\"+230\",\"shortName\":\"MU\",\"showName\":\"+230(Mauritius)\"},{\"chineseName\":\"墨西哥\",\"country\":\"Mexico\",\"region\":\"+52\",\"shortName\":\"MX\",\"showName\":\"+52(Mexico)\"},{\"chineseName\":\"摩尔多瓦\",\"country\":\"Moldova, Republic of\",\"region\":\"+373\",\"shortName\":\"MD\",\"showName\":\"+373(Moldova, Republic of)\"},{\"chineseName\":\"摩纳哥\",\"country\":\"Monaco\",\"region\":\"+377\",\"shortName\":\"MC\",\"showName\":\"+377(Monaco)\"},{\"chineseName\":\"蒙古\",\"country\":\"Mongolia\",\"region\":\"+976\",\"shortName\":\"MN\",\"showName\":\"+976(Mongolia)\"},{\"chineseName\":\"蒙特塞拉特岛\",\"country\":\"Montserrat Is\",\"region\":\"+1664\",\"shortName\":\"MS\",\"showName\":\"+1664(Montserrat Is)\"},{\"chineseName\":\"摩洛哥\",\"country\":\"Morocco\",\"region\":\"+212\",\"shortName\":\"MA\",\"showName\":\"+212(Morocco)\"},{\"chineseName\":\"莫桑比克\",\"country\":\"Mozambique\",\"region\":\"+258\",\"shortName\":\"MZ\",\"showName\":\"+258(Mozambique)\"},{\"chineseName\":\"纳米比亚\",\"country\":\"Namibia\",\"region\":\"+264\",\"shortName\":\"NA\",\"showName\":\"+264(Namibia)\"},{\"chineseName\":\"瑙鲁\",\"country\":\"Nauru\",\"region\":\"+674\",\"shortName\":\"NR\",\"showName\":\"+674(Nauru)\"},{\"chineseName\":\"尼泊尔\",\"country\":\"Nepal\",\"region\":\"+977\",\"shortName\":\"NP\",\"showName\":\"+977(Nepal)\"},{\"chineseName\":\"荷属安的列斯\",\"country\":\"Netheriands Antilles\",\"region\":\"+599\",\"shortName\":\"　\",\"showName\":\"+599(Netheriands Antilles)\"},{\"chineseName\":\"荷兰\",\"country\":\"Netherlands \",\"region\":\"+31\",\"shortName\":\"NL\",\"showName\":\"+31(Netherlands )\"},{\"chineseName\":\"新西兰\",\"country\":\"NewZealand\",\"region\":\"+64\",\"shortName\":\"NZ\",\"showName\":\"+64(NewZealand)\"},{\"chineseName\":\"尼加拉瓜\",\"country\":\"Nicaragua\",\"region\":\"+505\",\"shortName\":\"NI\",\"showName\":\"+505(Nicaragua)\"},{\"chineseName\":\"尼日尔\",\"country\":\"Niger\",\"region\":\"+227\",\"shortName\":\"NE\",\"showName\":\"+227(Niger)\"},{\"chineseName\":\"尼日利亚\",\"country\":\"Nigeria\",\"region\":\"+234\",\"shortName\":\"NG\",\"showName\":\"+234(Nigeria)\"},{\"chineseName\":\"朝鲜\",\"country\":\"North Korea\",\"region\":\"+850\",\"shortName\":\"KP\",\"showName\":\"+850(North Korea)\"},{\"chineseName\":\"挪威\",\"country\":\"Norway\",\"region\":\"+47\",\"shortName\":\"NO\",\"showName\":\"+47(Norway)\"},{\"chineseName\":\"阿曼\",\"country\":\"Oman\",\"region\":\"+968\",\"shortName\":\"OM\",\"showName\":\"+968(Oman)\"},{\"chineseName\":\"巴基斯坦\",\"country\":\"Pakistan\",\"region\":\"+92\",\"shortName\":\"PK\",\"showName\":\"+92(Pakistan)\"},{\"chineseName\":\"巴拿马\",\"country\":\"Panama\",\"region\":\"+507\",\"shortName\":\"PA\",\"showName\":\"+507(Panama)\"},{\"chineseName\":\"巴布亚新几内亚\",\"country\":\"Papua New Cuinea\",\"region\":\"+675\",\"shortName\":\"PG\",\"showName\":\"+675(Papua New Cuinea)\"},{\"chineseName\":\"巴拉圭\",\"country\":\"Paraguay\",\"region\":\"+595\",\"shortName\":\"PY\",\"showName\":\"+595(Paraguay)\"},{\"chineseName\":\"秘鲁\",\"country\":\"Peru\",\"region\":\"+51\",\"shortName\":\"PE\",\"showName\":\"+51(Peru)\"},{\"chineseName\":\"菲律宾\",\"country\":\"Philippines \",\"region\":\"+63\",\"shortName\":\"PH\",\"showName\":\"+63(Philippines )\"},{\"chineseName\":\"波兰\",\"country\":\"Poland\",\"region\":\"+48\",\"shortName\":\"PL\",\"showName\":\"+48(Poland)\"},{\"chineseName\":\"法属玻利尼西亚\",\"country\":\"French Polynesia\",\"region\":\"+689\",\"shortName\":\"PF\",\"showName\":\"+689(French Polynesia)\"},{\"chineseName\":\"葡萄牙\",\"country\":\"Portugal\",\"region\":\"+351\",\"shortName\":\"PT\",\"showName\":\"+351(Portugal)\"},{\"chineseName\":\"波多黎各\",\"country\":\"PuertoRico\",\"region\":\"+1787\",\"shortName\":\"PR\",\"showName\":\"+1787(PuertoRico)\"},{\"chineseName\":\"卡塔尔\",\"country\":\"Qatar\",\"region\":\"+974\",\"shortName\":\"QA\",\"showName\":\"+974(Qatar)\"},{\"chineseName\":\"留尼旺\",\"country\":\"Reunion\",\"region\":\"+262\",\"shortName\":\"　\",\"showName\":\"+262(Reunion)\"},{\"chineseName\":\"罗马尼亚\",\"country\":\"Romania\",\"region\":\"+40\",\"shortName\":\"RO\",\"showName\":\"+40(Romania)\"},{\"chineseName\":\"俄罗斯\",\"country\":\"Russia\",\"region\":\"+7\",\"shortName\":\"RU\",\"showName\":\"+7(Russia)\"},{\"chineseName\":\"圣卢西亚\",\"country\":\"Saint Lueia\",\"region\":\"+1758\",\"shortName\":\"LC\",\"showName\":\"+1758(Saint Lueia)\"},{\"chineseName\":\"圣文森特岛 \",\"country\":\"Saint Vincent\",\"region\":\"+1784\",\"shortName\":\"VC\",\"showName\":\"+1784(Saint Vincent)\"},{\"chineseName\":\"东萨摩亚(美)\",\"country\":\"Samoa Eastern\",\"region\":\"+684\",\"shortName\":\"　\",\"showName\":\"+684(Samoa Eastern)\"},{\"chineseName\":\"西萨摩亚\",\"country\":\"Samoa Western\",\"region\":\"+685\",\"shortName\":\"　\",\"showName\":\"+685(Samoa Western)\"},{\"chineseName\":\"圣马力诺\",\"country\":\"San Marino\",\"region\":\"+378\",\"shortName\":\"SM\",\"showName\":\"+378(San Marino)\"},{\"chineseName\":\"圣多美和普林西比\",\"country\":\"Sao Tome and Principe\",\"region\":\"+239\",\"shortName\":\"ST\",\"showName\":\"+239(Sao Tome and Principe)\"},{\"chineseName\":\"沙特阿拉伯\",\"country\":\"Saudi Arabia\",\"region\":\"+966\",\"shortName\":\"SA\",\"showName\":\"+966(Saudi Arabia)\"},{\"chineseName\":\"塞内加尔\",\"country\":\"Senegal\",\"region\":\"+221\",\"shortName\":\"SN\",\"showName\":\"+221(Senegal)\"},{\"chineseName\":\"塞舌尔\",\"country\":\"Seychelles\",\"region\":\"+248\",\"shortName\":\"SC\",\"showName\":\"+248(Seychelles)\"},{\"chineseName\":\"塞拉利昂\",\"country\":\"Sierra Leone\",\"region\":\"+232\",\"shortName\":\"SL\",\"showName\":\"+232(Sierra Leone)\"},{\"chineseName\":\"新加坡\",\"country\":\"Singapore\",\"region\":\"+65\",\"shortName\":\"SG\",\"showName\":\"+65(Singapore)\"},{\"chineseName\":\"斯洛伐克\",\"country\":\"Slovakia\",\"region\":\"+421\",\"shortName\":\"SK\",\"showName\":\"+421(Slovakia)\"},{\"chineseName\":\"斯洛文尼亚 \",\"country\":\"Slovenia\",\"region\":\"+386\",\"shortName\":\"SI\",\"showName\":\"+386(Slovenia)\"},{\"chineseName\":\"所罗门群岛\",\"country\":\"Solomon Is\",\"region\":\"+677\",\"shortName\":\"SB\",\"showName\":\"+677(Solomon Is)\"},{\"chineseName\":\"索马里\",\"country\":\"Somali\",\"region\":\"+252\",\"shortName\":\"SO\",\"showName\":\"+252(Somali)\"},{\"chineseName\":\"南非\",\"country\":\"South Africa\",\"region\":\"+27\",\"shortName\":\"ZA\",\"showName\":\"+27(South Africa)\"},{\"chineseName\":\"西班牙\",\"country\":\"Spain\",\"region\":\"+34\",\"shortName\":\"ES\",\"showName\":\"+34(Spain)\"},{\"chineseName\":\"斯里兰卡\",\"country\":\"Sri Lanka\",\"region\":\"+94\",\"shortName\":\"LK\",\"showName\":\"+94(Sri Lanka)\"},{\"chineseName\":\"圣卢西亚\",\"country\":\"St.Lucia\",\"region\":\"+1758\",\"shortName\":\"LC\",\"showName\":\"+1758(St.Lucia)\"},{\"chineseName\":\"圣文森特\",\"country\":\"St.Vincent\",\"region\":\"+1784\",\"shortName\":\"VC\",\"showName\":\"+1784(St.Vincent)\"},{\"chineseName\":\"苏丹\",\"country\":\"Sudan\",\"region\":\"+249\",\"shortName\":\"SD\",\"showName\":\"+249(Sudan)\"},{\"chineseName\":\"苏里南\",\"country\":\"Suriname\",\"region\":\"+597\",\"shortName\":\"SR\",\"showName\":\"+597(Suriname)\"},{\"chineseName\":\"斯威士兰\",\"country\":\"Swaziland\",\"region\":\"+268\",\"shortName\":\"SZ\",\"showName\":\"+268(Swaziland)\"},{\"chineseName\":\"瑞典\",\"country\":\"Sweden\",\"region\":\"+46\",\"shortName\":\"SE\",\"showName\":\"+46(Sweden)\"},{\"chineseName\":\"瑞士\",\"country\":\"Switzerland \",\"region\":\"+41\",\"shortName\":\"CH\",\"showName\":\"+41(Switzerland )\"},{\"chineseName\":\"叙利亚\",\"country\":\"Syria\",\"region\":\"+963\",\"shortName\":\"SY\",\"showName\":\"+963(Syria)\"},{\"chineseName\":\"台湾省\",\"country\":\"Taiwan\",\"region\":\"+886\",\"shortName\":\"TW\",\"showName\":\"+886(Taiwan)\"},{\"chineseName\":\"塔吉克斯坦 \",\"country\":\"Tajikstan\",\"region\":\"+992\",\"shortName\":\"TJ\",\"showName\":\"+992(Tajikstan)\"},{\"chineseName\":\"坦桑尼亚\",\"country\":\"Tanzania\",\"region\":\"+255\",\"shortName\":\"TZ\",\"showName\":\"+255(Tanzania)\"},{\"chineseName\":\"泰国\",\"country\":\"Thailand\",\"region\":\"+66\",\"shortName\":\"TH\",\"showName\":\"+66(Thailand)\"},{\"chineseName\":\"多哥\",\"country\":\"Togo\",\"region\":\"+228\",\"shortName\":\"TG\",\"showName\":\"+228(Togo)\"},{\"chineseName\":\"汤加\",\"country\":\"Tonga\",\"region\":\"+676\",\"shortName\":\"TO\",\"showName\":\"+676(Tonga)\"},{\"chineseName\":\"特立尼达和多巴哥\",\"country\":\"Trinidad and Tobago\",\"region\":\"+1809\",\"shortName\":\"TT\",\"showName\":\"+1809(Trinidad and Tobago)\"},{\"chineseName\":\"突尼斯\",\"country\":\"Tunisia\",\"region\":\"+216\",\"shortName\":\"TN\",\"showName\":\"+216(Tunisia)\"},{\"chineseName\":\"土耳其\",\"country\":\"Turkey\",\"region\":\"+90\",\"shortName\":\"TR\",\"showName\":\"+90(Turkey)\"},{\"chineseName\":\"土库曼斯坦 \",\"country\":\"Turkmenistan\",\"region\":\"+993\",\"shortName\":\"TM\",\"showName\":\"+993(Turkmenistan)\"},{\"chineseName\":\"乌干达\",\"country\":\"Uganda\",\"region\":\"+256\",\"shortName\":\"UG\",\"showName\":\"+256(Uganda)\"},{\"chineseName\":\"乌克兰\",\"country\":\"Ukraine\",\"region\":\"+380\",\"shortName\":\"UA\",\"showName\":\"+380(Ukraine)\"},{\"chineseName\":\"阿拉伯联合酋长国\",\"country\":\"United Arab Emirates\",\"region\":\"+971\",\"shortName\":\"AE\",\"showName\":\"+971(United Arab Emirates)\"},{\"chineseName\":\"英国\",\"country\":\"United Kiongdom\",\"region\":\"+44\",\"shortName\":\"GB\",\"showName\":\"+44(United Kiongdom)\"},{\"chineseName\":\"美国\",\"country\":\"United States of America\",\"region\":\"+1\",\"shortName\":\"US\",\"showName\":\"+1(United States of America)\"},{\"chineseName\":\"乌拉圭\",\"country\":\"Uruguay\",\"region\":\"+598\",\"shortName\":\"UY\",\"showName\":\"+598(Uruguay)\"},{\"chineseName\":\"乌兹别克斯坦\",\"country\":\"Uzbekistan\",\"region\":\"+233\",\"shortName\":\"UZ\",\"showName\":\"+233(Uzbekistan)\"},{\"chineseName\":\"委内瑞拉\",\"country\":\"Venezuela\",\"region\":\"+58\",\"shortName\":\"VE\",\"showName\":\"+58(Venezuela)\"},{\"chineseName\":\"越南\",\"country\":\"Vietnam\",\"region\":\"+84\",\"shortName\":\"VN\",\"showName\":\"+84(Vietnam)\"},{\"chineseName\":\"也门\",\"country\":\"Yemen\",\"region\":\"+967\",\"shortName\":\"YE\",\"showName\":\"+967(Yemen)\"},{\"chineseName\":\"南斯拉夫\",\"country\":\"Yugoslavia\",\"region\":\"+381\",\"shortName\":\"YU\",\"showName\":\"+381(Yugoslavia)\"},{\"chineseName\":\"津巴布韦\",\"country\":\"Zimbabwe\",\"region\":\"+263\",\"shortName\":\"ZW\",\"showName\":\"+263(Zimbabwe)\"},{\"chineseName\":\"扎伊尔\",\"country\":\"Zaire\",\"region\":\"+243\",\"shortName\":\"ZR\",\"showName\":\"+243(Zaire)\"},{\"chineseName\":\"赞比亚\",\"country\":\"Zambia\",\"region\":\"+260\",\"shortName\":\"ZM\",\"showName\":\"+260(Zambia)\"}]");
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAABgCAYAAADrVoBrAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTRCNzcxOTY2QjMwMTFFOUE5RUFDMEIxRkM1RUYxRjQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTRCNzcxOTU2QjMwMTFFOUE5RUFDMEIxRkM1RUYxRjQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkE2OTUzQzc3OTkzMDExRTc5M0MyQ0NEM0FDQzk5Q0QzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkE2OTUzQzc4OTkzMDExRTc5M0MyQ0NEM0FDQzk5Q0QzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+zdjizwAAHk1JREFUeNrsXQnYVmP6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"
+
+/***/ }),
+
+/***/ 60:
+/*!******************************************************************!*\
+  !*** E:/LHMiniProgramRespository/static/dodotour_tmall_shop.jpg ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,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"
 
 /***/ })
 

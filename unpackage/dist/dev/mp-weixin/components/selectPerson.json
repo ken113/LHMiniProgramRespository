@@ -1,4 +1,7 @@
 {
-  "navigationBarTitleText": "选择客人",
-  "usingComponents": {}
+  "component": true,
+  "usingComponents": {
+    "edit-traveller": "/components/editTraveller",
+    "edit-traveller-means": "/components/editTravellerMeans"
+  }
 }

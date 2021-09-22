@@ -1,10 +1,15 @@
 {
   "navigationBarTitleText": "填写订单",
   "usingComponents": {
+    "notice": "/pages/order/notice",
+    "person": "/components/form/person",
     "travel-date": "/components/form/travelDate",
-    "flight-number": "/components/form/flightNumber",
-    "flight-time": "/components/form/flightTime",
+    "form-input": "/components/form/formInput",
+    "form-date": "/components/form/formDate",
+    "form-date-time": "/components/form/formDateTime",
     "form-select": "/components/form/formSelect",
-    "hotel": "/components/form/hotel"
+    "hotel": "/components/form/hotel",
+    "form-textarea": "/components/form/formTextarea",
+    "form-time": "/components/form/formTime"
   }
 }

@@ -21,13 +21,13 @@
   overflow: hidden;
 }
 .page-user .user-top .user-box.data-v-137d5072 {
-  height: 295rpx;
+  height: 320rpx;
   width: 700rpx;
   background: #ffffff;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   margin: 0 auto;
   margin-top: 80rpx;
+  padding-top: 20rpx;
 }
 .page-user .user-top .user-box .user-box-top.data-v-137d5072 {
   overflow: hidden;
@@ -39,13 +39,14 @@
 .page-user .user-top .user-box .user-box-top .user-img ._img.data-v-137d5072 {
   height: 120rpx;
   width: 120rpx;
+  border-radius: 50%;
 }
 .page-user .user-top .user-box .user-box-top .user-name.data-v-137d5072 {
   float: left;
   padding-left: 10px;
   font-size: 28rpx;
-  height: 100rpx;
-  line-height: 100rpx;
+  height: 120rpx;
+  line-height: 120rpx;
 }
 .page-user .user-top .user-box .user-box-bottom.data-v-137d5072 {
   overflow: hidden;
@@ -62,24 +63,20 @@
   width: 50%;
   float: left;
   padding-left: 70rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-right: 1px solid #eeeeee;
 }
 .page-user .user-top .user-box .user-box-bottom .ubb-right.data-v-137d5072 {
   width: 50%;
   float: left;
   padding-left: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .page-user .user-menu.data-v-137d5072 {
   width: 700rpx;
-  margin: 0 auto;
+  margin: 70rpx auto;
   background: #ffffff;
-  margin-top: 70rpx;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
 }
 .page-user .user-menu .lml-btm-line.data-v-137d5072 {
   margin-left: 24rpx;
@@ -90,13 +87,19 @@
   height: 80rpx;
   margin: 0 auto;
   background: #ffffff;
-  margin-top: 70rpx;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  margin-bottom: 30rpx;
+  border-radius: 10px;
   text-align: center;
   color: #ff0000;
   font-size: 24rpx;
   line-height: 80rpx;
+}
+.page-user .user-logout.change.data-v-137d5072 {
+  color: #333333;
+}
+.page-user .official.data-v-137d5072 {
+  width: 700rpx;
+  margin: 20rpx auto;
 }
 .langhua-menu-list.data-v-137d5072 {
   display: -webkit-box;

@@ -63,18 +63,31 @@ button::after {
 
 .lhform {
 	/* margin: 0 24rpx; */
+	background: #fff;
 }
-
+.lhform .error-item .uib-item{
+	border-bottom: 1px solid #FF0000;
+}
+.lhform .error-item .error-text{
+	font-size:24rpx;
+	padding-left: 204rpx;
+	color:#FF0000;
+}
 .lhform .uib-item {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	height: 80rpx;
-	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
 	background: #ffffff;
 }
-
+.lhform .uib-item.textarea{
+	height: auto;
+}
+.lhform .uib-item.textarea .item-right{
+	height: auto;
+}
 .lhform .uib-item .item-left {
 	width: 180rpx;
 	padding-left: 24rpx;
@@ -97,16 +110,32 @@ button::after {
 	font-size: 24rpx;
 }
 
+.lhform .uib-item .item-right .lh-date-input{
+	width: 100%;
+	height: 100%;
+}
+
 .lhform .uib-item .item-right .iconright {
 	float: right;
-	margin-right: 24rpx;
-	width: 24rpx;
+	margin-right: 40rpx;
+	width: 48rpx;
 	color:#797979;
+	text-align: right;
 }
 
 .lhform .uib-item .item-right .input {
 	font-size: 24rpx;
 	width: 100%;
+	height: 80rpx;
+	line-height: 80rpx;
+	vertical-align: top;
+}
+
+.lhform .uib-item .item-right .textarea {
+	font-size: 24rpx;
+	width: 100%;
+	padding-top: 10rpx;
+	line-height: 22rpx;
 }
 
 .lhform .uib-item .item-right .select {
@@ -120,6 +149,8 @@ button::after {
 
 .lhform .uib-item .item-right .radio {
 	font-size: 22rpx;
+	height: 100%;
+	    display: inline-block;
 }
 
 .lhform .uib-item .item-right .region {
@@ -136,7 +167,15 @@ button::after {
 }
 
 .lhform .uib-item .item-right .ipt {
-	width: 280rpx;
+	width: 480rpx;
+	display: inline-block;
+	height: 80rpx;
+	line-height: 80rpx;
+	vertical-align: top;
+}
+
+.lhform .uib-item .item-right .ipt2 {
+	width: 420rpx;
 	display: inline-block;
 	height: 80rpx;
 	line-height: 80rpx;
@@ -168,6 +207,7 @@ button::after {
 }
 .lhform .uib-item .item-right .uni-date__input{
 	font-size: 24rpx;
+	color:#333;
 }
 .lhform .uib-item .item-right .uni-date-x{
 		padding: 0 !important;
@@ -177,4 +217,13 @@ button::after {
 }
 .lhform .uib-item .item-right .uni-date__input{
 	padding: 0 !important;
+}
+.lhform .uni-forms-item{
+
+}
+.lhform .uni-forms-item__box{
+	padding: 0 24rpx;
+}
+.lhform .uni-forms-item .label-text{
+	font-size:26rpx;
 }

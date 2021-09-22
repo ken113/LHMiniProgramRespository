@@ -1,4 +1,7 @@
 {
-  "navigationBarTitleText": "登录",
-  "usingComponents": {}
+  "navigationStyle": "default",
+  "navigationBarTitleText": "浪花朵朵行程管家",
+  "usingComponents": {
+    "l-h-calendar": "/components/LHCalendar"
+  }
 }

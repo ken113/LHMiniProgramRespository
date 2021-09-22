@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "个人资料",
-  "usingComponents": {}
+  "usingComponents": {
+    "l-h-indexed-list": "/components/LHIndexedList"
+  }
 }

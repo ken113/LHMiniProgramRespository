@@ -1,31 +1,32 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-	{
-		"path": "pages/order/index",
-		"style": {
-			"navigationBarTitleText": "浪花朵朵行程管家"
-		}
-	},
-	{
-		"path": "pages/index/login",
-		"style": {
-			"navigationBarTitleText": "登录"
-		}
-	},
-	{
-		"path": "pages/user/index",
-		"style": {
-			"navigationBarTitleText": "个人中心"
-		}
-	},
-	{
-		"path": "pages/user/edit_visitor",
-		"style": {
-			"navigationBarTitleText": "编辑常用游客"
-		}
-	},
-	
-	
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "浪花朵朵行程管家",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/login",
+			"style": {
+				"navigationStyle":"default",
+				"navigationBarTitleText": "浪花朵朵行程管家"
+			}
+		},
+
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/user/addTraveller",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
 		{
 			"path": "pages/order/edit",
 			"style": {
@@ -33,38 +34,22 @@
 			}
 		},
 		{
-			"path": "components/selectPerson",
+			"path": "pages/order/detail",
 			"style": {
-				"navigationBarTitleText": "选择客人"
+				"navigationBarTitleText": "确认单"
 			}
 		},
-		
-		
-		
 		{
-			"path": "pages/order/base",
-			"style": {
-				"navigationBarTitleText": "基本资料"
-			}
-		},
-
-		{
-			"path": "pages/user/means",
+			"path": "pages/user/travellerMeans",
 			"style": {
 				"navigationBarTitleText": "附加资料"
 			}
 		},
-		
 		{
-			"path": "pages/user/visitor",
+			"path": "pages/user/travellerList",
 			"style": {
-				"navigationBarTitleText": "常用游客"
-			}
-		},
-		{
-			"path": "components/LHIndexedList",
-			"style": {
-				"navigationBarTitleText": "选择国家或地区"
+				"navigationBarTitleText": "常用游客",
+				"disableScroll":true
 			}
 		},
 		{
@@ -73,29 +58,19 @@
 				"navigationBarTitleText": "个人资料"
 			}
 		},
-		
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "浪花朵朵行程管家"
 			}
 		}
-	    ,{
-            "path" : "components/form/travelDate",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "浪花朵朵行程管家",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
-		"enablePullDownRefresh": true
+		"enablePullDownRefresh": false
 	},
 	"tabBar": {
 		"color": "#cdcdcd",
@@ -103,14 +78,14 @@
 		"borderStyle": "white",
 		"backgroundColor": "#ffffff",
 		"list": [{
-				"iconPath": "static/订单.png",
-				"selectedIconPath": "static/订单 (1).png",
+				"iconPath": "static/icon_order.png",
+				"selectedIconPath": "static/icon_order_selected.png",
 				"pagePath": "pages/order/index",
 				"text": "订单"
 			},
 			{
 				"iconPath": "static/icon_patriarch.png",
-				"selectedIconPath": "static/icon_patriarch (1).png",
+				"selectedIconPath": "static/icon_patriarch_selected.png",
 				"pagePath": "pages/user/index",
 				"text": "我的"
 			}

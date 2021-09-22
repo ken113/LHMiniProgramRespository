@@ -1,5 +1,6 @@
 <template>
 	<view class="page-order">
+		<!-- <button open-type="getUserInfo" @click="loginMP">获取用户信息</button> -->
 		<view class="uni-tab-bar">
 			<scroll-view class="order-tab" scroll-x>
 				<block v-for="(tab,index) in tabBars" :key="index">
@@ -7,7 +8,7 @@
 						v-bind:id="'tabNum'+index">
 						<view class="tab-name">
 							{{tab.name}}
-							<text :class="tab.num ? 'num':'hidden'">{{tab.num?tab.num:""}}</text>
+							<text v-if="index===1" :class="tab.num ? 'num':'hidden'">{{tab.num?tab.num:""}}</text>
 						</view>
 					</view>
 				</block>
@@ -15,83 +16,60 @@
 			<view class="order-tab-line" :style="{left: tabLineLeft + 'px' }"></view>
 		</view>
 
-		<!-- <swiper class="ui-carinfos" @change="swiperChange" :current="tabIndex">
-      <swiper-item
-        class="ui-carinfo-item"
-        v-for="(item,index) in carinfos"
-        :key="index"
-      >{{item.carinfo}}</swiper-item>
-    </swiper>-->
-
-		<view class="top-img" :style="{backgroundImage:`url(${indexBackgroundImage})`,backgroundSize: 'cover'}"></view>
-
-		<swiper class="ui-order" @change="swiperChange" :current="tabIndex" :style="'height: ' + height +'px;'"
-			v-if="tabIndex!==3">
+		<!-- <view class="top-img" :style="{backgroundImage:`url(${indexBackgroundImage})`,backgroundSize: 'cover'}"></view> -->
+		<swiper class="ui-order" @change="swiperChange" :current="tabIndex" :style="'height: ' + height +'px;'">
 			<swiper-item class="ui-order-item" v-for="(item,index) in tabBars" :key="index">
-				<view class="order-list-ctn">
+				<view class="order-list-ctn" :id="'orderListCtn'+index">
 					<view class="order-list">
-						<navigator url="/pages/order/edit" open-type="navigate">
-							<view class="order-item-box">
+						<!-- @tap="openOrderEidt(index,$event)" -->
+						<view  v-for="(item,index) in orderList[index]" :key="item.OrderId">
+
+							<navigator class="order-item-box" hover-class="active"
+								:url=" item.isEidt ? '/pages/order/edit?id=' + item.OrderId : '/pages/order/detail?id=' + item.OrderId "
+								open-type="navigate">
+								<!-- item.AdultNetPrice ===0 && item.BobyNetPrice ===0 && item.ChildNetPrice ===0 -->
+								<view v-if="false" class="free-iamge"
+									style="background:url('./../../static/u128.png');background-size: cover"></view>
+
 								<view class="item-top">
-									<text class="order-number">订单号：201708231501206310</text>
-									<text class="order-status">未填写</text>
+									<text class="order-number">订单号：{{ item.OrderNo}}</text>
+									<text :class=" 'order-status ' + cusotmrStatusColor[item.CusotmrStatus]"><text
+											v-if="item.CusotmrStatus ===70"
+											class="iconfont">&#xe8ad;</text>{{ item.CustomrStatusName }}</text>
 								</view>
 								<view class="item-center">
-									<view class="order-name">普吉小车接机MG</view>
+									<view class="order-name">{{ item.cnItemName }}</view>
 								</view>
 								<view class="item-bottom">
-									<text class="order-date">出行：2020-09-01</text>
-									<text class="order-person">2 成人 0 儿童 0 婴儿</text>
+									<text class="order-date">出行：{{ item.ServiceDate }}</text>
+									<text class="order-person">{{ item.personText }}</text>
 								</view>
-							</view>
-						</navigator>
+								<view class="item-bottom2" v-if="item.ReceiveManTime">接人时间：{{ item.ReceiveManTime }}
+								</view>
 
-						<view class="order-item-box">
-							<view class="free-iamge"
-								style="background:url('./../../static/u128.png');background-size: cover"></view>
-							<view class="item-top">
-								<text class="order-number">订单号：201708231501206310</text>
-								<text class="order-status ok"><text class="iconfont">&#xe8ad;</text>已确认</text>
-							</view>
-							<view class="item-center">
-								<view class="order-name">王权免税店海鲜自助餐购（特价款）（全岛免费接送）</view>
-							</view>
-							<view class="item-bottom">
-								<text class="order-date">出行：2020-09-01</text>
-								<text class="order-person">2 成人 0 儿童 0 婴儿</text>
-							</view>
-							<view class="item-bottom2">接人时间：08:00-08:15</view>
-						</view>
-						<view class="order-item-box" v-if="index===1">
-							<view class="item-top">
-								<text class="order-number">订单号：201708231501206310</text>
-								<text class="order-status">未填写</text>
-							</view>
-							<view class="item-center">
-								<view class="order-name">王权免税店海鲜自助餐购（特价款）（全岛免费接送）</view>
-							</view>
-							<view class="item-bottom">
-								<text class="order-date">出行：2020-09-01</text>
-								<text class="order-person">2 成人 0 儿童 0 婴儿</text>
-							</view>
-							<view class="item-bottom2">接人时间：08:00-08:15</view>
+							</navigator>
+
 						</view>
 
-						<view class="order-item-nomore">
+						<view class="order-item-nomore"
+							v-if=" orderList[tabIndex].length === 0 || ( tabIndex===0 && total === orderList[0].length)">
 							<view class="top">
 								<view class="txt1"></view>
-								<view class="txt2">我也是有底线的</view>
+								<view class="txt2" v-if="orderList[tabIndex].length === 0">还没有订单</view>
+								<view class="txt2" v-if="orderList[tabIndex].length > 0">我也是有底线的</view>
 								<view class="txt3"></view>
 							</view>
-							<view class="center"
-								style="background:url('./../../static/u55.png');background-size: cover"></view>
+							<view class="center" :style="{backgroundImage:`url(${imageLogo})`,backgroundSize: 'cover'}">
+							</view>
 						</view>
+
+
 					</view>
 				</view>
 			</swiper-item>
 		</swiper>
 
-		<view class="order-item-null">
+		<!-- <view class="order-item-null" >
 			<view class="center">
 				<view class="img" style="background:url('./../../static/u64.png');background-size: cover"></view>
 				<view class="text">还没有订单，去逛逛</view>
@@ -100,11 +78,11 @@
 				<view class="txt1"></view>
 				<view class="txt2">你可能还能喜欢</view>
 				<view class="txt3"></view>
-			</view>
-		</view>
-		<view class="goods-list">
+			</view> 
+		</view> -->
+		<!-- 		<view class="goods-list" v-if="orderList.length === 0">
 			<view class="goods-item">
-				<view class="goods-img" style="background:url('./../../static/u12.png')"></view>
+				<view class="goods-img" style="background:url('./../../static/u13.png')"></view>
 				<view class="goods-name">泰国曼谷金东尼人妖秀演出门票</view>
 				<view class="goods-bottom">
 					<text class="goods-price">￥50</text>
@@ -120,7 +98,7 @@
 				</view>
 			</view>
 			<view class="goods-item">
-				<view class="goods-img" style="background:url('./../../static/u12.png')"></view>
+				<view class="goods-img" style="background:url('./../../static/u13.png')"></view>
 				<view class="goods-name">泰国曼谷金东尼人妖秀演出门票</view>
 				<view class="goods-bottom">
 					<text class="goods-price">￥50</text>
@@ -135,28 +113,48 @@
 					<text class="goods-link iconfont lhddcart"></text>
 				</view>
 			</view>
-		</view>
+		</view> -->
+		<selectUser ref="selectUser" :customerList="customerList" @selectedUser="selectedUser"></selectUser>
 	</view>
 </template>
 
 <script>
-	import indexBackgroundImage from "@/static/3.png";
+	//import indexBackgroundImage from "@/static/1.png";
+	import imageLogo from '@/static/u55.png';
+	import util from '@/common/util.js';
+
+	import selectUser from '@/components/selectUser.vue';
 
 	export default {
-		components:{
-			//uCard
+		components: {
+			selectUser
 		},
+		beforeCreate() {
+
+		},
+
 		data() {
 			return {
-				indexBackgroundImage: indexBackgroundImage,
-				title: "Hello",
+				imageLogo,
+				page: 1,
+				page2: 1,
+				pageSize: 10,
+				total: 0,
+				orderDataList: [], //所以的数据，缓存到列表
+				orderList: [
+					[],
+					[],
+					[],
+					[],
+					[]
+				], //页面展示
 				tabIndex: 0, // 选中的
 				tabLineLeft: 0,
 				height: 0,
 				tabBars: [{
 						name: "全部",
 						id: "all",
-						num: 12
+						num: 0,
 					},
 					{
 						name: "待处理",
@@ -166,12 +164,12 @@
 					{
 						name: "处理中",
 						id: "processing",
-						num: 10
+						num: 0
 					},
 					{
 						name: "已确认",
 						id: "confirm",
-						num: 999
+						num: 0
 					},
 					{
 						name: "已取消",
@@ -179,49 +177,432 @@
 						num: 0
 					},
 				],
-				carinfos: [{
-						carinfo: "全部",
-					},
-					{
-						carinfo: "待处理",
-					},
-					{
-						carinfo: "处理中",
-					},
-					{
-						carinfo: "已确认",
-					},
-					{
-						carinfo: "已取消",
-					},
-				],
+				orderStatusMap: {
+					0: "未填写",
+					1: "待核对",
+					2: "已核对",
+					3: "已发送",
+					4: "新单已接",
+					5: "确认待检",
+					6: "已确认",
+					7: "拒绝待检",
+					8: "已拒绝",
+					9: "请求取消",
+					10: "取消待检",
+					11: "已取消",
+					12: "请求变更",
+					13: "已作废",
+					14: "取消已接",
+					15: "变更已接",
+				},
+				cusotmrStatusColor: {
+					0: 'noedit',
+					70: 'ok'
+				},
+				customerList:[],
 			};
 		},
-		onLoad() {
-			this.setScrollLeft(0);
-
-			this.height =
-				uni.getSystemInfoSync().windowHeight -
-				((66 * 1.2) / 750) * uni.getSystemInfoSync().windowHeight;
+		filters: {
+			filterDate(value) {
+				if (!value || value.substring(0, 10) == '0001-01-01' || value.substring(0, 10) == '1900-01-01') {
+					return '';
+				}
+				return util.dateFormat(value, 'd');
+			},
 		},
+
+		onLoad(options) {
+
+			util.autoUpdater();
+			//pages/order/index?officialAccount=2&openID=oQO72jnXxbKwWhkfeTZtCLCddDBs&customerId=156624&path=105540_0 
+			// options = {
+			// 	officialAccount:'2',
+			// 	openID:'oQO72jnXxbKwWhkfeTZtCLCddDBs',
+			// 	customerId:'156624',
+			// 	path:'105540_40'
+			// };
+
+			console.log('orderlist', options)
+			let officialAccount = options && options.officialAccount;
+			//officialAccount = 1;
+
+			//从公众号菜单跳转过来
+			if (officialAccount == '1') {
+				uni.hideTabBar();
+				this.getSessionId(officialAccount);
+			} else if (officialAccount == '2') {
+				const {
+					openID,
+					customerId,
+					path
+				} = options;
+				this.getSessionId(officialAccount, openID, customerId, path);
+			} else {
+				if (!uni.getStorageSync("sessionId")) {
+					uni.redirectTo({
+						url: '/pages/index/login'
+					});
+				} else {
+					this.init();
+				}
+
+			}
+		},
+		onShow() {
+
+		},
+		onHide() {},
+		mounted() {},
+		onShareAppMessage: function() {
+
+		},
+		//下拉刷新
+		onPullDownRefresh() {
+			
+			if(!uni.getStorageSync("sessionId")){
+				return;
+			}
+			this.page = 1;
+			this.pageSize = 10;
+			this.orderDataList = [];
+			this.orderList = [
+				[],
+				[],
+				[],
+				[],
+				[]
+			];
+			this.getOrderList();
+		},
+		onReachBottom() {
+
+			if (this.total === this.orderDataList && this.tabIndex === 0) {
+				return;
+			}
+
+			if (this.page > this.page2 || this.total > this.orderDataList.length) {
+				this.page2++;
+				this.renderList(this.tabIndex);
+
+			}
+			if (this.tabIndex === 0) {
+				this.page++;
+				this.getOrderList();
+			}
+		},
+		onShow(e) {},
 		methods: {
+
+			getSessionId(officialAccount, openID, customerId, path) {
+				const _this = this;
+				wx.login({
+					success(res) {
+						if (res.code) {
+							const data = {
+								code: res.code,
+								type: 1,
+							};
+							if (officialAccount == '2') {
+								data.openID = openID;
+								data.customerId = customerId;
+								data.type = 2;
+							}
+							_this.$sendRequest({
+									url: "/WxOpen/OnLogin",
+									method: "GET",
+									data,
+									loadding: false,
+								})
+								.then((response) => {
+									console.log('获取微信code', response);
+									
+									if( response.Code === 301 && response.data.length > 1){
+										uni.removeStorageSync('sessionId');
+										_this.customerList = response.data;
+										_this.$refs.selectUser.userShow = true;
+									}else if (response.Code === 200) {
+										
+										uni.showTabBar();
+										uni.setStorageSync("sessionId", response.data.Key);
+
+										if (officialAccount == '1') {
+											_this.init();
+										}
+										if (officialAccount == '2') {
+
+											let tabIndex = 0;
+											let [orderNo, CusotmrStatus] = path.split('_');
+
+											console.log('CusotmrStatus', CusotmrStatus);
+											CusotmrStatus = parseInt(CusotmrStatus);
+
+											if (CusotmrStatus === 0) {
+												_this.init();
+												uni.navigateTo({
+													url: '/pages/order/edit?id=' + orderNo
+												});
+											} else if (CusotmrStatus === 70) {
+												_this.init();
+												uni.navigateTo({
+													url: '/pages/order/detail?id=' + orderNo
+												});
+											} else {
+
+												//待处理
+												if ([0, 20, 30, 10].includes(CusotmrStatus)) {
+													tabIndex = 1;
+												}
+												//处理中
+												if ([40, 50, 60].includes(CusotmrStatus)) {
+													tabIndex = 2;
+												}
+												//已确认
+												if ([70].includes(CusotmrStatus)) {
+													tabIndex = 3;
+												}
+												//已取消
+												if ([80].includes(CusotmrStatus)) {
+													tabIndex = 4;
+												}
+
+												_this.init(tabIndex);
+											}
+										}
+									} else {
+										uni.showToast({
+											icon: "none",
+											title: response.Msg,
+										});
+									}
+								});
+						} else {
+							console.log("登录失败！" + res.errMsg);
+						}
+					},
+				});
+			},
+			selectedUser() {
+
+			},
+			init(tabIndex = 0) {
+				this.page = 1;
+				this.pageSize = 10;
+				this.orderDataList = [];
+				this.orderList = [
+					[],
+					[],
+					[],
+					[],
+					[]
+				];
+				this.tabIndex = tabIndex;
+				this.setScrollLeft(tabIndex);
+				//this.height =uni.getSystemInfoSync().windowHeight -((66 * 1.2) / 750) * uni.getSystemInfoSync().windowHeight;
+				this.getOrderList();
+				//uni.startPullDownRefresh();
+
+			},
 			tabtap: function(index) {
+				this.page2 = 1;
 				this.tabIndex = index;
 				this.setScrollLeft(index);
+				this.renderList(index);
+
+				uni.pageScrollTo({
+					duration: 0, //过渡时间必须为0，否则运行到手机会报错
+					scrollTop: 0
+				})
 			},
 			swiperChange: function(e) {
+				this.page2 = 1;
 				var index = e.target.current || e.detail.current;
 				this.tabIndex = index;
 				this.setScrollLeft(index);
+				this.renderList(index);
+
+
 			},
 			setScrollLeft: function(tabIndex) {
 				let winWidth = uni.getSystemInfoSync().windowWidth,
 					tabLineWidth = Math.floor(
-						(96 / 750) * uni.getSystemInfoSync().windowWidth
+						(80 / 750) * uni.getSystemInfoSync().windowWidth
 					);
-				this.tabLineLeft =
-					(Math.floor(winWidth / 5) - tabLineWidth) / 2 +
-					Math.floor(winWidth / 5) * tabIndex;
+				this.tabLineLeft = (Math.floor(winWidth / 5) - tabLineWidth) / 2 + Math.floor(winWidth / 5) * tabIndex;
+
+
+			},
+			getOrderList() {
+				uni.showLoading({
+					title: "加载中",
+					mask: false,
+
+				});
+				this.$sendRequest({
+					url: "/WxOpen/GetIndexList",
+					method: "POST",
+					data: {
+						page: this.page,
+						pageSize: this.pageSize,
+					},
+				}).then(res => {
+					uni.stopPullDownRefresh();
+					const tabBars = [];
+					console.log('加载订单列表', res);
+					if (res.Code === 200) {
+
+						res.data.orders.forEach(item => {
+
+							const {
+								AdultNum,
+								ChildNum,
+								RoomNum,
+								INFNum,
+								RightNum,
+								ServiceTypeID,
+								ServiceDate
+							} = item;
+
+							let personText = AdultNum + ' 成人 ' + ChildNum + ' 儿童 ' + INFNum + ' 婴儿';
+							if (ServiceTypeID === 4) {
+								personText = AdultNum + ' 成人 ' + ChildNum + ' 儿童 ' + INFNum + ' 婴儿 ' + RoomNum + ' 间 ' + RightNum + ' 晚';
+							}
+							item.personText = personText;
+
+							let _ServiceDate = '';
+							if (!ServiceDate || ServiceDate.substring(0, 10) == '0001-01-01' || ServiceDate
+								.substring(0, 10) == '1900-01-01') {
+								_ServiceDate = '';
+							} else {
+								_ServiceDate = util.dateFormat(ServiceDate, 'd');
+							}
+							item.ServiceDate = _ServiceDate;
+							if( [0,20].includes(item.CusotmrStatus) ){
+								item.isEidt = true;
+							}
+							
+						})
+
+						if (this.page === 1) {
+							this.orderDataList = res.data.orders;
+						} else {
+							this.orderDataList = this.orderDataList.concat(res.data.orders);
+						}
+
+						//this.orderList = [...res.data.data];
+						this.total = res.data.TotalCount;
+
+						this.renderList(this.tabIndex, '2');
+
+						let num1 = 0;
+						let num2 = 0;
+						let num3 = 0;
+						let num4 = 0;
+
+						this.orderDataList.forEach(item => {
+							//待处理
+							if ([0, 20, 30, 10].includes(item.CusotmrStatus)) {
+								num1++;
+							}
+							//处理中
+							if ([40, 50, 60].includes(item.CusotmrStatus)) {
+								num2++;
+							}
+							//已确认
+							if ([70].includes(item.CusotmrStatus)) {
+								num3++;
+							}
+							//已取消
+							if ([80].includes(item.CusotmrStatus)) {
+								num4++;
+							}
+						});
+
+						this.$set(this.tabBars[0], 'num', this.orderDataList.length);
+						this.$set(this.tabBars[1], 'num', num1);
+						this.$set(this.tabBars[2], 'num', num2);
+						this.$set(this.tabBars[3], 'num', num3);
+						this.$set(this.tabBars[4], 'num', num4);
+
+						this.$nextTick(() => {
+
+							const query = uni.createSelectorQuery().in(this);
+							const id = '#orderListCtn' + this.tabIndex;
+							query.select(id).boundingClientRect(data => {
+								if (data) {
+									const height = uni.getSystemInfoSync().windowHeight - 60;
+									this.height = Math.max(height, data.height);
+								}
+							}).exec();
+
+						});
+
+					}
+				});
+			},
+			renderList(index, type) {
+				// if (index === 0 && !type) {
+				// 	this.orderList = [...this.orderDataList];
+				// 	return;
+				// }
+
+				let statusList = [];
+				if (index === 0) {
+					statusList = [-1];
+				} else if (index === 1) {
+					statusList = [0, 20, 30, 10];
+				} else if (index === 2) {
+					statusList = [40, 50, 60];
+				} else if (index === 3) {
+					statusList = [70];
+				} else if (index === 4) {
+					statusList = [80];
+				}
+
+				//debugger;
+				let tempList = [];
+				let tempPage = type ? this.page : this.page2;
+				const len = tempPage * this.pageSize;
+				if (index === 0) {
+					tempList = [...this.orderDataList];
+				} else {
+					this.orderDataList.forEach(item => {
+						if (statusList.includes(item.CusotmrStatus)) {
+							tempList.push(item);
+						}
+					});
+				}
+				this.orderList[index] = [...tempList];
+				//缓存加载
+				//this.orderList = [...tempList].splice(0,len);
+
+				this.$nextTick(() => {
+
+					const query = uni.createSelectorQuery().in(this);
+					const id = '#orderListCtn' + this.tabIndex;
+					query.select(id).boundingClientRect(data => {
+						if (data) {
+							const height = uni.getSystemInfoSync().windowHeight - 60;
+							this.height = Math.max(height, data.height);
+						}
+					}).exec();
+
+				});
+			},
+			openOrderEidt(a, b) {
+				const order = this.orderList[this.tabIndex][a];
+				if ([0, 20].includes(order.CusotmrStatus)) {
+					uni.navigateTo({
+						url: '/pages/order/edit?id=' + order.OrderId
+					});
+				} else {
+					uni.navigateTo({
+						url: '/pages/order/detail?id=' + order.OrderId
+					});
+				}
+			},
+			selectedUser(){
+				this.init();
+				uni.showTabBar();
 			},
 		},
 	};
@@ -230,11 +611,16 @@
 <style lang="scss" scoped>
 	.page-order {
 		font-size: 24rpx;
+		//overflow: hidden;
 
 		.uni-tab-bar {
 			height: 80rpx;
 			line-height: 80rpx;
-			position: relative;
+			position: fixed;
+			background: #fff;
+			top: 0;
+			width: 100%;
+			z-index: 100;
 
 			.order-tab-line {
 				border-top: 2px solid #4992e7;
@@ -277,7 +663,7 @@
 
 		.order-item-nomore {
 			margin: 0 auto;
-			margin-top: 90rpx;
+			margin-top: 40rpx;
 			text-align: center;
 			width: 100%;
 
@@ -285,20 +671,26 @@
 				color: #999;
 				display: flex;
 				justify-content: space-between;
+				height: 40rpx;
+				align-items: center;
 
 				.txt1,
 				.txt3 {
 					border-bottom: 1px solid #eeeeee;
 					width: 33.33%;
-					transform: translate(0, 20rpx);
+					transform: translate(0, -10rpx);
+				}
+
+				.txt2 {
+					margin-bottom: 20rpx;
 				}
 			}
 
 			.center {
 				height: 44rpx;
-				width: 135rpx;
+				width: 140rpx;
 				display: inline-block;
-				margin-top: 5rpx;
+				margin-top: 20rpx;
 			}
 		}
 
@@ -434,8 +826,14 @@
 		}
 
 		.ui-order {
-			height: 100%;
+			//height: 885rpx;
 			position: relative;
+			margin-top: 80rpx;
+
+			.ui-order-item {
+				overflow: auto;
+				height: fit-content !important;
+			}
 		}
 
 		.top-img {
@@ -446,6 +844,7 @@
 
 		.order-list-ctn {
 			padding: 24rpx;
+			padding-top: 0;
 
 			.order-list {
 				margin-top: 24rpx;
@@ -457,6 +856,10 @@
 					border-radius: 10px;
 
 					position: relative;
+					
+					&.active{
+						background: rgba(51,51,51,.1);
+					}
 
 					.free-iamge {
 						position: absolute;
@@ -483,16 +886,20 @@
 						.order-status {
 							float: right;
 							font-size: 24rpx;
-							
-							&.ok{
-								color:#4992E7;
+
+							&.noedit {
+								color: #FF6600;
 							}
-							
-							.iconfont{
-								
-								    margin: 0rpx 5rpx;
-								    font-size: 28rpx;
-								    padding-top: 0rpx;
+
+							&.ok {
+								color: #4992E7;
+							}
+
+							.iconfont {
+
+								margin: 0rpx 5rpx;
+								font-size: 28rpx;
+								padding-top: 0rpx;
 							}
 						}
 					}

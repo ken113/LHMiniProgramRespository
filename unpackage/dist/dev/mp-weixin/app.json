@@ -3,16 +3,13 @@
     "pages/order/index",
     "pages/index/login",
     "pages/user/index",
-    "pages/user/edit_visitor",
+    "pages/user/addTraveller",
     "pages/order/edit",
-    "components/selectPerson",
-    "pages/order/base",
-    "pages/user/means",
-    "pages/user/visitor",
-    "components/LHIndexedList",
+    "pages/order/detail",
+    "pages/user/travellerMeans",
+    "pages/user/travellerList",
     "pages/user/info",
-    "pages/index/index",
-    "components/form/travelDate"
+    "pages/index/index"
   ],
   "subPackages": [],
   "window": {
@@ -20,7 +17,7 @@
     "navigationBarTitleText": "浪花朵朵行程管家",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "color": "#cdcdcd",
@@ -29,19 +26,20 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "iconPath": "static/订单.png",
-        "selectedIconPath": "static/订单 (1).png",
+        "iconPath": "static/icon_order.png",
+        "selectedIconPath": "static/icon_order_selected.png",
         "pagePath": "pages/order/index",
         "text": "订单"
       },
       {
         "iconPath": "static/icon_patriarch.png",
-        "selectedIconPath": "static/icon_patriarch (1).png",
+        "selectedIconPath": "static/icon_patriarch_selected.png",
         "pagePath": "pages/user/index",
         "text": "我的"
       }
     ]
   },
   "permission": {},
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
